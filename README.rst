@@ -1,6 +1,8 @@
 Rocket Meals
 ============
 
+Test
+
 |Build Status| |CodeCov Badge| |PyPi Badge| |Zenodo Badge| |SonarCloud Badge| |OpenSSF Badge| |FairSoftware Badge|
 
 Rocket Meals simplifies the software development of optimized and auto-tuned GPU programs, by enabling Python-based unit testing of GPU code and making it easy to develop scripts for auto-tuning GPU kernels. This also means no extensive changes and no new dependencies are required in the kernel code. The kernels can still be compiled and used as normal from any host programming language.
