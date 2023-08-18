@@ -25,12 +25,12 @@ setup(
     description=("An easy to use CUDA/OpenCL kernel tuner in Python"),
     license="Apache 2.0",
     keywords="auto-tuning gpu computing pycuda cuda pyopencl opencl",
-    url="https://KernelTuner.github.io/RocketMealsDocumentation/",
+    url="https://rocket-meals.github.io/RocketMealsDocumentation/",
     include_package_data=True,  # use MANIFEST.in during install
     project_urls={
-        "Documentation": "https://KernelTuner.github.io/RocketMealsDocumentation/",
-        "Source": "https://github.com/KernelTuner/RocketMealsDocumentation",
-        "Tracker": "https://github.com/KernelTuner/RocketMealsDocumentation/issues",
+        "Documentation": "https://rocket-meals.github.io/RocketMealsDocumentation/",
+        "Source": "https://github.com/rocket-meals/RocketMealsDocumentation",
+        "Tracker": "https://github.com/rocket-meals/RocketMealsDocumentation/issues",
     },
     long_description=readme(),
     long_description_content_type="text/x-rst",

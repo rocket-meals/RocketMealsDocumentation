@@ -8,9 +8,9 @@ Rocket Meals is a software development tool for the creation of highly-optimized
 The Rocket Meals documentation pages are mostly about Rocket Meals itself, but there are a number of related repositories that
 are considered part of the Rocket Meals family:
 
- * `Rocket Meals Tutorial <https://github.com/KernelTuner/RocketMealsDocumentation_tutorial>`__
- * `Kernel Launcher <https://github.com/KernelTuner/kernel_launcher>`__
- * `KT Dashboard <https://github.com/KernelTuner/dashboard>`__
+ * `Rocket Meals Tutorial <https://github.com/rocket-meals/RocketMealsDocumentation_tutorial>`__
+ * `Kernel Launcher <https://github.com/rocket-meals/kernel_launcher>`__
+ * `KT Dashboard <https://github.com/rocket-meals/dashboard>`__
 
 Quick install
 -------------

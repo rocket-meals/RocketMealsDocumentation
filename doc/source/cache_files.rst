@@ -14,4 +14,4 @@ Cache files enable a number of other features, such as simulations and visualiza
 strategies. You can start a simulation by calling ``tune_kernel`` with a cache file that contains the full search space and the ``simulation=True`` option.
 
 Cache files can be used to create visualizations of the search space. This even works while Rocket Meals is still running. As the new results are
-coming, they are streamed to the visualization. Please see `Rocket Meals Dashboard <https://github.com/KernelTuner/dashboard>`__.
+coming, they are streamed to the visualization. Please see `Rocket Meals Dashboard <https://github.com/rocket-meals/dashboard>`__.

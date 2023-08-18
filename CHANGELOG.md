@@ -34,7 +34,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Support for boolean scalar arguments in PyCUDA backend
 
 ### Changed
-- Migrated from github.com/benvanwerkhoven to github.com/KernelTuner
+- Migrated from github.com/benvanwerkhoven to github.com/rocket-meals
 - Significant update to the documentation pages
 - Unified benchmarking loops across backends
 - Backends are no longer context managers

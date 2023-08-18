@@ -189,16 +189,16 @@ If you use Rocket Meals in research or research software, please cite the most r
     }
 
 
-.. |Build Status| image:: https://github.com/KernelTuner/RocketMealsDocumentation/actions/workflows/python-app.yml/badge.svg
-   :target: https://github.com/KernelTuner/RocketMealsDocumentation/actions/workflows/python-app.yml
-.. |CodeCov Badge| image:: https://codecov.io/gh/KernelTuner/RocketMealsDocumentation/branch/master/graph/badge.svg
-   :target: https://codecov.io/gh/KernelTuner/RocketMealsDocumentation
+.. |Build Status| image:: https://github.com/rocket-meals/RocketMealsDocumentation/actions/workflows/python-app.yml/badge.svg
+   :target: https://github.com/rocket-meals/RocketMealsDocumentation/actions/workflows/python-app.yml
+.. |CodeCov Badge| image:: https://codecov.io/gh/rocket-meals/RocketMealsDocumentation/branch/master/graph/badge.svg
+   :target: https://codecov.io/gh/rocket-meals/RocketMealsDocumentation
 .. |PyPi Badge| image:: https://img.shields.io/pypi/v/RocketMealsDocumentation.svg?colorB=blue
    :target: https://pypi.python.org/pypi/RocketMealsDocumentation/
 .. |Zenodo Badge| image:: https://zenodo.org/badge/54894320.svg
    :target: https://zenodo.org/badge/latestdoi/54894320
-.. |SonarCloud Badge| image:: https://sonarcloud.io/api/project_badges/measure?project=KernelTuner_RocketMealsDocumentation&metric=alert_status
-   :target: https://sonarcloud.io/dashboard?id=KernelTuner_RocketMealsDocumentation
+.. |SonarCloud Badge| image:: https://sonarcloud.io/api/project_badges/measure?project=rocket-meals_RocketMealsDocumentation&metric=alert_status
+   :target: https://sonarcloud.io/dashboard?id=rocket-meals_RocketMealsDocumentation
 .. |OpenSSF Badge| image:: https://bestpractices.coreinfrastructure.org/projects/6573/badge
    :target: https://bestpractices.coreinfrastructure.org/projects/6573
 .. |FairSoftware Badge| image:: https://img.shields.io/badge/fair--software.eu-%E2%97%8F%20%20%E2%97%8F%20%20%E2%97%8F%20%20%E2%97%8F%20%20%E2%97%8F-green
