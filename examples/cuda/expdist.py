@@ -3,8 +3,8 @@ from collections import OrderedDict
 import json
 import numpy
 
-from RocketMealsDocumentation import tune_kernel
-from RocketMealsDocumentation import util
+from kernel_tuner import tune_kernel
+from kernel_tuner import util
 
 def tune_expdist():
 

@@ -4,8 +4,8 @@ import json
 
 import pytest
 
-from RocketMealsDocumentation import integration
-from RocketMealsDocumentation import util
+from kernel_tuner import integration
+from kernel_tuner import util
 from datetime import datetime, timezone
 
 

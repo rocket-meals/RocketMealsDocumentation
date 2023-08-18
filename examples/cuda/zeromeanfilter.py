@@ -2,7 +2,7 @@
 
 from collections import OrderedDict
 import numpy
-from RocketMealsDocumentation import tune_kernel, run_kernel
+from kernel_tuner import tune_kernel, run_kernel
 
 
 def tune_zeromean():

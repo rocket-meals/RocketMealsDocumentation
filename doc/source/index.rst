@@ -1,38 +1,38 @@
 
 
-The Rocket Meals documentation
+The Kernel Tuner documentation
 ==============================
 
-Rocket Meals is a software development tool for the creation of highly-optimized and tuned GPU applications.
+Kernel Tuner is a software development tool for the creation of highly-optimized and tuned GPU applications.
 
-The Rocket Meals documentation pages are mostly about Rocket Meals itself, but there are a number of related repositories that
-are considered part of the Rocket Meals family:
+The Kernel Tuner documentation pages are mostly about Kernel Tuner itself, but there are a number of related repositories that 
+are considered part of the Kernel Tuner family:
 
- * `Rocket Meals Tutorial <https://github.com/rocket-meals/RocketMealsDocumentation_tutorial>`__
- * `Kernel Launcher <https://github.com/rocket-meals/kernel_launcher>`__
- * `KT Dashboard <https://github.com/rocket-meals/dashboard>`__
+ * `Kernel Tuner Tutorial <https://github.com/KernelTuner/kernel_tuner_tutorial>`__
+ * `Kernel Launcher <https://github.com/KernelTuner/kernel_launcher>`__
+ * `KT Dashboard <https://github.com/KernelTuner/dashboard>`__
 
 Quick install
 -------------
 
-The easiest way to install the Rocket Meals is using pip:
+The easiest way to install the Kernel Tuner is using pip:
 
 To tune CUDA kernels:
 
 - First, make sure you have the `CUDA Toolkit <https://developer.nvidia.com/cuda-toolkit>`_ installed
-- Then type: ``pip install RocketMealsDocumentation[cuda]``
+- Then type: ``pip install kernel_tuner[cuda]``
 
 To tune OpenCL kernels:
 
 - First, make sure you have an OpenCL compiler for your intended OpenCL platform
-- Then type: ``pip install RocketMealsDocumentation[opencl]``
+- Then type: ``pip install kernel_tuner[opencl]``
 
 Or both:
 
-- ``pip install RocketMealsDocumentation[cuda,opencl]``
+- ``pip install kernel_tuner[cuda,opencl]``
 
-More information about how to install Rocket Meals and its
-dependencies can be found under :ref:`install`.
+More information about how to install Kernel Tuner and its
+dependencies can be found under :ref:`install`. 
 
 Example usage
 -------------
@@ -66,13 +66,13 @@ The following shows a simple example for tuning a CUDA kernel:
 
 Citation
 --------
-If you use Rocket Meals in research or research software, please cite the most relevant among the following publications:
+If you use Kernel Tuner in research or research software, please cite the most relevant among the following publications:
 
 .. code:: latex
 
     @article{kerneltuner,
       author  = {Ben van Werkhoven},
-      title   = {Rocket Meals: A search-optimizing GPU code auto-tuner},
+      title   = {Kernel Tuner: A search-optimizing GPU code auto-tuner},
       journal = {Future Generation Computer Systems},
       year = {2019},
       volume  = {90},
@@ -89,7 +89,7 @@ If you use Rocket Meals in research or research software, please cite the most r
       year = {2021},
       url = {https://arxiv.org/abs/2111.14991}
     }
-
+    
     @article{schoonhoven2022benchmarking,
       title={Benchmarking optimization algorithms for auto-tuning GPU kernels},
       author={Schoonhoven, Richard and van Werkhoven, Ben and Batenburg, K Joost},

@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #
-# RocketMealsDocumentation documentation build configuration file, created by
+# kernel_tuner documentation build configuration file, created by
 # sphinx-quickstart on Tue Mar 29 15:46:32 2016.
 #
 # This file is execfile()d with the current directory set to its
@@ -50,7 +50,7 @@ source_suffix = '.rst'
 master_doc = 'contents'
 
 # General information about the project.
-project = u'Rocket Meals'
+project = u'Kernel Tuner'
 copyright = u'2016, Ben van Werkhoven'
 author = u'Ben van Werkhoven'
 
@@ -128,15 +128,15 @@ html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
 
 html_context = {
     "display_github": True, # Integrate GitHub
-    "github_user": "rocket-meals", # Username
-    "github_repo": "RocketMealsDocumentation", # Repo name
+    "github_user": "KernelTuner", # Username
+    "github_repo": "kernel_tuner", # Repo name
     "github_version": "master", # Version
     "conf_py_path": "/doc/source/", # Path in the checkout to the docs root
 }
 
 # The name for this set of Sphinx documents.
 # "<project> v<release> documentation" by default.
-#html_title = u'RocketMealsDocumentation v0.0.1'
+#html_title = u'kernel_tuner v0.0.1'
 
 # A shorter title for the navigation bar.  Default is the same as html_title.
 #html_short_title = None
@@ -218,7 +218,7 @@ html_static_path = ['_static']
 #html_search_scorer = 'scorer.js'
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'RocketMealsDocumentationdoc'
+htmlhelp_basename = 'kernel_tunerdoc'
 
 # -- Options for LaTeX output ---------------------------------------------
 
@@ -240,7 +240,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'RocketMealsDocumentation.tex', u'Rocket Meals Documentation',
+    (master_doc, 'kernel_tuner.tex', u'Kernel Tuner Documentation',
      u'Ben van Werkhoven', 'manual'),
 ]
 
@@ -270,7 +270,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'RocketMealsDocumentation', u'Rocket Meals Documentation',
+    (master_doc, 'kernel_tuner', u'Kernel Tuner Documentation',
      [author], 1)
 ]
 
@@ -284,8 +284,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'RocketMealsDocumentation', u'Rocket Meals Documentation',
-     author, 'RocketMealsDocumentation', 'A simple CUDA/OpenCL Auto-Tuner in Python',
+    (master_doc, 'kernel_tuner', u'Kernel Tuner Documentation',
+     author, 'kernel_tuner', 'A simple CUDA/OpenCL Auto-Tuner in Python',
      'Miscellaneous'),
 ]
 

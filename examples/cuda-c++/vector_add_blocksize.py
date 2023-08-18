@@ -1,11 +1,11 @@
 #!/usr/bin/env python
-""" This is the example demonstrates how to use Rocket Meals
+""" This is the example demonstrates how to use Kernel Tuner
     to insert tunable parameters into template arguments
 """
 
 import json
 import numpy
-from RocketMealsDocumentation import tune_kernel
+from kernel_tuner import tune_kernel
 
 def tune():
 

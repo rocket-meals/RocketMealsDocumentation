@@ -1,6 +1,6 @@
 import numpy as np
 
-from RocketMealsDocumentation.observers.observer import BenchmarkObserver
+from kernel_tuner.observers.observer import BenchmarkObserver
 
 # check if pmt is installed
 try:

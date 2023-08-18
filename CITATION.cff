@@ -10,7 +10,7 @@ authors:
     email: "b.vanwerkhoven@esciencecenter.nl"
 date-released: 2019-12-20
 doi: 10.5281/zenodo.1220113
-keywords:
+keywords: 
   - "GPU Computing"
   - "Auto-Tuning"
   - "Performance Optimization"
@@ -27,9 +27,9 @@ references:
         name-particle: van
         orcid: "https://orcid.org/0000-0002-7508-3272"
         email: "b.vanwerkhoven@esciencecenter.nl"
-    title: "Rocket Meals: A Search-Optimizing GPU Code Auto-Tuner"
+    title: "Kernel Tuner: A Search-Optimizing GPU Code Auto-Tuner"
     journal: "Future Generation Computer Systems"
     year: 2019
-repository-code: "https://github.com/benvanwerkhoven/RocketMealsDocumentation"
-title: Rocket Meals
+repository-code: "https://github.com/benvanwerkhoven/kernel_tuner"
+title: Kernel Tuner
 version: "0.3.0"

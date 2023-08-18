@@ -10,8 +10,8 @@ import numpy as np
 from scipy.stats import norm
 
 # BO imports
-from RocketMealsDocumentation.searchspace import Searchspace
-from RocketMealsDocumentation.strategies.common import CostFunc
+from kernel_tuner.searchspace import Searchspace
+from kernel_tuner.strategies.common import CostFunc
 
 try:
     from sklearn.exceptions import ConvergenceWarning
@@ -22,8 +22,8 @@ try:
 except ImportError:
     bayes_opt_present = False
 
-from RocketMealsDocumentation import util
-from RocketMealsDocumentation.strategies import common
+from kernel_tuner import util
+from kernel_tuner.strategies import common
 
 supported_methods = ["poi", "ei", "lcb", "lcb-srinivas", "multi", "multi-advanced", "multi-fast"]
 
@@ -72,12 +72,12 @@ def prune_parameter_space(parameter_space, tuning_options, tune_params, normaliz
 def tune(searchspace: Searchspace, runner, tuning_options):
     """ Find the best performing kernel configuration in the parameter space
 
-    :params runner: A runner from RocketMealsDocumentation.runners
-    :type runner: RocketMealsDocumentation.runner
+    :params runner: A runner from kernel_tuner.runners
+    :type runner: kernel_tuner.runner
 
     :param tuning_options: A dictionary with all options regarding the tuning
         process. Allows setting hyperparameters via the strategy_options key.
-    :type tuning_options: RocketMealsDocumentation.interface.Options
+    :type tuning_options: kernel_tuner.interface.Options
 
     :returns: A list of dictionaries for executed kernel configurations and their
         execution times.

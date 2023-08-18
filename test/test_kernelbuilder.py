@@ -2,9 +2,9 @@ import numpy as np
 from .context import skip_backend
 
 import pytest
-from RocketMealsDocumentation import kernelbuilder
-from RocketMealsDocumentation import util
-from RocketMealsDocumentation import integration
+from kernel_tuner import kernelbuilder
+from kernel_tuner import util
+from kernel_tuner import integration
 
 
 backends = ["cuda", "cupy"]

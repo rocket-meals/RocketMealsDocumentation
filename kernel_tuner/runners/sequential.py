@@ -4,10 +4,10 @@ from collections import OrderedDict
 from datetime import datetime, timezone
 from time import perf_counter
 
-from RocketMealsDocumentation.core import DeviceInterface
-from RocketMealsDocumentation.util import (ErrorConfig, print_config_output,
+from kernel_tuner.core import DeviceInterface
+from kernel_tuner.util import (ErrorConfig, print_config_output,
                                process_metrics, store_cache)
-from RocketMealsDocumentation.runners.runner import Runner
+from kernel_tuner.runners.runner import Runner
 
 
 class SequentialRunner(Runner):
@@ -17,14 +17,14 @@ class SequentialRunner(Runner):
         """ Instantiate the SequentialRunner
 
         :param kernel_source: The kernel source
-        :type kernel_source: RocketMealsDocumentation.core.KernelSource
+        :type kernel_source: kernel_tuner.core.KernelSource
 
         :param kernel_options: A dictionary with all options for the kernel.
-        :type kernel_options: RocketMealsDocumentation.interface.Options
+        :type kernel_options: kernel_tuner.interface.Options
 
         :param device_options: A dictionary with all options for the device
             on which the kernel should be tuned.
-        :type device_options: RocketMealsDocumentation.interface.Options
+        :type device_options: kernel_tuner.interface.Options
 
         :param iterations: The number of iterations used for benchmarking
             each kernel instance.
@@ -58,7 +58,7 @@ class SequentialRunner(Runner):
 
         :param tuning_options: A dictionary with all options regarding the tuning
             process.
-        :type tuning_options: RocketMealsDocumentation.iterface.Options
+        :type tuning_options: kernel_tuner.iterface.Options
 
         :returns: A list of dictionaries for executed kernel configurations and their
             execution times.

@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 import numpy
 import logging
-import RocketMealsDocumentation
+import kernel_tuner
 from collections import OrderedDict
 
 def tune():
@@ -44,7 +44,7 @@ def tune():
 
     start = time.time()
 
-    results, env = RocketMealsDocumentation.tune_kernel("convolution_kernel", kernel_string,
+    results, env = kernel_tuner.tune_kernel("convolution_kernel", kernel_string,
         problem_size, args, tune_params,
         grid_div_y=grid_div_y, grid_div_x=grid_div_x, cmem_args=cmem_args,
         verbose=True, restrictions=restrict)

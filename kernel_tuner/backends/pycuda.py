@@ -1,14 +1,14 @@
-"""This module contains all CUDA specific RocketMealsDocumentation functions"""
+"""This module contains all CUDA specific kernel_tuner functions"""
 from __future__ import print_function
 
 import logging
 import time
 import numpy as np
 
-from RocketMealsDocumentation.backends.backend import GPUBackend
-from RocketMealsDocumentation.observers.pycuda import PyCudaRuntimeObserver
-from RocketMealsDocumentation.observers.nvml import nvml
-from RocketMealsDocumentation.util import TorchPlaceHolder, SkippableFailure
+from kernel_tuner.backends.backend import GPUBackend
+from kernel_tuner.observers.pycuda import PyCudaRuntimeObserver
+from kernel_tuner.observers.nvml import nvml
+from kernel_tuner.util import TorchPlaceHolder, SkippableFailure
 
 # embedded in try block to be able to generate documentation
 # and run tests without pycuda installed

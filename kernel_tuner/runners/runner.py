@@ -5,7 +5,7 @@ from abc import ABC, abstractmethod
 
 
 class Runner(ABC):
-    """Base class for RocketMealsDocumentation runners"""
+    """Base class for kernel_tuner runners"""
 
     @abstractmethod
     def __init__(

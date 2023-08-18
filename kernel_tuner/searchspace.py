@@ -4,9 +4,9 @@ from typing import Tuple, List
 from constraint import Problem, Constraint, FunctionConstraint
 import numpy as np
 
-from RocketMealsDocumentation.util import default_block_size_names
-from RocketMealsDocumentation.util import check_restrictions as check_instance_restrictions
-from RocketMealsDocumentation.util import MaxProdConstraint
+from kernel_tuner.util import default_block_size_names
+from kernel_tuner.util import check_restrictions as check_instance_restrictions
+from kernel_tuner.util import MaxProdConstraint
 
 supported_neighbor_methods = ["strictly-adjacent", "adjacent", "Hamming"]
 

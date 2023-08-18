@@ -2,8 +2,8 @@
 """This is the minimal example from the README"""
 
 import numpy
-from RocketMealsDocumentation import tune_kernel
-from RocketMealsDocumentation.file_utils import store_output_file, store_metadata_file
+from kernel_tuner import tune_kernel
+from kernel_tuner.file_utils import store_output_file, store_metadata_file
 
 def tune():
 

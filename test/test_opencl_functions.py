@@ -3,9 +3,9 @@ from collections import OrderedDict
 import pytest
 import numpy as np
 
-import RocketMealsDocumentation
-from RocketMealsDocumentation.backends import opencl
-from RocketMealsDocumentation.core import KernelSource, KernelInstance
+import kernel_tuner
+from kernel_tuner.backends import opencl
+from kernel_tuner.core import KernelSource, KernelInstance
 
 from .context import skip_if_no_opencl
 
@@ -96,7 +96,7 @@ def env():
 
 @skip_if_no_opencl
 def test_benchmark(env):
-    results, _ = RocketMealsDocumentation.tune_kernel(*env)
+    results, _ = kernel_tuner.tune_kernel(*env)
     assert len(results) == 3
     assert all(["block_size_x" in result for result in results])
     assert all(["time" in result for result in results])

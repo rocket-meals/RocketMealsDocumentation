@@ -1,6 +1,6 @@
 /*
  * Example program to demonstrate how to use the kernel tuner to tune
- * parameters in the host code of GPU programs, such as the number of
+ * parameters in the host code of GPU programs, such as the number of 
  * streams, in combination with parameters in the kernel
  */
 #include <stdio.h>
@@ -125,7 +125,7 @@ float convolution_streams(float *output, float *input, float *filter) {
         if (err != cudaSuccess) {
             fprintf(stderr, "Error in cudaMemcpyDeviceToHost: %s\n", cudaGetErrorString(err));
         }
-    }
+    }    
 
     //mark the end of the computation
     cudaEventRecord(stop, 0);
@@ -151,7 +151,7 @@ float convolution_streams(float *output, float *input, float *filter) {
     cudaDeviceSynchronize();
     err = cudaGetLastError();
     if (err != cudaSuccess) {
-        //this bit is necessary because the Rocket Meals currently can't decide whether
+        //this bit is necessary because the Kernel Tuner currently can't decide whether
         //it's OK to silently skip an error or break execution when calling C functions
         const char *error_string = cudaGetErrorString(err);
         if (strncmp("too many resources requested for launch", error_string, 10) == 0) {

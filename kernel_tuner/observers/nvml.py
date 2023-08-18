@@ -4,7 +4,7 @@ import re
 import numpy as np
 from collections import OrderedDict
 
-from RocketMealsDocumentation.observers.observer import BenchmarkObserver, ContinuousObserver
+from kernel_tuner.observers.observer import BenchmarkObserver, ContinuousObserver
 
 try:
     import pynvml

@@ -3,9 +3,9 @@ from collections import OrderedDict
 import random
 import numpy as np
 
-from RocketMealsDocumentation.interface import Options
-import RocketMealsDocumentation.strategies.common as common
-from RocketMealsDocumentation.searchspace import Searchspace
+from kernel_tuner.interface import Options
+import kernel_tuner.strategies.common as common
+from kernel_tuner.searchspace import Searchspace
 
 
 def test_get_bounds_x0_eps():

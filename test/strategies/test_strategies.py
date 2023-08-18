@@ -4,9 +4,9 @@ import os
 import pytest
 import numpy as np
 
-import RocketMealsDocumentation
-from RocketMealsDocumentation.interface import strategy_map
-from RocketMealsDocumentation import util
+import kernel_tuner
+from kernel_tuner.interface import strategy_map
+from kernel_tuner import util
 
 cache_filename = os.path.dirname(os.path.realpath(__file__)) + "/../test_cache_file.json"
 
@@ -41,13 +41,13 @@ def test_strategies(vector_add, strategy):
 
     print(f"testing {strategy}")
 
-    if hasattr(RocketMealsDocumentation.interface.strategy_map[strategy], "_options"):
-        filter_options = {opt:val for opt, val in options.items() if opt in RocketMealsDocumentation.interface.strategy_map[strategy]._options}
+    if hasattr(kernel_tuner.interface.strategy_map[strategy], "_options"):
+        filter_options = {opt:val for opt, val in options.items() if opt in kernel_tuner.interface.strategy_map[strategy]._options}
     else:
         filter_options = options
     filter_options["max_fevals"] = 10
 
-    results, _ = RocketMealsDocumentation.tune_kernel(*vector_add, strategy=strategy, strategy_options=filter_options,
+    results, _ = kernel_tuner.tune_kernel(*vector_add, strategy=strategy, strategy_options=filter_options,
                                          verbose=False, cache=cache_filename, simulation_mode=True)
 
     assert len(results) > 0

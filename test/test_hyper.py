@@ -1,6 +1,6 @@
 from collections import OrderedDict
 
-from RocketMealsDocumentation.hyper import tune_hyper_params
+from kernel_tuner.hyper import tune_hyper_params
 
 from .test_runners import env, cache_filename
 

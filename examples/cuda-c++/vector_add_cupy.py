@@ -4,7 +4,7 @@
 import json
 import numpy as np
 import cupy as cp
-from RocketMealsDocumentation import tune_kernel
+from kernel_tuner import tune_kernel
 
 def tune():
 

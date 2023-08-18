@@ -6,7 +6,7 @@ import json
 import numpy
 from jinja2 import Template
 
-from RocketMealsDocumentation import tune_kernel
+from kernel_tuner import tune_kernel
 
 
 def tune():

@@ -3,8 +3,8 @@ import logging
 from collections import namedtuple
 from time import perf_counter
 
-from RocketMealsDocumentation import util
-from RocketMealsDocumentation.runners.runner import Runner
+from kernel_tuner import util
+from kernel_tuner.runners.runner import Runner
 
 _SimulationDevice = namedtuple("_SimulationDevice", ["max_threads", "env", "quiet"])
 
@@ -33,14 +33,14 @@ class SimulationRunner(Runner):
         """ Instantiate the SimulationRunner
 
         :param kernel_source: The kernel source
-        :type kernel_source: RocketMealsDocumentation.core.KernelSource
+        :type kernel_source: kernel_tuner.core.KernelSource
 
         :param kernel_options: A dictionary with all options for the kernel.
-        :type kernel_options: RocketMealsDocumentation.interface.Options
+        :type kernel_options: kernel_tuner.interface.Options
 
         :param device_options: A dictionary with all options for the device
             on which the kernel should be tuned.
-        :type device_options: RocketMealsDocumentation.interface.Options
+        :type device_options: kernel_tuner.interface.Options
 
         :param iterations: The number of iterations used for benchmarking
             each kernel instance.
@@ -73,7 +73,7 @@ class SimulationRunner(Runner):
 
         :param tuning_options: A dictionary with all options regarding the tuning
             process.
-        :type tuning_options: RocketMealsDocumentation.iterface.Options
+        :type tuning_options: kernel_tuner.iterface.Options
 
         :returns: A list of dictionaries for executed kernel configurations and their
             execution times.

@@ -2,10 +2,10 @@
 from collections import OrderedDict
 
 import scipy.optimize
-from RocketMealsDocumentation import util
-from RocketMealsDocumentation.searchspace import Searchspace
-from RocketMealsDocumentation.strategies import common
-from RocketMealsDocumentation.strategies.common import (CostFunc,
+from kernel_tuner import util
+from kernel_tuner.searchspace import Searchspace
+from kernel_tuner.strategies import common
+from kernel_tuner.strategies.common import (CostFunc,
                                             setup_method_arguments,
                                             setup_method_options)
 

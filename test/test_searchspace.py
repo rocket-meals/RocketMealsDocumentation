@@ -8,8 +8,8 @@ try:
 except ImportError:
     from unittest.mock import patch
 
-from RocketMealsDocumentation.interface import Options
-from RocketMealsDocumentation.searchspace import Searchspace
+from kernel_tuner.interface import Options
+from kernel_tuner.searchspace import Searchspace
 
 from constraint import ExactSumConstraint, FunctionConstraint
 import numpy as np
@@ -318,7 +318,7 @@ def test_param_neighbors():
             assert param == expected_neighbors[index][param_index]
 
 
-@patch("RocketMealsDocumentation.searchspace.choice", lambda x: x[0])
+@patch("kernel_tuner.searchspace.choice", lambda x: x[0])
 def test_order_param_configs():
     """test whether the ordering of parameter configurations according to parameter index happens as expected"""
     test_order = [1, 2, 0]

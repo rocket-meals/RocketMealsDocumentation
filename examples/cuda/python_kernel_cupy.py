@@ -6,7 +6,7 @@
 
 import cupy as cp
 import numpy as np
-from RocketMealsDocumentation.kernelbuilder import PythonKernel
+from kernel_tuner.kernelbuilder import PythonKernel
 
 def kernelbuilder_example():
 

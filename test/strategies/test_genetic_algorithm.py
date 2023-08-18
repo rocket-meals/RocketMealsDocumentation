@@ -1,7 +1,7 @@
 from collections import OrderedDict
-from RocketMealsDocumentation.strategies import genetic_algorithm as ga
-from RocketMealsDocumentation.interface import Options
-from RocketMealsDocumentation.searchspace import Searchspace
+from kernel_tuner.strategies import genetic_algorithm as ga
+from kernel_tuner.interface import Options
+from kernel_tuner.searchspace import Searchspace
 
 tune_params = OrderedDict()
 tune_params["x"] = [1, 2, 3]

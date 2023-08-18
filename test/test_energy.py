@@ -1,6 +1,6 @@
 import os
 from .context import skip_if_no_pycuda, skip_if_no_pynvml
-from RocketMealsDocumentation.energy import energy
+from kernel_tuner.energy import energy
 
 
 cache_filename = os.path.dirname(os.path.realpath(__file__)) + "/synthetic_fp32_cache_NVIDIA_RTX_A4000.json"

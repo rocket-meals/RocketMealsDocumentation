@@ -4,7 +4,7 @@
 import logging
 import json
 import numpy as np
-from RocketMealsDocumentation import tune_kernel
+from kernel_tuner import tune_kernel
 
 def tune():
 

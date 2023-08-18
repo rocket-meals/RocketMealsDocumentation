@@ -1,13 +1,13 @@
 import numpy as np
 
-import RocketMealsDocumentation
+import kernel_tuner
 from .context import skip_if_no_cuda
 from .test_runners import env
 
 import pytest
-from RocketMealsDocumentation import tune_kernel
-from RocketMealsDocumentation.backends import nvcuda
-from RocketMealsDocumentation.core import KernelSource, KernelInstance
+from kernel_tuner import tune_kernel
+from kernel_tuner.backends import nvcuda
+from kernel_tuner.core import KernelSource, KernelInstance
 
 try:
     from cuda import cuda

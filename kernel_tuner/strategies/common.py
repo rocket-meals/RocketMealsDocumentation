@@ -4,8 +4,8 @@ from collections import OrderedDict
 from time import perf_counter
 
 import numpy as np
-from RocketMealsDocumentation import util
-from RocketMealsDocumentation.searchspace import Searchspace
+from kernel_tuner import util
+from kernel_tuner.searchspace import Searchspace
 
 _docstring_template = """ Find the best performing kernel configuration in the parameter space
 
@@ -13,12 +13,12 @@ _docstring_template = """ Find the best performing kernel configuration in the p
 
 $STRAT_OPT$
 
-    :params runner: A runner from RocketMealsDocumentation.runners
-    :type runner: RocketMealsDocumentation.runner
+    :params runner: A runner from kernel_tuner.runners
+    :type runner: kernel_tuner.runner
 
     :param tuning_options: A dictionary with all options regarding the tuning
         process.
-    :type tuning_options: RocketMealsDocumentation.interface.Options
+    :type tuning_options: kernel_tuner.interface.Options
 
     :returns: A list of dictionaries for executed kernel configurations and their
         execution times. And a dictionary that contains information

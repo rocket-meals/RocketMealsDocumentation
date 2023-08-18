@@ -8,8 +8,8 @@ try:
 except ImportError:
     from unittest.mock import patch
 
-from RocketMealsDocumentation import core
-from RocketMealsDocumentation.interface import Options
+from kernel_tuner import core
+from kernel_tuner.interface import Options
 
 from .context import skip_if_no_pycuda
 
@@ -93,7 +93,7 @@ def test_default_verify_function(env):
     assert True
 
 
-@patch('RocketMealsDocumentation.core.PyCudaFunctions')
+@patch('kernel_tuner.core.PyCudaFunctions')
 def test_check_kernel_output(dev_func_interface):
     dev_func_interface.configure_mock(**mock_config)
 

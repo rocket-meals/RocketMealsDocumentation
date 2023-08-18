@@ -2,10 +2,10 @@ import sys
 from collections import OrderedDict
 from time import perf_counter
 
-from RocketMealsDocumentation.searchspace import Searchspace
-from RocketMealsDocumentation.strategies import common
-from RocketMealsDocumentation.interface import Options
-from RocketMealsDocumentation.strategies.common import CostFunc
+from kernel_tuner.searchspace import Searchspace
+from kernel_tuner.strategies import common
+from kernel_tuner.interface import Options
+from kernel_tuner.strategies.common import CostFunc
 
 try:
     from mock import Mock

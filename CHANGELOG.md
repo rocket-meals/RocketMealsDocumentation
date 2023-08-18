@@ -34,7 +34,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Support for boolean scalar arguments in PyCUDA backend
 
 ### Changed
-- Migrated from github.com/benvanwerkhoven to github.com/rocket-meals
+- Migrated from github.com/benvanwerkhoven to github.com/KernelTuner
 - Significant update to the documentation pages
 - Unified benchmarking loops across backends
 - Backends are no longer context managers
@@ -93,7 +93,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [0.3.2] - 2020-11-04
 ### Added
 - support loop unrolling using params that start with loop_unroll_factor
-- always insert "define RocketMealsDocumentation 1" to allow preprocessor ifdef RocketMealsDocumentation
+- always insert "define kernel_tuner 1" to allow preprocessor ifdef kernel_tuner
 - support for user-defined metrics
 - support for choosing the optimization starting point x0 for most strategies
 
@@ -237,7 +237,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ### Added
 - a public roadmap
 - requirements.txt
-- example showing GPU code unit testing with the Rocket Meals
+- example showing GPU code unit testing with the Kernel Tuner
 - support for passing a (list of) filenames instead of kernel string
 - runner that takes a random sample of 10 percent
 - support for OpenCL platform selection

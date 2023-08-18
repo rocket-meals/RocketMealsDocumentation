@@ -1,11 +1,11 @@
-"""This module contains the interface of all RocketMealsDocumentation backends"""
+"""This module contains the interface of all kernel_tuner backends"""
 from __future__ import print_function
 
 from abc import ABC, abstractmethod
 
 
 class Backend(ABC):
-    """Base class for RocketMealsDocumentation backends"""
+    """Base class for kernel_tuner backends"""
 
     @abstractmethod
     def ready_argument_list(self, arguments):

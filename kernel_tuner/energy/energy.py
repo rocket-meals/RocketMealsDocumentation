@@ -5,8 +5,8 @@ for energy efficiency.
 from collections import OrderedDict
 
 import numpy as np
-from RocketMealsDocumentation import tune_kernel, util
-from RocketMealsDocumentation.observers.nvml import NVMLObserver, get_nvml_gr_clocks
+from kernel_tuner import tune_kernel, util
+from kernel_tuner.observers.nvml import NVMLObserver, get_nvml_gr_clocks
 from scipy import optimize
 
 try:

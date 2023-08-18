@@ -1,6 +1,6 @@
 """ The default strategy that iterates through the whole parameter space """
-from RocketMealsDocumentation.searchspace import Searchspace
-from RocketMealsDocumentation.strategies import common
+from kernel_tuner.searchspace import Searchspace
+from kernel_tuner.strategies import common
 
 _options = {}
 

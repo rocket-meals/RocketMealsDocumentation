@@ -10,10 +10,10 @@ try:
 except ImportError:
     from unittest.mock import patch, Mock
 
-import RocketMealsDocumentation
-from RocketMealsDocumentation.backends.c import CFunctions, Argument
-from RocketMealsDocumentation.core import KernelSource, KernelInstance
-from RocketMealsDocumentation import util
+import kernel_tuner
+from kernel_tuner.backends.c import CFunctions, Argument
+from kernel_tuner.core import KernelSource, KernelInstance
+from kernel_tuner import util
 
 from .context import skip_if_no_gfortran, skip_if_no_gcc, skip_if_no_openmp
 
@@ -127,8 +127,8 @@ def test_byte_array_arguments():
     assert all(dest == arg1)
 
 
-@patch('RocketMealsDocumentation.backends.c.subprocess')
-@patch('RocketMealsDocumentation.backends.c.numpy.ctypeslib')
+@patch('kernel_tuner.backends.c.subprocess')
+@patch('kernel_tuner.backends.c.numpy.ctypeslib')
 def test_compile(npct, subprocess):
 
     kernel_string = "this is a fake C program"
@@ -157,8 +157,8 @@ def test_compile(npct, subprocess):
     assert not os.path.isfile(filename + ".so")
 
 
-@patch('RocketMealsDocumentation.backends.c.subprocess')
-@patch('RocketMealsDocumentation.backends.c.numpy.ctypeslib')
+@patch('kernel_tuner.backends.c.subprocess')
+@patch('kernel_tuner.backends.c.numpy.ctypeslib')
 def test_compile_detects_device_code(npct, subprocess):
 
     kernel_string = "this code clearly contains device code __global__ kernel(float* arg){ return; }"
@@ -322,7 +322,7 @@ def env():
 @skip_if_no_openmp
 @skip_if_no_gcc
 def test_benchmark(env):
-    results, _ = RocketMealsDocumentation.tune_kernel(*env, block_size_names=["nthreads"])
+    results, _ = kernel_tuner.tune_kernel(*env, block_size_names=["nthreads"])
     assert len(results) == 3
     assert all(["nthreads" in result for result in results])
     assert all(["time" in result for result in results])

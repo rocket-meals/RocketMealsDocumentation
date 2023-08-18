@@ -1,8 +1,8 @@
 #!/usr/bin/env python
-"""Minimal example for a parameterized test of a CUDA kernel using Rocket Meals"""
+"""Minimal example for a parameterized test of a CUDA kernel using Kernel Tuner"""
 
 import numpy
-from RocketMealsDocumentation import run_kernel
+from kernel_tuner import run_kernel
 import pytest
 
 @pytest.fixture()

@@ -6,7 +6,7 @@ difference is that a naive kernel is used to compute a reference
 output. This reference output is used to check the correctness of
 every kernel before it is benchmarked.
 
-This is done using the run_kernel() function of the Rocket Meals and
+This is done using the run_kernel() function of the Kernel Tuner and
 the `answer` option of the tune_kernel function.
 
 The run_kernel function simply runs a kernel using much of the same
@@ -23,7 +23,7 @@ the correctness of every kernel in the parameter space before it is
 benchmarked.
 """
 import numpy
-import RocketMealsDocumentation
+import kernel_tuner
 from collections import OrderedDict
 
 def tune():
@@ -51,7 +51,7 @@ def tune():
 
     #compute the answer using a naive kernel
     params = { "block_size_x": 16, "block_size_y": 16 }
-    results = RocketMealsDocumentation.run_kernel("convolution_naive", kernel_string,
+    results = kernel_tuner.run_kernel("convolution_naive", kernel_string,
         problem_size, args, params,
         grid_div_y=["block_size_y"], grid_div_x=["block_size_x"])
 
@@ -59,7 +59,7 @@ def tune():
     answer = [results[0], None, None]
 
     #start kernel tuning with correctness verification
-    return RocketMealsDocumentation.tune_kernel("convolution_kernel", kernel_string,
+    return kernel_tuner.tune_kernel("convolution_kernel", kernel_string,
         problem_size, args, tune_params,
         grid_div_y=grid_div_y, grid_div_x=grid_div_x, verbose=True, answer=answer)
 

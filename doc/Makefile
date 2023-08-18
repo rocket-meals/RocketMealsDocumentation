@@ -95,9 +95,9 @@ qthelp:
 	@echo
 	@echo "Build finished; now you can run "qcollectiongenerator" with the" \
 	      ".qhcp project file in $(BUILDDIR)/qthelp, like this:"
-	@echo "# qcollectiongenerator $(BUILDDIR)/qthelp/RocketMealsDocumentation.qhcp"
+	@echo "# qcollectiongenerator $(BUILDDIR)/qthelp/kernel_tuner.qhcp"
 	@echo "To view the help file:"
-	@echo "# assistant -collectionFile $(BUILDDIR)/qthelp/RocketMealsDocumentation.qhc"
+	@echo "# assistant -collectionFile $(BUILDDIR)/qthelp/kernel_tuner.qhc"
 
 .PHONY: applehelp
 applehelp:
@@ -114,8 +114,8 @@ devhelp:
 	@echo
 	@echo "Build finished."
 	@echo "To view the help file:"
-	@echo "# mkdir -p $$HOME/.local/share/devhelp/RocketMealsDocumentation"
-	@echo "# ln -s $(BUILDDIR)/devhelp $$HOME/.local/share/devhelp/RocketMealsDocumentation"
+	@echo "# mkdir -p $$HOME/.local/share/devhelp/kernel_tuner"
+	@echo "# ln -s $(BUILDDIR)/devhelp $$HOME/.local/share/devhelp/kernel_tuner"
 	@echo "# devhelp"
 
 .PHONY: epub

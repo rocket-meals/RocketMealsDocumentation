@@ -32,8 +32,8 @@ except ImportError as e:
     drv = None
     raise e
 
-from RocketMealsDocumentation.energy import energy
-from RocketMealsDocumentation.observers.nvml import get_nvml_gr_clocks
+from kernel_tuner.energy import energy
+from kernel_tuner.observers.nvml import get_nvml_gr_clocks
 
 def get_default_parser():
     parser = argparse.ArgumentParser(

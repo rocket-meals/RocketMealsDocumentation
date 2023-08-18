@@ -5,9 +5,9 @@ from collections import OrderedDict
 import numpy as np
 import pytest
 
-from RocketMealsDocumentation import util, tune_kernel, core
-from RocketMealsDocumentation.interface import Options, _kernel_options, _device_options, _tuning_options
-from RocketMealsDocumentation.runners.sequential import SequentialRunner
+from kernel_tuner import util, tune_kernel, core
+from kernel_tuner.interface import Options, _kernel_options, _device_options, _tuning_options
+from kernel_tuner.runners.sequential import SequentialRunner
 
 from .context import skip_if_no_pycuda
 

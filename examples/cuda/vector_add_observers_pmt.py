@@ -5,8 +5,8 @@ import json
 from collections import OrderedDict
 
 import numpy
-from RocketMealsDocumentation import tune_kernel
-from RocketMealsDocumentation.observers.pmt import PMTObserver
+from kernel_tuner import tune_kernel
+from kernel_tuner.observers.pmt import PMTObserver
 
 def tune():
 

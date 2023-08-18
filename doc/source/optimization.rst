@@ -3,12 +3,12 @@
 Optimization strategies
 -----------------------
 
-Rocket Meals supports many optimization strategies that accelerate the auto-tuning search process. By default, Rocket Meals
-uses 'brute force' tuning, which means that Rocket Meals will try all possible combinations of all values of all tunable
+Kernel Tuner supports many optimization strategies that accelerate the auto-tuning search process. By default, Kernel Tuner 
+uses 'brute force' tuning, which means that Kernel Tuner will try all possible combinations of all values of all tunable 
 parameters. Even with simple kernels this form of tuning can become prohibitively slow and a waste of time and energy.
 
-To enable optimization strategies in Rocket Meals, you simply have to supply the name of the strategy you'd like to use using
-the ``strategy=`` optional argument of ``tune_kernel()``. Rocket Meals currently supports the following strategies:
+To enable optimization strategies in Kernel Tuner, you simply have to supply the name of the strategy you'd like to use using 
+the ``strategy=`` optional argument of ``tune_kernel()``. Kernel Tuner currently supports the following strategies:
 
  * "basinhopping" Basin Hopping
  * "bayes_opt" Bayesian Optimization
@@ -26,9 +26,9 @@ the ``strategy=`` optional argument of ``tune_kernel()``. Rocket Meals currently
  * "random_sample" takes a random sample of the search space
  * "simulated_annealing" simulated annealing strategy
 
-Most strategies have some mechanism built in to detect when to stop tuning, which may be controlled through specific
-parameters that can be passed to the strategies using the ``strategy_options=`` optional argument of ``tune_kernel()``. You
-can also override whatever internal stop criterion the strategy uses, and set either a time limit in seconds (using ``time_limit=``) or a maximum
+Most strategies have some mechanism built in to detect when to stop tuning, which may be controlled through specific 
+parameters that can be passed to the strategies using the ``strategy_options=`` optional argument of ``tune_kernel()``. You 
+can also override whatever internal stop criterion the strategy uses, and set either a time limit in seconds (using ``time_limit=``) or a maximum 
 number of unique function evaluations (using ``max_fevals=``).
 
 To give an example, one could simply add these two arguments to any code calling ``tune_kernel()``:
@@ -40,89 +40,89 @@ To give an example, one could simply add these two arguments to any code calling
                                strategy_options=dict(max_fevals=5))
 
 
-A 'unique function evaluation' corresponds to the first time that Rocket Meals tries to compile and benchmark a parameter
-configuration that has been selected by the optimization strategy. If you are continuing from a previous tuning session using
+A 'unique function evaluation' corresponds to the first time that Kernel Tuner tries to compile and benchmark a parameter 
+configuration that has been selected by the optimization strategy. If you are continuing from a previous tuning session using 
 cache files, serving a value from the cache for the first time in the run also counts as a function evaluation for the strategy.
-Only unique function evaluations are counted, so the second time a parameter configuration is selected by the strategy it is served from the
+Only unique function evaluations are counted, so the second time a parameter configuration is selected by the strategy it is served from the 
 cache, but not counted as a unique function evaluation.
 
 Below all the strategies are listed with their strategy-specific options that can be passed in a dictionary to the ``strategy_options=`` argument
 of ``tune_kernel()``.
 
 
-RocketMealsDocumentation.strategies.basinhopping
+kernel_tuner.strategies.basinhopping
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. automodule:: RocketMealsDocumentation.strategies.basinhopping
+.. automodule:: kernel_tuner.strategies.basinhopping
     :members:
 
-RocketMealsDocumentation.strategies.bayes_opt
+kernel_tuner.strategies.bayes_opt
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. automodule:: RocketMealsDocumentation.strategies.bayes_opt
+.. automodule:: kernel_tuner.strategies.bayes_opt
     :members:
 
-RocketMealsDocumentation.strategies.brute_force
+kernel_tuner.strategies.brute_force
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. automodule:: RocketMealsDocumentation.strategies.brute_force
+.. automodule:: kernel_tuner.strategies.brute_force
     :members:
 
-RocketMealsDocumentation.strategies.diff_evo
+kernel_tuner.strategies.diff_evo
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. automodule:: RocketMealsDocumentation.strategies.diff_evo
+.. automodule:: kernel_tuner.strategies.diff_evo
     :members:
 
-RocketMealsDocumentation.strategies.dual_annealing
+kernel_tuner.strategies.dual_annealing
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. automodule:: RocketMealsDocumentation.strategies.dual_annealing
+.. automodule:: kernel_tuner.strategies.dual_annealing
     :members:
 
-RocketMealsDocumentation.strategies.firefly_algorithm
+kernel_tuner.strategies.firefly_algorithm
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. automodule:: RocketMealsDocumentation.strategies.firefly_algorithm
+.. automodule:: kernel_tuner.strategies.firefly_algorithm
     :members:
 
-RocketMealsDocumentation.strategies.genetic_algorithm
+kernel_tuner.strategies.genetic_algorithm
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. automodule:: RocketMealsDocumentation.strategies.genetic_algorithm
+.. automodule:: kernel_tuner.strategies.genetic_algorithm
     :members:
 
-RocketMealsDocumentation.strategies.greedy_ils
+kernel_tuner.strategies.greedy_ils
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. automodule:: RocketMealsDocumentation.strategies.greedy_ils
+.. automodule:: kernel_tuner.strategies.greedy_ils
     :members:
 
-RocketMealsDocumentation.strategies.greedy_mls
+kernel_tuner.strategies.greedy_mls
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. automodule:: RocketMealsDocumentation.strategies.greedy_mls
+.. automodule:: kernel_tuner.strategies.greedy_mls
     :members:
 
-RocketMealsDocumentation.strategies.minimize
+kernel_tuner.strategies.minimize
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. automodule:: RocketMealsDocumentation.strategies.minimize
+.. automodule:: kernel_tuner.strategies.minimize
     :members:
 
-RocketMealsDocumentation.strategies.mls
+kernel_tuner.strategies.mls
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. automodule:: RocketMealsDocumentation.strategies.mls
+.. automodule:: kernel_tuner.strategies.mls
     :members:
 
-RocketMealsDocumentation.strategies.ordered_greedy_mls
+kernel_tuner.strategies.ordered_greedy_mls
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. automodule:: RocketMealsDocumentation.strategies.ordered_greedy_mls
+.. automodule:: kernel_tuner.strategies.ordered_greedy_mls
     :members:
 
-RocketMealsDocumentation.strategies.pso
+kernel_tuner.strategies.pso
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. automodule:: RocketMealsDocumentation.strategies.pso
+.. automodule:: kernel_tuner.strategies.pso
     :members:
 
-RocketMealsDocumentation.strategies.random_sample
+kernel_tuner.strategies.random_sample
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. automodule:: RocketMealsDocumentation.strategies.random_sample
+.. automodule:: kernel_tuner.strategies.random_sample
     :members:
 
-RocketMealsDocumentation.strategies.simulated_annealing
+kernel_tuner.strategies.simulated_annealing
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. automodule:: RocketMealsDocumentation.strategies.simulated_annealing
+.. automodule:: kernel_tuner.strategies.simulated_annealing
     :members:
 
 

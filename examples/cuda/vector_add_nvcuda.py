@@ -8,7 +8,7 @@ can be selected using the lang='nvcuda' option of tune_kernel.
 
 import json
 import numpy
-from RocketMealsDocumentation import tune_kernel
+from kernel_tuner import tune_kernel
 
 def tune():
 

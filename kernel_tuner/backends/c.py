@@ -12,9 +12,9 @@ import _ctypes
 import numpy as np
 import numpy.ctypeslib
 
-from RocketMealsDocumentation.backends.backend import CompilerBackend
-from RocketMealsDocumentation.observers.c import CRuntimeObserver
-from RocketMealsDocumentation.util import (
+from kernel_tuner.backends.backend import CompilerBackend
+from kernel_tuner.observers.c import CRuntimeObserver
+from kernel_tuner.util import (
     get_temp_filename,
     delete_temp_file,
     write_file,
@@ -124,7 +124,7 @@ class CFunctions(CompilerBackend):
 
         :param kernel_instance: An object representing the specific instance of the tunable kernel
             in the parameter space.
-        :type kernel_instance: RocketMealsDocumentation.core.KernelInstance
+        :type kernel_instance: kernel_tuner.core.KernelInstance
 
         :returns: An ctypes function that can be called directly.
         :rtype: ctypes._FuncPtr

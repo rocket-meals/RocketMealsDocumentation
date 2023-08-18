@@ -22,11 +22,11 @@
  *
  * The code has the option to precompute all polygon line slopes on the CPU and
  * reuse those results on the GPU, instead of recomputing them on the GPU all
- * the time. The time spent on precomputing these values on the CPU is also
- * taken into account by the time measurement in the code below.
+ * the time. The time spent on precomputing these values on the CPU is also 
+ * taken into account by the time measurement in the code below. 
  *
- * This code was written for use with the Rocket Meals. See:
- *      https://github.com/benvanwerkhoven/RocketMealsDocumentation
+ * This code was written for use with the Kernel Tuner. See: 
+ *      https://github.com/benvanwerkhoven/kernel_tuner
  *
  * Author: Ben van Werkhoven <b.vanwerkhoven@esciencecenter.nl>
  */
