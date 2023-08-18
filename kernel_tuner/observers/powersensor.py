@@ -1,6 +1,6 @@
 import numpy as np
 
-from kernel_tuner.observers.observer import BenchmarkObserver
+from RocketMealsDocumentation.observers.observer import BenchmarkObserver
 
 # check if powersensor is installed
 try:

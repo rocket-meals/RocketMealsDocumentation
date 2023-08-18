@@ -1,9 +1,9 @@
 #!/usr/bin/env python
-"""This is the minimal example of using a code generator with the Kernel Tuner"""
+"""This is the minimal example of using a code generator with the Rocket Meals"""
 
 import json
 import numpy
-from kernel_tuner import tune_kernel
+from RocketMealsDocumentation import tune_kernel
 
 def my_fancy_generator(params):
     kernel_string = """

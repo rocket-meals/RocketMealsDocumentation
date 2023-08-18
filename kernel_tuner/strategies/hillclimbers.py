@@ -1,8 +1,8 @@
 import random
 
-from kernel_tuner import util
-from kernel_tuner.searchspace import Searchspace
-from kernel_tuner.strategies.common import CostFunc
+from RocketMealsDocumentation import util
+from RocketMealsDocumentation.searchspace import Searchspace
+from RocketMealsDocumentation.strategies.common import CostFunc
 
 
 def base_hillclimb(base_sol: tuple, neighbor_method: str, max_fevals: int, searchspace: Searchspace, tuning_options,
@@ -30,8 +30,8 @@ def base_hillclimb(base_sol: tuple, neighbor_method: str, max_fevals: int, searc
         process.
     :type tuning_options: dict
 
-    :param cost_func: An instance of `kernel_tuner.strategies.common.CostFunc`
-    :type runner: kernel_tuner.strategies.common.CostFunc
+    :param cost_func: An instance of `RocketMealsDocumentation.strategies.common.CostFunc`
+    :type runner: RocketMealsDocumentation.strategies.common.CostFunc
 
     :params restart: Boolean that controls whether to greedely restart hillclimbing
         from a new position as soon as an improved position is found. True by default.

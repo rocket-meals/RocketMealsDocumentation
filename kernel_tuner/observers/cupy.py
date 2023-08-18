@@ -5,7 +5,7 @@ try:
 except ImportError:
     cp = None
 
-from kernel_tuner.observers.observer import BenchmarkObserver
+from RocketMealsDocumentation.observers.observer import BenchmarkObserver
 
 
 class CupyRuntimeObserver(BenchmarkObserver):

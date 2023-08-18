@@ -3,7 +3,7 @@ from setuptools import setup
 
 
 def version():
-    with open("kernel_tuner/__init__.py") as fp:
+    with open("RocketMealsDocumentation/__init__.py") as fp:
         match = re.search(r"__version__\s*=\s*['\"]([^'\"]+)", fp.read())
 
     if not match:
@@ -18,27 +18,27 @@ def readme():
 
 
 setup(
-    name="kernel_tuner",
+    name="RocketMealsDocumentation",
     version=version(),
-    author="Ben van Werkhoven",
-    author_email="b.vanwerkhoven@esciencecenter.nl",
+    author="Baumgartner Software",
+    author_email="nilsbaumgartner1994@gmail.com",
     description=("An easy to use CUDA/OpenCL kernel tuner in Python"),
     license="Apache 2.0",
     keywords="auto-tuning gpu computing pycuda cuda pyopencl opencl",
-    url="https://KernelTuner.github.io/kernel_tuner/",
+    url="https://KernelTuner.github.io/RocketMealsDocumentation/",
     include_package_data=True,  # use MANIFEST.in during install
     project_urls={
-        "Documentation": "https://KernelTuner.github.io/kernel_tuner/",
-        "Source": "https://github.com/KernelTuner/kernel_tuner",
-        "Tracker": "https://github.com/KernelTuner/kernel_tuner/issues",
+        "Documentation": "https://KernelTuner.github.io/RocketMealsDocumentation/",
+        "Source": "https://github.com/KernelTuner/RocketMealsDocumentation",
+        "Tracker": "https://github.com/KernelTuner/RocketMealsDocumentation/issues",
     },
     packages=[
-        "kernel_tuner",
-        "kernel_tuner.backends",
-        "kernel_tuner.energy",
-        "kernel_tuner.observers",
-        "kernel_tuner.runners",
-        "kernel_tuner.strategies",
+        "RocketMealsDocumentation",
+        "RocketMealsDocumentation.backends",
+        "RocketMealsDocumentation.energy",
+        "RocketMealsDocumentation.observers",
+        "RocketMealsDocumentation.runners",
+        "RocketMealsDocumentation.strategies",
     ],
     long_description=readme(),
     long_description_content_type="text/x-rst",

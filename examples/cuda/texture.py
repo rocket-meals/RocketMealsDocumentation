@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-import kernel_tuner
+import RocketMealsDocumentation
 import numpy
 from collections import OrderedDict
 
@@ -10,27 +10,27 @@ _rotation_kernel_source = """
 texture<float, 2> tex;
 
 __global__ void copy_texture_kernel(
-    const float resize_val, 
+    const float resize_val,
     const float alpha,
     unsigned char* data) {
 
         // calculate pixel idx
         unsigned int x = blockIdx.x * blockDim.x + threadIdx.x;
         unsigned int y = blockIdx.y * blockDim.y + threadIdx.y;
-        
+
         // We might be outside the reachable pixels. Don't do anything
         if( (x >= newiw) || (y >= newih) )
             return;
-        
+
         // calculate offset into destination array
         unsigned int didx = y * newiw + x;
-        
+
         // calculate offset into source array (be aware of rotation and scaling)
         float xmiddle = (x-newiw/2.) / resize_val;
         float ymiddle = (y-newih/2.) / resize_val;
         float sx = ( xmiddle*cos(alpha)+ymiddle*sin(alpha) + oldiw/2.) ;
         float sy = ( -xmiddle*sin(alpha)+ymiddle*cos(alpha) + oldih/2.);
-        
+
         data[didx] = tex2D(tex, sx, sy);
     }
 """
@@ -51,7 +51,7 @@ def tune():
 
     args = [ numpy.float32(0.5), numpy.float32(20), out ]
 
-    return kernel_tuner.tune_kernel("copy_texture_kernel", kernel_string, problem_size, args, tune_params, texmem_args = { 'tex': { 'array': x, 'address_mode': 'border' } })
+    return RocketMealsDocumentation.tune_kernel("copy_texture_kernel", kernel_string, problem_size, args, tune_params, texmem_args = { 'tex': { 'array': x, 'address_mode': 'border' } })
 
 if __name__ == "__main__":
     tune()

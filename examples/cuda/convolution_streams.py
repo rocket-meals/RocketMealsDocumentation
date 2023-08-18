@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 import json
 import numpy
-import kernel_tuner
+import RocketMealsDocumentation
 from collections import OrderedDict
 import logging
 
@@ -37,7 +37,7 @@ def tune():
     tune_params["tile_size_y"] = [2**i for i in range(4)]
     tune_params["num_streams"] = [2**i for i in range(6)]
 
-    #tell the Kernel Tuner how to compute grid dimensions
+    #tell the Rocket Meals how to compute grid dimensions
     grid_div_x = ["block_size_x", "tile_size_x"]
     grid_div_y = ["block_size_y", "tile_size_y", "num_streams"]
 
@@ -48,7 +48,7 @@ def tune():
     with open('convolution.cu', 'r') as f:
         kernel_string = f.read()
     params = { "block_size_x": 16, "block_size_y": 16 }
-    results = kernel_tuner.run_kernel("convolution_naive", kernel_string,
+    results = RocketMealsDocumentation.run_kernel("convolution_naive", kernel_string,
         problem_size, args, params,
         grid_div_y=["block_size_y"], grid_div_x=["block_size_x"])
 
@@ -56,7 +56,7 @@ def tune():
     answer = [results[0], None, None]
 
     #start tuning the kernel
-    result = kernel_tuner.tune_kernel("convolution_streams", ['convolution_streams.cu', 'convolution.cu'],
+    result = RocketMealsDocumentation.tune_kernel("convolution_streams", ['convolution_streams.cu', 'convolution.cu'],
         problem_size, args, tune_params,
         grid_div_y=grid_div_y, grid_div_x=grid_div_x, restrictions=restrict, answer=answer, verbose=True, lang="C",
         compiler_options=["-arch=sm_52"])

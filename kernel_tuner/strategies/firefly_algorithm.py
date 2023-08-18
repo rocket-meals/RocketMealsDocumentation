@@ -3,11 +3,11 @@ import sys
 from collections import OrderedDict
 
 import numpy as np
-from kernel_tuner import util
-from kernel_tuner.searchspace import Searchspace
-from kernel_tuner.strategies import common
-from kernel_tuner.strategies.common import (CostFunc, scale_from_params)
-from kernel_tuner.strategies.pso import Particle
+from RocketMealsDocumentation import util
+from RocketMealsDocumentation.searchspace import Searchspace
+from RocketMealsDocumentation.strategies import common
+from RocketMealsDocumentation.strategies.common import (CostFunc, scale_from_params)
+from RocketMealsDocumentation.strategies.pso import Particle
 
 _options = OrderedDict(popsize=("Population size", 20),
                        maxiter=("Maximum number of iterations", 100),

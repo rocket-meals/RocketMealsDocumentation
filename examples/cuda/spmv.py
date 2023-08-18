@@ -7,7 +7,7 @@ from scipy.sparse import csr_matrix
 from itertools import chain
 from collections import OrderedDict
 
-import kernel_tuner
+import RocketMealsDocumentation
 
 def tune():
     with open('spmv.cu', 'r') as f:
@@ -47,7 +47,7 @@ def tune():
 
     answer = [expected_y, None, None, None, None, None]
 
-    return kernel_tuner.tune_kernel("spmv_kernel", kernel_string,
+    return RocketMealsDocumentation.tune_kernel("spmv_kernel", kernel_string,
         problem_size, args, tune_params,
         grid_div_x=grid_div_x, verbose=True, answer=answer, atol=1e-4)
 

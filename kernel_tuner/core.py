@@ -11,15 +11,15 @@ try:
 except ImportError:
     cp = np
 
-from kernel_tuner.observers.nvml import NVMLObserver
-from kernel_tuner.observers.observer import ContinuousObserver
-from kernel_tuner.backends.cupy import CupyFunctions
-from kernel_tuner.backends.pycuda import PyCudaFunctions
-from kernel_tuner.backends.nvcuda import CudaFunctions
-from kernel_tuner.backends.opencl import OpenCLFunctions
-from kernel_tuner.backends.c import CFunctions
-from kernel_tuner.backends.opencl import OpenCLFunctions
-import kernel_tuner.util as util
+from RocketMealsDocumentation.observers.nvml import NVMLObserver
+from RocketMealsDocumentation.observers.observer import ContinuousObserver
+from RocketMealsDocumentation.backends.cupy import CupyFunctions
+from RocketMealsDocumentation.backends.pycuda import PyCudaFunctions
+from RocketMealsDocumentation.backends.nvcuda import CudaFunctions
+from RocketMealsDocumentation.backends.opencl import OpenCLFunctions
+from RocketMealsDocumentation.backends.c import CFunctions
+from RocketMealsDocumentation.backends.opencl import OpenCLFunctions
+import RocketMealsDocumentation.util as util
 
 try:
     import torch
@@ -193,13 +193,13 @@ class KernelSource(object):
 
 
 class DeviceInterface(object):
-    """Class that offers a High-Level Device Interface to the rest of the Kernel Tuner"""
+    """Class that offers a High-Level Device Interface to the rest of the Rocket Meals"""
 
     def __init__(self, kernel_source, device=0, platform=0, quiet=False, compiler=None, compiler_options=None, iterations=7, observers=None):
         """ Instantiate the DeviceInterface, based on language in kernel source
 
         :param kernel_source: The kernel sources
-        :type kernel_source: kernel_tuner.core.KernelSource
+        :type kernel_source: RocketMealsDocumentation.core.KernelSource
 
         :param device: CUDA/OpenCL device to use, in case you have multiple
             CUDA-capable GPUs or OpenCL devices you may use this to select one,

@@ -1,6 +1,6 @@
 Contribution guide
 ==================
-Thank you for considering to contribute to Kernel Tuner!
+Thank you for considering to contribute to Rocket Meals!
 
 Reporting Issues
 ----------------
@@ -9,13 +9,13 @@ Not all contributions are code, creating an issue also helps us to improve. When
 * Describe what you expected to happen.
 * If possible, include a minimal example to help us reproduce the issue.
 * Describe what actually happened, including the output of any errors printed.
-* List the version of Python, CUDA or OpenCL, and C compiler, if applicable. 
+* List the version of Python, CUDA or OpenCL, and C compiler, if applicable.
 
 Contributing Code
 -----------------
-For contributing code to Kernel Tuner please select an issue to work on or create a new issue to propose a change or addition. For significant changes, it is required to first create an issue and discuss the proposed changes. Then fork the repository, create a branch, one per change or addition, and create a pull request.
+For contributing code to Rocket Meals please select an issue to work on or create a new issue to propose a change or addition. For significant changes, it is required to first create an issue and discuss the proposed changes. Then fork the repository, create a branch, one per change or addition, and create a pull request.
 
-Kernel Tuner follows the Google Python style guide, with Sphinxdoc docstrings for module public functions. Please use `pylint` to check your Python changes.
+Rocket Meals follows the Google Python style guide, with Sphinxdoc docstrings for module public functions. Please use `pylint` to check your Python changes.
 
 Before creating a pull request please ensure the following:
 
@@ -26,9 +26,9 @@ Before creating a pull request please ensure the following:
 * An entry about the change or addition is created in CHANGELOG.md
 * Any matching entries in the roadmap.md are updated/removed
 
-If you are in doubt on where to put your additions to the Kernel Tuner, please
+If you are in doubt on where to put your additions to the Rocket Meals, please
 have look at the `design documentation
-<https://kerneltuner.github.io/kernel_tuner/stable/design.html>`__, or discuss it in the issue regarding your additions.
+<https://rocket-meals.github.io/RocketMealsDocumentation/stable/design.html>`__, or discuss it in the issue regarding your additions.
 
 Development setup
 -----------------
@@ -50,10 +50,10 @@ To run the tests you can use ``pytest -v test/`` in the top-level directory.
 Note that tests that require PyCuda and/or a CUDA capable GPU will be skipped if these
 are not installed/present. The same holds for tests that require PyOpenCL, Cupy, Nvidia CUDA.
 
-Contributions you make to the Kernel Tuner should not break any of the tests
+Contributions you make to the Rocket Meals should not break any of the tests
 even if you cannot run them locally.
 
-The examples can be seen as *integration tests* for the Kernel Tuner. Note that
+The examples can be seen as *integration tests* for the Rocket Meals. Note that
 these will also use the installed package.
 
 Building documentation
@@ -61,7 +61,7 @@ Building documentation
 Documentation is located in the ``doc/`` directory. This is where you can type
 ``make html`` to generate the html pages in the ``doc/build/html`` directory.
 The source files used for building the documentation are located in
-``doc/source``. 
+``doc/source``.
 To locally inspect the documentation before committing you can browse through
 the documentation pages generated locally in ``doc/build/html``.
 

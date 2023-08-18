@@ -1,9 +1,9 @@
 """ A greedy multi-start local search algorithm for parameter search that traverses variables in order."""
 from collections import OrderedDict
 
-from kernel_tuner.searchspace import Searchspace
-from kernel_tuner.strategies import common
-from kernel_tuner.strategies.greedy_mls import tune as mls_tune
+from RocketMealsDocumentation.searchspace import Searchspace
+from RocketMealsDocumentation.strategies import common
+from RocketMealsDocumentation.strategies.greedy_mls import tune as mls_tune
 
 _options = OrderedDict(neighbor=("Method for selecting neighboring nodes, choose from Hamming or adjacent", "Hamming"),
                        restart=("controls greedyness, i.e. whether to restart from a position as soon as an improvement is found", True),

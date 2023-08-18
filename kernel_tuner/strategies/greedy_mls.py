@@ -1,10 +1,10 @@
 """ A greedy multi-start local search algorithm for parameter search """
 from collections import OrderedDict
 
-from kernel_tuner import util
-from kernel_tuner.searchspace import Searchspace
-from kernel_tuner.strategies import common
-from kernel_tuner.strategies.hillclimbers import base_hillclimb
+from RocketMealsDocumentation import util
+from RocketMealsDocumentation.searchspace import Searchspace
+from RocketMealsDocumentation.strategies import common
+from RocketMealsDocumentation.strategies.hillclimbers import base_hillclimb
 
 _options = OrderedDict(neighbor=("Method for selecting neighboring nodes, choose from Hamming or adjacent", "Hamming"),
                        restart=("controls greedyness, i.e. whether to restart from a position as soon as an improvement is found", True),

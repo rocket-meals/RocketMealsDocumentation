@@ -4,7 +4,7 @@
 import json
 from pathlib import Path
 import numpy as np
-from kernel_tuner import run_kernel
+from RocketMealsDocumentation import run_kernel
 
 def test():
 

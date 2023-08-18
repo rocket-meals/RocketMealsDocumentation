@@ -1,8 +1,8 @@
 #!/usr/bin/env python
-"""Minimal example for a CUDA Kernel unit test with the Kernel Tuner"""
+"""Minimal example for a CUDA Kernel unit test with the Rocket Meals"""
 
 import numpy
-from kernel_tuner import run_kernel
+from RocketMealsDocumentation import run_kernel
 import pytest
 
 def test_vector_add():

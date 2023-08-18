@@ -17,14 +17,14 @@ reuse those results on the GPU, instead of recomputing them on the GPU all
 the time. The time spent on precomputing these values on the CPU is also
 taken into account by the time measurement in the code.
 
-This code was written for use with the Kernel Tuner. See:
-     https://github.com/benvanwerkhoven/kernel_tuner
+This code was written for use with the Rocket Meals. See:
+     https://github.com/benvanwerkhoven/RocketMealsDocumentation
 
-Author: Ben van Werkhoven <b.vanwerkhoven@esciencecenter.nl>
+Author: Baumgartner Software <nilsbaumgartner1994@gmail.com>
 """
 from collections import OrderedDict
 import numpy
-import kernel_tuner
+import RocketMealsDocumentation
 import json
 import logging
 
@@ -66,11 +66,11 @@ def tune():
     tune_params["use_precomputed_slopes"] = [0, 1]
     tune_params["use_method"] = [0, 1]
 
-    #tell the Kernel Tuner how to compute the grid dimensions from the problem_size
+    #tell the Rocket Meals how to compute the grid dimensions from the problem_size
     grid_div_x = ["block_size_x", "tile_size"]
 
     #start tuning
-    results = kernel_tuner.tune_kernel("cn_pnpoly_host", ['pnpoly_host.cu', 'pnpoly.cu'],
+    results = RocketMealsDocumentation.tune_kernel("cn_pnpoly_host", ['pnpoly_host.cu', 'pnpoly.cu'],
         problem_size, args, tune_params,
         grid_div_x=grid_div_x, lang="C", compiler_options=["-arch=sm_52"], verbose=True, log=logging.DEBUG)
 

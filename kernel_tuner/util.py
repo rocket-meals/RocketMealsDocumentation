@@ -23,7 +23,7 @@ try:
 except ImportError:
     cuda = None
 
-from kernel_tuner.observers.nvml import NVMLObserver
+from RocketMealsDocumentation.observers.nvml import NVMLObserver
 
 # number of special values to insert when a configuration cannot be measured
 
@@ -479,7 +479,7 @@ def process_metrics(params, metrics):
 
     Metrics must be an OrderedDict to support composable metrics. The dictionary keys describe
     the name given to this user-defined metric and will be used as the key in the results dictionaries
-    return by Kernel Tuner. The values describe how to calculate the user-defined metric, using either a
+    return by Rocket Meals. The values describe how to calculate the user-defined metric, using either a
     string expression in which the tunable parameters and benchmark results can be used as variables, or
     as a function that accepts a dictionary as argument.
     Example:
@@ -589,7 +589,7 @@ def prepare_kernel_string(kernel_name, kernel_string, params, grid, threads, blo
     #  * grid_size_x, grid_size_y, grid_size_z
     #  * block_size_x, block_size_y, block_size_z
     #  * each tunable parameter
-    #  * kernel_tuner=1
+    #  * RocketMealsDocumentation=1
     if defines is None:
         defines = OrderedDict()
 
@@ -603,7 +603,7 @@ def prepare_kernel_string(kernel_name, kernel_string, params, grid, threads, blo
         for k, v in params.items():
             defines[k] = v
 
-        defines["kernel_tuner"] = 1
+        defines["RocketMealsDocumentation"] = 1
 
     for k, v in defines.items():
         if callable(v):

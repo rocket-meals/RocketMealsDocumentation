@@ -6,9 +6,9 @@ from time import perf_counter
 
 import numpy as np
 import scipy.optimize
-from kernel_tuner import util
-from kernel_tuner.searchspace import Searchspace
-from kernel_tuner.strategies.common import (CostFunc,
+from RocketMealsDocumentation import util
+from RocketMealsDocumentation.searchspace import Searchspace
+from RocketMealsDocumentation.strategies.common import (CostFunc,
                                             get_options,
                                             get_strategy_docstring,
                                             setup_method_arguments,

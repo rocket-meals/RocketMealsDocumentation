@@ -1,11 +1,11 @@
-"""Kernel Tuner interface module
+"""Rocket Meals interface module
 
-This module contains the main functions that Kernel Tuner
+This module contains the main functions that Rocket Meals
 offers to its users.
 
 Author
 ------
-Ben van Werkhoven <b.vanwerkhoven@esciencenter.nl>
+Baumgartner Software <b.vanwerkhoven@esciencenter.nl>
 
 Copyright and License
 ---------------------
@@ -30,21 +30,21 @@ import logging
 import numpy
 from time import perf_counter
 
-from kernel_tuner.integration import get_objective_defaults
+from RocketMealsDocumentation.integration import get_objective_defaults
 
-import kernel_tuner.util as util
-import kernel_tuner.core as core
+import RocketMealsDocumentation.util as util
+import RocketMealsDocumentation.core as core
 
-from kernel_tuner.runners.sequential import SequentialRunner
-from kernel_tuner.runners.simulation import SimulationRunner
-from kernel_tuner.searchspace import Searchspace
+from RocketMealsDocumentation.runners.sequential import SequentialRunner
+from RocketMealsDocumentation.runners.simulation import SimulationRunner
+from RocketMealsDocumentation.searchspace import Searchspace
 
 try:
     import torch
 except ImportError:
     torch = util.TorchPlaceHolder()
 
-from kernel_tuner.strategies import (
+from RocketMealsDocumentation.strategies import (
     brute_force,
     random_sample,
     diff_evo,
@@ -121,7 +121,7 @@ _kernel_options = Options([
     (
         "lang",
         (
-            """Specifies the language used for GPU kernels. The kernel_tuner
+            """Specifies the language used for GPU kernels. The RocketMealsDocumentation
         automatically detects the language, but if it fails, you may specify
         the language using this argument, currently supported: "CUDA", "Cupy",
         "OpenCL", or "C".""",
@@ -138,14 +138,14 @@ _kernel_options = Options([
             1,2,3-dimensional tuple.
 
             In general, do not divide the problem_size yourself by the thread block sizes.
-            Kernel Tuner does this for you based on tunable parameters,
+            Rocket Meals does this for you based on tunable parameters,
             called "block_size_x", "block_size_y", and "block_size_z".
             If more or different parameters divide the grid dimensions use
             grid_div_x/y/z options to specify this.
 
             In most use-cases the problem_size is specified using a single integer
             or a tuple of integers,
-            but Kernel Tuner supports more advanced use cases where the problem_size
+            but Rocket Meals supports more advanced use cases where the problem_size
             itself depends on the tunable parameters in some way.
 
             You are allowed to use a function or string to specify the problem_size.
@@ -155,7 +155,7 @@ _kernel_options = Options([
 
             When passing a string, you are allowed to write Python
             arithmetic and use the names of tunable parameters as variables
-            in these expressions. Kernel Tuner will replace instances of the tunable
+            in these expressions. Rocket Meals will replace instances of the tunable
             parameters with their current value when computing the grid dimensions.
             This option exists for convenience, but do note that using a lambda
             function is probably safer. The string notation should only return
@@ -283,14 +283,14 @@ _tuning_options = Options([
         (
             """A dictionary containing the parameter names as keys,
             and lists of possible parameter settings as values.
-            Kernel Tuner will try to compile and benchmark all possible
+            Rocket Meals will try to compile and benchmark all possible
             combinations of all possible values for all tuning parameters.
             This typically results in a rather large search space of all
             possible kernel configurations.
 
             For each kernel configuration, each tuning parameter is
             replaced at compile-time with its current value.
-            Currently, Kernel Tuner uses the convention that the following
+            Currently, Rocket Meals uses the convention that the following
             list of tuning parameters are used as thread block dimensions:
 
                 * "block_size_x"   thread block (work group) x-dimension
@@ -705,7 +705,7 @@ _run_kernel_docstring = """Compile and run a single kernel
      * Execute the kernel on the GPU
      * Copy all data from the GPU back to the host and return it as a list of Numpy arrays
 
-    This function was added to Kernel Tuner mostly to allow easy testing for kernel correctness.
+    This function was added to Rocket Meals mostly to allow easy testing for kernel correctness.
     On purpose, the interface is a lot like `tune_kernel()`.
 
 %s

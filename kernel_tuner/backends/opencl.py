@@ -1,10 +1,10 @@
-"""This module contains all OpenCL specific kernel_tuner functions"""
+"""This module contains all OpenCL specific RocketMealsDocumentation functions"""
 from __future__ import print_function
 import time
 import numpy as np
 
-from kernel_tuner.backends.backend import GPUBackend
-from kernel_tuner.observers.opencl import OpenCLObserver
+from RocketMealsDocumentation.backends.backend import GPUBackend
+from RocketMealsDocumentation.observers.opencl import OpenCLObserver
 
 # embedded in try block to be able to generate documentation
 try:

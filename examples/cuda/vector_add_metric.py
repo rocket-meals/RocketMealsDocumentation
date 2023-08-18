@@ -4,7 +4,7 @@
 from collections import OrderedDict
 import json
 import numpy
-from kernel_tuner import tune_kernel
+from RocketMealsDocumentation import tune_kernel
 
 def tune():
 

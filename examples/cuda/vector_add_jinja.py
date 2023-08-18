@@ -3,7 +3,7 @@
 
 import json
 import numpy
-from kernel_tuner import tune_kernel
+from RocketMealsDocumentation import tune_kernel
 
 from jinja2 import Template
 

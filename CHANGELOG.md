@@ -93,7 +93,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [0.3.2] - 2020-11-04
 ### Added
 - support loop unrolling using params that start with loop_unroll_factor
-- always insert "define kernel_tuner 1" to allow preprocessor ifdef kernel_tuner
+- always insert "define RocketMealsDocumentation 1" to allow preprocessor ifdef RocketMealsDocumentation
 - support for user-defined metrics
 - support for choosing the optimization starting point x0 for most strategies
 
@@ -237,7 +237,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ### Added
 - a public roadmap
 - requirements.txt
-- example showing GPU code unit testing with the Kernel Tuner
+- example showing GPU code unit testing with the Rocket Meals
 - support for passing a (list of) filenames instead of kernel string
 - runner that takes a random sample of 10 percent
 - support for OpenCL platform selection

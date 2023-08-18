@@ -1,4 +1,4 @@
-# Roadmap for Kernel Tuner
+# Roadmap for Rocket Meals
 
 This roadmap presents an overview of the features we are currently planning to
 implement. Please note that this is a living document that will evolve as

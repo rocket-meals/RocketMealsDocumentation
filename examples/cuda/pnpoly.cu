@@ -16,11 +16,11 @@ __constant__ float d_slopes[VERTICES];
  *
  * The kernel cn_pnpoly_naive is used for correctness checking.
  *
- * The algorithm used here is adapted from: 
+ * The algorithm used here is adapted from:
  *     'Inclusion of a Point in a Polygon', Dan Sunday, 2001
  *     (http://geomalgorithms.com/a03-_inclusion.html)
  *
- * Author: Ben van Werkhoven <b.vanwerkhoven@esciencecenter.nl>
+ * Author: Baumgartner Software <nilsbaumgartner1994@gmail.com>
  */
 
 #ifndef block_size_x
@@ -93,8 +93,8 @@ __global__ void cn_pnpoly(int* bitmap, float2* points, int n) {
         int k = VERTICES-1;
 
         for (int j=0; j<VERTICES; k = j++) {    // edge from vj to vk
-            float2 vj = d_vertices[j]; 
-            float2 vk = d_vertices[k]; 
+            float2 vj = d_vertices[j];
+            float2 vk = d_vertices[k];
 
             #if use_precomputed_slopes == 0
             float slope = (vk.x-vj.x) / (vk.y-vj.y);
@@ -158,8 +158,8 @@ __global__ void cn_pnpoly_naive(int* bitmap, float2* points, int n) {
         int k = VERTICES-1;
 
         for (int j=0; j<VERTICES; k = j++) {    // edge from v to vp
-            float2 vj = d_vertices[j]; 
-            float2 vk = d_vertices[k]; 
+            float2 vj = d_vertices[j];
+            float2 vk = d_vertices[k];
 
             float slope = (vk.x-vj.x) / (vk.y-vj.y);
 

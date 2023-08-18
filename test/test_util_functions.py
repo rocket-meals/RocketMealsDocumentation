@@ -10,12 +10,12 @@ import pytest
 
 from .context import skip_if_no_pycuda, skip_if_no_cuda, skip_if_no_opencl
 
-from kernel_tuner.interface import Options
-import kernel_tuner.core as core
-import kernel_tuner.backends.pycuda as pycuda
-import kernel_tuner.backends.nvcuda as nvcuda
-import kernel_tuner.backends.opencl as opencl
-from kernel_tuner.util import *
+from RocketMealsDocumentation.interface import Options
+import RocketMealsDocumentation.core as core
+import RocketMealsDocumentation.backends.pycuda as pycuda
+import RocketMealsDocumentation.backends.nvcuda as nvcuda
+import RocketMealsDocumentation.backends.opencl as opencl
+from RocketMealsDocumentation.util import *
 
 block_size_names = ["block_size_x", "block_size_y", "block_size_z"]
 
@@ -173,7 +173,7 @@ def test_prepare_kernel_string():
                "#define block_size_y 2\n" \
                "#define block_size_z 3\n" \
                "#define is 8\n" \
-               "#define kernel_tuner 1\n" \
+               "#define RocketMealsDocumentation 1\n" \
                "#line 1\n" \
                "this is a weird kernel"
     assert output == expected

@@ -5,8 +5,8 @@ try:
 except ImportError:
     cuda = None
 
-from kernel_tuner.observers.observer import BenchmarkObserver
-from kernel_tuner.util import cuda_error_check
+from RocketMealsDocumentation.observers.observer import BenchmarkObserver
+from RocketMealsDocumentation.util import cuda_error_check
 
 
 class CudaRuntimeObserver(BenchmarkObserver):

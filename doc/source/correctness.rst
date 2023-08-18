@@ -22,7 +22,7 @@ tuner runs the kernel once to verify the output it produces. For each
 argument in the ``answer`` list that is not None, it will check the results
 produced by the current kernel against the expected result specified in
 ``answer``. The comparison is currently implemented using numpy.allclose()
-with an maximum allowed absolute error of 1e-6. If you want to use a 
+with an maximum allowed absolute error of 1e-6. If you want to use a
 difference tolerance value, use the optional argument ``atol``.
 
 The example in ``examples/cuda/convolution_correct.py`` demonstrates how
@@ -31,7 +31,7 @@ to use the ``answer`` option of ``tune_kernel()``:
 .. code-block:: python
 
     import numpy
-    import kernel_tuner
+    import RocketMealsDocumentation
 
     with open('convolution.cu', 'r') as f:
         kernel_string = f.read()
@@ -59,7 +59,7 @@ to use the ``answer`` option of ``tune_kernel()``:
 
     #compute the answer using a naive kernel
     params = { "block_size_x": 16, "block_size_y": 16 }
-    results = kernel_tuner.run_kernel("convolution_naive", kernel_string,
+    results = RocketMealsDocumentation.run_kernel("convolution_naive", kernel_string,
         problem_size, args, params,
         grid_div_y=["block_size_y"], grid_div_x=["block_size_x"])
 
@@ -67,7 +67,7 @@ to use the ``answer`` option of ``tune_kernel()``:
     answer = [results[0], None, None]
 
     #start kernel tuning with correctness verification
-    kernel_tuner.tune_kernel("convolution_kernel", kernel_string,
+    RocketMealsDocumentation.tune_kernel("convolution_kernel", kernel_string,
         problem_size, args, tune_params,
         grid_div_y=grid_div_y, grid_div_x=grid_div_x,
         verbose=True, cmem_args=cmem_args, answer=answer)

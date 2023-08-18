@@ -1,40 +1,40 @@
-Kernel Tuner
+Rocket Meals
 ============
 
 |Build Status| |CodeCov Badge| |PyPi Badge| |Zenodo Badge| |SonarCloud Badge| |OpenSSF Badge| |FairSoftware Badge|
 
-Kernel Tuner simplifies the software development of optimized and auto-tuned GPU programs, by enabling Python-based unit testing of GPU code and making it easy to develop scripts for auto-tuning GPU kernels. This also means no extensive changes and no new dependencies are required in the kernel code. The kernels can still be compiled and used as normal from any host programming language.
+Rocket Meals simplifies the software development of optimized and auto-tuned GPU programs, by enabling Python-based unit testing of GPU code and making it easy to develop scripts for auto-tuning GPU kernels. This also means no extensive changes and no new dependencies are required in the kernel code. The kernels can still be compiled and used as normal from any host programming language.
 
-Kernel Tuner provides a comprehensive solution for auto-tuning GPU programs, supporting auto-tuning of user-defined parameters in both host and device code, supporting output verification of all benchmarked kernels during tuning, as well as many optimization strategies to speed up the tuning process.
+Rocket Meals provides a comprehensive solution for auto-tuning GPU programs, supporting auto-tuning of user-defined parameters in both host and device code, supporting output verification of all benchmarked kernels during tuning, as well as many optimization strategies to speed up the tuning process.
 
 Documentation
 -------------
 
 The full documentation is available
-`here <https://kerneltuner.github.io/kernel_tuner/stable/index.html>`__.
+`here <https://rocket-meals.github.io/RocketMealsDocumentation/stable/index.html>`__.
 
 Installation
 ------------
 
-The easiest way to install the Kernel Tuner is using pip:
+The easiest way to install the Rocket Meals is using pip:
 
 To tune CUDA kernels:
 
 - First, make sure you have the `CUDA Toolkit <https://developer.nvidia.com/cuda-toolkit>`_ installed
-- Then type: ``pip install kernel_tuner[cuda]``
+- Then type: ``pip install RocketMealsDocumentation[cuda]``
 
 To tune OpenCL kernels:
 
 - First, make sure you have an OpenCL compiler for your intended OpenCL platform
-- Then type: ``pip install kernel_tuner[opencl]``
+- Then type: ``pip install RocketMealsDocumentation[opencl]``
 
 Or both:
 
-- ``pip install kernel_tuner[cuda,opencl]``
+- ``pip install RocketMealsDocumentation[cuda,opencl]``
 
-More information about how to install Kernel Tuner and its
-dependencies can be found in the `installation guide 
-<http://kerneltuner.github.io/kernel_tuner/stable/install.html>`__.
+More information about how to install Rocket Meals and its
+dependencies can be found in the `installation guide
+<http://rocket-meals.github.io/RocketMealsDocumentation/stable/install.html>`__.
 
 Example usage
 -------------
@@ -78,25 +78,25 @@ The exact same Python code can be used to tune an OpenCL kernel:
     }
     """
 
-The Kernel Tuner will detect the kernel language and select the right compiler and 
-runtime. For every kernel in the parameter space, the Kernel Tuner will insert C 
-preprocessor defines for the tunable parameters, compile, and benchmark the kernel. The 
-timing results will be printed to the console, but are also returned by tune_kernel to 
-allow further analysis. Note that this is just the default behavior, what and how 
-tune_kernel does exactly is controlled through its many `optional arguments 
-<http://kerneltuner.github.io/kernel_tuner/stable/user-api.html#kernel_tuner.tune_kernel>`__.
+The Rocket Meals will detect the kernel language and select the right compiler and
+runtime. For every kernel in the parameter space, the Rocket Meals will insert C
+preprocessor defines for the tunable parameters, compile, and benchmark the kernel. The
+timing results will be printed to the console, but are also returned by tune_kernel to
+allow further analysis. Note that this is just the default behavior, what and how
+tune_kernel does exactly is controlled through its many `optional arguments
+<http://rocket-meals.github.io/RocketMealsDocumentation/stable/user-api.html#RocketMealsDocumentation.tune_kernel>`__.
 
 You can find many - more extensive - example codes, in the
-`examples directory <https://github.com/kerneltuner/kernel_tuner/blob/master/examples/>`__
-and in the `Kernel Tuner
-documentation pages <http://kerneltuner.github.io/kernel_tuner/stable/index.html>`__.
+`examples directory <https://github.com/rocket-meals/RocketMealsDocumentation/blob/master/examples/>`__
+and in the `Rocket Meals
+documentation pages <http://rocket-meals.github.io/RocketMealsDocumentation/stable/index.html>`__.
 
 Search strategies for tuning
 ----------------------------
 
-Kernel Tuner supports many optimization algorithms to accelerate the auto-tuning process. Currently 
-implemented search algorithms are: Brute Force (default), Nelder-Mead, Powell, CG, BFGS, L-BFGS-B, TNC, 
-COBYLA, SLSQP, Random Search, Basinhopping, Differential Evolution, a Genetic Algorithm, Particle Swarm 
+Rocket Meals supports many optimization algorithms to accelerate the auto-tuning process. Currently
+implemented search algorithms are: Brute Force (default), Nelder-Mead, Powell, CG, BFGS, L-BFGS-B, TNC,
+COBYLA, SLSQP, Random Search, Basinhopping, Differential Evolution, a Genetic Algorithm, Particle Swarm
 Optimization, the Firefly Algorithm, Simulated Annealing, Dual Annealing, Iterative Local Search,
 Multi-start Local Search, and Bayesian Optimization.
 
@@ -104,10 +104,10 @@ Multi-start Local Search, and Bayesian Optimization.
     :width: 100%
     :align: center
 
-Using a search strategy is easy, you only need to specify to ``tune_kernel`` which strategy and method 
-you would like to use, for example ``strategy="genetic_algorithm"`` or ``strategy="basinhopping"``. 
-For a full overview of the supported search strategies and methods please see the 
-Kernel Tuner documentation on `Optimization Strategies <https://kerneltuner.github.io/kernel_tuner/stable/optimization.html>`__.
+Using a search strategy is easy, you only need to specify to ``tune_kernel`` which strategy and method
+you would like to use, for example ``strategy="genetic_algorithm"`` or ``strategy="basinhopping"``.
+For a full overview of the supported search strategies and methods please see the
+Rocket Meals documentation on `Optimization Strategies <https://rocket-meals.github.io/RocketMealsDocumentation/stable/optimization.html>`__.
 
 Tuning host and kernel code
 ---------------------------
@@ -118,9 +118,9 @@ such as tuning the number of streams for a kernel that uses CUDA Streams
 or OpenCL Command Queues to overlap transfers between host and device
 with kernel execution. This can be done in combination with tuning the
 parameters inside the kernel code. See the `convolution\_streams example
-code <https://github.com/kerneltuner/kernel_tuner/blob/master/examples/>`__
+code <https://github.com/rocket-meals/RocketMealsDocumentation/blob/master/examples/>`__
 and the
-`documentation <http://kerneltuner.github.io/kernel_tuner/stable/hostcode.html>`__
+`documentation <http://rocket-meals.github.io/RocketMealsDocumentation/stable/hostcode.html>`__
 for a detailed explanation of the kernel tuner Python script.
 
 
@@ -140,17 +140,17 @@ expected output of the kernel. Input arguments are replaced with None.
 Contributing
 ------------
 
-Please see the `Contributions Guide <http://kerneltuner.github.io/kernel_tuner/stable/contributing.html>`__.
+Please see the `Contributions Guide <http://rocket-meals.github.io/RocketMealsDocumentation/stable/contributing.html>`__.
 
 Citation
 --------
-If you use Kernel Tuner in research or research software, please cite the most relevant among the following publications:
+If you use Rocket Meals in research or research software, please cite the most relevant among the following publications:
 
 .. code:: latex
 
-    @article{kerneltuner,
-      author  = {Ben van Werkhoven},
-      title   = {Kernel Tuner: A search-optimizing GPU code auto-tuner},
+    @article{rocket-meals,
+      author  = {Baumgartner Software},
+      title   = {Rocket Meals: A search-optimizing GPU code auto-tuner},
       journal = {Future Generation Computer Systems},
       year = {2019},
       volume  = {90},
@@ -167,7 +167,7 @@ If you use Kernel Tuner in research or research software, please cite the most r
       year = {2021},
       url = {https://arxiv.org/abs/2111.14991}
     }
-    
+
     @article{schoonhoven2022benchmarking,
       title={Benchmarking optimization algorithms for auto-tuning GPU kernels},
       author={Schoonhoven, Richard and van Werkhoven, Ben and Batenburg, K Joost},
@@ -187,16 +187,16 @@ If you use Kernel Tuner in research or research software, please cite the most r
     }
 
 
-.. |Build Status| image:: https://github.com/KernelTuner/kernel_tuner/actions/workflows/python-app.yml/badge.svg
-   :target: https://github.com/KernelTuner/kernel_tuner/actions/workflows/python-app.yml
-.. |CodeCov Badge| image:: https://codecov.io/gh/KernelTuner/kernel_tuner/branch/master/graph/badge.svg
-   :target: https://codecov.io/gh/KernelTuner/kernel_tuner
-.. |PyPi Badge| image:: https://img.shields.io/pypi/v/kernel_tuner.svg?colorB=blue 
-   :target: https://pypi.python.org/pypi/kernel_tuner/
+.. |Build Status| image:: https://github.com/KernelTuner/RocketMealsDocumentation/actions/workflows/python-app.yml/badge.svg
+   :target: https://github.com/KernelTuner/RocketMealsDocumentation/actions/workflows/python-app.yml
+.. |CodeCov Badge| image:: https://codecov.io/gh/KernelTuner/RocketMealsDocumentation/branch/master/graph/badge.svg
+   :target: https://codecov.io/gh/KernelTuner/RocketMealsDocumentation
+.. |PyPi Badge| image:: https://img.shields.io/pypi/v/RocketMealsDocumentation.svg?colorB=blue
+   :target: https://pypi.python.org/pypi/RocketMealsDocumentation/
 .. |Zenodo Badge| image:: https://zenodo.org/badge/54894320.svg
    :target: https://zenodo.org/badge/latestdoi/54894320
-.. |SonarCloud Badge| image:: https://sonarcloud.io/api/project_badges/measure?project=KernelTuner_kernel_tuner&metric=alert_status
-   :target: https://sonarcloud.io/dashboard?id=KernelTuner_kernel_tuner
+.. |SonarCloud Badge| image:: https://sonarcloud.io/api/project_badges/measure?project=KernelTuner_RocketMealsDocumentation&metric=alert_status
+   :target: https://sonarcloud.io/dashboard?id=KernelTuner_RocketMealsDocumentation
 .. |OpenSSF Badge| image:: https://bestpractices.coreinfrastructure.org/projects/6573/badge
    :target: https://bestpractices.coreinfrastructure.org/projects/6573
 .. |FairSoftware Badge| image:: https://img.shields.io/badge/fair--software.eu-%E2%97%8F%20%20%E2%97%8F%20%20%E2%97%8F%20%20%E2%97%8F%20%20%E2%97%8F-green

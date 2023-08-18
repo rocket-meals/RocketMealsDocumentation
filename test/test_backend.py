@@ -1,6 +1,6 @@
 import pytest
 
-import kernel_tuner
+import RocketMealsDocumentation
 from .context import (
     skip_if_no_gcc,
     skip_if_no_cupy,
@@ -8,7 +8,7 @@ from .context import (
     skip_if_no_opencl,
     skip_if_no_pycuda,
 )
-from kernel_tuner.backends import backend, c, cupy, nvcuda, opencl, pycuda
+from RocketMealsDocumentation.backends import backend, c, cupy, nvcuda, opencl, pycuda
 
 
 class WrongBackend(backend.Backend):

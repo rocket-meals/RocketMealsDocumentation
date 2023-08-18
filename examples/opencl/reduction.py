@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 import numpy
-from kernel_tuner import tune_kernel
-from kernel_tuner.util import get_config_string
+from RocketMealsDocumentation import tune_kernel
+from RocketMealsDocumentation.util import get_config_string
 from collections import OrderedDict
 import json
 

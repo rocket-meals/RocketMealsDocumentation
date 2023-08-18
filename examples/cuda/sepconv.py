@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 import numpy
 import logging
-from kernel_tuner import tune_kernel
+from RocketMealsDocumentation import tune_kernel
 from collections import OrderedDict
 
 def tune():
@@ -39,7 +39,7 @@ def tune():
     cmem_args = {'d_filter': filter_weights}
     args = [output_image, input_image, filter_weights]
 
-    #tell the Kernel Tuner how to compute grid dimensions
+    #tell the Rocket Meals how to compute grid dimensions
     grid_div_x = ["block_size_x", "tile_size_x"]
     grid_div_y = ["block_size_y", "tile_size_y"]
 

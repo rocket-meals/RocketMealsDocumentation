@@ -1,9 +1,9 @@
-"""This module contains all NVIDIA cuda-python specific kernel_tuner functions"""
+"""This module contains all NVIDIA cuda-python specific RocketMealsDocumentation functions"""
 import numpy as np
 
-from kernel_tuner.backends.backend import GPUBackend
-from kernel_tuner.observers.nvcuda import CudaRuntimeObserver
-from kernel_tuner.util import SkippableFailure, cuda_error_check
+from RocketMealsDocumentation.backends.backend import GPUBackend
+from RocketMealsDocumentation.observers.nvcuda import CudaRuntimeObserver
+from RocketMealsDocumentation.util import SkippableFailure, cuda_error_check
 
 # embedded in try block to be able to generate documentation
 # and run tests without cuda-python installed

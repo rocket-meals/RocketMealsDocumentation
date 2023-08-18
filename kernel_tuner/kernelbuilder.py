@@ -1,9 +1,9 @@
 import numpy as np
 
-from kernel_tuner import core
-from kernel_tuner.interface import Options, _kernel_options
+from RocketMealsDocumentation import core
+from RocketMealsDocumentation.interface import Options, _kernel_options
 
-from kernel_tuner.integration import TuneResults
+from RocketMealsDocumentation.integration import TuneResults
 
 class PythonKernel(object):
 
@@ -19,7 +19,7 @@ class PythonKernel(object):
             Only the kernel arguments marked as outputs will be returned, note that the result is always
             returned in a list, even when there is only one output.
 
-            Most of the arguments to this function are the same as with tune_kernel or run_kernel in Kernel Tuner,
+            Most of the arguments to this function are the same as with tune_kernel or run_kernel in Rocket Meals,
             and are therefore not duplicated here. The two new arguments are:
 
             :param inputs: a boolean list of length arguments to signal whether an argument is input to the kernel

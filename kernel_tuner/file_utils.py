@@ -10,7 +10,7 @@ from pathlib import Path
 from importlib.metadata import requires, version, PackageNotFoundError
 from packaging.requirements import Requirement
 
-from kernel_tuner import util
+from RocketMealsDocumentation import util
 
 schema_dir = os.path.dirname(os.path.realpath(__file__)) + "/schema"
 
@@ -33,7 +33,7 @@ def output_file_schema(target):
 
 
 def get_configuration_validity(objective) -> str:
-    """Convert internal Kernel Tuner error to string"""
+    """Convert internal Rocket Meals error to string"""
     errorstring: str
     if not isinstance(objective, util.ErrorConfig):
         errorstring = "correct"
@@ -110,7 +110,7 @@ def store_output_file(output_filename: str, results, tune_params, objective="tim
         # encode the validity of the configuration
         out["invalidity"] = get_configuration_validity(result[objective])
 
-        # Kernel Tuner does not support producing results of configs that fail the correctness check
+        # Rocket Meals does not support producing results of configs that fail the correctness check
         # therefore correctness is always 1
         out["correctness"] = 1
 
@@ -122,7 +122,7 @@ def store_output_file(output_filename: str, results, tune_params, objective="tim
         out["measurements"] = measurements
 
         # objectives
-        # In Kernel Tuner we currently support only one objective at a time, this can be a user-defined
+        # In Rocket Meals we currently support only one objective at a time, this can be a user-defined
         # metric that combines scores from multiple different quantities into a single value to support
         # multi-objective tuning however.
         out["objectives"] = [objective]
@@ -137,8 +137,8 @@ def store_output_file(output_filename: str, results, tune_params, objective="tim
         json.dump(output_json, fh, cls=util.NpEncoder)
 
 
-def get_dependencies(package="kernel_tuner"):
-    """Get the Python dependencies of Kernel Tuner currently installed and their version numbers"""
+def get_dependencies(package="RocketMealsDocumentation"):
+    """Get the Python dependencies of Rocket Meals currently installed and their version numbers"""
     requirements = requires(package)
     deps = [Requirement(req).name for req in requirements]
     depends = []

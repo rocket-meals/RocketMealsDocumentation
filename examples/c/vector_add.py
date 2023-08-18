@@ -2,10 +2,10 @@
 """This is a simple example for tuning C code with the kernel tuner"""
 
 import numpy
-from kernel_tuner import tune_kernel
+from RocketMealsDocumentation import tune_kernel
 from collections import OrderedDict
 
-kernel_string = """ 
+kernel_string = """
 #include <omp.h>
 
 typedef float vfloat __attribute__ ((vector_size (vecsize*4)));

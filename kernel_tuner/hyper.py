@@ -4,8 +4,8 @@ import itertools
 import warnings
 import numpy as np
 
-import kernel_tuner
-from kernel_tuner.util import get_config_string
+import RocketMealsDocumentation
+from RocketMealsDocumentation.util import get_config_string
 
 
 def tune_hyper_params(target_strategy, hyper_params, *args, **kwargs):
@@ -48,7 +48,7 @@ def tune_hyper_params(target_strategy, hyper_params, *args, **kwargs):
 
     #find optimum
     kwargs["strategy"] = "brute_force"
-    results, _ = kernel_tuner.tune_kernel(*args, **kwargs)
+    results, _ = RocketMealsDocumentation.tune_kernel(*args, **kwargs)
     optimum = min(results, key=lambda p: p["time"])["time"]
 
     #could throw a warning for the kwargs that will be overwritten, strategy(_options)
@@ -68,7 +68,7 @@ def tune_hyper_params(target_strategy, hyper_params, *args, **kwargs):
             #measure
             with warnings.catch_warnings():
                 warnings.simplefilter("ignore")
-                results, _ = kernel_tuner.tune_kernel(*args, **kwargs)
+                results, _ = RocketMealsDocumentation.tune_kernel(*args, **kwargs)
 
             #get unique function evaluations
             unique_fevals = {",".join([str(v) for k, v in record.items() if k in tune_params])

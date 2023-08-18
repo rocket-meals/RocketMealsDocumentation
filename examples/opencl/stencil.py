@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 import numpy
-import kernel_tuner
+import RocketMealsDocumentation
 from collections import OrderedDict
 
 def tune():
@@ -22,7 +22,7 @@ def tune():
     grid_div_x = ["block_size_x"]
     grid_div_y = ["block_size_y"]
 
-    return kernel_tuner.tune_kernel("stencil_kernel", kernel_string, problem_size,
+    return RocketMealsDocumentation.tune_kernel("stencil_kernel", kernel_string, problem_size,
         args, tune_params, grid_div_x=grid_div_x, grid_div_y=grid_div_y,
         verbose = True)
 

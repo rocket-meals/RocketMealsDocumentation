@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 import numpy
-import kernel_tuner
+import RocketMealsDocumentation
 
 problem_size = (4096, 4096)
 size = numpy.prod(problem_size)
@@ -15,5 +15,5 @@ answer = [numpy.dot(A,B), None, None]
 
 params = {"block_size_x": 32, "block_size_y": 32}
 
-results = kernel_tuner.run_kernel("matmul_kernel", "matmul_data_reuse.cu",
+results = RocketMealsDocumentation.run_kernel("matmul_kernel", "matmul_data_reuse.cu",
                                    problem_size, args, params)

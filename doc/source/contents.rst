@@ -1,14 +1,14 @@
-.. kernel_tuner documentation master file, created by
+.. RocketMealsDocumentation documentation master file, created by
    sphinx-quickstart on Tue Mar 29 15:46:32 2016.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-The Kernel Tuner documentation
+The Rocket Meals documentation
 ==============================
 
 .. toctree::
    :maxdepth: 1
-   :caption: Kernel Tuner
+   :caption: Rocket Meals
 
    Introduction <index>
    install

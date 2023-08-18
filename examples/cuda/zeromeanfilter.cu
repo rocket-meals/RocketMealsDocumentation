@@ -38,7 +38,7 @@
  *  computeMeanVertically(h, w, input);
  *  transpose(h, w, input);
  *
- * @author Ben van Werkhoven <b.vanwerkhoven@esciencecenter.nl>
+ * @author Baumgartner Software <nilsbaumgartner1994@gmail.com>
  * @version 0.1
  */
 
@@ -185,7 +185,7 @@ __global__ void computeMeanHorizontally(int h, int w, float *input) {
             sumEven += input[i*w+j];
             sumOdd += input[i*w+j + 1];
         }
-        if (tj == 0 && w & 1) {    // if w is odd 
+        if (tj == 0 && w & 1) {    // if w is odd
             sumEven += input[i*w+(w-1)];
         }
 
@@ -217,7 +217,7 @@ __global__ void computeMeanHorizontally(int h, int w, float *input) {
             input[i*w+j] -= meanEven;
             input[i*w+j + 1] -= meanOdd;
         }
-        if (tj == 0 && w & 1) {    // if w is odd 
+        if (tj == 0 && w & 1) {    // if w is odd
             input[i*w+(w-1)] -= meanEven;
         }
     }

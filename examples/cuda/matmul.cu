@@ -9,7 +9,7 @@
  *          PLEASE *DO NOT USE IT* IN PRODUCTION, USE A BLAS
  *          LIBRARY SUCH AS CUBLAS, CLBLAST OR CUTLASS INSTEAD.
  *
- * @author Ben van Werkhoven <b.vanwerkhoven@esciencecenter.nl>
+ * @author Baumgartner Software <nilsbaumgartner1994@gmail.com>
  *
  */
 

@@ -1,4 +1,4 @@
-"""This module contains all Cupy specific kernel_tuner functions"""
+"""This module contains all Cupy specific RocketMealsDocumentation functions"""
 from __future__ import print_function
 
 
@@ -6,8 +6,8 @@ import logging
 import time
 import numpy as np
 
-from kernel_tuner.backends.backend import GPUBackend
-from kernel_tuner.observers.cupy import CupyRuntimeObserver
+from RocketMealsDocumentation.backends.backend import GPUBackend
+from RocketMealsDocumentation.observers.cupy import CupyRuntimeObserver
 
 
 # embedded in try block to be able to generate documentation
