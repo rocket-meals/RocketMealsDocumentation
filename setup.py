@@ -32,14 +32,6 @@ setup(
         "Source": "https://github.com/KernelTuner/RocketMealsDocumentation",
         "Tracker": "https://github.com/KernelTuner/RocketMealsDocumentation/issues",
     },
-    packages=[
-        "RocketMealsDocumentation",
-        "RocketMealsDocumentation.backends",
-        "RocketMealsDocumentation.energy",
-        "RocketMealsDocumentation.observers",
-        "RocketMealsDocumentation.runners",
-        "RocketMealsDocumentation.strategies",
-    ],
     long_description=readme(),
     long_description_content_type="text/x-rst",
     classifiers=[
