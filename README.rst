@@ -148,7 +148,7 @@ If you use Rocket Meals in research or research software, please cite the most r
 .. code:: latex
 
     @article{rocket-meals,
-      author  = {Baumgartner Software},
+      author  = {Baumgartner Software UG (haftungsbeschränkt)},
       title   = {Rocket Meals: A search-optimizing GPU code auto-tuner},
       journal = {Future Generation Computer Systems},
       year = {2019},
