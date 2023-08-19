@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Parameter Vocabulary &#8212; Rocket Meals 0.0.1 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="_static/classic.css?v=514cf933" />
+    
+    <script src="_static/documentation_options.js?v=d45e8c67"></script>
+    <script src="_static/doctools.js?v=888ff710"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Design documentation" href="design.html" />
+    <link rel="prev" title="API Documentation" href="user-api.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="design.html" title="Design documentation"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="user-api.html" title="API Documentation"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="contents.html">Rocket Meals 0.0.1 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Parameter Vocabulary</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="parameter-vocabulary">
+<span id="id1"></span><h1>Parameter Vocabulary<a class="headerlink" href="#parameter-vocabulary" title="Link to this heading">¶</a></h1>
+<p>There are certain tunable parameters that have special meaning in Rocket Meals.
+This document specifies which parameters are special and what there uses are when auto-tuning GPU kernels.</p>
+<p>In general, it is best to avoid using these parameter names for purposes other than the ones indicated in this document.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">RocketMealsDocumentation</span> <span class="c1">#is inserted by Rocket Meals to signal the code is compiled using the tuner</span>
+
+<span class="n">block_size_</span><span class="o">*</span> <span class="c1">#reserved for thread block dimensions</span>
+<span class="n">grid_size_</span><span class="o">*</span> <span class="c1">#reserved for grid dimensions, if you want to tune these use problem_size</span>
+
+<span class="n">compiler_opt_</span><span class="o">*</span> <span class="c1">#reserved for future support for tuning compiler options</span>
+
+<span class="n">loop_unroll_factor_</span><span class="o">*</span> <span class="c1">#reserved for tunable parameters that specify loop unrolling factors</span>
+
+<span class="n">nvml_</span><span class="o">*</span> <span class="c1">#reserved for tunable parameters and outputs related to NVML</span>
+<span class="n">nvml_pwr_limit</span> <span class="c1">#use NVML to set power limit</span>
+<span class="n">nvml_gr_clock</span> <span class="c1">#use NVML to set graphics clock</span>
+<span class="n">nvml_mem_clock</span> <span class="c1">#use NVML to set memory clock</span>
+</pre></div>
+</div>
+<p>There are also a number of names that Rocket Meals uses for reporting benchmarking results.
+Because these are reported along with the tunable parameters, it is generally a good idea to not use these names for any tunable parameters.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">time</span><span class="o">*</span> <span class="c1">#reserved for time measurements</span>
+
+<span class="c1"># Information that can be observed using RocketMealsDocumentation.nvml.NVMLObserver:</span>
+<span class="n">nvml_energy</span>
+<span class="n">nvml_power</span>
+<span class="n">power_readings</span>
+<span class="n">core_freq</span>
+<span class="n">mem_freq</span>
+<span class="n">temperature</span>
+
+<span class="c1"># Information observed using RocketMealsDocumentation.observers.PowerSensor</span>
+<span class="n">ps_energy</span>  <span class="c1"># Energy in Joules</span>
+<span class="n">ps_power</span>   <span class="c1"># Power in Watts</span>
+</pre></div>
+</div>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="contents.html">
+              <img class="logo" src="_static/logo.png" alt="Logo"/>
+            </a></p>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="user-api.html"
+                          title="previous chapter">API Documentation</a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="design.html"
+                          title="next chapter">Design documentation</a></p>
+  </div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/vocabulary.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="design.html" title="Design documentation"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="user-api.html" title="API Documentation"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="contents.html">Rocket Meals 0.0.1 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Parameter Vocabulary</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+    &#169; Copyright 2016, Baumgartner Software.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.2.2.
+    </div>
+  </body>
+</html>

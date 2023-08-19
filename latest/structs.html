@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Using structs &#8212; Rocket Meals 0.0.1 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="_static/classic.css?v=514cf933" />
+    
+    <script src="_static/documentation_options.js?v=d45e8c67"></script>
+    <script src="_static/doctools.js?v=888ff710"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Templated kernels" href="templates.html" />
+    <link rel="prev" title="Tuning Host Code" href="hostcode.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="templates.html" title="Templated kernels"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="hostcode.html" title="Tuning Host Code"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="contents.html">Rocket Meals 0.0.1 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Using structs</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="using-structs">
+<h1>Using structs<a class="headerlink" href="#using-structs" title="Link to this heading">¶</a></h1>
+<p>One of the issues with calling GPU kernels from Python is the use of custom data types in kernel arguments. In general, it is recommended for portability of your GPU code, which may be
+used in any host program in any host programming language, to keep the interface of your kernels as simple as possible. This means sticking to simple pointers of primitive types such as integer, float, and double.
+For performance reasons, it is also recommended to not use arrays of structs for kernel arguments, as this is very likely to lead to inefficient memory accesses on the GPU.</p>
+<p>However, there are situations, in particular in scientific applications, where the GPU code needs a lot of input parameters where it makes sense to collect these in a struct that
+describes the simulation or experimental setup. For these use cases, it is possible to use Python’s built-in <code class="docutils literal notranslate"><span class="pre">struct</span></code> library, in particular the function <code class="docutils literal notranslate"><span class="pre">struct.pack()</span></code>. For how to use
+<code class="docutils literal notranslate"><span class="pre">struct.pack</span></code>, please consult the <a class="reference external" href="https://docs.python.org/3/library/struct.html">Python documentation</a>. In the code below we show part of Python script that uses <code class="docutils literal notranslate"><span class="pre">struct.pack</span></code>,
+Numpy, and Rocket Meals to call a CUDA kernel that uses a struct as kernel argument.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">struct</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">RocketMealsDocumentation</span> <span class="k">as</span> <span class="nn">kt</span>
+
+<span class="k">def</span> <span class="nf">create_receive_spec_struct</span><span class="p">():</span>
+    <span class="o">...</span>
+
+    <span class="c1"># Use struct.pack to create a byte representation of our struct</span>
+    <span class="c1"># The format string uses:</span>
+    <span class="c1">#   i for integer, P for Pointer, f for float, ? for bool</span>
+    <span class="c1"># The 0l at the end ensures padding to the next long (8bytes)</span>
+    <span class="n">packstr</span> <span class="o">=</span> <span class="n">struct</span><span class="o">.</span><span class="n">pack</span><span class="p">(</span><span class="s1">&#39;iiiiiiiiiiiPPi?fffi?0l&#39;</span><span class="p">,</span>
+                          <span class="n">nSamples</span><span class="p">,</span> <span class="n">nSamplesIQ</span><span class="p">,</span> <span class="n">nSlowTimeSamples</span><span class="p">,</span>
+                          <span class="n">nChannels</span><span class="p">,</span> <span class="n">nTX</span><span class="p">,</span> <span class="n">nRepeats</span><span class="p">,</span> <span class="n">nFastTimeSamples</span><span class="p">,</span>
+                          <span class="n">rfSize</span><span class="p">,</span> <span class="n">mNRows</span><span class="p">,</span> <span class="n">mNRowsIQ</span><span class="p">,</span> <span class="n">nActiveChannels</span><span class="p">,</span>
+                          <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">isIQ</span><span class="p">,</span> <span class="n">Fs</span><span class="p">,</span> <span class="n">FsIQ</span><span class="p">,</span> <span class="n">Fc</span><span class="p">,</span> <span class="n">nBuffers</span><span class="p">,</span>
+                          <span class="n">initialized</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">frombuffer</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">packstr</span><span class="p">),</span>
+                         <span class="n">np</span><span class="o">.</span><span class="n">dtype</span><span class="p">((</span><span class="n">np</span><span class="o">.</span><span class="n">void</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">packstr</span><span class="p">))))[</span><span class="mi">0</span><span class="p">]</span>
+
+<span class="n">receive_spec</span> <span class="o">=</span> <span class="n">create_receive_spec_struct</span><span class="p">()</span>
+
+<span class="o">...</span>
+
+<span class="n">args</span> <span class="o">=</span> <span class="p">[</span><span class="n">bf</span><span class="p">,</span> <span class="n">rf</span><span class="p">,</span> <span class="n">receive_spec</span><span class="p">,</span> <span class="n">recon</span><span class="p">]</span>
+
+<span class="n">kt</span><span class="o">.</span><span class="n">tune_kernel</span><span class="p">(</span><span class="n">kernel_name</span><span class="p">,</span> <span class="n">kernel_source</span><span class="p">,</span> <span class="n">problem_size</span><span class="p">,</span> <span class="n">args</span><span class="p">,</span> <span class="n">tune_params</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>The most difficult part of this code is ensuring the struct.pack format string is correct and keeping it in sync with the GPU code. Note the <code class="docutils literal notranslate"><span class="pre">0l</span></code> at the end of string. This enables
+padding to the next long, which is sometimes needed when the struct argument is not the last argument in the kernel argument list.</p>
+<p>Using the packstr returned by struct.pack, we can create a numpy buffer, in this case we are only interested in the first element in the array, hence the <code class="docutils literal notranslate"><span class="pre">[0]</span></code> at the end. To tell Numpy
+what data type our packstr hold we specify the dtype as an np.void of length <code class="docutils literal notranslate"><span class="pre">len(packstr)</span></code>, which is the number of bytes in our data type. If you need an array of structs, you only
+need some slight modifications to the example code above.</p>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="contents.html">
+              <img class="logo" src="_static/logo.png" alt="Logo"/>
+            </a></p>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="hostcode.html"
+                          title="previous chapter">Tuning Host Code</a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="templates.html"
+                          title="next chapter">Templated kernels</a></p>
+  </div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/structs.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="templates.html" title="Templated kernels"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="hostcode.html" title="Tuning Host Code"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="contents.html">Rocket Meals 0.0.1 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Using structs</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+    &#169; Copyright 2016, Baumgartner Software.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.2.2.
+    </div>
+  </body>
+</html>
