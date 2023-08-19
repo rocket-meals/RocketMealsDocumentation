@@ -40,7 +40,7 @@ setup(
         "Intended Audience :: Science/Research",
         "Intended Audience :: Education",
         "License :: OSI Approved :: Apache Software License",
-        "Natural Language :: English",
+        "Natural Language :: German",
         "Operating System :: POSIX :: Linux",
         "Programming Language :: Python :: 3.7",
         "Programming Language :: Python :: 3.8",
