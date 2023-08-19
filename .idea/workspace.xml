@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="beba6e1a-54d1-48b4-bf48-a310f321d4f7" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.github/workflows/docs-on-release.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/docs.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.nojekyll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CHANGELOG.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CITATION.cff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CONTRIBUTING.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/INSTALL.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MANIFEST.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RocketMealsDocumentation/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RocketMealsDocumentation/backends/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RocketMealsDocumentation/backends/backend.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RocketMealsDocumentation/backends/c.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RocketMealsDocumentation/backends/cupy.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RocketMealsDocumentation/backends/nvcuda.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RocketMealsDocumentation/backends/opencl.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RocketMealsDocumentation/backends/pycuda.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RocketMealsDocumentation/core.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RocketMealsDocumentation/energy/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RocketMealsDocumentation/energy/energy.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RocketMealsDocumentation/file_utils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RocketMealsDocumentation/hyper.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RocketMealsDocumentation/integration.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RocketMealsDocumentation/interface.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RocketMealsDocumentation/kernelbuilder.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RocketMealsDocumentation/observers/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RocketMealsDocumentation/observers/c.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RocketMealsDocumentation/observers/cupy.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RocketMealsDocumentation/observers/nvcuda.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RocketMealsDocumentation/observers/nvml.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RocketMealsDocumentation/observers/observer.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RocketMealsDocumentation/observers/opencl.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RocketMealsDocumentation/observers/pmt.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RocketMealsDocumentation/observers/powersensor.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RocketMealsDocumentation/observers/pycuda.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RocketMealsDocumentation/runners/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RocketMealsDocumentation/runners/runner.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RocketMealsDocumentation/runners/sequential.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RocketMealsDocumentation/runners/simulation.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RocketMealsDocumentation/schema/T4/1.0.0/metadata-schema.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RocketMealsDocumentation/schema/T4/1.0.0/results-schema.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RocketMealsDocumentation/searchspace.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RocketMealsDocumentation/strategies/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RocketMealsDocumentation/strategies/basinhopping.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RocketMealsDocumentation/strategies/bayes_opt.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RocketMealsDocumentation/strategies/brute_force.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RocketMealsDocumentation/strategies/common.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RocketMealsDocumentation/strategies/diff_evo.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RocketMealsDocumentation/strategies/dual_annealing.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RocketMealsDocumentation/strategies/firefly_algorithm.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RocketMealsDocumentation/strategies/genetic_algorithm.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RocketMealsDocumentation/strategies/greedy_ils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RocketMealsDocumentation/strategies/greedy_mls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RocketMealsDocumentation/strategies/hillclimbers.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RocketMealsDocumentation/strategies/minimize.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RocketMealsDocumentation/strategies/mls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RocketMealsDocumentation/strategies/ordered_greedy_mls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RocketMealsDocumentation/strategies/pso.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RocketMealsDocumentation/strategies/random_sample.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RocketMealsDocumentation/strategies/simulated_annealing.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RocketMealsDocumentation/util.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/README.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/c/vector_add.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/cuda-c++/vector_add.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/cuda-c++/vector_add_blocksize.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/cuda-c++/vector_add_cupy.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/cuda-c++/vector_add_defines.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/cuda/convolution.cu" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/cuda/convolution.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/cuda/convolution_correct.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/cuda/convolution_streams.cu" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/cuda/convolution_streams.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/cuda/expdist.cu" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/cuda/expdist.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/cuda/going_green_performance_model.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/cuda/matmul.cu" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/cuda/matmul.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/cuda/pnpoly.cu" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/cuda/pnpoly.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/cuda/pnpoly_host.cu" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/cuda/python_kernel.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/cuda/python_kernel_cupy.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/cuda/reduction.cu" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/cuda/reduction.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/cuda/sepconv.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/cuda/spmv.cu" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/cuda/spmv.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/cuda/stencil.cu" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/cuda/stencil.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/cuda/test_vector_add.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/cuda/test_vector_add_parameterized.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/cuda/texture.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/cuda/vector_add.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/cuda/vector_add_codegen.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/cuda/vector_add_cupy.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/cuda/vector_add_jinja.cu" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/cuda/vector_add_jinja.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/cuda/vector_add_jinja2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/cuda/vector_add_metric.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/cuda/vector_add_nvcuda.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/cuda/vector_add_observers.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/cuda/vector_add_observers_pmt.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/cuda/zeromeanfilter.cu" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/cuda/zeromeanfilter.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/fortran/test_fortran_vector_add.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/fortran/vector_add.F90" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/fortran/vector_add.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/fortran/vector_add_acc.F90" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/fortran/vector_add_acc.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/opencl/convolution.cl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/opencl/convolution.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/opencl/convolution_correct.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/opencl/matmul.cl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/opencl/matmul.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/opencl/reduction.cl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/opencl/reduction.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/opencl/sepconv.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/opencl/stencil.cl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/opencl/stencil.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/opencl/vector_add.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/opencl/vector_add_codegen.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/opencl/vector_add_observers.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/latest/.buildinfo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/latest/.nojekyll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/latest/_images/architecture_0.4.3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/latest/_images/diffusion_15_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/latest/_images/diffusion_7_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/latest/_images/diffusion_9_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/latest/_images/diffusion_opencl_10_0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/latest/_images/diffusion_opencl_17_0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/latest/_images/diffusion_opencl_7_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/latest/_images/diffusion_use_optparam_11_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/latest/_images/diffusion_use_optparam_17_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/latest/_images/diffusion_use_optparam_48_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/latest/_images/diffusion_use_optparam_9_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/latest/_sources/cache_files.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/latest/_sources/contents.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/latest/_sources/contributing.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/latest/_sources/convolution.ipynb.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/latest/_sources/correctness.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/latest/_sources/design.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/latest/_sources/diffusion.ipynb.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/latest/_sources/diffusion_opencl.ipynb.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/latest/_sources/diffusion_use_optparam.ipynb.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/latest/_sources/examples.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/latest/_sources/grid3d.ipynb.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/latest/_sources/hostcode.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/latest/_sources/index.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/latest/_sources/install.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/latest/_sources/matrix_multiplication.ipynb.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/latest/_sources/metrics.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/latest/_sources/observers.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/latest/_sources/optimization.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/latest/_sources/quickstart.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/latest/_sources/structs.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/latest/_sources/templates.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/latest/_sources/user-api.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/latest/_sources/vocabulary.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/latest/_static/basic.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/latest/_static/css/badge_only.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/latest/_static/css/fonts/Roboto-Slab-Bold.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/latest/_static/css/fonts/Roboto-Slab-Bold.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/latest/_static/css/fonts/Roboto-Slab-Regular.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/latest/_static/css/fonts/Roboto-Slab-Regular.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/latest/_static/css/fonts/fontawesome-webfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/latest/_static/css/fonts/fontawesome-webfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/latest/_static/css/fonts/fontawesome-webfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/latest/_static/css/fonts/fontawesome-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/latest/_static/css/fonts/fontawesome-webfont.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/latest/_static/css/fonts/lato-bold-italic.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/latest/_static/css/fonts/lato-bold-italic.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/latest/_static/css/fonts/lato-bold.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/latest/_static/css/fonts/lato-bold.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/latest/_static/css/fonts/lato-normal-italic.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/latest/_static/css/fonts/lato-normal-italic.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/latest/_static/css/fonts/lato-normal.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/latest/_static/css/fonts/lato-normal.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/latest/_static/css/theme.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/latest/_static/doctools.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/latest/_static/documentation_options.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/latest/_static/file.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/latest/_static/js/badge_only.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/latest/_static/js/html5shiv-printshiv.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/latest/_static/js/html5shiv.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/latest/_static/js/theme.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/latest/_static/language_data.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/latest/_static/minus.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/latest/_static/nbsphinx-broken-thumbnail.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/latest/_static/nbsphinx-code-cells.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/latest/_static/nbsphinx-gallery.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/latest/_static/nbsphinx-no-thumbnail.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/latest/_static/plus.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/latest/_static/pygments.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/latest/_static/searchtools.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/latest/_static/sphinx_highlight.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/latest/cache_files.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/latest/contents.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/latest/contributing.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/latest/convolution.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/latest/convolution.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/latest/correctness.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/latest/design.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/latest/diffusion.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/latest/diffusion.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/latest/diffusion_opencl.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/latest/diffusion_opencl.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/latest/diffusion_use_optparam.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/latest/diffusion_use_optparam.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/latest/examples.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/latest/genindex.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/latest/grid3d.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/latest/grid3d.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/latest/hostcode.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/latest/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/latest/install.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/latest/matrix_multiplication.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/latest/matrix_multiplication.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/latest/metrics.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/latest/objects.inv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/latest/observers.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/latest/optimization.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/latest/quickstart.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/latest/search.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/latest/searchindex.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/latest/structs.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/latest/templates.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/latest/user-api.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/latest/vocabulary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nojekyll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/roadmap.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/searchindex.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/setup.cfg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/context.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/strategies/test_bayesian_optimization.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/strategies/test_common.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/strategies/test_genetic_algorithm.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/strategies/test_strategies.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/synthetic_fp32_cache_NVIDIA_RTX_A4000.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_backend.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_c_functions.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_cache_file.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_common.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_core.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_cuda_functions.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_cupy_functions.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_energy.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_file_utils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_hyper.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_integration.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_kernelbuilder.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_nvml_mocked.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_observers.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_opencl_functions.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_pycuda_functions.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_pycuda_mocked.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_runners.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_searchspace.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_util_functions.py" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="ProjectId" id="2UAwgr6B5AGOrKOHUDoVwKd4SGD" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/doc/source/images" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/doc/source/images" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/latest" />
+      <recent name="$PROJECT_DIR$/latest/_sources" />
+      <recent name="$PROJECT_DIR$/latest/_static" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="beba6e1a-54d1-48b4-bf48-a310f321d4f7" name="Default Changelist" comment="" />
+      <created>1692395807854</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1692395807854</updated>
+      <workItem from="1692395811061" duration="5172000" />
+      <workItem from="1692433632732" duration="3718000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+</project>
