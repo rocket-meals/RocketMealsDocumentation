@@ -1,35 +1,18 @@
+Rocket Meals Entwickler Dokumentation
+===================================
 
+Willkommen zur Entwicklerdokumentation von Rocket Meals! Diese Dokumentation richtet sich an Entwickler, die unsere Dienste in ihre Anwendungen integrieren möchten.
 
-The Rocket Meals documentation
-==============================
+Rocket Meals ist eine Plattform, die Studierenden hilft, sich auf einen reibungslosen Start ins Studentenleben vorzubereiten. Von allergenfreien Mahlzeiten bis zur Wohnungssuche, wir bieten eine Vielzahl von Diensten an, um den Studi-Alltag zu erleichtern.
 
-Rocket Meals is a software development tool for the creation of highly-optimized and tuned GPU applications.
+Unsere Erfahrung ermöglicht ein tiefgreifendes Verständnis der Bedürfnisse und Herausforderungen beider Welten: Studierenden und Studierendenwerk.
 
-The Rocket Meals documentation pages are mostly about Rocket Meals itself, but there are a number of related repositories that
-are considered part of the Rocket Meals family:
+In dieser Dokumentation finden Sie Informationen über:
 
- * `Rocket Meals Tutorial <https://github.com/rocket-meals/RocketMealsDocumentation_tutorial>`__
- * `Kernel Launcher <https://github.com/rocket-meals/kernel_launcher>`__
- * `KT Dashboard <https://github.com/rocket-meals/dashboard>`__
+- **Integration**: Wie Sie unsere Dienste in Ihre Anwendungen integrieren können.
+- **APIs**: Detaillierte Informationen über unsere APIs, einschließlich Anforderungen, Endpunkte und Beispiele.
+- **Sicherheit und Konformität**: Informationen über unsere Sicherheitspraktiken und Datenschutzrichtlinien.
+- **Fehlerbehebung**: Häufige Probleme und deren Lösungen.
+- **Abrechnung und Preise**: Informationen über unsere Preismodelle und Zahlungsoptionen.
 
-Quick install
--------------
-
-The easiest way to install the Rocket Meals is using pip:
-
-To tune CUDA kernels:
-
-- First, make sure you have the `CUDA Toolkit <https://developer.nvidia.com/cuda-toolkit>`_ installed
-- Then type: ``pip install RocketMealsDocumentation[cuda]``
-
-To tune OpenCL kernels:
-
-- First, make sure you have an OpenCL compiler for your intended OpenCL platform
-- Then type: ``pip install RocketMealsDocumentation[opencl]``
-
-Or both:
-
-- ``pip install RocketMealsDocumentation[cuda,opencl]``
-
-More information about how to install Rocket Meals and its
-dependencies can be found under :ref:`install`.
+Wir hoffen, dass diese Dokumentation Ihnen hilft, unsere Dienste effektiv zu nutzen und zu integrieren. Wenn Sie Fragen oder Anregungen haben, zögern Sie nicht, uns zu kontaktieren.
