@@ -102,9 +102,6 @@ COBYLA, SLSQP, Random Search, Basinhopping, Differential Evolution, a Genetic Al
 Optimization, the Firefly Algorithm, Simulated Annealing, Dual Annealing, Iterative Local Search,
 Multi-start Local Search, and Bayesian Optimization.
 
-.. image:: doc/gemm-amd-summary.png
-    :width: 100%
-    :align: center
 
 Using a search strategy is easy, you only need to specify to ``tune_kernel`` which strategy and method
 you would like to use, for example ``strategy="genetic_algorithm"`` or ``strategy="basinhopping"``.
