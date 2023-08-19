@@ -17,65 +17,59 @@ Rocket Meals Dokumentation
    :maxdepth: 1
    :caption: Anleitungen
 
-   Anleitungen/Erste Schritte <Guides/quickstart>
-   Anleitungen/Integration <Guides/integration>
-   Anleitungen/Sicherheit und Konformität <Guides/security_compliance>
-   Anleitungen/Fehlerbehebung <Guides/troubleshooting>
-   Anleitungen/Abrechnung und Preise <Guides/billing_pricing>
+   Erste Schritte <Guides/quickstart>
+   Integration <Guides/integration>
+   Sicherheit und Konformität <Guides/security_compliance>
+   Fehlerbehebung <Guides/troubleshooting>
+   Abrechnung und Preise <Guides/billing_pricing>
 
 .. toctree::
    :maxdepth: 1
    :caption: Funktionen
 
-   Funktionen/Funktion 1 <Features/feature1>
-   Funktionen/Funktion 2 <Features/feature2>
-   Funktionen/Funktion 3 <Features/feature3>
+   Funktion 1 <Features/feature1>
+   Funktion 2 <Features/feature2>
+   Funktion 3 <Features/feature3>
    ...
 
 .. toctree::
    :maxdepth: 1
    :caption: Anforderungen
 
-   Anforderungen/Hardware-Anforderungen <Requirements/hardware_requirements>
-   Anforderungen/Software-Anforderungen <Requirements/software_requirements>
-   Anforderungen/Apple Developer Account <Requirements/apple_developer_account>
-   Anforderungen/Google Developer Account <Requirements/google_developer_account>
-   Anforderungen/Einladung zu den Projekten <Requirements/invite_to_projects>
+   Hardware-Anforderungen <Requirements/hardware_requirements>
+   Software-Anforderungen <Requirements/software_requirements>
+   Apple Developer Account <Requirements/apple_developer_account>
+   Google Developer Account <Requirements/google_developer_account>
+   Einladung zu den Projekten <Requirements/invite_to_projects>
 
 .. toctree::
    :maxdepth: 1
    :caption: Benutzerunterstützung
 
-   Benutzerunterstützung/Unterstützte Benutzergrenzen <UserSupport/supported_user_limits>
-   Benutzerunterstützung/Benutzerrollen und Berechtigungen <UserSupport/user_roles_permissions>
-   Benutzerunterstützung/Benutzer-Onboarding und Schulung <UserSupport/user_onboarding_training>
-
-.. toctree::
-   :maxdepth: 1
-   :caption: Referenz
-
-   Referenz/Benutzer-API <Reference/user-api>
-   Referenz/Glossar <Reference/vocabulary>
-   Referenz/Design <Reference/design>
-   Referenz/Mitwirken <Reference/contributing>
+   Unterstützte Benutzergrenzen <UserSupport/supported_user_limits>
+   Benutzerrollen und Berechtigungen <UserSupport/user_roles_permissions>
+   Benutzer-Onboarding und Schulung <UserSupport/user_onboarding_training>
 
 .. toctree::
    :maxdepth: 1
    :caption: Kontakt und Support
 
-   Kontakt und Support/Kundensupport-Kanäle <ContactSupport/customer_support_channels>
-   Kontakt und Support/Öffnungszeiten <ContactSupport/hours_of_operation>
+   Kundensupport-Kanäle <ContactSupport/customer_support_channels>
+   Öffnungszeiten <ContactSupport/hours_of_operation>
    ...
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Referenz
+
+   Benutzer-API <Reference/user-api>
+   Glossar <Reference/vocabulary>
+   Design <Reference/design>
+   Mitwirken <Reference/contributing>
 
 .. toctree::
    :maxdepth: 1
    :caption: Anhänge
 
-   Anhänge/Glossar der Begriffe <Appendices/glossary_terms>
-   Anhänge/Zusätzliche Ressourcen <Appendices/additional_resources>
-
-.. toctree::
-   :maxdepth: 1
-   :caption: Index
-
-   Index/Index <Index/index>
+   Glossar der Begriffe <Appendices/glossary_terms>
+   Zusätzliche Ressourcen <Appendices/additional_resources>
