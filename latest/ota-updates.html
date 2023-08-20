@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Search &mdash; Rocket Meals 0.0.1 documentation</title>
+  <title>OTA-Updates &mdash; Rocket Meals 0.0.1 documentation</title>
       <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-    
   <!--[if lt IE 9]>
     <script src="_static/js/html5shiv.min.js"></script>
   <![endif]-->
@@ -16,10 +16,8 @@
         <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
         <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script src="_static/js/theme.js"></script>
-    <script src="_static/searchtools.js"></script>
-    <script src="_static/language_data.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="#" /> 
+    <link rel="search" title="Search" href="search.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -38,7 +36,7 @@
                 0.0.1
               </div>
 <div role="search">
-  <form id="rtd-search-form" class="wy-form" action="#" method="get">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
@@ -106,8 +104,9 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="contents.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active">Search</li>
+      <li class="breadcrumb-item active">OTA-Updates</li>
       <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/rocket-meals/RocketMealsDocumentation/blob/master/doc/source/ota-updates.rst" class="fa fa-github"> Edit on GitHub</a>
       </li>
   </ul>
   <hr/>
@@ -115,18 +114,28 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <noscript>
-  <div id="fallback" class="admonition warning">
-    <p class="last">
-      Please activate JavaScript to enable the search functionality.
-    </p>
-  </div>
-  </noscript>
+  <section id="ota-updates">
+<h1>OTA-Updates<a class="headerlink" href="#ota-updates" title="Link to this heading">¶</a></h1>
+<p>Die Rocket Meals App bietet Over-the-Air (OTA) Updates an, eine leistungsstarke Funktion, die es ermöglicht, Aktualisierungen der Basisversion der App und wichtige Sicherheitspatches ohne den traditionellen App Store-Prozess bereitzustellen. Diese Updates sind speziell für die Behebung von Sicherheitslücken und die Aktualisierung der Basisversion der App konzipiert und nicht für das Hinzufügen von neuen Inhalten wie Speiseplänen.</p>
+<section id="implementierungstechnologie">
+<h2>Implementierungstechnologie<a class="headerlink" href="#implementierungstechnologie" title="Link to this heading">¶</a></h2>
+<p>Für die Bereitstellung von OTA-Updates nutzen wir den Dienst “Code Push” von Microsoft. Code Push ist ein Cloud-Service, der Entwicklern ermöglicht, Updates für ihre mobilen Anwendungen direkt an die Geräte der Benutzer zu senden, ohne den traditionellen App Store-Prozess durchlaufen zu müssen. Aktuell bietet Microsoft diesen Dienst kostenlos an. Sollte Microsoft jedoch in Zukunft Gebühren für die Nutzung von Code Push einführen, werden diese Kosten vom Kunden übernommen.</p>
+</section>
+<section id="was-sind-ota-updates">
+<h2>Was sind OTA-Updates?<a class="headerlink" href="#was-sind-ota-updates" title="Link to this heading">¶</a></h2>
+<p>Over-the-Air (OTA) Updates sind Software-Aktualisierungen, die drahtlos an Geräte gesendet werden. Im Gegensatz zu traditionellen Updates, die über den App Store heruntergeladen werden müssen, ermöglichen OTA-Updates eine schnellere und direktere Aktualisierung der App. Dies ist besonders nützlich für die schnelle Behebung von Sicherheitslücken und die Aktualisierung der Basisversion der App.</p>
+</section>
+<section id="bereitstellungsprozess">
+<h2>Bereitstellungsprozess<a class="headerlink" href="#bereitstellungsprozess" title="Link to this heading">¶</a></h2>
+<p>Wir stellen Updates in einem angemessenen Umfang bereit und nutzen GitHub Actions für die Bereitstellung. GitHub Actions bietet ein kostenloses Kontingent von 3.000 Linux-Minuten pro Monat. Darüber hinausgehende Minuten werden zu einem Preis von $0,008 USD pro Minute berechnet. Ein Update benötigt etwa 15 Minuten, sodass mit einem Budget von $24 USD theoretisch bis zu 200 Updates pro Monat möglich sind. Historisch gesehen hat das kostenlose Kontingent für unsere Bedürfnisse ausgereicht und es sind keine zusätzlichen Kosten angefallen.</p>
+</section>
+<section id="kostenuberlegungen">
+<h2>Kostenüberlegungen<a class="headerlink" href="#kostenuberlegungen" title="Link to this heading">¶</a></h2>
+<p>Es ist wichtig zu beachten, dass Kosten für die Bereitstellung von Updates anfallen können, wenn das kostenlose Kontingent von GitHub Actions überschritten wird. Diese Kosten werden vom Kunden getragen. In der Vergangenheit hat das kostenlose Kontingent jedoch ausgereicht und es sind keine zusätzlichen Kosten angefallen.</p>
+<p>Zusammenfassend bieten OTA-Updates eine effiziente Möglichkeit, die Rocket Meals App zu aktualisieren und Sicherheitslücken zu schließen. Die Kosten für die Bereitstellung von Updates werden vom Kunden getragen, falls das kostenlose Kontingent von GitHub Actions überschritten wird. Bei Fragen oder Bedenken bezüglich der OTA-Updates stehen wir Ihnen gerne zur Verfügung.</p>
+</section>
+</section>
 
-  
-  <div id="search-results">
-  
-  </div>
 
            </div>
           </div>
@@ -152,14 +161,7 @@
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-  <script>
-    jQuery(function() { Search.loadIndex("searchindex.js"); });
-  </script>
-  
-  <script id="searchindexloader"></script>
-   
-
+  </script> 
 
 </body>
 </html>
