@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mehrsprachigkeit &mdash; Rocket Meals 0.0.1 documentation</title>
+  <title>Single Sign-On (SSO) &mdash; Rocket Meals 0.0.1 documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <!--[if lt IE 9]>
@@ -18,8 +18,8 @@
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Automatische Übersetzung" href="automatic-translation.html" />
-    <link rel="prev" title="Preiskategorien in Rocket Meals" href="price-category.html" /> 
+    <link rel="next" title="The Rocket Meals documentation" href="../UserSupport/supported_user_limits.html" />
+    <link rel="prev" title="Automatische Übersetzung" href="automatic-translation.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -73,13 +73,15 @@
 <li class="toctree-l1"><a class="reference internal" href="meals.html">Speiseplan</a></li>
 <li class="toctree-l1"><a class="reference internal" href="meal-feedback.html">Speise-Bewertungen</a></li>
 <li class="toctree-l1"><a class="reference internal" href="price-category.html">Preiskategorien</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Sprache</a></li>
 <li class="toctree-l1"><a class="reference internal" href="automatic-translation.html">Automatische Übersetzung</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Single Sign-on (Einmalanmeldung)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#vorteile-von-sso">Vorteile von SSO</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#einrichtung-von-sso">Einrichtung von SSO</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#unterstutzte-sso-mechanismen">Unterstützte SSO-Mechanismen</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="ingredient-filter.html">TODO: Guthabenleser</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ingredient-filter.html">TODO: Stundenplaner</a></li>
-<li class="toctree-l1"><a class="reference internal" href="ingredient-filter.html">TODO: Transparente Dateneinsicht</a></li>
-<li class="toctree-l1"><a class="reference internal" href="ingredient-filter.html">TODO: Single Sign-on (Einmalanmeldung)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="ingredient-filter.html">TODO: Anonyme Nutzung</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ingredient-filter.html">TODO: Bewertungen</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ingredient-filter.html">TODO: Speisevorschläge</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ingredient-filter.html">TODO: Auslastungsprognose</a></li>
@@ -89,7 +91,6 @@
 <li class="toctree-l1"><a class="reference internal" href="ingredient-filter.html">TODO: Waschmaschienen</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ingredient-filter.html">TODO: Konfigurierbares Menü</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ingredient-filter.html">TODO: Lageplan</a></li>
-<li class="toctree-l1"><a class="reference internal" href="ingredient-filter.html">TODO: Datenschutzvorlage</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Benutzerunterstützung</span></p>
 <ul>
@@ -104,15 +105,15 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Referenz</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../Reference/vocabulary.html">Glossar</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../Reference/design.html">Design</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../Reference/contributing.html">Mitwirken</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Reference/vocabulary.html">TODO: Glossar</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Reference/design.html">TODO: Design</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Reference/contributing.html">TODO: Mitwirken</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Anhänge</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../Appendices/glossary_terms.html">Glossar der Begriffe</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../Appendices/additional_resources.html">Zusätzliche Ressourcen</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../Appendices/ingredient-disclaimer.html">Speisekennzeichnungen - Haftungsausschluss</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Appendices/glossary_terms.html">TODO: Glossar der Begriffe</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Appendices/additional_resources.html">TODO: Zusätzliche Ressourcen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Appendices/ingredient-disclaimer.html">TODO: Speisekennzeichnungen - Haftungsausschluss</a></li>
 </ul>
 
         </div>
@@ -129,9 +130,9 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../contents.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active">Mehrsprachigkeit</li>
+      <li class="breadcrumb-item active">Single Sign-On (SSO)</li>
       <li class="wy-breadcrumbs-aside">
-              <a href="https://github.com/rocket-meals/RocketMealsDocumentation/blob/master/doc/source/Features/language.rst" class="fa fa-github"> Edit on GitHub</a>
+              <a href="https://github.com/rocket-meals/RocketMealsDocumentation/blob/master/doc/source/Features/sso.rst" class="fa fa-github"> Edit on GitHub</a>
       </li>
   </ul>
   <hr/>
@@ -139,34 +140,41 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="mehrsprachigkeit">
-<h1>Mehrsprachigkeit<a class="headerlink" href="#mehrsprachigkeit" title="Link to this heading">¶</a></h1>
-<p>Die Vielfalt der Menschen, die Ihre Gäste und Endnutzer sind, spiegelt sich auch in der Vielfalt ihrer Herkunft und Sprache wider. Bei Rocket Meals haben wir erkannt, wie wichtig es ist, mehrere Sprachen zu unterstützen. Unsere Anwendung unterstützt standardmäßig 12 Sprachen:</p>
-<ul class="simple">
-<li><p>Deutsch (de-DE)</p></li>
-<li><p>Englisch (en-US)</p></li>
-<li><p>Spanisch (es-ES)</p></li>
-<li><p>Französisch (fr-FR)</p></li>
-<li><p>Italienisch (it-IT)</p></li>
-<li><p>Polnisch (pl-PL)</p></li>
-<li><p>Portugiesisch (pt-BR)</p></li>
-<li><p>Rumänisch (ro-RO)</p></li>
-<li><p>Russisch (ru-RU)</p></li>
-<li><p>Türkisch (tr-TR)</p></li>
-<li><p>Ukrainisch (uk-UK)</p></li>
-<li><p>Chinesisch (zh-ZH)</p></li>
-</ul>
-<p>Obwohl Ihr Standort und Ihre Einrichtungen in einem bestimmten Land (z.B. Deutschland) ansässig sein mögen, gilt dies nicht unbedingt für Ihre Gäste und Endnutzer. Die Rocket Meals-Anwendung erkennt automatisch die auf den Endgeräten eingestellte Tastatursprache und wählt entsprechend die optimale Sprache für die Endnutzer aus. Diese Auswahl kann von den Endnutzern jederzeit angepasst werden. Die automatische Sprachauswahl erfolgt nach folgendem Schema: Wenn eine unterstützte Sprache (weder Deutsch noch Englisch) gefunden wird, wird diese eingestellt. Wenn keine unterstützte Sprache als Tastatursprache eingestellt ist, wird Englisch als Standardsprache gewählt. In allen anderen Fällen (z.B. wenn sowohl Deutsch als auch Englisch als Tastatursprachen vorhanden sind) wird die deutsche Sprache gewählt.</p>
-<p>Wenn Sie Texte selbst anpassen oder Inhalte einpflegen und nicht alle 12 Sprachen abdecken, wird automatisch auf Englisch oder Deutsch als Ausweichsprache zurückgegriffen.</p>
-<p>Die Unterstützung mehrerer Sprachen bringt natürlich auch die Herausforderung mit sich, diese Inhalte einzupflegen. Um Ihnen dabei zu helfen, bieten wir die Funktion der <a class="reference external" href="../Features/automatic-translation.html">automatischen Übersetzung</a> an.</p>
+  <section id="single-sign-on-sso">
+<h1>Single Sign-On (SSO)<a class="headerlink" href="#single-sign-on-sso" title="Link to this heading">¶</a></h1>
+<p>Single Sign-On (SSO) ist ein Authentifizierungsverfahren, das es Benutzern ermöglicht, auf mehrere Anwendungen oder Dienste zuzugreifen, indem sie sich nur einmal anmelden. Mit SSO können Benutzer ihre Anmeldeinformationen (z.B. Benutzername und Passwort) einmal eingeben und dann auf verschiedene Dienste zugreifen, ohne sich jedes Mal erneut anmelden zu müssen.</p>
+<section id="vorteile-von-sso">
+<h2>Vorteile von SSO<a class="headerlink" href="#vorteile-von-sso" title="Link to this heading">¶</a></h2>
+<ol class="arabic simple">
+<li><p><strong>Benutzerfreundlichkeit</strong>: Benutzer müssen sich nur einmal anmelden, um auf mehrere Dienste zuzugreifen, was den Anmeldeprozess vereinfacht und beschleunigt.</p></li>
+<li><p><strong>Verbesserte Sicherheit</strong>: Da Benutzer nur ein Passwort benötigen, können sie ein stärkeres Passwort wählen und es regelmäßig ändern, ohne sich an mehrere Passwörter erinnern zu müssen.</p></li>
+<li><p><strong>Vereinfachtes Passwortmanagement</strong>: IT-Abteilungen müssen weniger Passwörter verwalten und zurücksetzen, was den Verwaltungsaufwand reduziert.</p></li>
+<li><p><strong>Schnellerer Zugriff</strong>: Benutzer können schneller auf die benötigten Dienste zugreifen, da sie den Anmeldeprozess nicht für jede Anwendung wiederholen müssen.</p></li>
+</ol>
+</section>
+<section id="einrichtung-von-sso">
+<h2>Einrichtung von SSO<a class="headerlink" href="#einrichtung-von-sso" title="Link to this heading">¶</a></h2>
+<p>Für die Einrichtung von SSO in Rocket Meals werden entsprechende Konten bei den jeweiligen Plattformen benötigt. Wir übernehmen gerne die Einrichtung von ausgewählten Plattformen als SSO-Anbieter, sofern die notwendigen Voraussetzungen von <a class="reference external" href="../Requirements/google_developer_account.html">Google</a> und <a class="reference external" href="../Requirements/apple_developer_account.html">Apple</a> erfüllt sind.</p>
+</section>
+<section id="unterstutzte-sso-mechanismen">
+<h2>Unterstützte SSO-Mechanismen<a class="headerlink" href="#unterstutzte-sso-mechanismen" title="Link to this heading">¶</a></h2>
+<p>Rocket Meals unterstützt vier Standardtypen von SSO-Mechanismen:</p>
+<ol class="arabic simple">
+<li><p><strong>OpenID</strong>: Ein offener Standard für die Authentifizierung von Benutzern. Weitere Informationen finden Sie in der <a class="reference external" href="https://openid.net/specs/openid-connect-core-1_0.html">OpenID Connect Core 1.0 Spezifikation</a>.</p></li>
+<li><p><strong>OAuth 2.0</strong>: Ein Protokoll, das es Anwendungen ermöglicht, auf Kontoinformationen von Benutzern zuzugreifen, ohne deren Passwort zu kennen. Weitere Informationen finden Sie im <a class="reference external" href="https://www.ietf.org/rfc/rfc6750.txt">RFC 6750</a>.</p></li>
+<li><p><strong>LDAP</strong>: Ein Protokoll zur Abfrage und Änderung von Verzeichnisdiensten, das häufig in Unternehmensumgebungen verwendet wird. Weitere Informationen finden Sie im <a class="reference external" href="https://datatracker.ietf.org/doc/html/rfc4511">RFC 4511</a>.</p></li>
+<li><p><strong>SAML</strong>: Ein XML-basiertes Framework für den Austausch von Authentifizierungs- und Autorisierungsinformationen. Weitere Informationen finden Sie im <a class="reference external" href="https://datatracker.ietf.org/doc/html/rfc7522">RFC 7522</a>.</p></li>
+</ol>
+<p>Intern verwenden wir die SSO-Mechanismen von Directus, die in der <a class="reference external" href="https://docs.directus.io/self-hosted/sso.html">Directus-Dokumentation</a> beschrieben sind.</p>
+</section>
 </section>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="price-category.html" class="btn btn-neutral float-left" title="Preiskategorien in Rocket Meals" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="automatic-translation.html" class="btn btn-neutral float-right" title="Automatische Übersetzung" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="automatic-translation.html" class="btn btn-neutral float-left" title="Automatische Übersetzung" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../UserSupport/supported_user_limits.html" class="btn btn-neutral float-right" title="The Rocket Meals documentation" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
