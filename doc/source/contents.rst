@@ -25,15 +25,6 @@ Rocket Meals Dokumentation
 
 .. toctree::
    :maxdepth: 1
-   :caption: Funktionen
-
-   Funktion 1 <Features/feature1>
-   Funktion 2 <Features/feature2>
-   Funktion 3 <Features/feature3>
-   ...
-
-.. toctree::
-   :maxdepth: 1
    :caption: Anforderungen
 
    Hardware-Anforderungen <Requirements/hardware_requirements>
@@ -41,6 +32,34 @@ Rocket Meals Dokumentation
    Apple Developer Account <Requirements/apple_developer_account>
    Google Developer Account <Requirements/google_developer_account>
    Einladung zu den Projekten <Requirements/invite_to_projects>
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Funktionen
+
+   Push-Nachrichten <Features/push-notifications>
+   OTA-Updates <Features/ota-updates>
+   Kennzeichnung Einstellung <Features/ingredient-filter>
+   Guthabenleser <Features/ingredient-filter>
+   Sprache <Features/ingredient-filter>
+   Automatische Übersetzung <Features/ingredient-filter>
+   Preiskategorien <Features/ingredient-filter>
+   Stundenplaner <Features/ingredient-filter>
+   Darstellung und Theme <Features/ingredient-filter>
+   Transparente Dateneinsicht <Features/ingredient-filter>
+   Single Sign-on (Einmalanmeldung) <Features/ingredient-filter>
+   Anonyme Nutzung <Features/ingredient-filter>
+   Bewertungen <Features/ingredient-filter>
+   Speisevorschläge <Features/ingredient-filter>
+   Auslastungsprognose <Features/ingredient-filter>
+   News <Features/ingredient-filter>
+   Gebäude <Features/ingredient-filter>
+   Wohnanlagen <Features/ingredient-filter>
+   Konfigurierbares Menü <Features/ingredient-filter>
+   Lageplan <Features/ingredient-filter>
+   Datenschutzvorlage <Features/ingredient-filter>
+   ...
+
 
 .. toctree::
    :maxdepth: 1
