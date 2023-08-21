@@ -21,7 +21,7 @@ Rocket Meals Dokumentation
    Integration <Guides/integration>
    Sicherheit und Konformität <Guides/security_compliance>
    Fehlerbehebung <Guides/troubleshooting>
-   Abrechnung und Preise <Guides/billing_pricing>
+   Aktualisierung des Speiseplans <Guides/meals_update>
 
 .. toctree::
    :maxdepth: 1
