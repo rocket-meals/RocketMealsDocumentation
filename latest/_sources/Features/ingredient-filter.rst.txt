@@ -16,7 +16,7 @@ Die Voraussetzung für diese Funktion ist, dass die Allergene in den Daten zu de
 Speicherung der Daten
 ----------------------
 
-Die Daten zu den Allergenen und Vorlieben werden sowohl auf dem Endgerät des Nutzers gespeichert, als auch im Backend. Die Speicherung im Backend ist notwendig, um personalisierte Benachrichtigungen senden zu können. So werden Nutzer nicht über Speisen benachrichtigt, die sie aufgrund ihrer Allergenauswahl oder Vorlieben nicht bevorzugen.
+Die Daten zu den Allergenen und Vorlieben werden sowohl auf dem Endgerät des Nutzers gespeichert, als auch im Backend. Die Speicherung im Backend ist notwendig, um personalisierte Benachrichtigungen senden zu können. So werden Nutzer nicht über Speisen benachrichtigt, die sie aufgrund ihrer Allergenauswahl oder Vorlieben nicht bevorzugen. Desweiteren können auf dem Server gespeichtere Kennzeichnung Einstellungen für eine Statistische Auswertung verwendet werden, wodurch Sie Ihre Speiseangebote optimieren können.
 
 Sortierung des Speiseplans
 --------------------------
@@ -29,4 +29,4 @@ Zusammenfassend bietet die Rocket Meals App die Möglichkeit, individualisierte 
 Speisekennzeichnungen - Haftungsausschluss
 ------------------------------------------
 
-Alle Allergen- und Kennzeichnungsinformationen können veraltet sein, daher sind die `Speisekennzeichnungen ohne Gewähr <Appendices/ingredient-disclaimer>`_ und die Angaben vor Ort maßgeblich.
+Alle Allergen- und Kennzeichnungsinformationen können veraltet sein, daher sind die `Speisekennzeichnungen ohne Gewähr <../Appendices/ingredient-disclaimer>`_ und die Angaben vor Ort maßgeblich.

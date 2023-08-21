@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>The Rocket Meals documentation &mdash; Rocket Meals 0.0.1 documentation</title>
+  <title>Aktualisierung des Speiseplans &mdash; Rocket Meals 0.0.1 documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <!--[if lt IE 9]>
@@ -18,8 +18,8 @@
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Kundensupport-Kanäle" href="../ContactSupport/customer_support_channels.html" />
-    <link rel="prev" title="The Rocket Meals documentation" href="user_roles_permissions.html" /> 
+    <link rel="next" title="Push-Nachrichten" href="../Features/push-notifications.html" />
+    <link rel="prev" title="Google Developer Account" href="../Requirements/google_developer_account.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -51,19 +51,23 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Anleitungen</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../Guides/quickstart.html">Erste Schritte</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../Guides/integration.html">Integration</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../Guides/security_compliance.html">Sicherheit und Konformität</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../Guides/troubleshooting.html">Fehlerbehebung</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../Guides/billing_pricing.html">Abrechnung und Preise</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quickstart.html">Erste Schritte</a></li>
+<li class="toctree-l1"><a class="reference internal" href="integration.html">Integration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="security_compliance.html">Sicherheit und Konformität</a></li>
+<li class="toctree-l1"><a class="reference internal" href="troubleshooting.html">Fehlerbehebung</a></li>
+<li class="toctree-l1"><a class="reference internal" href="billing_pricing.html">Abrechnung und Preise</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Anforderungen</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../Requirements/device_requirements.html">Endgerät-Anforderungen</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Requirements/app_identity.html">App-Identität</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Requirements/apple_developer_account.html">Apple Developer Account</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Requirements/google_developer_account.html">Google Developer Account</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../Guides/meals_update.html">Speiseplan-Daten</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Speiseplan-Daten</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#automatische-aktualisierung-durch-tl1-export">Automatische Aktualisierung durch TL1 Export</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#manuelle-aktualisierung-uber-api">Manuelle Aktualisierung über API</a></li>
+</ul>
+</li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Funktionen</span></p>
 <ul>
@@ -91,10 +95,10 @@
 <li class="toctree-l1"><a class="reference internal" href="../Features/ingredient-filter.html">TODO: Datenschutzvorlage</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Benutzerunterstützung</span></p>
-<ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="supported_user_limits.html">Unterstützte Benutzergrenzen</a></li>
-<li class="toctree-l1"><a class="reference internal" href="user_roles_permissions.html">Benutzerrollen und Berechtigungen</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Benutzer-Onboarding und Schulung</a></li>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../UserSupport/supported_user_limits.html">Unterstützte Benutzergrenzen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../UserSupport/user_roles_permissions.html">Benutzerrollen und Berechtigungen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../UserSupport/user_onboarding_training.html">Benutzer-Onboarding und Schulung</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Kontakt und Support</span></p>
 <ul>
@@ -128,9 +132,9 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../contents.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active">The Rocket Meals documentation</li>
+      <li class="breadcrumb-item active">Aktualisierung des Speiseplans</li>
       <li class="wy-breadcrumbs-aside">
-              <a href="https://github.com/rocket-meals/RocketMealsDocumentation/blob/master/doc/source/UserSupport/user_onboarding_training.rst" class="fa fa-github"> Edit on GitHub</a>
+              <a href="https://github.com/rocket-meals/RocketMealsDocumentation/blob/master/doc/source/Guides/meals_update.rst" class="fa fa-github"> Edit on GitHub</a>
       </li>
   </ul>
   <hr/>
@@ -138,17 +142,89 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="the-rocket-meals-documentation">
-<h1>The Rocket Meals documentation<a class="headerlink" href="#the-rocket-meals-documentation" title="Link to this heading">¶</a></h1>
-<p>Example Text</p>
+  <p>Hier ist eine überarbeitete Version des Textes, die etwas formeller und geschäftlicher klingt, ohne zu übertreiben:</p>
+<section id="aktualisierung-des-speiseplans">
+<h1>Aktualisierung des Speiseplans<a class="headerlink" href="#aktualisierung-des-speiseplans" title="Link to this heading">¶</a></h1>
+<p>Die regelmäßige Aktualisierung des Speiseplans in Ihrer Rocket Meals-Anwendung ist von entscheidender Bedeutung, um sicherzustellen, dass Ihre Kunden stets über die neuesten verfügbaren Speisen informiert sind. Es stehen Ihnen verschiedene Methoden zur Verfügung, um Ihren Speiseplan in Rocket Meals zu aktualisieren:</p>
+<section id="automatische-aktualisierung-durch-tl1-export">
+<h2>Automatische Aktualisierung durch TL1 Export<a class="headerlink" href="#automatische-aktualisierung-durch-tl1-export" title="Link to this heading">¶</a></h2>
+<p>Eine effiziente Methode zur Aktualisierung Ihres Speiseplans ist die automatische Integration durch den TL1 Export. Dieser Prozess stellt sicher, dass Ihre Speisen immer aktuell in Rocket Meals präsentiert werden.</p>
+<ol class="arabic simple">
+<li><dl class="simple">
+<dt>Anforderungen für den TL1 Export:</dt><dd><ul class="simple">
+<li><dl class="simple">
+<dt>Der TL1 Export erfordert die Erfüllung bestimmter Bedingungen. Bitte beachten Sie, dass für die Anpassung eines Exports in das erforderliche Format möglicherweise Kosten bei TL1 anfallen.</dt><dd><ul>
+<li><p>Die Identifizierung einer Speise erfolgt durch Aggregation der <cite>REZEPTUR_ID</cite> über den Namen der Speise.</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Beispiel eines Exports:</dt><dd><ul>
+<li><dl class="simple">
+<dt>Die Speise <cite>Paprika-Hähncheneintopf mit Nudeln</cite> wird hier dargestellt.</dt><dd><ul>
+<li><p>Es ist ersichtlich, dass der Name der Speise gleich ist, die Speise jedoch aus zwei Bestandteilen (<cite>REZEPTUR_ID</cite>) besteht: <cite>2045</cite> und <cite>2961</cite>.</p></li>
+<li><dl class="simple">
+<dt>Aus den Feldern der <cite>REZEPTUR_ID</cite> wird ein zusammengesetzter Schlüssel erstellt: <cite>2045-2961</cite>.</dt><dd><ul>
+<li><p>Änderungen am Namen der Speise aus Marketing- oder Herstellungsgründen führen nicht zu einer Verwechslung der Speise. Funktionen, die mit der Speise verknüpft sind (z.B. Fotos, Bewertungen, Kommentare), bleiben erhalten.</p></li>
+<li><p>Es darf keine andere Speise mit denselben Werten der <cite>REZEPTUR_ID</cite> geben, da sie sonst als dieselbe Speise erkannt wird.</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Der Name der Speise wird formatiert, indem Kennzeichnungen (Allergene) in Klammern entfernt werden.</dt><dd><ul>
+<li><p>Aus dem Eintrag: <cite>Paprika-Hähncheneintopf mit Nudeln (40,a,g) | Weizenbrötchen (1,21,a,f)</cite> wird <cite>Paprika-Hähncheneintopf mit Nudeln, Weizenbrötchen</cite>.</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ol>
+<ol class="arabic simple" start="2">
+<li><dl class="simple">
+<dt>Bereitstellung des Exports:</dt><dd><ul class="simple">
+<li><dl class="simple">
+<dt>Sie können uns den Export auf folgende Weise bereitstellen:</dt><dd><ol class="loweralpha simple">
+<li><p>Über eine eigene URL von Ihnen. Wir greifen dann auf diese Daten zu und pflegen sie in Rocket Meals ein.</p></li>
+<li><p>FTP: Sie können den Export per FTP an den von uns bereitgestellten Server für Ihre Rocket Meals-Anwendung senden. Die Zugangsdaten erhalten Sie von uns.</p></li>
+</ol>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ol>
+</section>
+<section id="manuelle-aktualisierung-uber-api">
+<h2>Manuelle Aktualisierung über API<a class="headerlink" href="#manuelle-aktualisierung-uber-api" title="Link to this heading">¶</a></h2>
+<p>Alternativ haben Sie die Möglichkeit, den Speiseplan manuell über unsere API zu aktualisieren. Dies bietet Ihnen mehr Kontrolle über die Aktualisierungen und ermöglicht es Ihnen, Änderungen sofort umzusetzen.</p>
+<ul class="simple">
+<li><p>Sie können die <a class="reference external" href="../Reference/api">API</a> verwenden, um den Speiseplan individuell anzupassen. Bitte beachten Sie, dass bei Verwendung der <a class="reference external" href="../Features/automatic-translation">automatischen Übersetzung</a> jeder neue Speisename automatisch übersetzt wird, sofern Sie dies nicht deaktivieren.</p></li>
+</ul>
+<p>Unabhängig von der gewählten Methode ist es wichtig, dass Sie Ihren Speiseplan regelmäßig aktualisieren, um sicherzustellen, dass Ihre Kunden stets über die neuesten verfügbaren Speisen informiert sind. Wir stehen Ihnen bei jedem Schritt des Prozesses zur Seite und sorgen dafür, dass Ihre Rocket Meals-Anwendung immer auf dem neuesten Stand und für Ihre Kunden attraktiv ist.</p>
+</section>
 </section>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="user_roles_permissions.html" class="btn btn-neutral float-left" title="The Rocket Meals documentation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="../ContactSupport/customer_support_channels.html" class="btn btn-neutral float-right" title="Kundensupport-Kanäle" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="../Requirements/google_developer_account.html" class="btn btn-neutral float-left" title="Google Developer Account" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../Features/push-notifications.html" class="btn btn-neutral float-right" title="Push-Nachrichten" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

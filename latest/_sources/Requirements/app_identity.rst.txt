@@ -16,7 +16,7 @@ Sie müssen uns das Logo Ihrer App in gängigen Formaten (z.B. png) und in einer
 Primärfarbe
 -----------
 
-Sie müssen eine Primärfarbe für Ihre App auswählen, die für entsprechende Highlights verwendet wird. Weitere Informationen finden Sie unter `Darstellung und Theme <Features/theming>`.
+Sie müssen eine Primärfarbe für Ihre App auswählen, die für entsprechende Highlights verwendet wird. Weitere Informationen finden Sie unter `Darstellung und Theme <../Features/theming>`_.
 
 App-Store Informationen
 -----------------------

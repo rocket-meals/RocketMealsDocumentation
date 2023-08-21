@@ -33,6 +33,8 @@ Rocket Meals Dokumentation
    Google Developer Account <Requirements/google_developer_account>
    Einladung zu den Projekten <Requirements/invite_to_projects>
 
+   Speiseplan-Daten <Guides/meals_update>
+
 .. toctree::
    :maxdepth: 1
    :caption: Funktionen
@@ -42,25 +44,28 @@ Rocket Meals Dokumentation
    Kennzeichnung Einstellung <Features/ingredient-filter>
    Speiseplan <Features/meals>
    Speise-Bewertungen <Features/meal-feedback>
-   Teller-Ticker <Features/meal-reminder>
-   Guthabenleser <Features/ingredient-filter>
-   Sprache <Features/ingredient-filter>
-   Automatische Übersetzung <Features/automatic-translation>
-   Preiskategorien <Features/ingredient-filter>
-   Stundenplaner <Features/ingredient-filter>
-   Darstellung und Theme <Features/theming>
-   Transparente Dateneinsicht <Features/ingredient-filter>
-   Single Sign-on (Einmalanmeldung) <Features/ingredient-filter>
-   Anonyme Nutzung <Features/ingredient-filter>
-   Bewertungen <Features/ingredient-filter>
-   Speisevorschläge <Features/ingredient-filter>
-   Auslastungsprognose <Features/ingredient-filter>
-   News <Features/ingredient-filter>
-   Gebäude <Features/ingredient-filter>
-   Wohnanlagen <Features/ingredient-filter>
-   Konfigurierbares Menü <Features/ingredient-filter>
-   Lageplan <Features/ingredient-filter>
-   Datenschutzvorlage <Features/ingredient-filter>
+   TODO: Preiskategorien <Features/ingredient-filter>
+   TODO: Sprache <Features/ingredient-filter>
+   TODO: Automatische Übersetzung <Features/automatic-translation>
+   TODO: Teller-Ticker <Features/meal-reminder>
+   TODO: Guthabenleser <Features/ingredient-filter>
+
+
+   TODO: Stundenplaner <Features/ingredient-filter>
+   TODO: Darstellung und Theme <Features/theming>
+   TODO: Transparente Dateneinsicht <Features/ingredient-filter>
+   TODO: Single Sign-on (Einmalanmeldung) <Features/ingredient-filter>
+   TODO: Anonyme Nutzung <Features/ingredient-filter>
+   TODO: Bewertungen <Features/ingredient-filter>
+   TODO: Speisevorschläge <Features/ingredient-filter>
+   TODO: Auslastungsprognose <Features/ingredient-filter>
+   TODO: News <Features/ingredient-filter>
+   TODO: Gebäude <Features/ingredient-filter>
+   TODO: Wohnanlagen <Features/ingredient-filter>
+   TODO: Waschmaschienen <Features/ingredient-filter>
+   TODO: Konfigurierbares Menü <Features/ingredient-filter>
+   TODO: Lageplan <Features/ingredient-filter>
+   TODO: Datenschutzvorlage <Features/ingredient-filter>
    ...
 
 
