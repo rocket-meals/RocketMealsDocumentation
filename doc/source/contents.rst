@@ -45,17 +45,12 @@ Rocket Meals Dokumentation
    Speiseplan <Features/meals>
    Speise-Bewertungen <Features/meal-feedback>
    Preiskategorien <Features/price-category>
-   Sprache <Features/language>
    Automatische Übersetzung <Features/automatic-translation>
+   Single Sign-on (Einmalanmeldung) <Features/sso>
    TODO: Teller-Ticker <Features/meal-reminder>
    TODO: Guthabenleser <Features/ingredient-filter>
-
-
    TODO: Stundenplaner <Features/ingredient-filter>
-   TODO: Darstellung und Theme <Features/theming>
-   TODO: Transparente Dateneinsicht <Features/ingredient-filter>
-   TODO: Single Sign-on (Einmalanmeldung) <Features/ingredient-filter>
-   TODO: Anonyme Nutzung <Features/ingredient-filter>
+
    TODO: Bewertungen <Features/ingredient-filter>
    TODO: Speisevorschläge <Features/ingredient-filter>
    TODO: Auslastungsprognose <Features/ingredient-filter>
@@ -65,8 +60,23 @@ Rocket Meals Dokumentation
    TODO: Waschmaschienen <Features/ingredient-filter>
    TODO: Konfigurierbares Menü <Features/ingredient-filter>
    TODO: Lageplan <Features/ingredient-filter>
-   TODO: Datenschutzvorlage <Features/ingredient-filter>
    ...
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Grundlegende Merkmale
+   Sprache <CoreFeatures/language>
+   TODO: Anonyme Nutzung <Features/ingredient-filter>
+   TODO: Transparente Dateneinsicht <Features/ingredient-filter>
+   TODO: Darstellung und Theme <Features/theming>
+
+   TODO: Barrierefreiheit <Features/ingredient-filter>
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Dokumente und Vorlagen
+   Impressumg Vorlage <DocumentsAndTemplates/about-us>
+   Datenschutzbedingung Vorlage <DocumentsAndTemplates/privacy-policy>
 
 
 .. toctree::
@@ -89,15 +99,15 @@ Rocket Meals Dokumentation
    :maxdepth: 1
    :caption: Referenz
 
-   Benutzer-API <Reference/user-api>
-   Glossar <Reference/vocabulary>
-   Design <Reference/design>
-   Mitwirken <Reference/contributing>
+   TODO: Benutzer-API <Reference/user-api>
+   TODO: Glossar <Reference/vocabulary>
+   TODO: Design <Reference/design>
+   TODO: Mitwirken <Reference/contributing>
 
 .. toctree::
    :maxdepth: 1
    :caption: Anhänge
 
-   Glossar der Begriffe <Appendices/glossary_terms>
-   Zusätzliche Ressourcen <Appendices/additional_resources>
-   Speisekennzeichnungen - Haftungsausschluss <Appendices/ingredient-disclaimer>
+   TODO: Glossar der Begriffe <Appendices/glossary_terms>
+   TODO: Zusätzliche Ressourcen <Appendices/additional_resources>
+   TODO: Speisekennzeichnungen - Haftungsausschluss <Appendices/ingredient-disclaimer>

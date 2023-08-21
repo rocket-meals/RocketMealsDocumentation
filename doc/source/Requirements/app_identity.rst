@@ -1,7 +1,16 @@
-App-Identität
+App-Identität und Anforderungen
 =============
 
 Die Identität Ihrer App ist ein wichtiger Aspekt, der die Wahrnehmung und das Branding Ihrer App beeinflusst. Hier sind die Anforderungen und Optionen, die Sie berücksichtigen sollten:
+
+Impressum und Datenschutzbedingungen
+--------
+
+Rechtliches zuerst! Sie müssen ein Impressum und eine Datenschutzbedingung angeben.
+Einer `Impressum Vorlage <../DocumentsAndTemplates/about-us.html>`_ können Sie hier finden.
+Mehr zum Thema `Datenschutzerklärung <../Requirements/privacy-policy.html>`_ und einer `Datenschutzerklärung Vorlage <../DocumentsAndTemplates/privacy-policy.html>`_ .
+
+
 
 App-Name
 --------
@@ -27,7 +36,7 @@ Diese Informationen werden in den jeweiligen App-Stores verwendet und angezeigt:
 - **Schlagwörter**:
 - **Untertitel**:
 - **Verfügbarkeit in Ländern**: Sie müssen auswählen, in welchen Ländern die App angeboten werden soll. Aus rechtlicher Sicht wird "Deutschland" empfohlen, um sicherzustellen, dass das entsprechende Recht angewendet wird. Erfahrungen haben gezeigt, dass die App im eigenen Kontinent (Europäischer Raum; 43 Länder) beliebt ist, da es Studierende gibt, die Auslandssemester machen und nicht ohne weiteres ihren App-Store wechseln können.
-- **App-Datenschutz**: Im Rahmen der Miete von Rocket Meals wird eine URL bereitgestellt, unter der Sie den Datenschutz anbieten können. Sie sind für den Inhalt des Datenschutzes verantwortlich. Diese URL wird in Rocket Meals und den App-Stores angezeigt.
+- **App-Datenschutz**: Im Rahmen der Miete von Rocket Meals wird eine URL bereitgestellt, unter der Sie den Datenschutz anbieten können. Sie sind für den Inhalt des Datenschutzes verantwortlich. Diese URL wird in Rocket Meals und den App-Stores angezeigt. Mehr zum Thema `Datenschutzerklärung <../Requirements/privacy-policy.html>`_ und einer `Datenschutzerklärung Vorlage <../DocumentsAndTemplates/privacy-policy.html>`_ .
 - **Datenerfassung**: Sie müssen für die Stores angeben, welche Daten erfasst werden.
 - **Vorschauen und Screenshots**: Wir erstellen für Sie standardmäßige Vorschaubilder, die die Kernfunktionen der App darstellen. Diese Vorschaubilder sind für die Stores verpflichtend.
 
