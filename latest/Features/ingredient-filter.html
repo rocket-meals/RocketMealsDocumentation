@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>The Rocket Meals documentation &mdash; Rocket Meals 0.0.1 documentation</title>
+  <title>Kennzeichnung Einstellung &mdash; Rocket Meals 0.0.1 documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <!--[if lt IE 9]>
@@ -18,7 +18,7 @@
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="The Rocket Meals documentation" href="../UserSupport/supported_user_limits.html" />
+    <link rel="next" title="Speiseplan" href="meals.html" />
     <link rel="prev" title="OTA-Updates" href="ota-updates.html" /> 
 </head>
 
@@ -59,8 +59,8 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Anforderungen</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../Requirements/hardware_requirements.html">Hardware-Anforderungen</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../Requirements/software_requirements.html">Software-Anforderungen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Requirements/device_requirements.html">Endgerät-Anforderungen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Requirements/app_identity.html">App-Identität</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Requirements/apple_developer_account.html">Apple Developer Account</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Requirements/google_developer_account.html">Google Developer Account</a></li>
 </ul>
@@ -68,25 +68,143 @@
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="push-notifications.html">Push-Nachrichten</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ota-updates.html">OTA-Updates</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Kennzeichnung Einstellung</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Guthabenleser</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Sprache</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Automatische Übersetzung</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Preiskategorien</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Stundenplaner</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Darstellung und Theme</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Transparente Dateneinsicht</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Single Sign-on (Einmalanmeldung)</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Anonyme Nutzung</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Bewertungen</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Speisevorschläge</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Auslastungsprognose</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">News</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Gebäude</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Wohnanlagen</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Konfigurierbares Menü</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Lageplan</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Datenschutzvorlage</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Kennzeichnung Einstellung</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#allergene-und-vorlieben">Allergene und Vorlieben</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#voraussetzungen">Voraussetzungen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#speicherung-der-daten">Speicherung der Daten</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#sortierung-des-speiseplans">Sortierung des Speiseplans</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#speisekennzeichnungen-haftungsausschluss">Speisekennzeichnungen - Haftungsausschluss</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="meals.html">Speiseplan</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Guthabenleser</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#allergene-und-vorlieben">Allergene und Vorlieben</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#voraussetzungen">Voraussetzungen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#speicherung-der-daten">Speicherung der Daten</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#sortierung-des-speiseplans">Sortierung des Speiseplans</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#speisekennzeichnungen-haftungsausschluss">Speisekennzeichnungen - Haftungsausschluss</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Sprache</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#allergene-und-vorlieben">Allergene und Vorlieben</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#voraussetzungen">Voraussetzungen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#speicherung-der-daten">Speicherung der Daten</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#sortierung-des-speiseplans">Sortierung des Speiseplans</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#speisekennzeichnungen-haftungsausschluss">Speisekennzeichnungen - Haftungsausschluss</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Preiskategorien</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#allergene-und-vorlieben">Allergene und Vorlieben</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#voraussetzungen">Voraussetzungen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#speicherung-der-daten">Speicherung der Daten</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#sortierung-des-speiseplans">Sortierung des Speiseplans</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#speisekennzeichnungen-haftungsausschluss">Speisekennzeichnungen - Haftungsausschluss</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Stundenplaner</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#allergene-und-vorlieben">Allergene und Vorlieben</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#voraussetzungen">Voraussetzungen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#speicherung-der-daten">Speicherung der Daten</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#sortierung-des-speiseplans">Sortierung des Speiseplans</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#speisekennzeichnungen-haftungsausschluss">Speisekennzeichnungen - Haftungsausschluss</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Transparente Dateneinsicht</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#allergene-und-vorlieben">Allergene und Vorlieben</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#voraussetzungen">Voraussetzungen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#speicherung-der-daten">Speicherung der Daten</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#sortierung-des-speiseplans">Sortierung des Speiseplans</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#speisekennzeichnungen-haftungsausschluss">Speisekennzeichnungen - Haftungsausschluss</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Single Sign-on (Einmalanmeldung)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#allergene-und-vorlieben">Allergene und Vorlieben</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#voraussetzungen">Voraussetzungen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#speicherung-der-daten">Speicherung der Daten</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#sortierung-des-speiseplans">Sortierung des Speiseplans</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#speisekennzeichnungen-haftungsausschluss">Speisekennzeichnungen - Haftungsausschluss</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Anonyme Nutzung</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#allergene-und-vorlieben">Allergene und Vorlieben</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#voraussetzungen">Voraussetzungen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#speicherung-der-daten">Speicherung der Daten</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#sortierung-des-speiseplans">Sortierung des Speiseplans</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#speisekennzeichnungen-haftungsausschluss">Speisekennzeichnungen - Haftungsausschluss</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Bewertungen</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#allergene-und-vorlieben">Allergene und Vorlieben</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#voraussetzungen">Voraussetzungen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#speicherung-der-daten">Speicherung der Daten</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#sortierung-des-speiseplans">Sortierung des Speiseplans</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#speisekennzeichnungen-haftungsausschluss">Speisekennzeichnungen - Haftungsausschluss</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Speisevorschläge</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#allergene-und-vorlieben">Allergene und Vorlieben</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#voraussetzungen">Voraussetzungen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#speicherung-der-daten">Speicherung der Daten</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#sortierung-des-speiseplans">Sortierung des Speiseplans</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#speisekennzeichnungen-haftungsausschluss">Speisekennzeichnungen - Haftungsausschluss</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Auslastungsprognose</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#allergene-und-vorlieben">Allergene und Vorlieben</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#voraussetzungen">Voraussetzungen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#speicherung-der-daten">Speicherung der Daten</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#sortierung-des-speiseplans">Sortierung des Speiseplans</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#speisekennzeichnungen-haftungsausschluss">Speisekennzeichnungen - Haftungsausschluss</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">News</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#allergene-und-vorlieben">Allergene und Vorlieben</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#voraussetzungen">Voraussetzungen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#speicherung-der-daten">Speicherung der Daten</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#sortierung-des-speiseplans">Sortierung des Speiseplans</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#speisekennzeichnungen-haftungsausschluss">Speisekennzeichnungen - Haftungsausschluss</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Gebäude</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#allergene-und-vorlieben">Allergene und Vorlieben</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#voraussetzungen">Voraussetzungen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#speicherung-der-daten">Speicherung der Daten</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#sortierung-des-speiseplans">Sortierung des Speiseplans</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#speisekennzeichnungen-haftungsausschluss">Speisekennzeichnungen - Haftungsausschluss</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Wohnanlagen</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#allergene-und-vorlieben">Allergene und Vorlieben</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#voraussetzungen">Voraussetzungen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#speicherung-der-daten">Speicherung der Daten</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#sortierung-des-speiseplans">Sortierung des Speiseplans</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#speisekennzeichnungen-haftungsausschluss">Speisekennzeichnungen - Haftungsausschluss</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Konfigurierbares Menü</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#allergene-und-vorlieben">Allergene und Vorlieben</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#voraussetzungen">Voraussetzungen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#speicherung-der-daten">Speicherung der Daten</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#sortierung-des-speiseplans">Sortierung des Speiseplans</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#speisekennzeichnungen-haftungsausschluss">Speisekennzeichnungen - Haftungsausschluss</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Lageplan</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#allergene-und-vorlieben">Allergene und Vorlieben</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#voraussetzungen">Voraussetzungen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#speicherung-der-daten">Speicherung der Daten</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#sortierung-des-speiseplans">Sortierung des Speiseplans</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#speisekennzeichnungen-haftungsausschluss">Speisekennzeichnungen - Haftungsausschluss</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Datenschutzvorlage</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#allergene-und-vorlieben">Allergene und Vorlieben</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#voraussetzungen">Voraussetzungen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#speicherung-der-daten">Speicherung der Daten</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#sortierung-des-speiseplans">Sortierung des Speiseplans</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#speisekennzeichnungen-haftungsausschluss">Speisekennzeichnungen - Haftungsausschluss</a></li>
+</ul>
+</li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Benutzerunterstützung</span></p>
 <ul>
@@ -109,6 +227,7 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../Appendices/glossary_terms.html">Glossar der Begriffe</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Appendices/additional_resources.html">Zusätzliche Ressourcen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Appendices/ingredient-disclaimer.html">Speisekennzeichnungen - Haftungsausschluss</a></li>
 </ul>
 
         </div>
@@ -125,7 +244,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../contents.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active">The Rocket Meals documentation</li>
+      <li class="breadcrumb-item active">Kennzeichnung Einstellung</li>
       <li class="wy-breadcrumbs-aside">
               <a href="https://github.com/rocket-meals/RocketMealsDocumentation/blob/master/doc/source/Features/ingredient-filter.rst" class="fa fa-github"> Edit on GitHub</a>
       </li>
@@ -135,9 +254,30 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="the-rocket-meals-documentation">
-<h1>The Rocket Meals documentation<a class="headerlink" href="#the-rocket-meals-documentation" title="Link to this heading">¶</a></h1>
-<p>Example Text</p>
+  <section id="kennzeichnung-einstellung">
+<h1>Kennzeichnung Einstellung<a class="headerlink" href="#kennzeichnung-einstellung" title="Link to this heading">¶</a></h1>
+<p>Die Rocket Meals App bietet die Möglichkeit, individualisierte Speisepläne zu erstellen, indem sie nach Kennzeichnungen, Allergenen und Vorlieben gefiltert und sortiert werden. Dies ermöglicht es den Nutzern, Speisen auszuwählen, die ihren individuellen Bedürfnissen und Vorlieben entsprechen.</p>
+<section id="allergene-und-vorlieben">
+<h2>Allergene und Vorlieben<a class="headerlink" href="#allergene-und-vorlieben" title="Link to this heading">¶</a></h2>
+<p>Menschen haben unterschiedliche Allergene und Vorlieben. Die Rocket Meals App ermöglicht es den Nutzern, ihre Speisepläne individuell zu gestalten, indem sie nach Kennzeichnungen, Allergenen und Vorlieben filtern und sortieren. Dies ermöglicht es den Nutzern, Speisen zu finden, die ihren individuellen Bedürfnissen und Vorlieben entsprechen.</p>
+</section>
+<section id="voraussetzungen">
+<h2>Voraussetzungen<a class="headerlink" href="#voraussetzungen" title="Link to this heading">¶</a></h2>
+<p>Die Voraussetzung für diese Funktion ist, dass die Allergene in den Daten zu den Speiseplänen enthalten sind. Hierfür müssen die Kennzeichnungen der Speisen vorhanden sein. Die Rocket Meals App verwendet diese Informationen, um die Speisepläne individuell zu gestalten.</p>
+</section>
+<section id="speicherung-der-daten">
+<h2>Speicherung der Daten<a class="headerlink" href="#speicherung-der-daten" title="Link to this heading">¶</a></h2>
+<p>Die Daten zu den Allergenen und Vorlieben werden sowohl auf dem Endgerät des Nutzers gespeichert, als auch im Backend. Die Speicherung im Backend ist notwendig, um personalisierte Benachrichtigungen senden zu können. So werden Nutzer nicht über Speisen benachrichtigt, die sie aufgrund ihrer Allergenauswahl oder Vorlieben nicht bevorzugen.</p>
+</section>
+<section id="sortierung-des-speiseplans">
+<h2>Sortierung des Speiseplans<a class="headerlink" href="#sortierung-des-speiseplans" title="Link to this heading">¶</a></h2>
+<p>Der Speiseplan wird nach den Vorlieben des Nutzers sortiert. Bevorzugte Speisen werden priorisiert und vorne angezeigt, während nicht bevorzugte Speisen nach hinten gesetzt werden. Zusätzlich wird ein farblicher Hinweis um die nicht bevorzugten Speisen gesetzt. Dieser farbliche Hinweis warnt den Nutzer aktiv und gibt ihm weitere Informationen darüber, warum die Speise hervorgehoben ist.</p>
+<p>Zusammenfassend bietet die Rocket Meals App die Möglichkeit, individualisierte Speisepläne zu erstellen, indem sie nach Kennzeichnungen, Allergenen und Vorlieben gefiltert und sortiert werden. Dies ermöglicht es den Nutzern, Speisen auszuwählen, die ihren individuellen Bedürfnissen und Vorlieben entsprechen.</p>
+</section>
+<section id="speisekennzeichnungen-haftungsausschluss">
+<h2>Speisekennzeichnungen - Haftungsausschluss<a class="headerlink" href="#speisekennzeichnungen-haftungsausschluss" title="Link to this heading">¶</a></h2>
+<p>Alle Allergen- und Kennzeichnungsinformationen können veraltet sein, daher sind die <cite>Speisekennzeichnungen ohne Gewähr &lt;Appendices/ingredient-disclaimer&gt;</cite> und die Angaben vor Ort maßgeblich.</p>
+</section>
 </section>
 
 
@@ -145,7 +285,7 @@
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="ota-updates.html" class="btn btn-neutral float-left" title="OTA-Updates" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="../UserSupport/supported_user_limits.html" class="btn btn-neutral float-right" title="The Rocket Meals documentation" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="meals.html" class="btn btn-neutral float-right" title="Speiseplan" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

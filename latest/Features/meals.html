@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>OTA-Updates &mdash; Rocket Meals 0.0.1 documentation</title>
+  <title>Speiseplan &mdash; Rocket Meals 0.0.1 documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <!--[if lt IE 9]>
@@ -18,8 +18,8 @@
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Kennzeichnung Einstellung" href="ingredient-filter.html" />
-    <link rel="prev" title="Push-Nachrichten" href="push-notifications.html" /> 
+    <link rel="next" title="The Rocket Meals documentation" href="../UserSupport/supported_user_limits.html" />
+    <link rel="prev" title="Kennzeichnung Einstellung" href="ingredient-filter.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -67,15 +67,16 @@
 <p class="caption" role="heading"><span class="caption-text">Funktionen</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="push-notifications.html">Push-Nachrichten</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">OTA-Updates</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#implementierungstechnologie">Implementierungstechnologie</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#was-sind-ota-updates">Was sind OTA-Updates?</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#bereitstellungsprozess">Bereitstellungsprozess</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#kostenuberlegungen">Kostenüberlegungen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ota-updates.html">OTA-Updates</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ingredient-filter.html">Kennzeichnung Einstellung</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Speiseplan</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#tagesauswahl">Tagesauswahl</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#speisedarstellung">Speisedarstellung</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#detailansicht">Detailansicht</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#schnelleinstellungen">Schnelleinstellungen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#bereitstellung-des-speiseplans">Bereitstellung des Speiseplans</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="ingredient-filter.html">Kennzeichnung Einstellung</a></li>
-<li class="toctree-l1"><a class="reference internal" href="meals.html">Speiseplan</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ingredient-filter.html">Guthabenleser</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ingredient-filter.html">Sprache</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ingredient-filter.html">Preiskategorien</a></li>
@@ -131,9 +132,9 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../contents.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active">OTA-Updates</li>
+      <li class="breadcrumb-item active">Speiseplan</li>
       <li class="wy-breadcrumbs-aside">
-              <a href="https://github.com/rocket-meals/RocketMealsDocumentation/blob/master/doc/source/Features/ota-updates.rst" class="fa fa-github"> Edit on GitHub</a>
+              <a href="https://github.com/rocket-meals/RocketMealsDocumentation/blob/master/doc/source/Features/meals.rst" class="fa fa-github"> Edit on GitHub</a>
       </li>
   </ul>
   <hr/>
@@ -141,25 +142,28 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="ota-updates">
-<h1>OTA-Updates<a class="headerlink" href="#ota-updates" title="Link to this heading">¶</a></h1>
-<p>Die Rocket Meals App bietet Over-the-Air (OTA) Updates an, eine leistungsstarke Funktion, die es ermöglicht, Aktualisierungen der Basisversion der App und wichtige Sicherheitspatches ohne den traditionellen App Store-Prozess bereitzustellen. Diese Updates sind speziell für die Behebung von Sicherheitslücken und die Aktualisierung der Basisversion der App konzipiert und nicht für das Hinzufügen von neuen Inhalten wie Speiseplänen.</p>
-<section id="implementierungstechnologie">
-<h2>Implementierungstechnologie<a class="headerlink" href="#implementierungstechnologie" title="Link to this heading">¶</a></h2>
-<p>Für die Bereitstellung von OTA-Updates nutzen wir den Dienst “Code Push” von Microsoft. Code Push ist ein Cloud-Service, der Entwicklern ermöglicht, Updates für ihre mobilen Anwendungen direkt an die Geräte der Benutzer zu senden, ohne den traditionellen App Store-Prozess durchlaufen zu müssen. Aktuell bietet Microsoft diesen Dienst kostenlos an. Sollte Microsoft jedoch in Zukunft Gebühren für die Nutzung von Code Push einführen, werden diese Kosten vom Kunden übernommen.</p>
+  <section id="speiseplan">
+<h1>Speiseplan<a class="headerlink" href="#speiseplan" title="Link to this heading">¶</a></h1>
+<p>Der Speiseplan ist ein zentrales Element der Rocket Meals App, das den Benutzern einen Überblick über die in verschiedenen Mensen verfügbaren Speisen bietet.</p>
+<section id="tagesauswahl">
+<h2>Tagesauswahl<a class="headerlink" href="#tagesauswahl" title="Link to this heading">¶</a></h2>
+<p>Benutzer können den gewünschten Tag für die Anzeige des Speiseplans auswählen. Standardmäßig wird der aktuelle Tag in der App angezeigt. Wenn an einem bestimmten Tag keine Speisen verfügbar sind, z. B. an einem Samstag, werden die Angebote für die nächsten und die vergangenen sieben Tage angezeigt, sodass Benutzer vor- oder zurückblättern können.</p>
 </section>
-<section id="was-sind-ota-updates">
-<h2>Was sind OTA-Updates?<a class="headerlink" href="#was-sind-ota-updates" title="Link to this heading">¶</a></h2>
-<p>Over-the-Air (OTA) Updates sind Software-Aktualisierungen, die drahtlos an Geräte gesendet werden. Im Gegensatz zu traditionellen Updates, die über den App Store heruntergeladen werden müssen, ermöglichen OTA-Updates eine schnellere und direktere Aktualisierung der App. Dies ist besonders nützlich für die schnelle Behebung von Sicherheitslücken und die Aktualisierung der Basisversion der App.</p>
+<section id="speisedarstellung">
+<h2>Speisedarstellung<a class="headerlink" href="#speisedarstellung" title="Link to this heading">¶</a></h2>
+<p>Die Speisen werden in einem Rasterlayout dargestellt, wobei der Schwerpunkt auf dem Bild der Speise liegt. Wenn kein Bild der Speise verfügbar ist, wird ein konfigurierbares Platzhalterbild verwendet. Der Name der Speise wird darunter in der ausgewählten Sprache angezeigt. Wenn keine Übersetzung verfügbar ist, wird der Name in Deutsch oder, wenn möglich, in Englisch angegeben. Übersetzungen müssen im Speiseplan-Export oder über die entsprechenden Schnittstellen bereitgestellt werden. Wenn die Funktion <cite>Automatisches Übersetzen &lt;Features/automatic-translation&gt;</cite> gebucht wurde, werden diese Übersetzungen verwendet. Die Sortierung der Speisen erfolgt nach Beliebtheit, wobei “gelikte” Speisen nach vorne sortiert werden. Diese Funktion steht nur registrierten Benutzern zur Verfügung. Speisen mit entsprechenden Kennzeichnungen werden durch die <cite>Kennzeichnung Einstellung &lt;Features/ingredient-filter&gt;</cite> sortiert und hervorgehoben.</p>
 </section>
-<section id="bereitstellungsprozess">
-<h2>Bereitstellungsprozess<a class="headerlink" href="#bereitstellungsprozess" title="Link to this heading">¶</a></h2>
-<p>Wir stellen Updates in einem angemessenen Umfang bereit und nutzen GitHub Actions für die Bereitstellung. GitHub Actions bietet ein kostenloses Kontingent von 3.000 Linux-Minuten pro Monat. Darüber hinausgehende Minuten werden zu einem Preis von $0,008 USD pro Minute berechnet. Ein Update benötigt etwa 15 Minuten, sodass mit einem Budget von $24 USD theoretisch bis zu 200 Updates pro Monat möglich sind. Historisch gesehen hat das kostenlose Kontingent für unsere Bedürfnisse ausgereicht und es sind keine zusätzlichen Kosten angefallen.</p>
+<section id="detailansicht">
+<h2>Detailansicht<a class="headerlink" href="#detailansicht" title="Link to this heading">¶</a></h2>
+<p>Bei Auswahl einer Speise wird dem Benutzer eine detaillierte Ansicht der Speise präsentiert. Diese Detailansicht enthält Nährwertangaben (falls vorhanden), Kennzeichnungen und Allergene, <cite>Speise-Bewertungen &lt;Features/meal-feedback&gt;</cite> (falls konfiguriert) und die Möglichkeit, den <cite>Teller-Ticker &lt;Features/meal-reminder&gt;</cite> zu aktivieren, um Erinnerungen zu erhalten, wenn die Speise erneut angeboten wird. Hierfür ist ein Benutzerkonto erforderlich. Alle Allergen- und Kennzeichnungsinformationen können veraltet sein, daher sind die <cite>Speisekennzeichnungen ohne Gewähr &lt;Appendices/ingredient-disclaimer&gt;</cite> und die Angaben vor Ort maßgeblich.</p>
 </section>
-<section id="kostenuberlegungen">
-<h2>Kostenüberlegungen<a class="headerlink" href="#kostenuberlegungen" title="Link to this heading">¶</a></h2>
-<p>Es ist wichtig zu beachten, dass Kosten für die Bereitstellung von Updates anfallen können, wenn das kostenlose Kontingent von GitHub Actions überschritten wird. Diese Kosten werden vom Kunden getragen. In der Vergangenheit hat das kostenlose Kontingent jedoch ausgereicht und es sind keine zusätzlichen Kosten angefallen.</p>
-<p>Zusammenfassend bieten OTA-Updates eine effiziente Möglichkeit, die Rocket Meals App zu aktualisieren und Sicherheitslücken zu schließen. Die Kosten für die Bereitstellung von Updates werden vom Kunden getragen, falls das kostenlose Kontingent von GitHub Actions überschritten wird. Bei Fragen oder Bedenken bezüglich der OTA-Updates stehen wir Ihnen gerne zur Verfügung.</p>
+<section id="schnelleinstellungen">
+<h2>Schnelleinstellungen<a class="headerlink" href="#schnelleinstellungen" title="Link to this heading">¶</a></h2>
+<p>Benutzer haben Zugriff auf Schnelleinstellungen, um zu anderen Funktionen zu wechseln, darunter die Suche nach Speisen, die <cite>Kennzeichnung Einstellung &lt;Features/ingredient-filter&gt;</cite> zur Anpassung von Vorlieben und Abneigungen, die Anpassung der Preiskategorie und die Auswahl der Mensa.</p>
+</section>
+<section id="bereitstellung-des-speiseplans">
+<h2>Bereitstellung des Speiseplans<a class="headerlink" href="#bereitstellung-des-speiseplans" title="Link to this heading">¶</a></h2>
+<p>Der Speiseplan muss im JSON-Format bereitgestellt werden.</p>
 </section>
 </section>
 
@@ -167,8 +171,8 @@
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="push-notifications.html" class="btn btn-neutral float-left" title="Push-Nachrichten" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="ingredient-filter.html" class="btn btn-neutral float-right" title="Kennzeichnung Einstellung" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="ingredient-filter.html" class="btn btn-neutral float-left" title="Kennzeichnung Einstellung" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../UserSupport/supported_user_limits.html" class="btn btn-neutral float-right" title="The Rocket Meals documentation" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

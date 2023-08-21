@@ -27,8 +27,8 @@ Rocket Meals Dokumentation
    :maxdepth: 1
    :caption: Anforderungen
 
-   Hardware-Anforderungen <Requirements/hardware_requirements>
-   Software-Anforderungen <Requirements/software_requirements>
+   Endgerät-Anforderungen <Requirements/device_requirements>
+   App-Identität <Requirements/app_identity>
    Apple Developer Account <Requirements/apple_developer_account>
    Google Developer Account <Requirements/google_developer_account>
    Einladung zu den Projekten <Requirements/invite_to_projects>
@@ -40,12 +40,15 @@ Rocket Meals Dokumentation
    Push-Nachrichten <Features/push-notifications>
    OTA-Updates <Features/ota-updates>
    Kennzeichnung Einstellung <Features/ingredient-filter>
+   Speiseplan <Features/meals>
+   Speise-Bewertungen <Features/meal-feedback>
+   Teller-Ticker <Features/meal-reminder>
    Guthabenleser <Features/ingredient-filter>
    Sprache <Features/ingredient-filter>
-   Automatische Übersetzung <Features/ingredient-filter>
+   Automatische Übersetzung <Features/automatic-translation>
    Preiskategorien <Features/ingredient-filter>
    Stundenplaner <Features/ingredient-filter>
-   Darstellung und Theme <Features/ingredient-filter>
+   Darstellung und Theme <Features/theming>
    Transparente Dateneinsicht <Features/ingredient-filter>
    Single Sign-on (Einmalanmeldung) <Features/ingredient-filter>
    Anonyme Nutzung <Features/ingredient-filter>
@@ -92,3 +95,4 @@ Rocket Meals Dokumentation
 
    Glossar der Begriffe <Appendices/glossary_terms>
    Zusätzliche Ressourcen <Appendices/additional_resources>
+   Speisekennzeichnungen - Haftungsausschluss <Appendices/ingredient-disclaimer>

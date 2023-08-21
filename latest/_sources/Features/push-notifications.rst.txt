@@ -24,3 +24,8 @@ Zustimmung der Nutzer
 Damit die Push-Nachrichten ankommen, müssen die Nutzer zuerst die Push-Nachrichten in der App erlauben. Bei iOS-Geräten ist für Push-Nachrichten mit Ton eine aktive Zustimmung des Nutzers erforderlich, andernfalls werden die Nachrichten als stille Benachrichtigungen zugestellt. Bei Android-Geräten ist keine aktive Zustimmung über das Betriebssystem notwendig. In der Rocket Meals App können die Nutzer die Push-Nachrichten selbst aktivieren.
 
 Zusammenfassend bieten Push-Nachrichten eine effektive Möglichkeit, Nutzer über wichtige Informationen oder Ereignisse zu informieren. Die Zustimmung der Nutzer ist erforderlich, um Push-Nachrichten zu erhalten, und die Nutzer können die Push-Nachrichten in der Rocket Meals App selbst aktivieren. Bei Fragen oder Bedenken bezüglich der Push-Nachrichten stehen wir Ihnen gerne zur Verfügung.
+
+Beschränkungen
+----------------------
+
+Es gelten die Beschränkungen zur Menge, Frequenz und Inhalt von Push-Nachriten der jeweiligen Anbieter auf dieser Seite genannt.
