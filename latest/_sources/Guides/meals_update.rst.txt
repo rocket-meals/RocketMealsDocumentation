@@ -1,5 +1,3 @@
-Hier ist eine überarbeitete Version des Textes, die etwas formeller und geschäftlicher klingt, ohne zu übertreiben:
-
 Aktualisierung des Speiseplans
 ==============================
 
