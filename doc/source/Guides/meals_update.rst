@@ -1,0 +1,48 @@
+Hier ist eine überarbeitete Version des Textes, die etwas formeller und geschäftlicher klingt, ohne zu übertreiben:
+
+Aktualisierung des Speiseplans
+==============================
+
+Die regelmäßige Aktualisierung des Speiseplans in Ihrer Rocket Meals-Anwendung ist von entscheidender Bedeutung, um sicherzustellen, dass Ihre Kunden stets über die neuesten verfügbaren Speisen informiert sind. Es stehen Ihnen verschiedene Methoden zur Verfügung, um Ihren Speiseplan in Rocket Meals zu aktualisieren:
+
+Automatische Aktualisierung durch TL1 Export
+---------------------------------------------
+
+Eine effiziente Methode zur Aktualisierung Ihres Speiseplans ist die automatische Integration durch den TL1 Export. Dieser Prozess stellt sicher, dass Ihre Speisen immer aktuell in Rocket Meals präsentiert werden.
+
+1. Anforderungen für den TL1 Export:
+    - Der TL1 Export erfordert die Erfüllung bestimmter Bedingungen. Bitte beachten Sie, dass für die Anpassung eines Exports in das erforderliche Format möglicherweise Kosten bei TL1 anfallen.
+        - Die Identifizierung einer Speise erfolgt durch Aggregation der `REZEPTUR_ID` über den Namen der Speise.
+    - Beispiel eines Exports:
+        - Die Speise `Paprika-Hähncheneintopf mit Nudeln` wird hier dargestellt.
+            - Es ist ersichtlich, dass der Name der Speise gleich ist, die Speise jedoch aus zwei Bestandteilen (`REZEPTUR_ID`) besteht: `2045` und `2961`.
+            - Aus den Feldern der `REZEPTUR_ID` wird ein zusammengesetzter Schlüssel erstellt: `2045-2961`.
+                - Änderungen am Namen der Speise aus Marketing- oder Herstellungsgründen führen nicht zu einer Verwechslung der Speise. Funktionen, die mit der Speise verknüpft sind (z.B. Fotos, Bewertungen, Kommentare), bleiben erhalten.
+                - Es darf keine andere Speise mit denselben Werten der `REZEPTUR_ID` geben, da sie sonst als dieselbe Speise erkannt wird.
+            - Der Name der Speise wird formatiert, indem Kennzeichnungen (Allergene) in Klammern entfernt werden.
+                - Aus dem Eintrag: `Paprika-Hähncheneintopf mit Nudeln (40,a,g) | Weizenbrötchen (1,21,a,f)` wird `Paprika-Hähncheneintopf mit Nudeln, Weizenbrötchen`.
+
+.. table:: Speiseplan
+   :widths: auto
+
+   +------------+------------+--------------+-------------+--------------------------+--------------------+------------+------------------------------------------+--------------------------+-------+-------+-------+------------------------------------------+--------------------------+--------+--------+--------+-------+-------+-------+----------+------------------------------------------+------------------+------------------+
+   | MENSA      | DATUM      | VK-ArtikelNr | VK-GebindeNR | SPEISE                   | SPEISE_BEZEICHNUNG| REZEPTUR_ID | TEXT1                                     | TEXT2                     | TEXT3 | TEXT4 | TEXT5 | TEXT1_1                                   | TEXT2_1                    | STD_PREIS| BED_PREIS| GÄSTE_PREIS| FREI1 | FREI2 | FREI3 | ZSNUMMERN| ZSNAMEN                                  | NAEHRWERTEJE100G | NAEHRWERTEJEPORT |
+   +------------+------------+--------------+-------------+--------------------------+--------------------+------------+------------------------------------------+--------------------------+-------+-------+-------+------------------------------------------+--------------------------+--------+--------+--------+-------+-------+-------+----------+------------------------------------------+------------------+------------------+
+   | Beispiel Mensa | 02.08.2023 | 1714         | 3614        | Eintopf (Terrine, Teller)| Eintopf Terrine   | 2045       | Paprika-Hähncheneintopf mit Nudeln (40,a,g) | Weizenbrötchen (1,21,a,f) |       |       |       | paprika stew with chicken and noodles (40,a,g) | Bread roll (1,21,a,f) | 1,80     | 4,10     | 5,10       | a     |       |       | 1, 14, 18, 21, a, g, f, 0 | mit Farbstoff, Rindfleisch, Fleisch aus artgerechter Tierhaltung, vegan, Glutenhaltiges Getreide (a), Milch und Laktose (g), Soja (f), zusatzstoff- und allergenfrei | Brennwert=2385 kJ (570 kcal), Fett=18,9g, davon gesättigte Fettsäuren=5,6g, Kohlenhydrate=63,4g, davon Zucker=13,7g, Ballaststoffe=4,1g, Eiweiß=29,3g, Salz=4,1g |                  |
+   | Beispiel Mensa | 02.08.2023 | 1714         | 3614        | Eintopf (Terrine, Teller)| Eintopf Terrine   | 2961       | Paprika-Hähncheneintopf mit Nudeln (40,a,g) | Weizenbrötchen (1,21,a,f) |       |       |       | paprika stew with chicken and noodles (40,a,g) | Bread roll (1,21,a,f) | 1,80     | 4,10     | 5,10       | a     |       |       | 1, 14, 18, 21, a, g, f, 0 | mit Farbstoff, Rindfleisch, Fleisch aus artgerechter Tierhaltung, vegan, Glutenhaltiges Getreide (a), Milch und Laktose (g), Soja (f), zusatzstoff- und allergenfrei | Brennwert=2385 kJ (570 kcal), Fett=18,9g, davon gesättigte Fettsäuren=5,6g, Kohlenhydrate=63,4g, davon Zucker=13,7g, Ballaststoffe=4,1g, Eiweiß=29,3g, Salz=4,1g |                  |
+   +------------+------------+--------------+-------------+--------------------------+--------------------+------------+------------------------------------------+--------------------------+-------+-------+-------+------------------------------------------+--------------------------+--------+--------+--------+-------+-------+-------+----------+------------------------------------------+------------------+------------------+
+
+
+2. Bereitstellung des Exports:
+    - Sie können uns den Export auf folgende Weise bereitstellen:
+        a) Über eine eigene URL von Ihnen. Wir greifen dann auf diese Daten zu und pflegen sie in Rocket Meals ein.
+        b) FTP: Sie können den Export per FTP an den von uns bereitgestellten Server für Ihre Rocket Meals-Anwendung senden. Die Zugangsdaten erhalten Sie von uns.
+
+Manuelle Aktualisierung über API
+--------------------------------
+
+Alternativ haben Sie die Möglichkeit, den Speiseplan manuell über unsere API zu aktualisieren. Dies bietet Ihnen mehr Kontrolle über die Aktualisierungen und ermöglicht es Ihnen, Änderungen sofort umzusetzen.
+
+- Sie können die `API <../Reference/api>`_ verwenden, um den Speiseplan individuell anzupassen. Bitte beachten Sie, dass bei Verwendung der `automatischen Übersetzung <../Features/automatic-translation>`_ jeder neue Speisename automatisch übersetzt wird, sofern Sie dies nicht deaktivieren.
+
+Unabhängig von der gewählten Methode ist es wichtig, dass Sie Ihren Speiseplan regelmäßig aktualisieren, um sicherzustellen, dass Ihre Kunden stets über die neuesten verfügbaren Speisen informiert sind. Wir stehen Ihnen bei jedem Schritt des Prozesses zur Seite und sorgen dafür, dass Ihre Rocket Meals-Anwendung immer auf dem neuesten Stand und für Ihre Kunden attraktiv ist.
