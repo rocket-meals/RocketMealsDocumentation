@@ -76,8 +76,9 @@
 <li class="toctree-l1"><a class="reference internal" href="automatic-translation.html">Automatische Übersetzung</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Single Sign-on (Einmalanmeldung)</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#vorteile-von-sso">Vorteile von SSO</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#einrichtung-von-sso">Einrichtung von SSO</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#unterstutzte-sso-mechanismen">Unterstützte SSO-Mechanismen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#einrichtung-von-sso">Einrichtung von SSO</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#beispielhafte-google-sso-einrichtung">Beispielhafte Google SSO Einrichtung</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="ingredient-filter.html">TODO: Guthabenleser</a></li>
@@ -152,10 +153,6 @@
 <li><p><strong>Schnellerer Zugriff</strong>: Benutzer können schneller auf die benötigten Dienste zugreifen, da sie den Anmeldeprozess nicht für jede Anwendung wiederholen müssen.</p></li>
 </ol>
 </section>
-<section id="einrichtung-von-sso">
-<h2>Einrichtung von SSO<a class="headerlink" href="#einrichtung-von-sso" title="Link to this heading">¶</a></h2>
-<p>Für die Einrichtung von SSO in Rocket Meals werden entsprechende Konten bei den jeweiligen Plattformen benötigt. Wir übernehmen gerne die Einrichtung von ausgewählten Plattformen als SSO-Anbieter, sofern die notwendigen Voraussetzungen von <a class="reference external" href="../Requirements/google_developer_account.html">Google</a> und <a class="reference external" href="../Requirements/apple_developer_account.html">Apple</a> erfüllt sind.</p>
-</section>
 <section id="unterstutzte-sso-mechanismen">
 <h2>Unterstützte SSO-Mechanismen<a class="headerlink" href="#unterstutzte-sso-mechanismen" title="Link to this heading">¶</a></h2>
 <p>Rocket Meals unterstützt vier Standardtypen von SSO-Mechanismen:</p>
@@ -166,6 +163,53 @@
 <li><p><strong>SAML</strong>: Ein XML-basiertes Framework für den Austausch von Authentifizierungs- und Autorisierungsinformationen. Weitere Informationen finden Sie im <a class="reference external" href="https://datatracker.ietf.org/doc/html/rfc7522">RFC 7522</a>.</p></li>
 </ol>
 <p>Intern verwenden wir die SSO-Mechanismen von Directus, die in der <a class="reference external" href="https://docs.directus.io/self-hosted/sso.html">Directus-Dokumentation</a> beschrieben sind.</p>
+</section>
+<section id="einrichtung-von-sso">
+<h2>Einrichtung von SSO<a class="headerlink" href="#einrichtung-von-sso" title="Link to this heading">¶</a></h2>
+<p>Für die Einrichtung von SSO in Rocket Meals werden entsprechende Konten bei den jeweiligen Plattformen benötigt. Wir unterstützen Sie gerne bei der SSO-Einrichtung von ausgewählten Google und Apple, sofern die notwendigen Voraussetzungen von <a class="reference external" href="../Requirements/google_developer_account.html">Google</a> und <a class="reference external" href="../Requirements/apple_developer_account.html">Apple</a> erfüllt sind.</p>
+</section>
+<section id="beispielhafte-google-sso-einrichtung">
+<h2>Beispielhafte Google SSO Einrichtung<a class="headerlink" href="#beispielhafte-google-sso-einrichtung" title="Link to this heading">¶</a></h2>
+<p>Keine Sorge, wir bieten auch eine Unterstützung bei der Einbindung an.</p>
+<p>Um Google OpenID als externen Anbieter nutzen zu können, müssen Sie folgende Schritte befolgen:</p>
+<ol class="arabic simple">
+<li><p>Gehen Sie zur Google <a class="reference external" href="https://console.cloud.google.com/">Cloud Console</a>.</p></li>
+<li><p>Wählen Sie ein neues Projekt aus oder erstellen Sie eines.</p></li>
+<li><dl class="simple">
+<dt>Gehen Sie zu <a class="reference external" href="https://console.cloud.google.com/apis/credentials/consent">APIs &amp; Dienste -&gt; OAuth-Zustimmungsbildschirm</a> in der Seitenleiste.</dt><dd><ol class="arabic simple">
+<li><dl class="simple">
+<dt>Wählen Sie den gewünschten Zugriff aus:</dt><dd><ul class="simple">
+<li><p>Wählen Sie Intern, wenn nur Personen innerhalb Ihrer Organisation Zugriff haben sollen.</p></li>
+<li><p>Wählen Sie Extern, um jedem mit einem Google-Konto den Zugriff zu ermöglichen.</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Füllen Sie die Felder nach Ihren Wünschen aus.</dt><dd><ul class="simple">
+<li><p>Die autorisierten Domains fügen eine zusätzliche Sicherheitsebene hinzu, sind jedoch nicht erforderlich. Wenn Sie sie ausfüllen, sollte es die Domain sein, auf der Ihre Rocket Meals läuft.</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p>Bei den Bereichen müssen Sie “…/auth/userinfo.email”, “”…/auth/userinfo.profile” und “openid” auswählen.</p></li>
+</ol>
+</dd>
+</dl>
+</li>
+<li><p>Gehen Sie in der Seitenleiste zu <a class="reference external" href="https://console.cloud.google.com/apis/credentials">Anmeldedaten</a>.</p></li>
+<li><dl class="simple">
+<dt>Klicken Sie auf <a class="reference external" href="https://console.cloud.google.com/apis/credentials/oauthclient">Anmeldedaten erstellen -&gt; OAuth-Client-ID</a>.</dt><dd><ol class="arabic simple">
+<li><p>Wählen Sie “Webanwendung” im Anwendungstyp aus.</p></li>
+<li><p>Die autorisierten JavaScript-Ursprünge fügen eine zusätzliche Sicherheitsebene hinzu, sind jedoch nicht erforderlich. Wenn Sie sie ausfüllen, sollte es die Adresse Ihrer Rocket Meals Instanz sein. Zum Beispiel “<a class="reference external" href="https://meine-app.rocket-meals.de">https://meine-app.rocket-meals.de</a>”.</p></li>
+<li><p>Geben Sie bei den autorisierten Weiterleitungs-URIs die Adresse Ihrer Rocket Meals Instanz plus /auth/login/google/callback ein. Zum Beispiel sollten Sie <a class="reference external" href="https://meine-app.rocket-meals.de/auth/login/google/callback">https://meine-app.rocket-meals.de/auth/login/google/callback</a> eingeben, wobei “<a class="reference external" href="https://meine-app.rocket-meals.de">https://meine-app.rocket-meals.de</a>” die Adresse Ihrer Rocket Meals Instanz sein sollte.</p></li>
+</ol>
+</dd>
+</dl>
+</li>
+<li><p>Klicken Sie auf Erstellen, und ein Fenster wird mit der <strong>Client ID</strong> und dem <strong>Client Secret</strong> angezeigt. Speichern Sie beide für die spätere Verwendung. Diese sind dann für die Einrichtung notwendig.</p></li>
+</ol>
+<p>Die Einbindung des SSO-Anbieter können wir dann übernehmen.</p>
 </section>
 </section>
 
