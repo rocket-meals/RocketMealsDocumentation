@@ -44,9 +44,9 @@ Rocket Meals Dokumentation
    Kennzeichnung Einstellung <Features/ingredient-filter>
    Speiseplan <Features/meals>
    Speise-Bewertungen <Features/meal-feedback>
-   TODO: Preiskategorien <Features/ingredient-filter>
-   TODO: Sprache <Features/ingredient-filter>
-   TODO: Automatische Übersetzung <Features/automatic-translation>
+   Preiskategorien <Features/price-category>
+   Sprache <Features/language>
+   Automatische Übersetzung <Features/automatic-translation>
    TODO: Teller-Ticker <Features/meal-reminder>
    TODO: Guthabenleser <Features/ingredient-filter>
 
