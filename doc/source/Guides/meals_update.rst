@@ -3,7 +3,7 @@ Aktualisierung des Speiseplans
 
 Die regelmäßige Aktualisierung des Speiseplans in Ihrer Rocket Meals-Anwendung ist von entscheidender Bedeutung, um sicherzustellen, dass Ihre Kunden stets über die neuesten verfügbaren Speisen informiert sind. Es stehen Ihnen verschiedene Methoden zur Verfügung, um Ihren Speiseplan in Rocket Meals zu aktualisieren:
 
-Automatische Aktualisierung durch TL1 Export
+TL1 Export
 ---------------------------------------------
 
 Eine effiziente Methode zur Aktualisierung Ihres Speiseplans ist die automatische Integration durch den TL1 Export. Dieser Prozess stellt sicher, dass Ihre Speisen immer aktuell in Rocket Meals präsentiert werden.
@@ -33,11 +33,17 @@ Eine effiziente Methode zur Aktualisierung Ihres Speiseplans ist die automatisch
         a) Über eine eigene URL von Ihnen. Wir greifen dann auf diese Daten zu und pflegen sie in Rocket Meals ein.
         b) FTP: Sie können den Export per FTP an den von uns bereitgestellten Server für Ihre Rocket Meals-Anwendung senden. Die Zugangsdaten erhalten Sie von uns.
 
-Manuelle Aktualisierung über API
+API Nutzung
 --------------------------------
 
-Alternativ haben Sie die Möglichkeit, den Speiseplan manuell über unsere API zu aktualisieren. Dies bietet Ihnen mehr Kontrolle über die Aktualisierungen und ermöglicht es Ihnen, Änderungen sofort umzusetzen.
+Alternativ haben Sie die Möglichkeit, den Speiseplan über unsere API zu aktualisieren. Dies bietet Ihnen mehr Kontrolle über die Aktualisierungen und ermöglicht es Ihnen, Änderungen sofort umzusetzen.
 
 - Sie können die `API <../Reference/api.html>`_ verwenden, um den Speiseplan individuell anzupassen. Bitte beachten Sie, dass bei Verwendung der `automatischen Übersetzung <../Features/automatic-translation.html>`_ jeder neue Speisename automatisch übersetzt wird, sofern Sie dies nicht deaktivieren.
 
 Unabhängig von der gewählten Methode ist es wichtig, dass Sie Ihren Speiseplan regelmäßig aktualisieren, um sicherzustellen, dass Ihre Kunden stets über die neuesten verfügbaren Speisen informiert sind. Wir stehen Ihnen bei jedem Schritt des Prozesses zur Seite und sorgen dafür, dass Ihre Rocket Meals-Anwendung immer auf dem neuesten Stand und für Ihre Kunden attraktiv ist.
+
+
+Manuelle Aktualisierung
+--------------------------------
+
+Alternativ haben Sie die Möglichkeit, den Speiseplan manuell über zu aktualisieren. Wir raten hiervon jedoch ab, da es eine Menge arbeit bedeuetet, dies täglich für alle Einrichtungen zu tätigen. Ein automatischer Prozess ist fehlerfreier und schneller.
