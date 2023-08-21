@@ -27,6 +27,6 @@ Zusammenfassend bietet die Rocket Meals App die Möglichkeit, individualisierte 
 
 
 Speisekennzeichnungen - Haftungsausschluss
---------------------------
+------------------------------------------
 
-Alle Allergen- und Kennzeichnungsinformationen können veraltet sein, daher sind die `Speisekennzeichnungen ohne Gewähr <Appendices/ingredient-disclaimer>` und die Angaben vor Ort maßgeblich.
+Alle Allergen- und Kennzeichnungsinformationen können veraltet sein, daher sind die `Speisekennzeichnungen ohne Gewähr <Appendices/ingredient-disclaimer>`_ und die Angaben vor Ort maßgeblich.
