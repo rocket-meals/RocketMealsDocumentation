@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>NFC &mdash; Rocket Meals 0.0.1 documentation</title>
+  <title>Guthaben Abfrage: Eine Lösung für bargeldloses Bezahlen &mdash; Rocket Meals 0.0.1 documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <!--[if lt IE 9]>
@@ -17,7 +17,9 @@
         <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" /> 
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Menü-Konfiguration" href="menu-configuration.html" />
+    <link rel="prev" title="Single Sign-On (SSO)" href="sso.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -63,7 +65,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../Guides/meals-update.html">Speiseplan-Daten</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Funktionen</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="push-notifications.html">Push-Nachrichten</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ota-updates.html">OTA-Updates</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ingredient-filter.html">Kennzeichnung Einstellung</a></li>
@@ -72,23 +74,38 @@
 <li class="toctree-l1"><a class="reference internal" href="price-category.html">Preiskategorien</a></li>
 <li class="toctree-l1"><a class="reference internal" href="automatic-translation.html">Automatische Übersetzung</a></li>
 <li class="toctree-l1"><a class="reference internal" href="sso.html">Single Sign-on (Einmalanmeldung)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="ingredient-filter.html">TODO: Guthabenleser</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Guthaben Abfrage</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#nfc-leser">NFC-Leser</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#balance-synchronizer-in-kurze-verfugbar">Balance-Synchronizer (in Kürze verfügbar)</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="menu-configuration.html">Konfigurierbares Menü</a></li>
+<li class="toctree-l1"><a class="reference internal" href="news.html">News</a></li>
+<li class="toctree-l1"><a class="reference internal" href="buildings.html">Gebäude</a></li>
+<li class="toctree-l1"><a class="reference internal" href="apartments.html">Wohnanlagen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="washingmachines.html">Waschanlagen</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ingredient-filter.html">TODO: Stundenplaner</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ingredient-filter.html">TODO: Bewertungen</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ingredient-filter.html">TODO: Speisevorschläge</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ingredient-filter.html">TODO: Auslastungsprognose</a></li>
-<li class="toctree-l1"><a class="reference internal" href="ingredient-filter.html">TODO: News</a></li>
-<li class="toctree-l1"><a class="reference internal" href="ingredient-filter.html">TODO: Gebäude</a></li>
-<li class="toctree-l1"><a class="reference internal" href="ingredient-filter.html">TODO: Wohnanlagen</a></li>
-<li class="toctree-l1"><a class="reference internal" href="ingredient-filter.html">TODO: Waschmaschienen</a></li>
-<li class="toctree-l1"><a class="reference internal" href="ingredient-filter.html">TODO: Konfigurierbares Menü</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ingredient-filter.html">TODO: Lageplan</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Grundlegende Merkmale</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../CoreFeatures/user-roles-permissions.html">Benutzerrollen und Berechtigungen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../CoreFeatures/language.html">Sprache</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../CoreFeatures/anonymous-usage.html">Anonyme Nutzung</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../CoreFeatures/transparent-data-insight.html">Transparente Dateneinsicht</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../CoreFeatures/theming.html">Darstellung und Theme</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../CoreFeatures/accessibility.html">Barrierefreiheit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../CoreFeatures/auto-backups.html">TODO: Automatische Backups</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Benutzerunterstützung</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../UserSupport/supported_user_limits.html">Unterstützte Benutzergrenzen</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../UserSupport/user_roles_permissions.html">Benutzerrollen und Berechtigungen</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../UserSupport/user_onboarding_training.html">Benutzer-Onboarding und Schulung</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../UserSupport/user_onboarding_training.html">TODO: Benutzer-Onboarding und Schulung</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../UserSupport/supported_user_limits.html">TODO: Unterstützte Benutzergrenzen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../UserSupport/user_roles_permissions.html">TODO: Benutzerrollen und Berechtigungen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../UserSupport/user_onboarding_training.html">TODO: Benutzer-Onboarding und Schulung</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Kontakt und Support</span></p>
 <ul>
@@ -122,9 +139,9 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../contents.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active">NFC</li>
+      <li class="breadcrumb-item active">Guthaben Abfrage: Eine Lösung für bargeldloses Bezahlen</li>
       <li class="wy-breadcrumbs-aside">
-              <a href="https://github.com/rocket-meals/RocketMealsDocumentation/blob/master/doc/source/Features/nfc-reader.rst" class="fa fa-github"> Edit on GitHub</a>
+              <a href="https://github.com/rocket-meals/RocketMealsDocumentation/blob/master/doc/source/Features/balance-check.rst" class="fa fa-github"> Edit on GitHub</a>
       </li>
   </ul>
   <hr/>
@@ -132,14 +149,38 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="nfc">
-<h1>NFC<a class="headerlink" href="#nfc" title="Link to this heading">¶</a></h1>
+  <section id="guthaben-abfrage-eine-losung-fur-bargeldloses-bezahlen">
+<h1>Guthaben Abfrage: Eine Lösung für bargeldloses Bezahlen<a class="headerlink" href="#guthaben-abfrage-eine-losung-fur-bargeldloses-bezahlen" title="Link to this heading">¶</a></h1>
+<p>In der heutigen Zeit setzen viele Studierendenwerke auf bargeldlose Zahlungsmethoden. Es ist wahrscheinlich, dass auch Ihr Studierendenwerk Karten für Mitarbeiter und Studierende verwendet, auf die ein Guthaben aufgeladen werden kann, um kontaktlos zu bezahlen. Als Studierende haben wir selbst festgestellt, dass es oft schwierig ist, den aktuellen Guthabenstand auf der Karte zu überprüfen, insbesondere wenn lange Schlangen vor den Aufladeautomaten stehen.</p>
+<p>Um dieses Problem zu lösen, haben wir die Guthaben-Leser-Funktion entwickelt. Nachdem das Guthaben gelesen wurde, wird es im Nutzerkonto und auf dem Endgerät gespeichert. Auf diese Weise können Endnutzer den Guthabenstand jederzeit direkt einsehen und über mehrere Geräte mit demselben Konto hinweg abrufen. Die angezeigten Informationen hängen von der jeweiligen Karte ab und können beispielsweise den aktuellen Stand, das letzte Aktualisierungsdatum und die letzte Abbuchung umfassen.</p>
+<p>Wir bieten zwei Optionen zur Guthabenabfrage an: den NFC-Leser und den Balance-Synchronizer.</p>
+<section id="nfc-leser">
+<h2>NFC-Leser<a class="headerlink" href="#nfc-leser" title="Link to this heading">¶</a></h2>
+<p>Der NFC-Leser ermöglicht es dem Endgerät mit der Rocket Meals Software, die Daten der Karte mittels NFC-Technologie zu lesen. Um diese Funktion nutzen zu können, müssen jedoch einige Anforderungen erfüllt sein:</p>
+<ol class="arabic simple">
+<li><p>Das Endgerät muss über die Fähigkeit verfügen, mittels NFC Daten auszutauschen. Die meisten modernen Mobiltelefone unterstützen dies standardmäßig.
+a) iOS: Eine Liste der unterstützten iPhones und iPads wird hier hinzugefügt.
+b) Android: Eine Liste der unterstützten Android-Geräte wird hier hinzugefügt.</p></li>
+<li><p>Das Endgerät muss neben der NFC-Unterstützung auch das entsprechende Protokoll unterstützen, mit dem Ihre Karte arbeitet.</p></li>
+<li><p>Die zu lesende Karte muss entweder unverschlüsselten Lesezugriff ermöglichen oder Sie müssen uns eine Möglichkeit zur Entschlüsselung der Karte bereitstellen.</p></li>
+<li><p>Derzeit unterstützen wir folgende (getestete) Karten und Protokolle:
+- Mifare DESFire von unverschlüsselten Karten. Ihr Kartenanbieter kann Ihnen sicherlich mehr Informationen dazu geben (z. B. InterCard). Sie können a) die Rocket Meals Demo App verwenden, um Ihre Karte zu testen und zu sehen, ob unsere aktuelle Implementierung Ihre Karte standardmäßig unterstützt. b) Sie können uns eine Beispielkarte zusenden, und wir werden diese gerne analysieren. Wenn wir Daten auf der Karte lesen können, werden wir die Lesefunktion implementieren.
+- Studierendenwerk Osnabrück</p></li>
+</ol>
+</section>
+<section id="balance-synchronizer-in-kurze-verfugbar">
+<h2>Balance-Synchronizer (in Kürze verfügbar)<a class="headerlink" href="#balance-synchronizer-in-kurze-verfugbar" title="Link to this heading">¶</a></h2>
+<p>In einigen Fällen ist es möglicherweise nicht möglich, die Karte per NFC zu lesen, sei es aufgrund eines nicht unterstützten Protokolls oder einer verschlüsselten Karte. Wir arbeiten bereits an Lösungen für solche Herausforderungen, um sicherzustellen, dass Sie immer Zugriff auf Ihr Guthaben haben.</p>
+</section>
 </section>
 
 
            </div>
           </div>
-          <footer>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="sso.html" class="btn btn-neutral float-left" title="Single Sign-On (SSO)" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="menu-configuration.html" class="btn btn-neutral float-right" title="Menü-Konfiguration" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
 
   <hr/>
 

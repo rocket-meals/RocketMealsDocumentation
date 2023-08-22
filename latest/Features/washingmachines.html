@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wäschereiverwaltung &mdash; Rocket Meals 0.0.1 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../_static/documentation_options.js?v=d45e8c67"></script>
+        <script src="../_static/doctools.js?v=888ff710"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Benutzerrollen und Berechtigungen" href="../CoreFeatures/user-roles-permissions.html" />
+    <link rel="prev" title="Wohnanlagen" href="apartments.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../contents.html" class="icon icon-home">
+            Rocket Meals
+              <img src="../_static/logo.png" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                0.0.1
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Rocket Meals</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../index.html">Einleitung</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Anleitungen</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Guides/quickstart.html">Erste Schritte</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Guides/integration.html">Integration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Guides/security_compliance.html">Sicherheit und Konformität</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Guides/troubleshooting.html">Fehlerbehebung</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Anforderungen</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Requirements/device_requirements.html">Endgerät-Anforderungen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Requirements/app_identity.html">App-Identität</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Requirements/apple_developer_account.html">Apple Developer Account</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Requirements/google_developer_account.html">Google Developer Account</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Guides/meals-update.html">Speiseplan-Daten</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Funktionen</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="push-notifications.html">Push-Nachrichten</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ota-updates.html">OTA-Updates</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ingredient-filter.html">Kennzeichnung Einstellung</a></li>
+<li class="toctree-l1"><a class="reference internal" href="meals.html">Speiseplan</a></li>
+<li class="toctree-l1"><a class="reference internal" href="meal-feedback.html">Speise-Bewertungen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="price-category.html">Preiskategorien</a></li>
+<li class="toctree-l1"><a class="reference internal" href="automatic-translation.html">Automatische Übersetzung</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sso.html">Single Sign-on (Einmalanmeldung)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="balance-check.html">Guthaben Abfrage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="menu-configuration.html">Konfigurierbares Menü</a></li>
+<li class="toctree-l1"><a class="reference internal" href="news.html">News</a></li>
+<li class="toctree-l1"><a class="reference internal" href="buildings.html">Gebäude</a></li>
+<li class="toctree-l1"><a class="reference internal" href="apartments.html">Wohnanlagen</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Waschanlagen</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#einleitung">Einleitung</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#funktionen">Funktionen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#aktualisierung-der-waschmaschinen-informationen">Aktualisierung der Waschmaschinen-Informationen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#zusammenfassung">Zusammenfassung</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="ingredient-filter.html">TODO: Stundenplaner</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ingredient-filter.html">TODO: Bewertungen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ingredient-filter.html">TODO: Speisevorschläge</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ingredient-filter.html">TODO: Auslastungsprognose</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ingredient-filter.html">TODO: Lageplan</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Grundlegende Merkmale</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../CoreFeatures/user-roles-permissions.html">Benutzerrollen und Berechtigungen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../CoreFeatures/language.html">Sprache</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../CoreFeatures/anonymous-usage.html">Anonyme Nutzung</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../CoreFeatures/transparent-data-insight.html">Transparente Dateneinsicht</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../CoreFeatures/theming.html">Darstellung und Theme</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../CoreFeatures/accessibility.html">Barrierefreiheit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../CoreFeatures/auto-backups.html">TODO: Automatische Backups</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Benutzerunterstützung</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../UserSupport/user_onboarding_training.html">TODO: Benutzer-Onboarding und Schulung</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../UserSupport/supported_user_limits.html">TODO: Unterstützte Benutzergrenzen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../UserSupport/user_roles_permissions.html">TODO: Benutzerrollen und Berechtigungen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../UserSupport/user_onboarding_training.html">TODO: Benutzer-Onboarding und Schulung</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Kontakt und Support</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../ContactSupport/customer_support_channels.html">Kundensupport-Kanäle</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ContactSupport/hours_of_operation.html">Öffnungszeiten</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Referenz</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Reference/vocabulary.html">TODO: Glossar</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Reference/design.html">TODO: Design</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Reference/contributing.html">TODO: Mitwirken</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Anhänge</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Appendices/glossary_terms.html">TODO: Glossar der Begriffe</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Appendices/additional_resources.html">TODO: Zusätzliche Ressourcen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Appendices/ingredient-disclaimer.html">TODO: Speisekennzeichnungen - Haftungsausschluss</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../contents.html">Rocket Meals</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../contents.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Wäschereiverwaltung</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/rocket-meals/RocketMealsDocumentation/blob/master/doc/source/Features/washingmachines.rst" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="waschereiverwaltung">
+<h1>Wäschereiverwaltung<a class="headerlink" href="#waschereiverwaltung" title="Link to this heading">¶</a></h1>
+<section id="einleitung">
+<h2>Einleitung<a class="headerlink" href="#einleitung" title="Link to this heading">¶</a></h2>
+<p>Studierende in Wohnheimen haben oft Schwierigkeiten, den geeigneten Zeitpunkt zum Waschen ihrer Wäsche zu finden. Als Lösung bieten wir eine Funktion in unserer Software an, die den Status von Waschmaschinen in ihren Wohnanlagen überwacht und benutzerfreundliche Benachrichtigungen bereitstellt.</p>
+</section>
+<section id="funktionen">
+<h2>Funktionen<a class="headerlink" href="#funktionen" title="Link to this heading">¶</a></h2>
+<p>Diese Funktion erlaubt Studierenden, den Status der Waschmaschinen in ihren Wohnanlagen über eine mobile App zu überprüfen. Dies kann bequem vom Sofa, während der Vorlesung oder von jedem anderen Ort aus geschehen. Auf diese Weise können Studierende sicherstellen, dass ihre Wäsche pünktlich fertig ist und auch überprüfen, wann eine Waschmaschine frei wird.</p>
+<p>Für registrierte Benutzer der Rocket Meals Software gibt es noch weitere Vorteile. Sie können Benachrichtigungen erhalten, sobald eine bestimmte Waschmaschine frei wird. Dies bietet mehr Komfort und Flexibilität, da sie nicht ständig ihr Smartphone überprüfen oder einen Wecker stellen müssen.</p>
+</section>
+<section id="aktualisierung-der-waschmaschinen-informationen">
+<h2>Aktualisierung der Waschmaschinen-Informationen<a class="headerlink" href="#aktualisierung-der-waschmaschinen-informationen" title="Link to this heading">¶</a></h2>
+<p>Automatische Aktualisierungen sind in diesem Kontext unerlässlich. Manuell jede Waschmaschine in jeder Wohnanlage zu überprüfen, würde den Zweck dieser Funktion untergraben. Zur Einbindung der Waschmaschinen müssen diese internetfähig sein und ein Zugang zu diesen Informationen muss uns ermöglicht werden.</p>
+<p>Wenn Sie in der Lage sind, uns Zugang zu den Informationen Ihrer Waschmaschinen zu gewähren, können wir ein automatisiertes Skript implementieren. Abhängig von der Komplexität und dem Umfang der Implementierung wird ein individuelles Angebot besprochen.</p>
+<p><strong>API</strong>:</p>
+<p>Nutzen Sie die <a class="reference external" href="../Reference/api.html">API</a>, um die Informationen der Waschanlagen zu aktualisieren. Diese automatisierte Methode stellt sicher, dass die Informationen regelmäßig aktualisiert und immer auf dem neuesten Stand sind.</p>
+<p><strong>Manuell</strong>:</p>
+<p>Alternativ können Sie die Informationen der Waschanlagen manuell unter der Adresse des Backends aktualisieren: <a class="reference external" href="https:/">https:/</a>/&lt;Rocket Meals Instanz&gt;/api/admin/content/washingmachines
+Eine manuell aktualisierte Waschanlage enthält verschiedene Felder, die Sie nach Belieben ausfüllen können:</p>
+<ul class="simple">
+<li><p><strong>Name</strong>: Name des Gebäudes.</p></li>
+<li><p><strong>Apartment</strong>: Beziehung zur Wohnanlage.</p></li>
+<li><p><strong>Date Finished</strong>: Datum, wann die Waschmaschine fertig ist.</p></li>
+</ul>
+</section>
+<section id="zusammenfassung">
+<h2>Zusammenfassung<a class="headerlink" href="#zusammenfassung" title="Link to this heading">¶</a></h2>
+<p>Mit dieser Funktion bieten wir eine komfortable und zeitsparende Lösung für Studierende, die Schwierigkeiten haben, ihre Wäsche in Wohnheimen zu waschen. Wir bieten eine unkomplizierte Überwachung des Waschmaschinenstatus und benutzerfreundliche Benachrichtigungen, um den Waschprozess zu optimieren.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="apartments.html" class="btn btn-neutral float-left" title="Wohnanlagen" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../CoreFeatures/user-roles-permissions.html" class="btn btn-neutral float-right" title="Benutzerrollen und Berechtigungen" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Baumgartner Software UG (haftungsbeschränkt).</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

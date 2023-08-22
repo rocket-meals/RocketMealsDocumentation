@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menü-Konfiguration &mdash; Rocket Meals 0.0.1 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../_static/documentation_options.js?v=d45e8c67"></script>
+        <script src="../_static/doctools.js?v=888ff710"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Neuigkeiten" href="news.html" />
+    <link rel="prev" title="Guthaben Abfrage: Eine Lösung für bargeldloses Bezahlen" href="balance-check.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../contents.html" class="icon icon-home">
+            Rocket Meals
+              <img src="../_static/logo.png" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                0.0.1
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Rocket Meals</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../index.html">Einleitung</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Anleitungen</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Guides/quickstart.html">Erste Schritte</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Guides/integration.html">Integration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Guides/security_compliance.html">Sicherheit und Konformität</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Guides/troubleshooting.html">Fehlerbehebung</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Anforderungen</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Requirements/device_requirements.html">Endgerät-Anforderungen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Requirements/app_identity.html">App-Identität</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Requirements/apple_developer_account.html">Apple Developer Account</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Requirements/google_developer_account.html">Google Developer Account</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Guides/meals-update.html">Speiseplan-Daten</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Funktionen</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="push-notifications.html">Push-Nachrichten</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ota-updates.html">OTA-Updates</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ingredient-filter.html">Kennzeichnung Einstellung</a></li>
+<li class="toctree-l1"><a class="reference internal" href="meals.html">Speiseplan</a></li>
+<li class="toctree-l1"><a class="reference internal" href="meal-feedback.html">Speise-Bewertungen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="price-category.html">Preiskategorien</a></li>
+<li class="toctree-l1"><a class="reference internal" href="automatic-translation.html">Automatische Übersetzung</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sso.html">Single Sign-on (Einmalanmeldung)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="balance-check.html">Guthaben Abfrage</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Konfigurierbares Menü</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#hinzufugen-eigener-menueintrage">Hinzufügen eigener Menüeinträge:</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="news.html">News</a></li>
+<li class="toctree-l1"><a class="reference internal" href="buildings.html">Gebäude</a></li>
+<li class="toctree-l1"><a class="reference internal" href="apartments.html">Wohnanlagen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="washingmachines.html">Waschanlagen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ingredient-filter.html">TODO: Stundenplaner</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ingredient-filter.html">TODO: Bewertungen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ingredient-filter.html">TODO: Speisevorschläge</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ingredient-filter.html">TODO: Auslastungsprognose</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ingredient-filter.html">TODO: Lageplan</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Grundlegende Merkmale</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../CoreFeatures/user-roles-permissions.html">Benutzerrollen und Berechtigungen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../CoreFeatures/language.html">Sprache</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../CoreFeatures/anonymous-usage.html">Anonyme Nutzung</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../CoreFeatures/transparent-data-insight.html">Transparente Dateneinsicht</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../CoreFeatures/theming.html">Darstellung und Theme</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../CoreFeatures/accessibility.html">Barrierefreiheit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../CoreFeatures/auto-backups.html">TODO: Automatische Backups</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Benutzerunterstützung</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../UserSupport/user_onboarding_training.html">TODO: Benutzer-Onboarding und Schulung</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../UserSupport/supported_user_limits.html">TODO: Unterstützte Benutzergrenzen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../UserSupport/user_roles_permissions.html">TODO: Benutzerrollen und Berechtigungen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../UserSupport/user_onboarding_training.html">TODO: Benutzer-Onboarding und Schulung</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Kontakt und Support</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../ContactSupport/customer_support_channels.html">Kundensupport-Kanäle</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ContactSupport/hours_of_operation.html">Öffnungszeiten</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Referenz</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Reference/vocabulary.html">TODO: Glossar</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Reference/design.html">TODO: Design</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Reference/contributing.html">TODO: Mitwirken</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Anhänge</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Appendices/glossary_terms.html">TODO: Glossar der Begriffe</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Appendices/additional_resources.html">TODO: Zusätzliche Ressourcen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Appendices/ingredient-disclaimer.html">TODO: Speisekennzeichnungen - Haftungsausschluss</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../contents.html">Rocket Meals</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../contents.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Menü-Konfiguration</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/rocket-meals/RocketMealsDocumentation/blob/master/doc/source/Features/menu-configuration.rst" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="menu-konfiguration">
+<h1>Menü-Konfiguration<a class="headerlink" href="#menu-konfiguration" title="Link to this heading">¶</a></h1>
+<p>Die Menü-Konfiguration ermöglicht es Endnutzern, über das Menü an der Seite auf verschiedene Funktionen der Software zuzugreifen und zu diesen zu navigieren. Über das Backend haben Sie die Möglichkeit, einzelne Funktionen zu deaktivieren, wodurch die entsprechenden Reiter im Menü nicht mehr angezeigt werden. Dies ermöglicht es Ihnen, unerwünschte Funktionen auszublenden, beispielsweise wenn Sie bereits eine eigene Lageplan-Karte haben und Endnutzer auf diese weiterleiten möchten. Das Deaktivieren einzelner Funktionen kann in der entsprechenden Konfiguration der Funktionen im Backend angepasst werden. Ein weiterer Anwendungsfall könnte sein, dass Sie auf besondere Ereignisse oder Informationen hinweisen möchten, wie zum Beispiel einen Instagram-Kanal oder eine Umfrage.</p>
+<section id="hinzufugen-eigener-menueintrage">
+<h2>Hinzufügen eigener Menüeinträge:<a class="headerlink" href="#hinzufugen-eigener-menueintrage" title="Link to this heading">¶</a></h2>
+<p>Um eigene Menüeinträge hinzuzufügen, besuchen Sie: <a class="reference external" href="https:/">https:/</a>/&lt;ROCKET_MEALS_INSTANZ&gt;/api/admin/content/wikis
+Dort können Sie bestehende Wikis bearbeiten oder ein neues Wiki erstellen.</p>
+<p>Jedes Wiki-Element enthält folgende Informationen, die Sie nach Belieben festlegen können:</p>
+<ul>
+<li><p><strong>Icon</strong>: Wählen Sie eines der angezeigten Icons aus.
+- Wir verwenden die von der installierten Directus-Version unterstützten Icons: <a class="reference external" href="https://docs.directus.io/user-guide/overview/glossary.html#icons">https://docs.directus.io/user-guide/overview/glossary.html#icons</a></p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Diese sind Material Icons (<a class="reference external" href="https://fonts.google.com/icons">https://fonts.google.com/icons</a>)
+- Auf dem Endgerät (nicht im Backend) ist die entsprechende Schriftart bereits heruntergeladen, um Datenschutzgründen zu entsprechen.</p></li>
+<li><p>Social Icons: Font Awesome 5 Brand Icons (<a class="reference external" href="https://fontawesome.com/v5.15/icons?d=gallery&amp;s=brands">https://fontawesome.com/v5.15/icons?d=gallery&amp;s=brands</a>)
+- Auf dem Endgerät (nicht im Backend) ist die entsprechende Schriftart bereits heruntergeladen, um Datenschutzgründen zu entsprechen.</p></li>
+<li><p>In einigen Fällen kann es aufgrund von Versionsunterschieden vorkommen, dass einzelne Icons nicht korrekt angezeigt werden. Wenn Sie ein Problem bemerken, kontaktieren Sie uns bitte. Wir bemühen uns, alle Icons sowohl im Web als auch auf den nativen Endgeräten korrekt anzuzeigen.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p><strong>Private Note</strong>: Eine Notiz für Ihre eigenen Zwecke. Diese Information kann über die API öffentlich gelesen werden. Als privat ist hier gemeint, dass Endnutzer diese Information nicht sehen können.</p></li>
+<li><p><strong>Parent</strong>: Wenn Sie verschachtelte Menüs verwenden möchten, können Sie hier das übergeordnete Menü angeben.</p></li>
+<li><p><strong>Public</strong>: Eine Checkbox, die bestimmt, ob jeder dieses Menü sehen darf, auch wenn er die Rocket Meals Software nur besucht, ohne anonym oder mit einem Konto fortzufahren.</p></li>
+<li><p><strong>Hide as Normal Wiki</strong>: Mit dieser Option können Sie bestimmte Wiki-Einträge aus dem Menü ausblenden. Wir können diese Menüs verwenden, um sie an anderer Stelle zu implementieren.</p></li>
+<li><p><strong>Custom ID</strong>: Ein eigener Bezeichner, mit dem Ihr Wiki-Eintrag gesondert erkannt werden kann. Wir verwenden diesen Eintrag, um das Impressum, den Datenschutz usw. zu kennzeichnen. Unzulässige Werte für neue Wiki-Einträge und von uns reservierte Bezeichner sind: “about_us”, “license”, “privacy_policy”, “cookieComponentConsent”, “cookieComponentAbout”.</p></li>
+<li><p><strong>Role</strong>: Nur Nutzer mit der entsprechenden Rolle dürfen dieses Menü sehen.</p></li>
+<li><p><strong>Title</strong>: Der Titel des Menüs in der Seitenleiste und wenn es aufgerufen wird.</p></li>
+<li><p><strong>Content</strong>: Der Inhalt im Menü, der für den Endnutzer angezeigt wird. Dies ist ein Markdown-Feld, sodass Sie auch Formatierungsoptionen nutzen können. Die Darstellung im Backend kann von der Darstellung auf den Endgeräten leicht abweichen, daher sollten Sie dies überprüfen.</p></li>
+<li><p><strong>URL</strong>: Wenn Sie den Nutzer zu einem Link weiterleiten möchten, können Sie hier die neue URL eingeben. Dies kann nützlich sein, wenn Sie beispielsweise einen Link zu Ihrer Umfrage öffnen lassen möchten.</p></li>
+<li><p><strong>Children</strong>: Diese Felder müssen Sie nicht ausfüllen.</p></li>
+<li><p><strong>Be Source for Translation</strong>: Ob die angezeigte Sprache als Ausgangssprache verwendet werden soll (nur verfügbar, wenn die automatische Übersetzungsfunktion aktiviert ist). In diesem Fall sollten Sie bei den anderen Sprachen diese Option deaktivieren, wenn Sie die Ausgangssprache ändern möchten.</p></li>
+<li><p><strong>Let Be Translated</strong>: Ob die angezeigte Sprache automatisch übersetzt werden soll (nur verfügbar, wenn die automatische Übersetzungsfunktion aktiviert ist).</p></li>
+<li><p><strong>Create Translations for All Languages</strong>: Ob für alle Sprachen eine Übersetzung erstellt werden soll (nur verfügbar, wenn die automatische Übersetzungsfunktion aktiviert ist).</p></li>
+</ul>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="balance-check.html" class="btn btn-neutral float-left" title="Guthaben Abfrage: Eine Lösung für bargeldloses Bezahlen" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="news.html" class="btn btn-neutral float-right" title="Neuigkeiten" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Baumgartner Software UG (haftungsbeschränkt).</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

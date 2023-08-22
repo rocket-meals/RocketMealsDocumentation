@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wohnanlagen &mdash; Rocket Meals 0.0.1 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../_static/documentation_options.js?v=d45e8c67"></script>
+        <script src="../_static/doctools.js?v=888ff710"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Wäschereiverwaltung" href="washingmachines.html" />
+    <link rel="prev" title="Gebäudeinformationen" href="buildings.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../contents.html" class="icon icon-home">
+            Rocket Meals
+              <img src="../_static/logo.png" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                0.0.1
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Rocket Meals</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../index.html">Einleitung</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Anleitungen</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Guides/quickstart.html">Erste Schritte</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Guides/integration.html">Integration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Guides/security_compliance.html">Sicherheit und Konformität</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Guides/troubleshooting.html">Fehlerbehebung</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Anforderungen</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Requirements/device_requirements.html">Endgerät-Anforderungen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Requirements/app_identity.html">App-Identität</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Requirements/apple_developer_account.html">Apple Developer Account</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Requirements/google_developer_account.html">Google Developer Account</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Guides/meals-update.html">Speiseplan-Daten</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Funktionen</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="push-notifications.html">Push-Nachrichten</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ota-updates.html">OTA-Updates</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ingredient-filter.html">Kennzeichnung Einstellung</a></li>
+<li class="toctree-l1"><a class="reference internal" href="meals.html">Speiseplan</a></li>
+<li class="toctree-l1"><a class="reference internal" href="meal-feedback.html">Speise-Bewertungen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="price-category.html">Preiskategorien</a></li>
+<li class="toctree-l1"><a class="reference internal" href="automatic-translation.html">Automatische Übersetzung</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sso.html">Single Sign-on (Einmalanmeldung)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="balance-check.html">Guthaben Abfrage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="menu-configuration.html">Konfigurierbares Menü</a></li>
+<li class="toctree-l1"><a class="reference internal" href="news.html">News</a></li>
+<li class="toctree-l1"><a class="reference internal" href="buildings.html">Gebäude</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Wohnanlagen</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#einrichtung-der-wohnanlageninformationen">Einrichtung der Wohnanlageninformationen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#aktualisierung-der-wohnanlageninformationen">Aktualisierung der Wohnanlageninformationen</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="washingmachines.html">Waschanlagen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ingredient-filter.html">TODO: Stundenplaner</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ingredient-filter.html">TODO: Bewertungen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ingredient-filter.html">TODO: Speisevorschläge</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ingredient-filter.html">TODO: Auslastungsprognose</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ingredient-filter.html">TODO: Lageplan</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Grundlegende Merkmale</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../CoreFeatures/user-roles-permissions.html">Benutzerrollen und Berechtigungen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../CoreFeatures/language.html">Sprache</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../CoreFeatures/anonymous-usage.html">Anonyme Nutzung</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../CoreFeatures/transparent-data-insight.html">Transparente Dateneinsicht</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../CoreFeatures/theming.html">Darstellung und Theme</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../CoreFeatures/accessibility.html">Barrierefreiheit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../CoreFeatures/auto-backups.html">TODO: Automatische Backups</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Benutzerunterstützung</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../UserSupport/user_onboarding_training.html">TODO: Benutzer-Onboarding und Schulung</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../UserSupport/supported_user_limits.html">TODO: Unterstützte Benutzergrenzen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../UserSupport/user_roles_permissions.html">TODO: Benutzerrollen und Berechtigungen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../UserSupport/user_onboarding_training.html">TODO: Benutzer-Onboarding und Schulung</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Kontakt und Support</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../ContactSupport/customer_support_channels.html">Kundensupport-Kanäle</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ContactSupport/hours_of_operation.html">Öffnungszeiten</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Referenz</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Reference/vocabulary.html">TODO: Glossar</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Reference/design.html">TODO: Design</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Reference/contributing.html">TODO: Mitwirken</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Anhänge</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Appendices/glossary_terms.html">TODO: Glossar der Begriffe</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Appendices/additional_resources.html">TODO: Zusätzliche Ressourcen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Appendices/ingredient-disclaimer.html">TODO: Speisekennzeichnungen - Haftungsausschluss</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../contents.html">Rocket Meals</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../contents.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Wohnanlagen</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/rocket-meals/RocketMealsDocumentation/blob/master/doc/source/Features/apartments.rst" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="wohnanlagen">
+<h1>Wohnanlagen<a class="headerlink" href="#wohnanlagen" title="Link to this heading">¶</a></h1>
+<p>Eine der größten Herausforderungen für Studierende ist es, bezahlbaren Wohnraum zu finden, insbesondere in Städten mit hohen Mietpreisen. Wahrscheinlich bietet Ihr Studierendenwerk ebenfalls Wohnanlagen für den schmalen Geldbeutel an. Die Wohnanlagenfunktion in der Rocket Meals Software kann Studierenden helfen, geeignete Wohnmöglichkeiten zu finden und sich über Ihre Einrichtungen und Dienstleistungen zu informieren, die in Ihren Wohnanlagen angeboten werden.</p>
+<p><strong>Waschmaschinen</strong>:</p>
+<p>Ein häufiges Problem für Studierende in Wohnanlagen ist die Verfügbarkeit und der Zugang zu Waschmaschinen. Unsere Erfahrungen haben gezeigt, dass ein Hauptproblem der Studierenden darin besteht, zu wissen, wann ihre Wäsche fertig ist. Wir bieten eine Lösung für dieses Problem an. Lesen Sie mehr unter der Funktion: <a class="reference external" href="../Reference/washingmachines.html">Waschanlagen</a>.</p>
+<section id="einrichtung-der-wohnanlageninformationen">
+<h2>Einrichtung der Wohnanlageninformationen<a class="headerlink" href="#einrichtung-der-wohnanlageninformationen" title="Link to this heading">¶</a></h2>
+<p><strong>Einmalige Einrichtung</strong>:</p>
+<p>Im Rahmen der Einrichtungsgebühren kann eine einmalige Einrichtung der Wohnanlageninformationen vorgenommen werden. Dabei benötigen wir die Informationen Ihrer Wohnanlagen. Unser Team wird vor Ort weitere Informationen sammeln und Fotos von den Gebäuden machen. Dies bietet den Vorteil, dass die Informationen von Anfang an in der App verfügbar sind und die Studierenden sofort davon profitieren können. Bitte beachten Sie, dass dieser Service einen vertretbaren Aufwand von 1-2 Arbeitstagen beinhaltet.</p>
+</section>
+<section id="aktualisierung-der-wohnanlageninformationen">
+<h2>Aktualisierung der Wohnanlageninformationen<a class="headerlink" href="#aktualisierung-der-wohnanlageninformationen" title="Link to this heading">¶</a></h2>
+<p><strong>Strukturiertes Format</strong>:</p>
+<ul class="simple">
+<li><p><strong>FTP oder REST-Schnittstelle</strong>: Wenn Sie uns Ihre Wohnanlageninformationen in einem gängigen Format wie JSON oder CSV anbieten können, z. B. über einen FTP-Job oder eine REST-Schnittstelle, können wir ein Skript implementieren, das Ihr Format automatisch einpflegt. Hierfür wird abhängig vom Umfang und der Komplexität ein gesondertes Angebot besprochen.</p></li>
+<li><p><strong>Web-Crawler</strong>:
+- Nicht immer haben Sie die Möglichkeit, Daten von Ihrer Webseite und dem zugehörigen Content-Management-System bereitzustellen. Eine Nachimplementierung bei Ihrem Anbieter kann sich aus finanziellen Gründen möglicherweise nicht lohnen oder es gibt andere Gründe, die dagegen sprechen. In diesem Fall bieten wir die Möglichkeit, die öffentlich zugänglichen Informationen von Ihrer Webseite automatisiert in Rocket Meals einpflegen zu lassen. Dabei verwenden wir einen sogenannten “Crawler”, ein Programm, das Ihre Webseite wie ein Benutzer aufruft. Diese Lösung muss individuell auf Ihre Webseite zugeschnitten werden und bedarf einer Anpassung, wenn sich Grundlegendes an den zu besuchenden Seiten ändert. TODO: Bewertung dieser Lösung
+- Hierfür wird abhängig vom Umfang und der Komplexität ein gesondertes Angebot besprochen.</p></li>
+</ul>
+<p><strong>Community-basierte Lösung</strong>:</p>
+<p>In der Zukunft möchten wir eine Community-basierte Lösung anbieten, bei der Studierende die Informationen aktuell halten können, indem sie Vorschläge machen. Dies ermöglicht es, die Informationen stets auf dem neuesten Stand zu halten und die Studierenden aktiv in den Prozess der Aktualisierung der Wohnanlageninformationen einzubeziehen.</p>
+<p><strong>API</strong>:</p>
+<p>Sie können die <a class="reference external" href="../Reference/api.html">API</a> verwenden, um die Wohnanlageninformationen zu aktualisieren. Dies bietet eine automatisierte Möglichkeit, die Informationen regelmäßig zu aktualisieren und sicherzustellen, dass sie stets auf dem neuesten Stand sind.</p>
+<p><strong>Manuell</strong>:</p>
+<p>Sie können die Wohnanlageninformationen manuell unter der Adresse des Backend aktualisieren: <a class="reference external" href="https:/">https:/</a>/&lt;Rocket Meals Instanz&gt;/api/admin/content/buildings
+Eine manuell aktualisierte Wohnanlageninformation enthält verschiedene Felder, die Sie nach Belieben ausfüllen können:</p>
+<ul class="simple">
+<li><p><strong>Available From</strong>: Sofern die Wohnanlage frei zur Vermietung ist, kann hier ein Datum angegeben werden, welches den Endnutzern angezeigt wird.</p></li>
+<li><p><strong>Handicapped Accessible</strong>: Ob diese Wohnung barrierefrei ist.</p></li>
+<li><p><strong>Family Friendly</strong>: Ob diese Wohnung familienfreundlich ist.</p></li>
+<li><p><strong>Singleflat</strong>: Ob diese Wohnung für Single-Personen ist, die nicht in einer WG wohnen möchten.</p></li>
+<li><p><strong>Building</strong>: Relation zu einem zugehörigen Gebäude. Diese Informationen werden verwendet für die allgemeinen Informationen zum Gebäude der Wohnanlage.</p></li>
+<li><p><strong>Be Source for Translation</strong>: Ob die angezeigte Sprache als Ausgangssprache verwendet werden soll (nur verfügbar, wenn die automatische Übersetzungsfunktion aktiviert ist). In diesem Fall sollten Sie bei den anderen Sprachen diese Option deaktivieren, wenn Sie die Ausgangssprache ändern möchten.</p></li>
+<li><p><strong>Let Be Translated</strong>: Ob die angezeigte Sprache automatisch übersetzt werden soll (nur verfügbar, wenn die automatische Übersetzungsfunktion aktiviert ist).</p></li>
+<li><p><strong>Create Translations for All Languages</strong>: Ob für alle Sprachen eine Übersetzung erstellt werden soll (nur verfügbar, wenn die automatische Übersetzungsfunktion aktiviert ist).</p></li>
+</ul>
+<p>Unabhängig von der gewählten Methode zur Einbindung und Aktualisierung der Wohnanlageninformationen bietet diese Funktion einen Mehrwert für die Studierenden und kann dazu beitragen, die Nutzung der Rocket Meals App zu erhöhen.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="buildings.html" class="btn btn-neutral float-left" title="Gebäudeinformationen" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="washingmachines.html" class="btn btn-neutral float-right" title="Wäschereiverwaltung" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Baumgartner Software UG (haftungsbeschränkt).</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

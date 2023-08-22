@@ -26,84 +26,109 @@ Eine effiziente Methode zur Aktualisierung Ihres Speiseplans ist die automatisch
                 - Aus dem Eintrag: `Paprika-Hähncheneintopf mit Nudeln (40,a,g) | Weizenbrötchen (1,21,a,f)` wird `Paprika-Hähncheneintopf mit Nudeln, Weizenbrötchen`.
 
 .. list-table:: TL1 Beispiel Export (Auszug und Darstellung transponiert)
-   :widths: 25 50 50
+   :widths: 25 50 50 5
    :header-rows: 1
 
    * - Eigenschaft
      - Zeile 1
      - Zeile 2
+     - Weitere Zeile
    * - MENSA
      - Beispiel Mensa
      - Beispiel Mensa
+     - ...
    * - DATUM
      - 02.08.2023
      - 02.08.2023
+     - ...
    * - VK-ArtikelNr
      - 1714
      - 1714
+     - ...
    * - VK-GebindeNR
      - 3614
      - 3614
+     - ...
    * - SPEISE
      - Eintopf (Terrine, Teller)
      - Eintopf (Terrine, Teller)
+     - ...
    * - SPEISE_BEZEICHNUNG
      - Eintopf Terrine
      - Eintopf Terrine
+     - ...
    * - REZEPTUR_ID
      - 2045
      - 2961
+     - ...
    * - TEXT1
      - Paprika-Hähncheneintopf mit Nudeln (40,a,g)
      - Paprika-Hähncheneintopf mit Nudeln (40,a,g)
+     - ...
    * - TEXT2
      - Weizenbrötchen (1,21,a,f)
      - Weizenbrötchen (1,21,a,f)
+     - ...
    * - TEXT3
      -
      -
+     - ...
    * - TEXT4
      -
      -
+     - ...
    * - TEXT5
      -
      -
+     - ...
    * - TEXT1_1
      - paprika stew with chicken and noodles (40,a,g)
      - paprika stew with chicken and noodles (40,a,g)
+     - ...
    * - TEXT2_1
      - Bread roll (1,21,a,f)
      - Bread roll (1,21,a,f)
+     - ...
    * - STD_PREIS
      - 1,80
      - 1,80
+     - ...
    * - BED_PREIS
      - 4,10
      - 4,10
+     - ...
    * - GÄSTE_PREIS
      - 5,10
      - 5,10
+     - ...
    * - FREI1
      - a
      - a
+     - ...
    * - FREI2
      -
      -
+     - ...
    * - FREI3
      -
      -
+     - ...
    * - ZSNUMMERN
      - 1, 14, 18, 21, a, g, f, 0
      - 1, 14, 18, 21, a, g, f, 0
+     - ...
    * - ZSNAMEN
      - mit Farbstoff, Rindfleisch, Fleisch aus artgerechter Tierhaltung, vegan, Glutenhaltiges Getreide (a), Milch und Laktose (g), Soja (f), zusatzstoff- und allergenfrei
      - mit Farbstoff, Rindfleisch, Fleisch aus artgerechter Tierhaltung, vegan, Glutenhaltiges Getreide (a), Milch und Laktose (g), Soja (f), zusatzstoff- und allergenfrei
+     - ...
    * - NAEHRWERTEJE100G
      - Brennwert=2385 kJ (570 kcal), Fett=18,9g, davon gesättigte Fettsäuren=5,6g, Kohlenhydrate=63,4g, davon Zucker=13,7g, Ballaststoffe=4,1g, Eiweiß=29,3g, Salz=4,1g
      - Brennwert=2385 kJ (570 kcal), Fett=18,9g, davon gesättigte Fettsäuren=5,6g, Kohlenhydrate=63,4g, davon Zucker=13,7g, Ballaststoffe=4,1g, Eiweiß=29,3g, Salz=4,1g
+     - ...
    * - NAEHRWERTEJEPORT
      -
      -
+     - ...
 
 
 

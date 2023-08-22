@@ -46,30 +46,32 @@ Rocket Meals Dokumentation
    Preiskategorien <Features/price-category>
    Automatische Übersetzung <Features/automatic-translation>
    Single Sign-on (Einmalanmeldung) <Features/sso>
-   TODO: Teller-Ticker <Features/meal-reminder>
-   TODO: Guthabenleser <Features/ingredient-filter>
-   TODO: Stundenplaner <Features/ingredient-filter>
+   Guthaben Abfrage <Features/balance-check>
+   Konfigurierbares Menü <Features/menu-configuration>
+   News <Features/news>
+   Gebäude <Features/buildings>
+   Wohnanlagen <Features/apartments>
+   Waschanlagen <Features/washingmachines>
 
+   TODO: Teller-Ticker <Features/meal-reminder>
+   TODO: Stundenplaner <Features/ingredient-filter>
    TODO: Bewertungen <Features/ingredient-filter>
    TODO: Speisevorschläge <Features/ingredient-filter>
    TODO: Auslastungsprognose <Features/ingredient-filter>
-   TODO: News <Features/ingredient-filter>
-   TODO: Gebäude <Features/ingredient-filter>
-   TODO: Wohnanlagen <Features/ingredient-filter>
-   TODO: Waschmaschienen <Features/ingredient-filter>
-   TODO: Konfigurierbares Menü <Features/ingredient-filter>
    TODO: Lageplan <Features/ingredient-filter>
    ...
 
 .. toctree::
    :maxdepth: 1
    :caption: Grundlegende Merkmale
-   Sprache <CoreFeatures/language>
-   TODO: Anonyme Nutzung <Features/ingredient-filter>
-   TODO: Transparente Dateneinsicht <Features/ingredient-filter>
-   TODO: Darstellung und Theme <Features/theming>
 
-   TODO: Barrierefreiheit <Features/ingredient-filter>
+   Benutzerrollen und Berechtigungen <CoreFeatures/user-roles-permissions>
+   Sprache <CoreFeatures/language>
+   Anonyme Nutzung <CoreFeatures/anonymous-usage>
+   Transparente Dateneinsicht <CoreFeatures/transparent-data-insight>
+   Darstellung und Theme <CoreFeatures/theming>
+   Barrierefreiheit <CoreFeatures/accessibility>
+   TODO: Automatische Backups <CoreFeatures/auto-backups>
 
 .. toctree::
    :maxdepth: 1
@@ -82,9 +84,11 @@ Rocket Meals Dokumentation
    :maxdepth: 1
    :caption: Benutzerunterstützung
 
-   Unterstützte Benutzergrenzen <UserSupport/supported_user_limits>
-   Benutzerrollen und Berechtigungen <UserSupport/user_roles_permissions>
-   Benutzer-Onboarding und Schulung <UserSupport/user_onboarding_training>
+   TODO: Benutzer-Onboarding und Schulung <UserSupport/user_onboarding_training>
+
+   TODO: Unterstützte Benutzergrenzen <UserSupport/supported_user_limits>
+   TODO: Benutzerrollen und Berechtigungen <UserSupport/user_roles_permissions>
+   TODO: Benutzer-Onboarding und Schulung <UserSupport/user_onboarding_training>
 
 .. toctree::
    :maxdepth: 1
