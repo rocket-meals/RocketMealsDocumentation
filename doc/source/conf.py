@@ -231,7 +231,20 @@ latex_elements = {
 
 # The font size ('10pt', '11pt' or '12pt').
 #'pointsize': '10pt',
-
+    'preamble': r'''
+            \usepackage{enumitem}
+            \setlistdepth{9}
+            \setlist[itemize,1]{label=\textbullet}
+            \setlist[itemize,2]{label=--}
+            \setlist[itemize,3]{label=*}
+            \setlist[itemize,4]{label=\textperiodcentered}
+            \setlist[itemize,5]{label=|}
+            \setlist[itemize,6]{label=+}
+            \setlist[itemize,7]{label=\textopenbullet}
+            \setlist[itemize,8]{label=\textbullet}
+            \setlist[itemize,9]{label=--}
+            \renewlist{itemize}{itemize}{9}
+        '''
 # Additional stuff for the LaTeX preamble.
 #'preamble': '',
 
