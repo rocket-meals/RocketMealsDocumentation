@@ -21,7 +21,6 @@ Rocket Meals Dokumentation
    Integration <Guides/integration>
    Sicherheit und Konformität <Guides/security_compliance>
    Fehlerbehebung <Guides/troubleshooting>
-   Aktualisierung des Speiseplans <Guides/meals_update>
 
 .. toctree::
    :maxdepth: 1
@@ -33,7 +32,7 @@ Rocket Meals Dokumentation
    Google Developer Account <Requirements/google_developer_account>
    Einladung zu den Projekten <Requirements/invite_to_projects>
 
-   Speiseplan-Daten <Guides/meals_update>
+   Speiseplan-Daten <Guides/meals-update>
 
 .. toctree::
    :maxdepth: 1
