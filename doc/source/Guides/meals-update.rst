@@ -26,7 +26,7 @@ Eine effiziente Methode zur Aktualisierung Ihres Speiseplans ist die automatisch
                 - Aus dem Eintrag: `Paprika-Hähncheneintopf mit Nudeln (40,a,g) | Weizenbrötchen (1,21,a,f)` wird `Paprika-Hähncheneintopf mit Nudeln, Weizenbrötchen`.
 
 .. list-table:: TL1 Beispiel Export (Auszug und Darstellung transponiert)
-   :widths: 25 50 50 5
+   :widths: 35 50 50 10
    :header-rows: 1
 
    * - Eigenschaft

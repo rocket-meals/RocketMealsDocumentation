@@ -68,7 +68,7 @@ release = u'0.0.1'
 #
 # This is also used if you do content translation via gettext catalogs.
 # Usually you set "language" from the command line for these cases.
-language = None
+language = 'de'
 
 # There are two options for replacing |today|: either, you set today to some
 # non-false value, then it is used:
@@ -262,7 +262,7 @@ latex_documents = [
 
 # The name of an image file (relative to this directory) to place at the top of
 # the title page.
-#latex_logo = None
+latex_logo = "images/logo.png"
 
 # For "manual" documents, if this is true, then toplevel headings are parts,
 # not chapters.
