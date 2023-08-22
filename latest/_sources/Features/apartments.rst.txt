@@ -31,7 +31,7 @@ In der Zukunft möchten wir eine Community-basierte Lösung anbieten, bei der St
 
 **API**:
 
-Sie können die `API <../Reference/api.html>`_ verwenden, um die Wohnanlageninformationen zu aktualisieren. Dies bietet eine automatisierte Möglichkeit, die Informationen regelmäßig zu aktualisieren und sicherzustellen, dass sie stets auf dem neuesten Stand sind.
+Sie können die `API <../Reference/api>`_ verwenden, um die Wohnanlageninformationen zu aktualisieren. Dies bietet eine automatisierte Möglichkeit, die Informationen regelmäßig zu aktualisieren und sicherzustellen, dass sie stets auf dem neuesten Stand sind.
 
 **Manuell**:
 
