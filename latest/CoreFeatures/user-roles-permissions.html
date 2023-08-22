@@ -49,13 +49,6 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../index.html">Einleitung</a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">Anleitungen</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../Guides/quickstart.html">Erste Schritte</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../Guides/integration.html">Integration</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../Guides/security_compliance.html">Sicherheit und Konformität</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../Guides/troubleshooting.html">Fehlerbehebung</a></li>
-</ul>
 <p class="caption" role="heading"><span class="caption-text">Anforderungen</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../Requirements/device_requirements.html">Endgerät-Anforderungen</a></li>
@@ -63,6 +56,12 @@
 <li class="toctree-l1"><a class="reference internal" href="../Requirements/apple_developer_account.html">Apple Developer Account</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Requirements/google_developer_account.html">Google Developer Account</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Guides/meals-update.html">Speiseplan-Daten</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Anleitungen</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Guides/quickstart.html">TODO: Erste Schritte</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Guides/quickstart.html">TODO: Backend nutzen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Guides/troubleshooting.html">TODO: Fehlerbehebung</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Funktionen</span></p>
 <ul>
@@ -88,7 +87,10 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Grundlegende Merkmale</span></p>
 <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Benutzerrollen und Berechtigungen</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Benutzerrollen und Berechtigungen</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#individuelle-rollen">Individuelle Rollen</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="language.html">Sprache</a></li>
 <li class="toctree-l1"><a class="reference internal" href="anonymous-usage.html">Anonyme Nutzung</a></li>
 <li class="toctree-l1"><a class="reference internal" href="transparent-data-insight.html">Transparente Dateneinsicht</a></li>
@@ -152,7 +154,15 @@ Alle Aktionen von Nutzern werden, welche Datenbankeinträge anlegen, werden zur 
 <p>Standartmäßig gibt es verschiedene Basis-Rollen, welche in jedem Rocket Meals Projekt verteilt werden. Zu diesen Rollen zählen:</p>
 <ul class="simple">
 <li><p><strong>Administrator</strong>: Der Administrator hat uneingeschränkten Zugriff auf die gesamte Datenbank und alle Daten. Standartmäßig besitzen wir einen Administrator Account.</p></li>
+<li><p><strong>Moderator</strong>: Der Moderator hat hat Zugriff auf bestimmte Daten und kann diese bearbeiten. So soll beispielsweise ein Moderator Speisebilder hochladen können.</p></li>
+<li><p><strong>User</strong>: Als User Rolle sind authentifizierte Nutzer gemeint, welche einen Account angelegt haben oder sich mittels SSO angemeldet haben. Endnutzer dieser Rolle können die Funktionen der Anwendung benutzen, allgemein bezeichnen wir diese häufig als Studierende oder Gäste mit Account.</p></li>
+<li><p><strong>Public</strong>: Als Public Rollen sind anonyme Nutzer und auch nicht authentifizierte Nutzer gemeint. Endnutzer mit dieser Rolle können nur beschränkt auf Daten zugreifen, jedoch keine Daten bearbeiten.</p></li>
 </ul>
+<p>Wir arbeiten ständig an weiteren Standard Rollen aus unseren Erfahrungen mit anderen Kunden und Studierendenwerken.</p>
+<section id="individuelle-rollen">
+<h2>Individuelle Rollen<a class="headerlink" href="#individuelle-rollen" title="Link to this heading">¶</a></h2>
+<p>Gerne können wir Ihnen weitere Rollen erstellen und diese auf Ihre Bedürfnisse zuschneiden, damit z. B. Mitarbeitende Personen aus der Gastronomie nicht auf Daten der Wohnanlagen zugreifen dürfen. Hierbei müssen wir zunächst Ihren Bedarf ermitteln. Hierfür wird abhängig vom Umfang und der Komplexität ein gesondertes Angebot besprochen.</p>
+</section>
 </section>
 
 

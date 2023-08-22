@@ -15,15 +15,6 @@ Rocket Meals Dokumentation
 
 .. toctree::
    :maxdepth: 1
-   :caption: Anleitungen
-
-   Erste Schritte <Guides/quickstart>
-   Integration <Guides/integration>
-   Sicherheit und Konformität <Guides/security_compliance>
-   Fehlerbehebung <Guides/troubleshooting>
-
-.. toctree::
-   :maxdepth: 1
    :caption: Anforderungen
 
    Endgerät-Anforderungen <Requirements/device_requirements>
@@ -33,6 +24,14 @@ Rocket Meals Dokumentation
    Einladung zu den Projekten <Requirements/invite_to_projects>
 
    Speiseplan-Daten <Guides/meals-update>
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Anleitungen
+
+   TODO: Erste Schritte <Guides/quickstart>
+   TODO: Backend nutzen <Guides/quickstart>
+   TODO: Fehlerbehebung <Guides/troubleshooting>
 
 .. toctree::
    :maxdepth: 1
