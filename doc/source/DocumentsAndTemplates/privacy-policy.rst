@@ -147,10 +147,13 @@ Bitte ersetzen Sie die folgenden Variablen:
     Name der abgerufenen Website und Datei
     - IP-Adresse des Nutzers
     - Datum und Uhrzeit des Zugriffs
+    - Aktionstyp (Update, Löschung, Erstellung, Login, Kommentierung)
     - Meldung über erfolgreichen Abruf
     - Übertragene Datenmenge
     - Websites, von denen das System des Nutzers auf unsere Internetseite gelangt
-    - Informationen über Browsertyp und Endgerätes und verwendete Version einschließlich Betriebssystem
+    - User Agent: Informationen über Browsertyp und Endgerätes und verwendete Version einschließlich Betriebssystem
+    - Datenbank Collection
+    - Datenbank Item Schlüssel
 
     Die Daten werden ebenfalls in den Logfiles unseres Systems gespeichert. Rechtsgrundlage für die vorübergehende Speicherung der Daten und der Logfiles ist Art. 6 Abs. 1 lit. f DSGVO.
 
