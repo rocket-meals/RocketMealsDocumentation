@@ -1,2 +1,7 @@
 
 .idea/
+
+doc/build/**
+!doc/build/latex/RocketMealsDocumentation.pdf
+
+**/.DS_Store
