@@ -8,3 +8,5 @@ Um diese Herausforderung zu bewältigen, nutzen wir die künstliche Intelligenz 
 Die Funktion der automatischen Übersetzung kann als zusätzliche Option hinzugebucht werden. Wenn Sie diese Funktion aktiviert haben, werden standardmäßig eine Vielzahl von Texten automatisch übersetzt, darunter Speisen, Nachrichten, Beschreibungen von Gebäuden und Wohnanlagen und vieles mehr.
 
 Die Unterstützung mehrerer Sprachen bringt natürlich auch die Herausforderung mit sich, diese Inhalte einzupflegen. Mit der automatischen Übersetzungsfunktion von Rocket Meals können Sie jedoch sicherstellen, dass Ihre Inhalte immer in mehreren Sprachen verfügbar sind, um ein breiteres Publikum anzusprechen.
+
+Sie können den aktuellen Stand des Verbrauchs immer unter über das Backend unter der Adresse einsehen: https://<ROCKET_MEALS_INSTANZ>/api/admin/content/auto_translation_settings
