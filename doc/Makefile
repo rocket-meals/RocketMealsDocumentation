@@ -140,6 +140,7 @@ latex:
 
 .PHONY: latexpdf
 latexpdf:
+	rm -rf $(BUILDDIR)
 	$(SPHINXBUILD) -b latex $(ALLSPHINXOPTS) $(BUILDDIR)/latex
 	@echo "Running LaTeX files through pdflatex..."
 	$(MAKE) -C $(BUILDDIR)/latex all-pdf
