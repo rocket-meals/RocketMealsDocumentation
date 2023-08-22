@@ -30,51 +30,49 @@ Bitte ersetzen Sie die folgenden Variablen:
 
 
 
-```
-# Über uns
+.. code-block:: md
+    # Über uns
 
-Diese Webseite und App ist aus einer Master-Arbeit von Nils Baumgartner entstanden. Das Motto lautet "von Studierenden für Studierende" und so soll dein Alltag im Studium gut ergänzt werden.
-
-
-# Impressum
+    Diese Webseite und App ist aus einer Master-Arbeit von Nils Baumgartner entstanden. Das Motto lautet "von Studierenden für Studierende" und so soll dein Alltag im Studium gut ergänzt werden.
 
 
-Die nachstehenden Informationen enthalten die gesetzlich vorgesehenen Pflichtangaben zur Anbieterkennzeichnung sowie rechtliche Hinweise zur Internetpräsenz und und App.
-
-## Herausgeber:
-- VARIABLE_HERAUSGEBER_NAME
-- VARIABLE_HERAUSGEBER_RECHTSFORM
-- VARIABLE_HERAUSGEBER_ADRESSE
-- VARIABLE_HERAUSGEBER_UMSATZSTEUER_ID
-- VARIABLE_HERAUSGEBER_HANDELS_REGISTER_NR
-
-### Kontaktmöglichkeiten
-- E-Mail-Adresse: [VARIABLE_HERAUSGEBER_VERANTWORTLICHE_EMAIL](mailto:VARIABLE_HERAUSGEBER_VERANTWORTLICHE_EMAIL)
-
-### Gestaltung und technische Umsetzung
-- Nils Baumgartner ([nilsbaumgartner1994@gmail.com](mailto:nilsbaumgartner1994@gmail.com))
-- Homepage: [baumgartner-software.de](https://baumgartner-software.de)
-
-## Verantwortlich für journalistisch-redaktionelle Inhalte:
-
-- VARIABLE_JOURNALISTISCHER_ANSPRECHPARTNER_PERSON
-- VARIABLE_JOURNALISTISCHER_ANSPRECHPARTNER_EMAIL
+    # Impressum
 
 
-# Haftungsausschluss
+    Die nachstehenden Informationen enthalten die gesetzlich vorgesehenen Pflichtangaben zur Anbieterkennzeichnung sowie rechtliche Hinweise zur Internetpräsenz und und App.
 
-## Inhalt des Onlineangebots
+    ## Herausgeber:
+    - VARIABLE_HERAUSGEBER_NAME
+    - VARIABLE_HERAUSGEBER_RECHTSFORM
+    - VARIABLE_HERAUSGEBER_ADRESSE
+    - VARIABLE_HERAUSGEBER_UMSATZSTEUER_ID
+    - VARIABLE_HERAUSGEBER_HANDELS_REGISTER_NR
 
-Der Autor übernimmt keinerlei Gewähr für die Aktualität, Korrektheit, Vollständigkeit oder Qualität der bereitgestellten Informationen. Haftungsansprüche gegen den Autor, welche sich auf Schäden materieller oder ideeller Art beziehen, die durch die Nutzung oder Nichtnutzung der dargebotenen Informationen bzw. durch die Nutzung fehlerhafter und unvollständiger Informationen verursacht wurden, sind grundsätzlich ausgeschlossen, sofern seitens des Autors kein nachweislich vorsätzliches oder grob fahrlässiges Verschulden vorliegt.
+    ### Kontaktmöglichkeiten
+    - E-Mail-Adresse: [VARIABLE_HERAUSGEBER_VERANTWORTLICHE_EMAIL](mailto:VARIABLE_HERAUSGEBER_VERANTWORTLICHE_EMAIL)
 
-Alle Angebote sind freibleibend und unverbindlich. Der Autor behält es sich ausdrücklich vor, Teile der Seiten oder das gesamte Angebot ohne gesonderte Ankündigung zu verändern, zu ergänzen, zu löschen oder die Veröffentlichung zeitweise oder endgültig einzustellen.
+    ### Gestaltung und technische Umsetzung
+    - Nils Baumgartner ([nilsbaumgartner1994@gmail.com](mailto:nilsbaumgartner1994@gmail.com))
+    - Homepage: [baumgartner-software.de](https://baumgartner-software.de)
 
-## Verweise und Links
+    ## Verantwortlich für journalistisch-redaktionelle Inhalte:
 
-Bei direkten oder indirekten Verweisen auf fremde Webseiten ("Hyperlinks"), die außerhalb des Verantwortungsbereiches des Autors liegen, würde eine Haftungsverpflichtung ausschließlich in dem Fall in Kraft treten, in dem der Autor von den Inhalten Kenntnis hat und es ihm technisch möglich und zumutbar wäre, die Nutzung im Falle rechtswidriger Inhalte zu verhindern.
+    - VARIABLE_JOURNALISTISCHER_ANSPRECHPARTNER_PERSON
+    - VARIABLE_JOURNALISTISCHER_ANSPRECHPARTNER_EMAIL
 
-## Urheber- und Kennzeichenrecht
 
-Der Autor ist bestrebt, in allen Publikationen die Urheberrechte der verwendeten Grafiken, Tondokumente, Videosequenzen und Texte zu beachten, von ihm selbst erstellte Grafiken, Tondokumente, Videosequenzen und Texte zu nutzen oder auf lizenzfreie Grafiken, Tondokumente, Videosequenzen und Texte zurückzugreifen.
+    # Haftungsausschluss
 
-```
+    ## Inhalt des Onlineangebots
+
+    Der Autor übernimmt keinerlei Gewähr für die Aktualität, Korrektheit, Vollständigkeit oder Qualität der bereitgestellten Informationen. Haftungsansprüche gegen den Autor, welche sich auf Schäden materieller oder ideeller Art beziehen, die durch die Nutzung oder Nichtnutzung der dargebotenen Informationen bzw. durch die Nutzung fehlerhafter und unvollständiger Informationen verursacht wurden, sind grundsätzlich ausgeschlossen, sofern seitens des Autors kein nachweislich vorsätzliches oder grob fahrlässiges Verschulden vorliegt.
+
+    Alle Angebote sind freibleibend und unverbindlich. Der Autor behält es sich ausdrücklich vor, Teile der Seiten oder das gesamte Angebot ohne gesonderte Ankündigung zu verändern, zu ergänzen, zu löschen oder die Veröffentlichung zeitweise oder endgültig einzustellen.
+
+    ## Verweise und Links
+
+    Bei direkten oder indirekten Verweisen auf fremde Webseiten ("Hyperlinks"), die außerhalb des Verantwortungsbereiches des Autors liegen, würde eine Haftungsverpflichtung ausschließlich in dem Fall in Kraft treten, in dem der Autor von den Inhalten Kenntnis hat und es ihm technisch möglich und zumutbar wäre, die Nutzung im Falle rechtswidriger Inhalte zu verhindern.
+
+    ## Urheber- und Kennzeichenrecht
+
+    Der Autor ist bestrebt, in allen Publikationen die Urheberrechte der verwendeten Grafiken, Tondokumente, Videosequenzen und Texte zu beachten, von ihm selbst erstellte Grafiken, Tondokumente, Videosequenzen und Texte zu nutzen oder auf lizenzfreie Grafiken, Tondokumente, Videosequenzen und Texte zurückzugreifen.
