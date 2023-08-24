@@ -58,18 +58,13 @@
 <li class="toctree-l1"><a class="reference internal" href="../Requirements/google_developer_account.html">Google Developer Account</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Guides/meals-update.html">Speiseplan-Daten</a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">Anleitungen</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../Guides/quickstart.html">TODO: Erste Schritte</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../Guides/quickstart.html">TODO: Backend nutzen</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../Guides/troubleshooting.html">TODO: Fehlerbehebung</a></li>
-</ul>
 <p class="caption" role="heading"><span class="caption-text">Funktionen</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="push-notifications.html">Push-Nachrichten</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ota-updates.html">OTA-Updates</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ingredient-filter.html">Kennzeichnung Einstellung</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Speiseplan</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#definitionen-speise-vs-speiseangebot">Definitionen: Speise vs. Speiseangebot</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#tagesauswahl">Tagesauswahl</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#speisedarstellung">Speisedarstellung</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#detailansicht">Detailansicht</a></li>
@@ -87,11 +82,6 @@
 <li class="toctree-l1"><a class="reference internal" href="buildings.html">Gebäude</a></li>
 <li class="toctree-l1"><a class="reference internal" href="apartments.html">Wohnanlagen</a></li>
 <li class="toctree-l1"><a class="reference internal" href="washingmachines.html">Waschanlagen</a></li>
-<li class="toctree-l1"><a class="reference internal" href="ingredient-filter.html">TODO: Stundenplaner</a></li>
-<li class="toctree-l1"><a class="reference internal" href="ingredient-filter.html">TODO: Bewertungen</a></li>
-<li class="toctree-l1"><a class="reference internal" href="ingredient-filter.html">TODO: Speisevorschläge</a></li>
-<li class="toctree-l1"><a class="reference internal" href="ingredient-filter.html">TODO: Auslastungsprognose</a></li>
-<li class="toctree-l1"><a class="reference internal" href="ingredient-filter.html">TODO: Lageplan</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Grundlegende Merkmale</span></p>
 <ul>
@@ -101,31 +91,11 @@
 <li class="toctree-l1"><a class="reference internal" href="../CoreFeatures/transparent-data-insight.html">Transparente Dateneinsicht</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../CoreFeatures/theming.html">Darstellung und Theme</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../CoreFeatures/accessibility.html">Barrierefreiheit</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../CoreFeatures/auto-backups.html">TODO: Automatische Backups</a></li>
-</ul>
-<p class="caption" role="heading"><span class="caption-text">Benutzerunterstützung</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../UserSupport/user_onboarding_training.html">TODO: Benutzer-Onboarding und Schulung</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../UserSupport/supported_user_limits.html">TODO: Unterstützte Benutzergrenzen</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../UserSupport/user_roles_permissions.html">TODO: Benutzerrollen und Berechtigungen</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../UserSupport/user_onboarding_training.html">TODO: Benutzer-Onboarding und Schulung</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Kontakt und Support</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../ContactSupport/customer_support_channels.html">Kundensupport-Kanäle</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../ContactSupport/hours_of_operation.html">Öffnungszeiten</a></li>
-</ul>
-<p class="caption" role="heading"><span class="caption-text">Referenz</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../Reference/vocabulary.html">TODO: Glossar</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../Reference/design.html">TODO: Design</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../Reference/contributing.html">TODO: Mitwirken</a></li>
-</ul>
-<p class="caption" role="heading"><span class="caption-text">Anhänge</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../Appendices/glossary_terms.html">TODO: Glossar der Begriffe</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../Appendices/additional_resources.html">TODO: Zusätzliche Ressourcen</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../Appendices/ingredient-disclaimer.html">TODO: Speisekennzeichnungen - Haftungsausschluss</a></li>
 </ul>
 
         </div>
@@ -154,7 +124,53 @@
              
   <section id="speiseplan">
 <h1>Speiseplan<a class="headerlink" href="#speiseplan" title="Link to this heading">¶</a></h1>
-<p>Der Speiseplan ist ein zentrales Element der Rocket Meals App, das den Benutzern einen Überblick über die in verschiedenen Mensen verfügbaren Speisen bietet.</p>
+<p>Das Speiseplan-Modul ist ein integraler Bestandteil der Rocket Meals Applikation und dient als zentrale Schnittstelle, die den Benutzern eine umfassende Übersicht über die verfügbaren Speisen in verschiedenen Betriebskantinen bietet.</p>
+<section id="definitionen-speise-vs-speiseangebot">
+<h2>Definitionen: Speise vs. Speiseangebot<a class="headerlink" href="#definitionen-speise-vs-speiseangebot" title="Link to this heading">¶</a></h2>
+<p>Bevor wir weiter ins Detail gehen, ist es wichtig, die Unterscheidung zwischen einer „Speise“ und einem „Speiseangebot“ zu klären.</p>
+<p><strong>Speise</strong></p>
+<p>Eine „Speise“ ist ein Datensatz, der die grundlegenden Informationen enthält, auf die verschiedene Speiseangebote zurückgreifen können. Die Attribute einer Speise umfassen:</p>
+<ul class="simple">
+<li><p><strong>ID</strong>: Eindeutige Identifikationsnummer der Speise (kann alphanumerisch sein)</p></li>
+<li><p><strong>Kalorien (calires_kcal)</strong>: Kaloriengehalt in Kilo-Kalorien</p></li>
+<li><p><strong>Kohlenhydrate (carbohydrate_g)</strong>: Kohlenhydratgehalt in Gramm</p></li>
+<li><p><strong>Fette (fat_g)</strong>: Fettgehalt in Gramm</p></li>
+<li><p><strong>Ballaststoffe (fiber_g)</strong>: Ballaststoffgehalt in Gramm</p></li>
+<li><p><strong>Proteine (protein_g)</strong>: Proteingehalt in Gramm</p></li>
+<li><p><strong>Gesättigte Fettsäuren (saturated_fat_g)</strong>: Gehalt an gesättigten Fettsäuren in Gramm</p></li>
+<li><p><strong>Natrium (sodium_g)</strong>: Natriumgehalt in Gramm</p></li>
+<li><p><strong>Zucker (sugar_g)</strong>: Zuckergehalt in Gramm</p></li>
+<li><p><strong>Zusatzinformationen (extra)</strong>: Individuelle Anpassungen und weitere Details</p></li>
+<li><p><strong>Übersetzungen (translations)</strong>: Mehrsprachige Bezeichnungen der Speise
+- <strong>Name</strong>: Bezeichnung der Speise
+- Weitere Informationen zur API-Integration finden Sie [hier](../Reference/api.html).</p></li>
+<li><p><strong>Bild (image)</strong>: Visuelle Darstellung der Speise</p></li>
+<li><p><strong>Feedbacks</strong>: Verknüpfung zu Benutzerbewertungen und -rückmeldungen</p></li>
+<li><p><strong>Markierungen (markings)</strong>: Informationen zu Allergenen und anderen Kennzeichnungen</p></li>
+</ul>
+<p><strong>Speiseangebot</strong></p>
+<p>Ein „Speiseangebot“ ist eine spezifische Instanz einer Speise, die zu einem bestimmten Zeitpunkt in einer bestimmten Kantine verfügbar ist. Die Attribute eines Speiseangebots umfassen:
+Ein Speiseangebot kann unterschiedliche Nährwerte und Kennzeichnungen haben als die eigentliche Speise. Dies resultiert aus unserer Erfahrung, dass es aufgrund von Umstellungen bei Lieferanten, Portionsgrößen oder unvorhergesehenem Zutatenmangel vorkommen kann, dass die angebotene Speise anders als sonst ist. Damit Sie flexibel bleiben können, werden diese Informationen sowohl für die Speise als auch für das Speiseangebot jeweils angegeben.</p>
+<ul class="simple">
+<li><p><strong>Speise (food)</strong>: Verknüpfung zur zugrundeliegenden Speise
+- Kennzeichnungen müssen für jedes Speiseangebot separat angegeben werden.</p></li>
+<li><p><strong>Preise</strong>:
+- <strong>Mitarbeiter (price_employee)</strong>: Preis in Euro für Angestellte
+- <strong>Gäste (price_guest)</strong>: Preis in Euro für Gäste
+- <strong>Studierende (price_student)</strong>: Preis in Euro für Studierende</p></li>
+<li><p><strong>Datum (date)</strong>: Gültigkeitsdatum des Angebots</p></li>
+<li><p><strong>Kantine (canteen)</strong>: Verknüpfung zur Betriebskantine, in der das Angebot verfügbar ist</p></li>
+<li><p><strong>Kennzeichnungen (markings)</strong>: Informationen zu Allergenen und anderen Kennzeichnungen</p></li>
+<li><p><strong>Kalorien (calires_kcal)</strong>: Kaloriengehalt in Kilo-Kalorien</p></li>
+<li><p><strong>Kohlenhydrate (carbohydrate_g)</strong>: Kohlenhydratgehalt in Gramm</p></li>
+<li><p><strong>Fette (fat_g)</strong>: Fettgehalt in Gramm</p></li>
+<li><p><strong>Ballaststoffe (fiber_g)</strong>: Ballaststoffgehalt in Gramm</p></li>
+<li><p><strong>Proteine (protein_g)</strong>: Proteingehalt in Gramm</p></li>
+<li><p><strong>Gesättigte Fettsäuren (saturated_fat_g)</strong>: Gehalt an gesättigten Fettsäuren in Gramm</p></li>
+<li><p><strong>Natrium (sodium_g)</strong>: Natriumgehalt in Gramm</p></li>
+<li><p><strong>Zucker (sugar_g)</strong>: Zuckergehalt in Gramm</p></li>
+</ul>
+</section>
 <section id="tagesauswahl">
 <h2>Tagesauswahl<a class="headerlink" href="#tagesauswahl" title="Link to this heading">¶</a></h2>
 <p>Benutzer können den gewünschten Tag für die Anzeige des Speiseplans auswählen. Standardmäßig wird der aktuelle Tag in der App angezeigt. Wenn an einem bestimmten Tag keine Speisen verfügbar sind, z. B. an einem Samstag, werden die Angebote für die nächsten und die vergangenen sieben Tage angezeigt, sodass Benutzer vor- oder zurückblättern können.</p>

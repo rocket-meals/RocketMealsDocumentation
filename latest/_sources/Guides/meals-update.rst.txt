@@ -3,6 +3,7 @@ Aktualisierung des Speiseplans
 
 Die regelmäßige Aktualisierung des Speiseplans in Ihrer Rocket Meals-Anwendung ist von entscheidender Bedeutung, um sicherzustellen, dass Ihre Kunden stets über die neuesten verfügbaren Speisen informiert sind. Es stehen Ihnen verschiedene Methoden zur Verfügung, um Ihren Speiseplan in Rocket Meals zu aktualisieren:
 
+
 TL1 Export
 ---------------------------------------------
 

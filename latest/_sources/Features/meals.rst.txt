@@ -1,7 +1,57 @@
 Speiseplan
 ==========
 
-Der Speiseplan ist ein zentrales Element der Rocket Meals App, das den Benutzern einen Überblick über die in verschiedenen Mensen verfügbaren Speisen bietet.
+Das Speiseplan-Modul ist ein integraler Bestandteil der Rocket Meals Applikation und dient als zentrale Schnittstelle, die den Benutzern eine umfassende Übersicht über die verfügbaren Speisen in verschiedenen Betriebskantinen bietet.
+
+
+Definitionen: Speise vs. Speiseangebot
+------------
+
+Bevor wir weiter ins Detail gehen, ist es wichtig, die Unterscheidung zwischen einer "Speise" und einem "Speiseangebot" zu klären.
+
+**Speise**
+
+Eine "Speise" ist ein Datensatz, der die grundlegenden Informationen enthält, auf die verschiedene Speiseangebote zurückgreifen können. Die Attribute einer Speise umfassen:
+
+- **ID**: Eindeutige Identifikationsnummer der Speise (kann alphanumerisch sein)
+- **Kalorien (calires_kcal)**: Kaloriengehalt in Kilo-Kalorien
+- **Kohlenhydrate (carbohydrate_g)**: Kohlenhydratgehalt in Gramm
+- **Fette (fat_g)**: Fettgehalt in Gramm
+- **Ballaststoffe (fiber_g)**: Ballaststoffgehalt in Gramm
+- **Proteine (protein_g)**: Proteingehalt in Gramm
+- **Gesättigte Fettsäuren (saturated_fat_g)**: Gehalt an gesättigten Fettsäuren in Gramm
+- **Natrium (sodium_g)**: Natriumgehalt in Gramm
+- **Zucker (sugar_g)**: Zuckergehalt in Gramm
+- **Zusatzinformationen (extra)**: Individuelle Anpassungen und weitere Details
+- **Übersetzungen (translations)**: Mehrsprachige Bezeichnungen der Speise
+  - **Name**: Bezeichnung der Speise
+  - Weitere Informationen zur API-Integration finden Sie [hier](../Reference/api.html).
+- **Bild (image)**: Visuelle Darstellung der Speise
+- **Feedbacks**: Verknüpfung zu Benutzerbewertungen und -rückmeldungen
+- **Markierungen (markings)**: Informationen zu Allergenen und anderen Kennzeichnungen
+
+**Speiseangebot**
+
+Ein "Speiseangebot" ist eine spezifische Instanz einer Speise, die zu einem bestimmten Zeitpunkt in einer bestimmten Kantine verfügbar ist. Die Attribute eines Speiseangebots umfassen:
+Ein Speiseangebot kann unterschiedliche Nährwerte und Kennzeichnungen haben als die eigentliche Speise. Dies resultiert aus unserer Erfahrung, dass es aufgrund von Umstellungen bei Lieferanten, Portionsgrößen oder unvorhergesehenem Zutatenmangel vorkommen kann, dass die angebotene Speise anders als sonst ist. Damit Sie flexibel bleiben können, werden diese Informationen sowohl für die Speise als auch für das Speiseangebot jeweils angegeben.
+
+- **Speise (food)**: Verknüpfung zur zugrundeliegenden Speise
+  - Kennzeichnungen müssen für jedes Speiseangebot separat angegeben werden.
+- **Preise**:
+  - **Mitarbeiter (price_employee)**: Preis in Euro für Angestellte
+  - **Gäste (price_guest)**: Preis in Euro für Gäste
+  - **Studierende (price_student)**: Preis in Euro für Studierende
+- **Datum (date)**: Gültigkeitsdatum des Angebots
+- **Kantine (canteen)**: Verknüpfung zur Betriebskantine, in der das Angebot verfügbar ist
+- **Kennzeichnungen (markings)**: Informationen zu Allergenen und anderen Kennzeichnungen
+- **Kalorien (calires_kcal)**: Kaloriengehalt in Kilo-Kalorien
+- **Kohlenhydrate (carbohydrate_g)**: Kohlenhydratgehalt in Gramm
+- **Fette (fat_g)**: Fettgehalt in Gramm
+- **Ballaststoffe (fiber_g)**: Ballaststoffgehalt in Gramm
+- **Proteine (protein_g)**: Proteingehalt in Gramm
+- **Gesättigte Fettsäuren (saturated_fat_g)**: Gehalt an gesättigten Fettsäuren in Gramm
+- **Natrium (sodium_g)**: Natriumgehalt in Gramm
+- **Zucker (sugar_g)**: Zuckergehalt in Gramm
 
 Tagesauswahl
 ------------
