@@ -29,6 +29,7 @@ Rocket Meals Dokumentation
    :maxdepth: 1
    :caption: Anleitungen
 
+..
    TODO: Erste Schritte <Guides/quickstart>
    TODO: Backend nutzen <Guides/quickstart>
    TODO: Fehlerbehebung <Guides/troubleshooting>
@@ -52,6 +53,7 @@ Rocket Meals Dokumentation
    Wohnanlagen <Features/apartments>
    Waschanlagen <Features/washingmachines>
 
+..
    TODO: Teller-Ticker <Features/meal-reminder>
    TODO: Stundenplaner <Features/ingredient-filter>
    TODO: Bewertungen <Features/ingredient-filter>
@@ -70,6 +72,8 @@ Rocket Meals Dokumentation
    Transparente Dateneinsicht <CoreFeatures/transparent-data-insight>
    Darstellung und Theme <CoreFeatures/theming>
    Barrierefreiheit <CoreFeatures/accessibility>
+
+..
    TODO: Automatische Backups <CoreFeatures/auto-backups>
 
 .. toctree::
@@ -83,8 +87,8 @@ Rocket Meals Dokumentation
    :maxdepth: 1
    :caption: Benutzerunterstützung
 
+..
    TODO: Benutzer-Onboarding und Schulung <UserSupport/user_onboarding_training>
-
    TODO: Unterstützte Benutzergrenzen <UserSupport/supported_user_limits>
    TODO: Benutzerrollen und Berechtigungen <UserSupport/user_roles_permissions>
    TODO: Benutzer-Onboarding und Schulung <UserSupport/user_onboarding_training>
@@ -101,6 +105,7 @@ Rocket Meals Dokumentation
    :maxdepth: 1
    :caption: Referenz
 
+..
    TODO: Benutzer-API <Reference/user-api>
    TODO: Glossar <Reference/vocabulary>
    TODO: Design <Reference/design>
@@ -110,6 +115,7 @@ Rocket Meals Dokumentation
    :maxdepth: 1
    :caption: Anhänge
 
+..
    TODO: Glossar der Begriffe <Appendices/glossary_terms>
    TODO: Zusätzliche Ressourcen <Appendices/additional_resources>
    TODO: Speisekennzeichnungen - Haftungsausschluss <Appendices/ingredient-disclaimer>
