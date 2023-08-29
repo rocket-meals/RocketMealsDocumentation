@@ -57,6 +57,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../Requirements/apple_developer_account.html">Apple Developer Account</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Requirements/google_developer_account.html">Google Developer Account</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Guides/meals-update.html">Speiseplan-Daten</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Requirements/accessibility.html">Barrierefreiheitserklärung</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Funktionen</span></p>
 <ul>
@@ -78,7 +79,11 @@
 <p class="caption" role="heading"><span class="caption-text">Grundlegende Merkmale</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="user-roles-permissions.html">Benutzerrollen und Berechtigungen</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Sprache</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Sprache</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#standardmaszige-mehrsprachigkeit-in-ui-ux">Standardmäßige Mehrsprachigkeit in UI/UX</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#individuelle-inhalte">Individuelle Inhalte</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="anonymous-usage.html">Anonyme Nutzung</a></li>
 <li class="toctree-l1"><a class="reference internal" href="transparent-data-insight.html">Transparente Dateneinsicht</a></li>
 <li class="toctree-l1"><a class="reference internal" href="theming.html">Darstellung und Theme</a></li>
@@ -116,7 +121,7 @@
              
   <section id="mehrsprachigkeit">
 <h1>Mehrsprachigkeit<a class="headerlink" href="#mehrsprachigkeit" title="Link to this heading">¶</a></h1>
-<p>Die Vielfalt der Menschen, die Ihre Gäste und Endnutzer sind, spiegelt sich auch in der Vielfalt ihrer Herkunft und Sprache wider. Bei Rocket Meals haben wir erkannt, wie wichtig es ist, mehrere Sprachen zu unterstützen. Unsere Anwendung unterstützt standardmäßig 12 Sprachen:</p>
+<p>Bei Rocket Meals sind wir uns der globalen Reichweite Ihrer Nutzerbasis und der Bedeutung einer nahtlosen Erfahrung in diversen Sprachräumen bewusst. Unsere Anwendung ist darauf ausgelegt, standardmäßig 12 Kernsprachen zu unterstützen:</p>
 <ul class="simple">
 <li><p>Deutsch (de-DE)</p></li>
 <li><p>Englisch (en-US)</p></li>
@@ -131,9 +136,16 @@
 <li><p>Ukrainisch (uk-UK)</p></li>
 <li><p>Chinesisch (zh-ZH)</p></li>
 </ul>
-<p>Obwohl Ihr Standort und Ihre Einrichtungen in einem bestimmten Land (z.B. Deutschland) ansässig sein mögen, gilt dies nicht unbedingt für Ihre Gäste und Endnutzer. Die Rocket Meals-Anwendung erkennt automatisch die auf den Endgeräten eingestellte Tastatursprache und wählt entsprechend die optimale Sprache für die Endnutzer aus. Diese Auswahl kann von den Endnutzern jederzeit angepasst werden. Die automatische Sprachauswahl erfolgt nach folgendem Schema: Wenn eine unterstützte Sprache (weder Deutsch noch Englisch) gefunden wird, wird diese eingestellt. Wenn keine unterstützte Sprache als Tastatursprache eingestellt ist, wird Englisch als Standardsprache gewählt. In allen anderen Fällen (z.B. wenn sowohl Deutsch als auch Englisch als Tastatursprachen vorhanden sind) wird die deutsche Sprache gewählt.</p>
-<p>Wenn Sie Texte selbst anpassen oder Inhalte einpflegen und nicht alle 12 Sprachen abdecken, wird automatisch auf Englisch oder Deutsch als Ausweichsprache zurückgegriffen.</p>
-<p>Die Unterstützung mehrerer Sprachen bringt natürlich auch die Herausforderung mit sich, diese Inhalte einzupflegen. Um Ihnen dabei zu helfen, bieten wir die Funktion der <a class="reference external" href="../Features/automatic-translation.html">automatischen Übersetzung</a> an.</p>
+<p>Unser Spracherkennungsalgorithmus identifiziert automatisch die Tastaturspracheinstellungen auf den Endgeräten der Nutzer und optimiert entsprechend die Benutzeroberflächensprache. Diese Funktion arbeitet nach einer hierarchischen Logik: Wird eine unterstützte, nicht-deutsche und nicht-englische Sprache erkannt, wird diese priorisiert; ansonsten wird Englisch als Standard festgelegt. In allen anderen Szenarien wird Deutsch ausgewählt.</p>
+<section id="standardmaszige-mehrsprachigkeit-in-ui-ux">
+<h2>Standardmäßige Mehrsprachigkeit in UI/UX<a class="headerlink" href="#standardmaszige-mehrsprachigkeit-in-ui-ux" title="Link to this heading">¶</a></h2>
+<p>Die Rocket Meals-Anwendung bietet standardmäßig eine Übersetzung für alle oben genannten Sprachen, die sich insbesondere auf die Navigations- und Bedienelemente der App konzentriert. Dies erstreckt sich jedoch nicht auf benutzergenerierte Inhalte. Um dies zu adressieren, bieten wir die Funktion der <a class="reference external" href="../Features/automatic-translation.html">automatischen Übersetzung</a> an. Obwohl wir eine hohe Übersetzungsqualität anstreben, sind Aktualisierungen und Verfeinerungen Teil unseres fortlaufenden Service-Engagements.
+Eine Erweitunge um weitere Sprachen ist zum aktuellen Zeitpunkt nicht geplant und nicht unterstützt.</p>
+</section>
+<section id="individuelle-inhalte">
+<h2>Individuelle Inhalte<a class="headerlink" href="#individuelle-inhalte" title="Link to this heading">¶</a></h2>
+<p>Die Plattform ermöglicht die Einbindung von individuellen Inhalten, was natürlich auch die Komplexität der Mehrsprachigkeit mit sich bringt. Um Sie bei dieser Herausforderung zu unterstützen, bieten wir die Funktion der <a class="reference external" href="../Features/automatic-translation.html">automatischen Übersetzung</a> an. Fehlt eine Übersetzung für eine bestimmte Sprache, greift das System automatisch auf Englisch oder Deutsch als Ausweichsprache zurück.</p>
+</section>
 </section>
 
 
