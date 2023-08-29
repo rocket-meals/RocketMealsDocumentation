@@ -24,6 +24,8 @@ Rocket Meals Dokumentation
    Einladung zu den Projekten <Requirements/invite_to_projects>
 
    Speiseplan-Daten <Guides/meals-update>
+   Datenschutzerklärung <Requirements/privacy_policy>
+   Barrierefreiheitserklärung <Requirements/accessibility>
 
 .. toctree::
    :maxdepth: 1
