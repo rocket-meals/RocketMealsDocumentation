@@ -279,7 +279,15 @@ Bitte ersetzen Sie die folgenden Variablen:
 
     Es besteht ein Vertrag zur Auftragsverarbeitung mit der Strato AG.
 
-    ## 14. Kontakt
+    ## 14. Code Push
+
+    Um dir technisch notwendige Updates, z. B. wenn eine Grundfunktionalität der App nicht funktionieren sollte oder es ein Sicherheitsproblem gibt, so schnell wie möglich zukommen zu lassen, benutzen wir den Code Push Dienst von Microsoft. Damit wird deine App automatisch aktualisiert und du kannst die App wie gewohnt benutzen. Um diesen Dienst nutzen zu können, müssen wir deine Gerätekennung und die Version der App an Microsoft übermitteln. Andere Daten wie z. B. deine E-Mail-Adresse geben wir nicht weiter. Informationen zu Zweck, Umfang, Art sowie der Nutzung deiner Daten durch den Betreiber des Dienstes findest du unter folgender Adresse: [https://learn.microsoft.com/de-de/appcenter/sdk/data-collected](https://learn.microsoft.com/de-de/appcenter/sdk/data-collected)
+
+    Es werden an Microsoft die "Allgemeine Daten" und Daten zum "Verteilen" gesendet
+
+    Wir geben diese Daten nur an diesen Dritten weiter, um dir eine gute Erfahrung mit unserem Produkt anbieten zu können und einen reibungslosen Betrieb gewährleisten zu können. Als rechtliche Grundlage führen wir hier Art. 6 Abs. 1 lit. f DSGVO und Art. 6 Abs. 1 lit. b DSGVO an.
+
+    ## 15. Kontakt
 
     Solltest du Fragen oder Anmerkungen zu unserem Umgang mit deinen personenbezogenen Daten haben oder möchtest du die unter Ziffer 6 und 7 genannten Rechte als betroffene Person ausüben, wende dich bitte an unsere Datenschutzbeauftragte.
 
