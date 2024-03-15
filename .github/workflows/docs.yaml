@@ -64,7 +64,7 @@ jobs:
           cd ./gh-pages-folder
           git config --global user.email "bot@github.com"
           git config --global user.name "GitHub Bot"
-          git add latest.pdf
+          git add ./latest/latest.pdf
           git commit -m "Add latest PDF"
         
 
