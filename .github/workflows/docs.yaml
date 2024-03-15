@@ -9,7 +9,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout for HTML
         uses: actions/checkout@master
         with:
           fetch-depth: 0
@@ -17,8 +17,8 @@ jobs:
 
       - name: Install dependencies
         run: |
-          sudo apt-get update
-          sudo apt-get install -y pandoc texlive-latex-recommended texlive-fonts-recommended texlive-latex-extra latexmk
+          sudo apt-get update;
+          sudo apt-get install pandoc
           python -m pip install --upgrade pip
           pip install .[doc]
         working-directory: gh-pages-folder  # Set working directory to gh-pages-folder
@@ -33,6 +33,40 @@ jobs:
       - name: List files in gh-pages-folder
         run: ls -la
         working-directory: gh-pages-folder  # Ensure we list files in the correct directory
+
+      - name: Checkout for PDF
+        uses: actions/checkout@master
+        with:
+          fetch-depth: 0
+          path: pdf-generation  # Checkout directly into pdf-generation
+
+      - name: Install PDF generation dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y pandoc texlive-latex-recommended texlive-fonts-recommended texlive-latex-extra latexmk
+          python -m pip install --upgrade pip
+          pip install .[doc]
+        working-directory: pdf-generation  # Set working directory to pdf-generation
+
+      - name: Build PDF
+        run: |
+          sphinx-build -b latex ./doc/source ./latest-pdf
+          cd ./latest-pdf
+          make all-pdf
+          cd ..
+          mkdir -p ./latest
+          mv ./latest-pdf/RocketMealsDocumentation.pdf ./latest.pdf
+        working-directory: pdf-generation  # Set working directory to pdf-generation
+
+      - name: Copy PDF to gh-pages-folder and commit
+        run: |
+          cp ./pdf-generation/latest.pdf ./gh-pages-folder/latest.pdf
+          cd ./gh-pages-folder
+          git config --global user.email "bot@github.com"
+          git config --global user.name "GitHub Bot"
+          git add latest.pdf
+          git commit -m "Add latest PDF"
+        
 
       - name: Push changes
         uses: ad-m/github-push-action@master
