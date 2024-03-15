@@ -60,7 +60,7 @@ jobs:
 
       - name: Copy PDF to gh-pages-folder and commit
         run: |
-          cp ./pdf-generation/latest.pdf ./gh-pages-folder/latest.pdf
+          cp ./pdf-generation/latest.pdf ./gh-pages-folder/latest/latest.pdf
           cd ./gh-pages-folder
           git config --global user.email "bot@github.com"
           git config --global user.name "GitHub Bot"
