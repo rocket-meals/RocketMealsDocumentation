@@ -33,6 +33,15 @@ jobs:
         with:
           documentation_path: doc/source
           target_path: latest
+      - name: Build Documentation (PDF)
+        run: |
+          sphinx-build -b latex doc/source latest-pdf
+          cd latest-pdf
+          make all-pdf
+          cd ..
+          mkdir -p latest
+          mv latest-pdf/RocketMealsDocumentation.pdf latest/latest.pdf
+          rm -rf latest-pdf
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
