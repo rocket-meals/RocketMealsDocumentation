@@ -24,10 +24,19 @@ jobs:
           fetch-depth: 0 # otherwise, you will failed to push refs to dest repo
       - name: Install dependencies
         run: |
-          sudo apt-get update;
-          sudo apt-get install pandoc
+          sudo apt-get update
+          sudo apt-get install -y pandoc texlive-latex-recommended texlive-fonts-recommended texlive-latex-extra latexmk
           python -m pip install --upgrade pip
           pip install .[doc]
+
+      - name: Build PDF
+        run: |
+          sphinx-build -b latex ./doc/source ./latest-pdf
+          cd ./latest-pdf
+          make all-pdf
+          cd ..
+          mkdir -p ./latest-standalone
+          mv ./latest-pdf/RocketMealsDocumentation.pdf ./latest/latest.pdf
       - name: Build and Commit
         uses: sphinx-notes/pages@v2
         with:

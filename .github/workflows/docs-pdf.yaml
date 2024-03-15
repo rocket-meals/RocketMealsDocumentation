@@ -34,8 +34,8 @@ jobs:
           cd ./latest-pdf
           make all-pdf
           cd ..
-          mkdir -p ./latest
-          mv ./latest-pdf/RocketMealsDocumentation.pdf ./latest/latest.pdf
+          mkdir -p ./latest-standalone
+          mv ./latest-pdf/RocketMealsDocumentation.pdf ./latest-standalone/latest.pdf
 
       - name: Checkout gh-pages branch
         uses: actions/checkout@v2
@@ -45,7 +45,8 @@ jobs:
 
       - name: Copy PDF to gh-pages
         run: |
-          cp ./latest/latest.pdf ./gh-pages/latest/latest.pdf
+          mkdir -p gh-pages/latest-standalone
+          cp ./latest/latest.pdf ./gh-pages/latest-standalone/latest.pdf
 
       - name: Push changes
         uses: ad-m/github-push-action@master
