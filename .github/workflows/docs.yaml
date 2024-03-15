@@ -14,6 +14,12 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Create gh-pages folder
+        run: mkdir $GITHUB_WORKSPACE/gh-pages-folder
+
+      - name: Copy repository to gh-pages folder
+        run: cp -r * $GITHUB_WORKSPACE/gh-pages-folder
+
       - name: Install dependencies
         run: |
           sudo apt-get update
@@ -24,13 +30,14 @@ jobs:
       - name: Build and Commit with Sphinx Pages
         uses: sphinx-notes/pages@v2
         with:
-          documentation_path: doc/source
+          documentation_path: gh-pages-folder/doc/source
           target_path: latest
+          repository_path: gh-pages-folder
 
-      - name: Change directory to pwd
-        run: cd $GITHUB_WORKSPACE
+      - name: Change directory to gh-pages-folder
+        run: cd $GITHUB_WORKSPACE/gh-pages-folder
 
-      - name: List files in current directory
+      - name: List files in gh-pages-folder
         run: ls -la
 
       - name: Push changes
@@ -38,3 +45,4 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: gh-pages
+          directory: gh-pages-folder
