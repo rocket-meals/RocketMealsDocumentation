@@ -37,6 +37,14 @@ jobs:
           cd ..
           mkdir -p ./latest
           mv ./latest-pdf/RocketMealsDocumentation.pdf ./latest/latest.pdf
+
+      - name: Add PDF to git
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add ./latest/latest.pdf
+          git commit -m "Add latest PDF documentation"
+
       - name: Build and Commit
         uses: sphinx-notes/pages@v2
         with:
