@@ -13,12 +13,7 @@ jobs:
         uses: actions/checkout@master
         with:
           fetch-depth: 0
-
-      - name: Create gh-pages folder
-        run: mkdir $GITHUB_WORKSPACE/gh-pages-folder
-
-      - name: Copy repository to gh-pages folder
-        run: cp -r * $GITHUB_WORKSPACE/gh-pages-folder
+          path: gh-pages-folder  # Checkout directly into gh-pages-folder
 
       - name: Install dependencies
         run: |
@@ -26,23 +21,22 @@ jobs:
           sudo apt-get install -y pandoc texlive-latex-recommended texlive-fonts-recommended texlive-latex-extra latexmk
           python -m pip install --upgrade pip
           pip install .[doc]
+        working-directory: gh-pages-folder  # Set working directory to gh-pages-folder
 
       - name: Build and Commit with Sphinx Pages
         uses: sphinx-notes/pages@v2
         with:
-          documentation_path: gh-pages-folder/doc/source
+          documentation_path: doc/source
           target_path: latest
-          repository_path: gh-pages-folder
-
-      - name: Change directory to gh-pages-folder
-        run: cd $GITHUB_WORKSPACE/gh-pages-folder
+          repository_path: ./gh-pages-folder
 
       - name: List files in gh-pages-folder
         run: ls -la
+        working-directory: gh-pages-folder  # Ensure we list files in the correct directory
 
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: gh-pages
-          directory: gh-pages-folder
+          directory: ./gh-pages-folder
