@@ -35,6 +35,7 @@ jobs:
           target_path: latest
       - name: Build Documentation (PDF)
         run: |
+          ls
           sphinx-build -b latex ./doc/source ./latest-pdf
           cd latest-pdf
           make all-pdf
