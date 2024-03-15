@@ -27,11 +27,11 @@ jobs:
           documentation_path: doc/source
           target_path: latest
 
-      - name: Check current branch
-        run: echo "Current branch is $GITHUB_REF"
+      - name: Change directory to pwd
+        run: cd $GITHUB_WORKSPACE
 
-      - name: Print current path
-        run: pwd
+      - name: List files in current directory
+        run: ls -la
 
       - name: Push changes
         uses: ad-m/github-push-action@master
