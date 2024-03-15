@@ -21,36 +21,17 @@ jobs:
           python -m pip install --upgrade pip
           pip install .[doc]
 
-      - name: Build PDF
-        run: |
-          sphinx-build -b latex ./doc/source ./latest-pdf
-          cd ./latest-pdf
-          make all-pdf
-          cd ..
-          mkdir -p ./latest
-          mv ./latest-pdf/RocketMealsDocumentation.pdf ./latest/latest.pdf
-
-      - name: Backup PDF
-        run: |
-          mkdir -p ./backup
-          cp ./latest/latest.pdf ./backup/latest.pdf
-
       - name: Build and Commit with Sphinx Pages
         uses: sphinx-notes/pages@v2
         with:
           documentation_path: doc/source
           target_path: latest
 
-      - name: Restore PDF
-        run: |
-          cp ./backup/latest.pdf ./latest/latest.pdf
+      - name: Check current branch
+        run: echo "Current branch is $GITHUB_REF"
 
-      - name: Add PDF to git
-        run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git add ./latest/latest.pdf
-          git commit -m "Add latest PDF documentation" || echo "No changes to commit"
+      - name: Print current path
+        run: pwd
 
       - name: Push changes
         uses: ad-m/github-push-action@master
