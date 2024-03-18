@@ -16,7 +16,7 @@ In dieser Dokumentation finden Sie Informationen über:
 - **FAQ's**: Häufige Fragen und deren Lösungen.
 
 Diese Dokumentation finden Sie als PDF-Datei unter:
-- Latest Version: [https://raw.githubusercontent.com/rocket-meals/RocketMealsDocumentation/gh-pages/latest/latest.pdf](https://raw.githubusercontent.com/rocket-meals/RocketMealsDocumentation/gh-pages/latest/latest.pdf)
-- Stable Version: [https://raw.githubusercontent.com/rocket-meals/RocketMealsDocumentation/gh-pages/stable/stable.pdf](https://raw.githubusercontent.com/rocket-meals/RocketMealsDocumentation/gh-pages/stable/stable.pdf)
+- Latest Version: https://raw.githubusercontent.com/rocket-meals/RocketMealsDocumentation/gh-pages/latest/latest.pdf
+- Stable Version: https://raw.githubusercontent.com/rocket-meals/RocketMealsDocumentation/gh-pages/stable/stable.pdf
 
 Wir hoffen, dass diese Dokumentation Ihnen hilft, unsere Dienste effektiv zu nutzen und zu integrieren. Wenn Sie Fragen oder Anregungen haben, zögern Sie nicht, uns zu kontaktieren.
