@@ -15,11 +15,6 @@ Unser wirtschaftliches Interesse liegt darin, Studierendenwerken mit wertvollen 
 Für alle Nutzer bieten wir als Grundlegendes Merkmal eine `transparente Dateneinsicht <../CoreFeatures/transparent-data-insight.html>`_ .
 
 
-APK-Option
--------------
-
-Für Android-Benutzer bieten wir die "APK" der App an. Eine APK (Android Package) ist eine Datei, die alle Elemente einer Android-App enthält und dazu verwendet wird, diese auf Android-Geräten zu installieren. Dies bietet eine Alternative für Studierende, die nicht den Google Play Store nutzen möchten, und ermöglicht ihnen weiterhin den Zugriff auf unsere App.
-
 Konfigurationseinstellungen
 ------------------------------
 
