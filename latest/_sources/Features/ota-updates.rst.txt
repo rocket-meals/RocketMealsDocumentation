@@ -6,7 +6,7 @@ Die Rocket Meals App bietet Over-the-Air (OTA) Updates an, eine leistungsstarke 
 Implementierungstechnologie
 ---------------------------
 
-Für die Bereitstellung von OTA-Updates nutzen wir den Dienst "Code Push" von Microsoft. Code Push ist ein Cloud-Service, der Entwicklern ermöglicht, Updates für ihre mobilen Anwendungen direkt an die Geräte der Benutzer zu senden, ohne den traditionellen App Store-Prozess durchlaufen zu müssen. Aktuell bietet Microsoft diesen Dienst kostenlos an. Sollte Microsoft jedoch in Zukunft Gebühren für die Nutzung von Code Push einführen, werden diese Kosten vom Kunden übernommen.
+Für die Bereitstellung von OTA-Updates nutzen wir den Dienst "Expo Update". Expo Update ist ein Cloud-Service, der Entwicklern ermöglicht, Updates für ihre mobilen Anwendungen direkt an die Geräte der Benutzer zu senden, ohne den traditionellen App Store-Prozess durchlaufen zu müssen. In der Rund-um-sorglos-Paket sind die Kosten für die Nutzung von Expo Update von 40.000 monatlichen Nutzern enthalten. Darüber hinausgehende kosten können anfallen. Diese Kosten werden vom Kunden getragen und können unter https://expo.io/pricing eingesehen werden.
 
 Was sind OTA-Updates?
 ----------------------
@@ -16,11 +16,4 @@ Over-the-Air (OTA) Updates sind Software-Aktualisierungen, die drahtlos an Gerä
 Bereitstellungsprozess
 -----------------------
 
-Wir stellen Updates in einem angemessenen Umfang bereit und nutzen GitHub Actions für die Bereitstellung. GitHub Actions bietet ein kostenloses Kontingent von 3.000 Linux-Minuten pro Monat. Darüber hinausgehende Minuten werden zu einem Preis von $0,008 USD pro Minute berechnet. Ein Update benötigt etwa 15 Minuten, sodass mit einem Budget von $24 USD theoretisch bis zu 200 Updates pro Monat möglich sind. Historisch gesehen hat das kostenlose Kontingent für unsere Bedürfnisse ausgereicht und es sind keine zusätzlichen Kosten angefallen.
-
-Kostenüberlegungen
--------------------
-
-Es ist wichtig zu beachten, dass Kosten für die Bereitstellung von Updates anfallen können, wenn das kostenlose Kontingent von GitHub Actions überschritten wird. Diese Kosten werden vom Kunden getragen. In der Vergangenheit hat das kostenlose Kontingent jedoch ausgereicht und es sind keine zusätzlichen Kosten angefallen.
-
-Zusammenfassend bieten OTA-Updates eine effiziente Möglichkeit, die Rocket Meals App zu aktualisieren und Sicherheitslücken zu schließen. Die Kosten für die Bereitstellung von Updates werden vom Kunden getragen, falls das kostenlose Kontingent von GitHub Actions überschritten wird. Bei Fragen oder Bedenken bezüglich der OTA-Updates stehen wir Ihnen gerne zur Verfügung.
+Wir stellen Updates in einem angemessenen Umfang bereit, um die Sicherheit und Stabilität der App zu gewährleisten. Die Updates werden von uns getestet und validiert, bevor sie an die Benutzer gesendet werden. Wir informieren die Benutzer über die Verfügbarkeit von Updates und fordern sie auf, die Updates zu installieren. Die Installation der Updates erfolgt automatisch, ohne dass der Benutzer die App verlassen muss.
