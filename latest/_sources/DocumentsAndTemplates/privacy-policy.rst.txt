@@ -165,9 +165,11 @@ Bitte ersetzen Sie die folgenden Variablen:
     In diesen Zwecken liegt auch unser berechtigtes Interesse an der Datenverarbeitung nach Art. 6 Abs. 1 lit. f DSGVO.
 
     ### Dauer der Speicherung
-    Die Daten werden gelöscht, sobald sie für die Erreichung des Zweckes ihrer Erhebung nicht mehr erforderlich sind. Im Falle der Erfassung der Daten zur Bereitstellung der Website ist dies der Fall, wenn die jeweilige Sitzung beendet ist.
+    Die Daten werden gelöscht, sobald sie für die Erreichung des Zweckes ihrer Erhebung nicht mehr erforderlich sind. 
 
-    Im Falle der Speicherung der Daten in Logfiles ist dies nach spätestens 180 Tagen der Fall.
+    Im Falle der Daten des Nutzer ist dies sobald der Nutzer seinen Account löscht oder nach 180 Tagen inaktivität.
+
+    Im Falle der Speicherung der Daten in Logfiles ist dies nach spätestens 30 Tagen der Fall.
 
     Widerspruchs- und Beseitigungsmöglichkeit
     Die Erfassung der Daten zur Bereitstellung der Website und die Speicherung der Daten in Logfiles ist für den Betrieb der Internetseite zwingend erforderlich. Es besteht folglich seitens des Nutzers keine Widerspruchsmöglichkeit.
