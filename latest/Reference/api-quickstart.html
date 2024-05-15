@@ -123,12 +123,14 @@
   <section id="api-quickstart">
 <h1>API Quickstart<a class="headerlink" href="#api-quickstart" title="Link to this heading">¶</a></h1>
 <p>For this part of the documentation, we will be using English as the language of choice.</p>
-<p>In this quickstart we will be covering the following topics:
-- Project Style and Logo
-- Canteen Loading
-- Food Offer Loading
-- Food Image Loading
-- Markings Loading</p>
+<p>In this quickstart we will be covering the following topics:</p>
+<ul class="simple">
+<li><p>Project Style and Logo</p></li>
+<li><p>Canteen Loading</p></li>
+<li><p>Food Offer Loading</p></li>
+<li><p>Food Image Loading</p></li>
+<li><p>Markings Loading</p></li>
+</ul>
 <p>So, in order to use the API, we will quickly go through the steps you need to know to get started. First, let’s talk about variables and preambles.</p>
 <p><strong>Preamble</strong></p>
 <ul class="simple">
@@ -142,9 +144,11 @@
 <div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">https</span><span class="o">:</span><span class="c1">//rocket-meals.de/rocket-meals/api/settings</span>
 </pre></div>
 </div>
-<p>Response Content:
-- This response will contain general information about the project.
-- Including the project name, color, and the logo.</p>
+<p>Response Content:</p>
+<ul class="simple">
+<li><p>This response will contain general information about the project.</p></li>
+<li><p>Including the project name, color, and the logo.</p></li>
+</ul>
 <p>Example Response:</p>
 <div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
 <span class="w">    </span><span class="s2">&quot;data&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
@@ -161,13 +165,15 @@
 <div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">https</span><span class="o">:</span><span class="c1">//rocket-meals.de/rocket-meals/api/items/canteens?fields=*&amp;limit=-1</span>
 </pre></div>
 </div>
-<p>Response Content:
-- This response will contain all canteens that are available in the system.
-- The canteens contain a lot of information. We will only cover the most important fields in this quickstart.
-- The <code class="docutils literal notranslate"><span class="pre">id</span></code> of the canteen is important for the next step.
-- The <code class="docutils literal notranslate"><span class="pre">alias</span></code> of the canteen is the name of the canteen.
-- The <code class="docutils literal notranslate"><span class="pre">external_identifier</span></code> is the identifier of the canteen in the related system where the data is coming from (e.g. TL1 or an FTP file).
-- Limit is set to <code class="docutils literal notranslate"><span class="pre">-1</span></code> to get all canteens.</p>
+<p>Response Content:</p>
+<ul class="simple">
+<li><p>This response will contain all canteens that are available in the system.</p></li>
+<li><p>The canteens contain a lot of information. We will only cover the most important fields in this quickstart.</p></li>
+<li><p>The <code class="docutils literal notranslate"><span class="pre">id</span></code> of the canteen is important for the next step.</p></li>
+<li><p>The <code class="docutils literal notranslate"><span class="pre">alias</span></code> of the canteen is the name of the canteen.</p></li>
+<li><p>The <code class="docutils literal notranslate"><span class="pre">external_identifier</span></code> is the identifier of the canteen in the related system where the data is coming from (e.g. TL1 or an FTP file).</p></li>
+<li><p>Limit is set to <code class="docutils literal notranslate"><span class="pre">-1</span></code> to get all canteens.</p></li>
+</ul>
 <p>Example Response:</p>
 <div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
 <span class="w">    </span><span class="s2">&quot;data&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
@@ -191,20 +197,24 @@
 <li><p>As <code class="docutils literal notranslate"><span class="pre">food</span> <span class="pre">offers</span></code> and <code class="docutils literal notranslate"><span class="pre">foods</span></code> contain a lot of data, we will only cover the most important fields in this quickstart.</p></li>
 <li><p>Please keep in mind that <code class="docutils literal notranslate"><span class="pre">food</span></code> and <code class="docutils literal notranslate"><span class="pre">foodoffers</span></code> are two different tables in the database. The <code class="docutils literal notranslate"><span class="pre">foodoffers</span></code> table contains the actual offers for a specific date and the <code class="docutils literal notranslate"><span class="pre">food</span></code> table contains general information about the food.</p></li>
 </ul>
-<p>Variables:
-- <code class="docutils literal notranslate"><span class="pre">&lt;CANTEEN_ID&gt;</span></code>: The ID of the canteen you want to get the food offers for. Please replace this with the actual ID you want to use.
-- <code class="docutils literal notranslate"><span class="pre">&lt;DATE_BEGIN&gt;</span></code>: The date for which you want to get the food offers. Please replace this with the actual date you want to use: e.g. <code class="docutils literal notranslate"><span class="pre">2024-05-14T22:00:00.000Z</span></code> in ISO format.
-- <code class="docutils literal notranslate"><span class="pre">&lt;DATE_END&gt;</span></code>: The date for which you want to get the food offers. Please replace this with the actual date you want to use: e.g. <code class="docutils literal notranslate"><span class="pre">2024-05-15T21:59:59.999Z</span></code> in ISO format.
-- We also filter for <code class="docutils literal notranslate"><span class="pre">date</span></code> being <code class="docutils literal notranslate"><span class="pre">null</span></code> as some offers are not bound to a specific date e.g. <code class="docutils literal notranslate"><span class="pre">daily</span> <span class="pre">offers</span></code> like fries or a salad.
-- Limit is set to <code class="docutils literal notranslate"><span class="pre">-1</span></code> to get all food offers.</p>
+<p>Variables:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">&lt;CANTEEN_ID&gt;</span></code>: The ID of the canteen you want to get the food offers for. Please replace this with the actual ID you want to use.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">&lt;DATE_BEGIN&gt;</span></code>: The date for which you want to get the food offers. Please replace this with the actual date you want to use: e.g. <code class="docutils literal notranslate"><span class="pre">2024-05-14T22:00:00.000Z</span></code> in ISO format.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">&lt;DATE_END&gt;</span></code>: The date for which you want to get the food offers. Please replace this with the actual date you want to use: e.g. <code class="docutils literal notranslate"><span class="pre">2024-05-15T21:59:59.999Z</span></code> in ISO format.</p></li>
+<li><p>We also filter for <code class="docutils literal notranslate"><span class="pre">date</span></code> being <code class="docutils literal notranslate"><span class="pre">null</span></code> as some offers are not bound to a specific date e.g. <code class="docutils literal notranslate"><span class="pre">daily</span> <span class="pre">offers</span></code> like fries or a salad.</p></li>
+<li><p>Limit is set to <code class="docutils literal notranslate"><span class="pre">-1</span></code> to get all food offers.</p></li>
+</ul>
 <p>Example Request:</p>
 <div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">https</span><span class="o">:</span><span class="c1">//rocket-meals.de/rocket-meals/api/items/foodoffers?fields=*,food.*,food.translations.*,markings.*&amp;filter={&quot;_and&quot;:[{&quot;_or&quot;:[{&quot;date&quot;:{&quot;_between&quot;:[&quot;&lt;DATE_BEGIN&gt;&quot;,&quot;&lt;DATE_END&gt;&quot;]}},{&quot;date&quot;:{&quot;_null&quot;:true}}]},{&quot;canteen&quot;:{&quot;_eq&quot;:&quot;&lt;CANTEEN_ID&gt;&quot;}}]}&amp;limit=-1</span>
 </pre></div>
 </div>
-<p>Response Content:
-- This response will contain all <code class="docutils literal notranslate"><span class="pre">food</span> <span class="pre">offers</span></code> for the <code class="docutils literal notranslate"><span class="pre">canteen</span></code> on the specified <code class="docutils literal notranslate"><span class="pre">date</span></code>.
-- The <code class="docutils literal notranslate"><span class="pre">food</span> <span class="pre">offer</span></code> holds information about: <code class="docutils literal notranslate"><span class="pre">prices</span></code>, <code class="docutils literal notranslate"><span class="pre">nutritional</span> <span class="pre">values</span></code>, <code class="docutils literal notranslate"><span class="pre">food</span></code> and <code class="docutils literal notranslate"><span class="pre">markings</span></code>.
-- The <code class="docutils literal notranslate"><span class="pre">food</span></code> holds information about: <code class="docutils literal notranslate"><span class="pre">translations</span></code>, <code class="docutils literal notranslate"><span class="pre">image</span></code> and <code class="docutils literal notranslate"><span class="pre">ratings</span></code>.</p>
+<p>Response Content:</p>
+<ul class="simple">
+<li><p>This response will contain all <code class="docutils literal notranslate"><span class="pre">food</span> <span class="pre">offers</span></code> for the <code class="docutils literal notranslate"><span class="pre">canteen</span></code> on the specified <code class="docutils literal notranslate"><span class="pre">date</span></code>.</p></li>
+<li><p>The <code class="docutils literal notranslate"><span class="pre">food</span> <span class="pre">offer</span></code> holds information about: <code class="docutils literal notranslate"><span class="pre">prices</span></code>, <code class="docutils literal notranslate"><span class="pre">nutritional</span> <span class="pre">values</span></code>, <code class="docutils literal notranslate"><span class="pre">food</span></code> and <code class="docutils literal notranslate"><span class="pre">markings</span></code>.</p></li>
+<li><p>The <code class="docutils literal notranslate"><span class="pre">food</span></code> holds information about: <code class="docutils literal notranslate"><span class="pre">translations</span></code>, <code class="docutils literal notranslate"><span class="pre">image</span></code> and <code class="docutils literal notranslate"><span class="pre">ratings</span></code>.</p></li>
+</ul>
 <p>Example Response:</p>
 <div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
 <span class="w">    </span><span class="s2">&quot;data&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
@@ -261,11 +271,15 @@
 <div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">https</span><span class="o">:</span><span class="c1">//rocket-meals.de/rocket-meals/api/assets/&lt;IMAGE_ASSET_ID&gt;</span>
 </pre></div>
 </div>
-<p>Response Content:
-- This response will contain the image of the <code class="docutils literal notranslate"><span class="pre">food</span></code>.</p>
-<p>Future Information:
-- You can also request thumbnails of the image or use preset transformations like <code class="docutils literal notranslate"><span class="pre">width</span></code> and <code class="docutils literal notranslate"><span class="pre">height</span></code> in the URL.
-- More can be found here: [Request a Thumbnail](<a class="reference external" href="https://docs.directus.io/reference/files.html#requesting-a-thumbnail">https://docs.directus.io/reference/files.html#requesting-a-thumbnail</a>)</p>
+<p>Response Content:</p>
+<ul class="simple">
+<li><p>This response will contain the image of the <code class="docutils literal notranslate"><span class="pre">food</span></code>.</p></li>
+</ul>
+<p>Future Information:</p>
+<ul class="simple">
+<li><p>You can also request thumbnails of the image or use preset transformations like <code class="docutils literal notranslate"><span class="pre">width</span></code> and <code class="docutils literal notranslate"><span class="pre">height</span></code> in the URL.</p></li>
+<li><p>More can be found here: [Request a Thumbnail](<a class="reference external" href="https://docs.directus.io/reference/files.html#requesting-a-thumbnail">https://docs.directus.io/reference/files.html#requesting-a-thumbnail</a>)</p></li>
+</ul>
 <p><strong>Step 5: Markings Loading</strong></p>
 <ul class="simple">
 <li><p>For each <code class="docutils literal notranslate"><span class="pre">food</span> <span class="pre">offer</span></code> we can read in the <code class="docutils literal notranslate"><span class="pre">markings</span></code> which <code class="docutils literal notranslate"><span class="pre">&lt;MARKING_ID&gt;</span></code> are assigned.</p></li>
@@ -275,12 +289,14 @@
 <div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">https</span><span class="o">:</span><span class="c1">//rocket-meals.de/rocket-meals/api/items/markings?fields=*,translations.*&amp;limit=-1</span>
 </pre></div>
 </div>
-<p>Response Content:
-- This response will contain all <code class="docutils literal notranslate"><span class="pre">markings</span></code> in the system.
-- The <code class="docutils literal notranslate"><span class="pre">markings</span></code> contain information about: <code class="docutils literal notranslate"><span class="pre">translations</span></code>.
-- The <code class="docutils literal notranslate"><span class="pre">markings</span></code> will have an <code class="docutils literal notranslate"><span class="pre">external_identifier</span></code> which is the identifier of the marking in the related system where the data is coming from (e.g. TL1 or an FTP file).
-- We highly reccoment to use the <code class="docutils literal notranslate"><span class="pre">external_identifier</span></code> for the identification of the marking and using the <code class="docutils literal notranslate"><span class="pre">translations</span></code> name (if available) or the <code class="docutils literal notranslate"><span class="pre">alias</span></code> for the display of the marking.
-- The <code class="docutils literal notranslate"><span class="pre">markings</span></code> also may contain information about an <code class="docutils literal notranslate"><span class="pre">image</span></code>, <code class="docutils literal notranslate"><span class="pre">image_remote_url</span></code> or <code class="docutils literal notranslate"><span class="pre">icon</span></code>.</p>
+<p>Response Content:</p>
+<ul class="simple">
+<li><p>This response will contain all <code class="docutils literal notranslate"><span class="pre">markings</span></code> in the system.</p></li>
+<li><p>The <code class="docutils literal notranslate"><span class="pre">markings</span></code> contain information about: <code class="docutils literal notranslate"><span class="pre">translations</span></code>.</p></li>
+<li><p>The <code class="docutils literal notranslate"><span class="pre">markings</span></code> will have an <code class="docutils literal notranslate"><span class="pre">external_identifier</span></code> which is the identifier of the marking in the related system where the data is coming from (e.g. TL1 or an FTP file).</p></li>
+<li><p>We highly reccoment to use the <code class="docutils literal notranslate"><span class="pre">external_identifier</span></code> for the identification of the marking and using the <code class="docutils literal notranslate"><span class="pre">translations</span></code> name (if available) or the <code class="docutils literal notranslate"><span class="pre">alias</span></code> for the display of the marking.</p></li>
+<li><p>The <code class="docutils literal notranslate"><span class="pre">markings</span></code> also may contain information about an <code class="docutils literal notranslate"><span class="pre">image</span></code>, <code class="docutils literal notranslate"><span class="pre">image_remote_url</span></code> or <code class="docutils literal notranslate"><span class="pre">icon</span></code>.</p></li>
+</ul>
 <p>Example Response:</p>
 <div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
 <span class="w">    </span><span class="s2">&quot;data&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>

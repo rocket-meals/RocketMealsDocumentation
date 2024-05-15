@@ -4,6 +4,7 @@ API Quickstart
 For this part of the documentation, we will be using English as the language of choice.
 
 In this quickstart we will be covering the following topics:
+
 - Project Style and Logo
 - Canteen Loading
 - Food Offer Loading
@@ -29,6 +30,7 @@ Request:
     https://rocket-meals.de/rocket-meals/api/settings
 
 Response Content:
+
 - This response will contain general information about the project.
 - Including the project name, color, and the logo.
 
@@ -55,6 +57,7 @@ Request:
     https://rocket-meals.de/rocket-meals/api/items/canteens?fields=*&limit=-1
 
 Response Content:
+
 - This response will contain all canteens that are available in the system.
 - The canteens contain a lot of information. We will only cover the most important fields in this quickstart.
 - The ``id`` of the canteen is important for the next step.
@@ -89,6 +92,7 @@ We will be using the ``id`` of the canteen for the next step.
 - Please keep in mind that ``food`` and ``foodoffers`` are two different tables in the database. The ``foodoffers`` table contains the actual offers for a specific date and the ``food`` table contains general information about the food.
 
 Variables:
+
 - ``<CANTEEN_ID>``: The ID of the canteen you want to get the food offers for. Please replace this with the actual ID you want to use.
 - ``<DATE_BEGIN>``: The date for which you want to get the food offers. Please replace this with the actual date you want to use: e.g. ``2024-05-14T22:00:00.000Z`` in ISO format.
 - ``<DATE_END>``: The date for which you want to get the food offers. Please replace this with the actual date you want to use: e.g. ``2024-05-15T21:59:59.999Z`` in ISO format.
@@ -102,6 +106,7 @@ Example Request:
     https://rocket-meals.de/rocket-meals/api/items/foodoffers?fields=*,food.*,food.translations.*,markings.*&filter={"_and":[{"_or":[{"date":{"_between":["<DATE_BEGIN>","<DATE_END>"]}},{"date":{"_null":true}}]},{"canteen":{"_eq":"<CANTEEN_ID>"}}]}&limit=-1
 
 Response Content:
+
 - This response will contain all ``food offers`` for the ``canteen`` on the specified ``date``.
 - The ``food offer`` holds information about: ``prices``, ``nutritional values``, ``food`` and ``markings``.
 - The ``food`` holds information about: ``translations``, ``image`` and ``ratings``.
@@ -167,9 +172,11 @@ Example Request:
     https://rocket-meals.de/rocket-meals/api/assets/<IMAGE_ASSET_ID>
 
 Response Content:
+
 - This response will contain the image of the ``food``.
 
 Future Information:
+
 - You can also request thumbnails of the image or use preset transformations like ``width`` and ``height`` in the URL.
 - More can be found here: [Request a Thumbnail](https://docs.directus.io/reference/files.html#requesting-a-thumbnail)
 
@@ -186,6 +193,7 @@ Example Request:
     https://rocket-meals.de/rocket-meals/api/items/markings?fields=*,translations.*&limit=-1
 
 Response Content:
+
 - This response will contain all ``markings`` in the system.
 - The ``markings`` contain information about: ``translations``.
 - The ``markings`` will have an ``external_identifier`` which is the identifier of the marking in the related system where the data is coming from (e.g. TL1 or an FTP file).
@@ -215,5 +223,6 @@ Example Response:
             ...
         ]
     }
+
 
 
