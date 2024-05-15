@@ -122,168 +122,143 @@
              
   <section id="api-quickstart">
 <h1>API Quickstart<a class="headerlink" href="#api-quickstart" title="Link to this heading">¶</a></h1>
-<p>For this part of the documentation we will be using english as the language of choice.</p>
-<p>So in order to use the API we will quickly go through the steps you need to know to get started. First let’s talk about variables and preambles.</p>
+<p>For this part of the documentation, we will be using English as the language of choice.</p>
+<p>So, in order to use the API, we will quickly go through the steps you need to know to get started. First, let’s talk about variables and preambles.</p>
 <p><strong>Preamble</strong></p>
 <ul class="simple">
-<li><p>For this quickstart we will be using <cite>https://rocket-meals.de/demo/api</cite> as the base URL for the API. Please replace this with the actual URL of the API.</p></li>
-<li><p>By the time of reading maybe some permissions on the test API have changed. If you encounter any problems please contact us or test it on the actual API you want to use.</p></li>
-<li><p>We are using the generated API routes from our used software (Directus)[<a class="reference external" href="https://directus.io/">https://directus.io/</a>]. Directus offers a (JavaScript SDK)[<a class="reference external" href="https://docs.directus.io/guides/sdk/getting-started.html">https://docs.directus.io/guides/sdk/getting-started.html</a>] which could be handy for you.</p></li>
-<li><p>In this quickstart we will be acting as a non-logged-in/guest/public user.</p></li>
+<li><p>For this quickstart, we will be using <code class="docutils literal notranslate"><span class="pre">https://rocket-meals.de/demo/api</span></code> as the base URL for the API. Please replace this with the actual URL of the API.</p></li>
+<li><p>By the time of reading, maybe some permissions on the test API have changed. If you encounter any problems, please contact us or test it on the actual API you want to use.</p></li>
+<li><p>We are using the generated API routes from our used software [Directus](<a class="reference external" href="https://directus.io/">https://directus.io/</a>). Directus offers a [JavaScript SDK](<a class="reference external" href="https://docs.directus.io/guides/sdk/getting-started.html">https://docs.directus.io/guides/sdk/getting-started.html</a>) which could be handy for you.</p></li>
+<li><p>In this quickstart, we will be acting as a non-logged-in/guest/public user.</p></li>
 </ul>
 <p><strong>Step 1: Project Style and Logo</strong></p>
-<p>Request:
-.. code-block:: javascript</p>
-<blockquote>
-<div><p><a class="reference external" href="https://rocket-meals.de/rocket-meals/api/settings">https://rocket-meals.de/rocket-meals/api/settings</a></p>
-</div></blockquote>
+<p>Request:</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">https</span><span class="o">:</span><span class="c1">//rocket-meals.de/rocket-meals/api/settings</span>
+</pre></div>
+</div>
 <p>Response Content:
-- This response will contain the general information about the project.
-- Including the project name, color and the logo.</p>
-<p>Example Response:
-.. code-block:: javascript</p>
-<blockquote>
-<div><dl>
-<dt>{</dt><dd><dl class="simple">
-<dt>„data“: {</dt><dd><p>„project_name“: „Rocket Meals“,
-„project_color“: „#80BA27“,
-„project_logo“: „&lt;PROJECT_LOGO_ID&gt;“</p>
-</dd>
-</dl>
-<p>}</p>
-</dd>
-</dl>
-<p>}</p>
-</div></blockquote>
-<p>The logo can then be accessed via the following URL: <cite>https://rocket-meals.de/demo/api/assets/&lt;PROJECT_LOGO_ID&gt;</cite></p>
+- This response will contain general information about the project.
+- Including the project name, color, and the logo.</p>
+<p>Example Response:</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="w">    </span><span class="s2">&quot;data&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="s2">&quot;project_name&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Rocket Meals&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;project_color&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;#80BA27&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;project_logo&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;&lt;PROJECT_LOGO_ID&gt;&quot;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>The logo can then be accessed via the following URL: <code class="docutils literal notranslate"><span class="pre">https://rocket-meals.de/demo/api/assets/&lt;PROJECT_LOGO_ID&gt;</span></code></p>
 <p><strong>Step 2: Canteen Loading</strong></p>
-<p>Request:
-.. code-block:: javascript</p>
-<blockquote>
-<div><p><a class="reference external" href="https://rocket-meals.de/demo/api/items/canteens?fields=*&amp;limit=-1">https://rocket-meals.de/demo/api/items/canteens?fields=*&amp;limit=-1</a></p>
-</div></blockquote>
+<p>Request:</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">https</span><span class="o">:</span><span class="c1">//rocket-meals.de/demo/api/items/canteens?fields=*&amp;limit=-1</span>
+</pre></div>
+</div>
 <p>Response Content:
 - This response will contain all canteens that are available in the system.
 - The canteens contain a lot of information. We will only cover the most important fields in this quickstart.
-- The <cite>id</cite> of the canteen is important for the next step.
-- The <cite>alias</cite> of the canteen is the name of the canteen.
-- The <cite>external_identifier</cite> is the identifier of the canteen in the related system where the data is coming from (e.g. TL1 or an FTP file).
-- Limit is set to <cite>-1</cite> to get all canteens.</p>
-<p>Example Response:
-.. code-block:: javascript</p>
-<blockquote>
-<div><dl>
-<dt>{</dt><dd><dl class="simple">
-<dt>„data“: [</dt><dd><dl class="simple">
-<dt>{</dt><dd><p>„id“: „&lt;CANTEEN_ID&gt;“,
-„alias“: „Hauptmensa“,
-„external_identifier“: „Hauptmensa“,
-…
-building: „&lt;BUILDING_ID&gt;“</p>
-</dd>
-</dl>
-</dd>
-</dl>
-<p>]</p>
-</dd>
-</dl>
-<p>}</p>
-</div></blockquote>
-<p>We will be using the <cite>id</cite> of the canteen for the next step.</p>
+- The <code class="docutils literal notranslate"><span class="pre">id</span></code> of the canteen is important for the next step.
+- The <code class="docutils literal notranslate"><span class="pre">alias</span></code> of the canteen is the name of the canteen.
+- The <code class="docutils literal notranslate"><span class="pre">external_identifier</span></code> is the identifier of the canteen in the related system where the data is coming from (e.g. TL1 or an FTP file).
+- Limit is set to <code class="docutils literal notranslate"><span class="pre">-1</span></code> to get all canteens.</p>
+<p>Example Response:</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="w">    </span><span class="s2">&quot;data&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="s2">&quot;id&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;&lt;CANTEEN_ID&gt;&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="s2">&quot;alias&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Hauptmensa&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="s2">&quot;external_identifier&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Hauptmensa&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="p">...</span>
+<span class="w">            </span><span class="s2">&quot;building&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;&lt;BUILDING_ID&gt;&quot;</span>
+<span class="w">        </span><span class="p">},</span>
+<span class="w">        </span><span class="p">...</span>
+<span class="w">    </span><span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>We will be using the <code class="docutils literal notranslate"><span class="pre">id</span></code> of the canteen for the next step.</p>
 <p><strong>Step 3: Food Offer Loading</strong></p>
 <ul class="simple">
-<li><p>As we optained the <cite>id</cite> of the canteen we can now request the food offers for the canteen.</p></li>
-<li><p>Our used API offers to pass a query in the URL. If you want to read more about that you can do so here: [Directus Query](<a class="reference external" href="https://docs.directus.io/reference/query.html">https://docs.directus.io/reference/query.html</a>)</p></li>
-<li><p>As <cite>food offers</cite> and <cite>foods</cite> contain a lot of data we will only cover the most important fields in this quickstart.</p></li>
-<li><p>Please keep in mind that <cite>food</cite> and <cite>foodoffers</cite> are two different tables in the database. The <cite>foodoffers</cite> table contains the actual offers for a specific date and the <cite>food</cite> table contains the general information about the food.</p></li>
+<li><p>As we obtained the <code class="docutils literal notranslate"><span class="pre">id</span></code> of the canteen, we can now request the food offers for the canteen.</p></li>
+<li><p>Our used API offers to pass a query in the URL. If you want to read more about that, you can do so here: [Directus Query](<a class="reference external" href="https://docs.directus.io/reference/query.html">https://docs.directus.io/reference/query.html</a>)</p></li>
+<li><p>As <code class="docutils literal notranslate"><span class="pre">food</span> <span class="pre">offers</span></code> and <code class="docutils literal notranslate"><span class="pre">foods</span></code> contain a lot of data, we will only cover the most important fields in this quickstart.</p></li>
+<li><p>Please keep in mind that <code class="docutils literal notranslate"><span class="pre">food</span></code> and <code class="docutils literal notranslate"><span class="pre">foodoffers</span></code> are two different tables in the database. The <code class="docutils literal notranslate"><span class="pre">foodoffers</span></code> table contains the actual offers for a specific date and the <code class="docutils literal notranslate"><span class="pre">food</span></code> table contains general information about the food.</p></li>
 </ul>
 <p>Variables:
-- <cite>&lt;CANTEEN_ID&gt;</cite>: The ID of the canteen you want to get the food offers for. Please replace this with the actual ID you want to use.
-- <cite>&lt;DATE_BEGIN&gt;</cite>: The date for which you want to get the food offers. Please replace this with the actual date you want to use: e.g. <cite>2024-05-14T22:00:00.000Z</cite> in ISO format.
-- <cite>&lt;DATE_END&gt;</cite>: The date for which you want to get the food offers. Please replace this with the actual date you want to use: e.g. <cite>2024-05-15T21:59:59.999Z</cite> in ISO format.
-- We also filter for <cite>date</cite> being <cite>null</cite> as some offers are not bound to a specific date e.g. <cite>daily offers</cite> like fries or a salad.
-- Limit is set to <cite>-1</cite> to get all food offers.</p>
-<p>Example Request:
-.. code-block:: javascript</p>
-<blockquote>
-<div><p><a class="reference external" href="https://rocket-meals.de/demo/api/items/foodoffers?fields=*,food.*,food.translations.*,markings">https://rocket-meals.de/demo/api/items/foodoffers?fields=*,food.*,food.translations.*,markings</a>.*&amp;filter={„_and“:[{„_or“:[{„date“:{„_between“:[„&lt;DATE_BEGIN&gt;“,“&lt;DATE_END&gt;“]}},{„date“:{„_null“:true}}]},{„canteen“:{„_eq“:“&lt;CANTEEN_ID&gt;“}}]}&amp;limit=-1</p>
-</div></blockquote>
+- <code class="docutils literal notranslate"><span class="pre">&lt;CANTEEN_ID&gt;</span></code>: The ID of the canteen you want to get the food offers for. Please replace this with the actual ID you want to use.
+- <code class="docutils literal notranslate"><span class="pre">&lt;DATE_BEGIN&gt;</span></code>: The date for which you want to get the food offers. Please replace this with the actual date you want to use: e.g. <code class="docutils literal notranslate"><span class="pre">2024-05-14T22:00:00.000Z</span></code> in ISO format.
+- <code class="docutils literal notranslate"><span class="pre">&lt;DATE_END&gt;</span></code>: The date for which you want to get the food offers. Please replace this with the actual date you want to use: e.g. <code class="docutils literal notranslate"><span class="pre">2024-05-15T21:59:59.999Z</span></code> in ISO format.
+- We also filter for <code class="docutils literal notranslate"><span class="pre">date</span></code> being <code class="docutils literal notranslate"><span class="pre">null</span></code> as some offers are not bound to a specific date e.g. <code class="docutils literal notranslate"><span class="pre">daily</span> <span class="pre">offers</span></code> like fries or a salad.
+- Limit is set to <code class="docutils literal notranslate"><span class="pre">-1</span></code> to get all food offers.</p>
+<p>Example Request:</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">https</span><span class="o">:</span><span class="c1">//rocket-meals.de/demo/api/items/foodoffers?fields=*,food.*,food.translations.*,markings.*&amp;filter={&quot;_and&quot;:[{&quot;_or&quot;:[{&quot;date&quot;:{&quot;_between&quot;:[&quot;&lt;DATE_BEGIN&gt;&quot;,&quot;&lt;DATE_END&gt;&quot;]}},{&quot;date&quot;:{&quot;_null&quot;:true}}]},{&quot;canteen&quot;:{&quot;_eq&quot;:&quot;&lt;CANTEEN_ID&gt;&quot;}}]}&amp;limit=-1</span>
+</pre></div>
+</div>
 <p>Response Content:
-- This response will contain all <cite>food offers</cite> for the <cite>canteen</cite> on the specified <cite>date</cite>.
-- The <cite>food offer</cite> holds information about: <cite>prices</cite>, <cite>nutritional values</cite>, <cite>food</cite> and <cite>markings</cite>.
-- The <cite>food</cite> holds information about: <cite>translations</cite>, <cite>image</cite> and <cite>ratings</cite>.</p>
-<p>Example Response:
-.. code-block:: javascript</p>
-<blockquote>
-<div><dl>
-<dt>{</dt><dd><dl>
-<dt>„data“: [</dt><dd><dl>
-<dt>{</dt><dd><p>„alias“: „Linsen-Mango-Curry Salzkartoffeln“,
-„id“: „&lt;FOODOFFER_ID&gt;“,
-„date“: „2024-05-15“,
-„price_employee“: 6.3,
-„price_guest“: 7.9,
-„price_student“: 3,
-„calories_kcal“: 570,
-„carbohydrate_g“: 82.4,
-…
-„markings“: [</p>
-<blockquote>
-<div><dl class="simple">
-<dt>{</dt><dd><p>„foodoffers_id“: „&lt;FOODOFFER_ID&gt;“,
-„id“: 752631,
-„markings_id“: „&lt;MARKING_ID&gt;“</p>
-</dd>
-</dl>
-</div></blockquote>
-<p>],
-„food“: {</p>
-<blockquote>
-<div><p>„alias“: „Linsen-Mango-Curry Salzkartoffeln“,
-„id“: „&lt;FOOD_ID&gt;“,
-„image“: „&lt;IMAGE_ASSET_ID&gt;“,
-„image_remote_url“: null,
-„rating_amount“: null,
-„rating_average“: null,
-…
-„translations“: [</p>
-<blockquote>
-<div><dl class="simple">
-<dt>{</dt><dd><p>„be_source_for_translations“: false,
-„foods_id“: „800190-802608“,
-„id“: 1952,
-„languages_code“: „de-DE“,
-„let_be_translated“: true,
-„name“: „Pellkartoffeln“</p>
-</dd>
-</dl>
-</div></blockquote>
-<p>]</p>
-</div></blockquote>
-<p>}</p>
-</dd>
-</dl>
-</dd>
-</dl>
-<p>]</p>
-</dd>
-</dl>
-<p>}</p>
-</div></blockquote>
+- This response will contain all <code class="docutils literal notranslate"><span class="pre">food</span> <span class="pre">offers</span></code> for the <code class="docutils literal notranslate"><span class="pre">canteen</span></code> on the specified <code class="docutils literal notranslate"><span class="pre">date</span></code>.
+- The <code class="docutils literal notranslate"><span class="pre">food</span> <span class="pre">offer</span></code> holds information about: <code class="docutils literal notranslate"><span class="pre">prices</span></code>, <code class="docutils literal notranslate"><span class="pre">nutritional</span> <span class="pre">values</span></code>, <code class="docutils literal notranslate"><span class="pre">food</span></code> and <code class="docutils literal notranslate"><span class="pre">markings</span></code>.
+- The <code class="docutils literal notranslate"><span class="pre">food</span></code> holds information about: <code class="docutils literal notranslate"><span class="pre">translations</span></code>, <code class="docutils literal notranslate"><span class="pre">image</span></code> and <code class="docutils literal notranslate"><span class="pre">ratings</span></code>.</p>
+<p>Example Response:</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="w">    </span><span class="s2">&quot;data&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="s2">&quot;alias&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Linsen-Mango-Curry Salzkartoffeln&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="s2">&quot;id&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;&lt;FOODOFFER_ID&gt;&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="s2">&quot;date&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;2024-05-15&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="s2">&quot;price_employee&quot;</span><span class="o">:</span><span class="w"> </span><span class="mf">6.3</span><span class="p">,</span>
+<span class="w">            </span><span class="s2">&quot;price_guest&quot;</span><span class="o">:</span><span class="w"> </span><span class="mf">7.9</span><span class="p">,</span>
+<span class="w">            </span><span class="s2">&quot;price_student&quot;</span><span class="o">:</span><span class="w"> </span><span class="mf">3</span><span class="p">,</span>
+<span class="w">            </span><span class="s2">&quot;calories_kcal&quot;</span><span class="o">:</span><span class="w"> </span><span class="mf">570</span><span class="p">,</span>
+<span class="w">            </span><span class="s2">&quot;carbohydrate_g&quot;</span><span class="o">:</span><span class="w"> </span><span class="mf">82.4</span><span class="p">,</span>
+<span class="w">            </span><span class="p">...</span>
+<span class="w">            </span><span class="s2">&quot;markings&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">                </span><span class="p">{</span>
+<span class="w">                    </span><span class="s2">&quot;foodoffers_id&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;&lt;FOODOFFER_ID&gt;&quot;</span><span class="p">,</span>
+<span class="w">                    </span><span class="s2">&quot;id&quot;</span><span class="o">:</span><span class="w"> </span><span class="mf">752631</span><span class="p">,</span>
+<span class="w">                    </span><span class="s2">&quot;markings_id&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;&lt;MARKING_ID&gt;&quot;</span>
+<span class="w">                </span><span class="p">},</span>
+<span class="w">                </span><span class="p">...</span>
+<span class="w">            </span><span class="p">],</span>
+<span class="w">            </span><span class="s2">&quot;food&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="s2">&quot;alias&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Linsen-Mango-Curry Salzkartoffeln&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="s2">&quot;id&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;&lt;FOOD_ID&gt;&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="s2">&quot;image&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;&lt;IMAGE_ASSET_ID&gt;&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="s2">&quot;image_remote_url&quot;</span><span class="o">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<span class="w">                </span><span class="s2">&quot;rating_amount&quot;</span><span class="o">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<span class="w">                </span><span class="s2">&quot;rating_average&quot;</span><span class="o">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<span class="w">                </span><span class="p">...</span>
+<span class="w">                </span><span class="s2">&quot;translations&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">                    </span><span class="p">{</span>
+<span class="w">                        </span><span class="s2">&quot;be_source_for_translations&quot;</span><span class="o">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">                        </span><span class="s2">&quot;foods_id&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;800190-802608&quot;</span><span class="p">,</span>
+<span class="w">                        </span><span class="s2">&quot;id&quot;</span><span class="o">:</span><span class="w"> </span><span class="mf">1952</span><span class="p">,</span>
+<span class="w">                        </span><span class="s2">&quot;languages_code&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;de-DE&quot;</span><span class="p">,</span>
+<span class="w">                        </span><span class="s2">&quot;let_be_translated&quot;</span><span class="o">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">                        </span><span class="s2">&quot;name&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Pellkartoffeln&quot;</span>
+<span class="w">                    </span><span class="p">},</span>
+<span class="w">                    </span><span class="p">...</span>
+<span class="w">                </span><span class="p">]</span>
+<span class="w">            </span><span class="p">}</span>
+<span class="w">        </span><span class="p">},</span>
+<span class="w">        </span><span class="p">...</span>
+<span class="w">    </span><span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+</div>
 <p><strong>Step 4: Food Offer Image Loading</strong></p>
 <ul class="simple">
-<li><p>As we have the <cite>image</cite> of the <cite>food</cite> from the <cite>food offer</cite> we can now request the image.</p></li>
-<li><p>The <cite>image</cite> id in our example is <cite>&lt;IMAGE_ASSET_ID&gt;</cite>.</p></li>
+<li><p>As we have the <code class="docutils literal notranslate"><span class="pre">image</span></code> of the <code class="docutils literal notranslate"><span class="pre">food</span></code> from the <code class="docutils literal notranslate"><span class="pre">food</span> <span class="pre">offer</span></code>, we can now request the image.</p></li>
+<li><p>The <code class="docutils literal notranslate"><span class="pre">image</span></code> id in our example is <code class="docutils literal notranslate"><span class="pre">&lt;IMAGE_ASSET_ID&gt;</span></code>.</p></li>
 </ul>
-<p>Example Request:
-.. code-block:: javascript</p>
-<blockquote>
-<div><p><a class="reference external" href="https://rocket-meals.de/demo/api/assets">https://rocket-meals.de/demo/api/assets</a>/&lt;IMAGE_ASSET_ID&gt;</p>
-</div></blockquote>
+<p>Example Request:</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">https</span><span class="o">:</span><span class="c1">//rocket-meals.de/demo/api/assets/&lt;IMAGE_ASSET_ID&gt;</span>
+</pre></div>
+</div>
 <p>Response Content:
-- This response will contain the image of the <cite>food</cite>.</p>
+- This response will contain the image of the <code class="docutils literal notranslate"><span class="pre">food</span></code>.</p>
 <p>Future Information:
-- You can also request thumbnails of the image or use preset transformations like <cite>width</cite> and <cite>height</cite> in the URL.
+- You can also request thumbnails of the image or use preset transformations like <code class="docutils literal notranslate"><span class="pre">width</span></code> and <code class="docutils literal notranslate"><span class="pre">height</span></code> in the URL.
 - More can be found here: [Request a Thumbnail](<a class="reference external" href="https://docs.directus.io/reference/files.html#requesting-a-thumbnail">https://docs.directus.io/reference/files.html#requesting-a-thumbnail</a>)</p>
 </section>
 
