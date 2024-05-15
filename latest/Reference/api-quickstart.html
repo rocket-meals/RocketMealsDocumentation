@@ -123,10 +123,16 @@
   <section id="api-quickstart">
 <h1>API Quickstart<a class="headerlink" href="#api-quickstart" title="Link to this heading">¶</a></h1>
 <p>For this part of the documentation, we will be using English as the language of choice.</p>
+<p>In this quickstart we will be covering the following topics:
+- Project Style and Logo
+- Canteen Loading
+- Food Offer Loading
+- Food Image Loading
+- Markings Loading</p>
 <p>So, in order to use the API, we will quickly go through the steps you need to know to get started. First, let’s talk about variables and preambles.</p>
 <p><strong>Preamble</strong></p>
 <ul class="simple">
-<li><p>For this quickstart, we will be using <code class="docutils literal notranslate"><span class="pre">https://rocket-meals.de/demo/api</span></code> as the base URL for the API. Please replace this with the actual URL of the API.</p></li>
+<li><p>For this quickstart, we will be using <code class="docutils literal notranslate"><span class="pre">https://rocket-meals.de/rocket-meals/api</span></code> as the base URL for the API. Please replace this with the actual URL of the API.</p></li>
 <li><p>By the time of reading, maybe some permissions on the test API have changed. If you encounter any problems, please contact us or test it on the actual API you want to use.</p></li>
 <li><p>We are using the generated API routes from our used software [Directus](<a class="reference external" href="https://directus.io/">https://directus.io/</a>). Directus offers a [JavaScript SDK](<a class="reference external" href="https://docs.directus.io/guides/sdk/getting-started.html">https://docs.directus.io/guides/sdk/getting-started.html</a>) which could be handy for you.</p></li>
 <li><p>In this quickstart, we will be acting as a non-logged-in/guest/public user.</p></li>
@@ -149,10 +155,10 @@
 <span class="p">}</span>
 </pre></div>
 </div>
-<p>The logo can then be accessed via the following URL: <code class="docutils literal notranslate"><span class="pre">https://rocket-meals.de/demo/api/assets/&lt;PROJECT_LOGO_ID&gt;</span></code></p>
+<p>The logo can then be accessed via the following URL: <code class="docutils literal notranslate"><span class="pre">https://rocket-meals.de/rocket-meals/api/assets/&lt;PROJECT_LOGO_ID&gt;</span></code></p>
 <p><strong>Step 2: Canteen Loading</strong></p>
 <p>Request:</p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">https</span><span class="o">:</span><span class="c1">//rocket-meals.de/demo/api/items/canteens?fields=*&amp;limit=-1</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">https</span><span class="o">:</span><span class="c1">//rocket-meals.de/rocket-meals/api/items/canteens?fields=*&amp;limit=-1</span>
 </pre></div>
 </div>
 <p>Response Content:
@@ -192,7 +198,7 @@
 - We also filter for <code class="docutils literal notranslate"><span class="pre">date</span></code> being <code class="docutils literal notranslate"><span class="pre">null</span></code> as some offers are not bound to a specific date e.g. <code class="docutils literal notranslate"><span class="pre">daily</span> <span class="pre">offers</span></code> like fries or a salad.
 - Limit is set to <code class="docutils literal notranslate"><span class="pre">-1</span></code> to get all food offers.</p>
 <p>Example Request:</p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">https</span><span class="o">:</span><span class="c1">//rocket-meals.de/demo/api/items/foodoffers?fields=*,food.*,food.translations.*,markings.*&amp;filter={&quot;_and&quot;:[{&quot;_or&quot;:[{&quot;date&quot;:{&quot;_between&quot;:[&quot;&lt;DATE_BEGIN&gt;&quot;,&quot;&lt;DATE_END&gt;&quot;]}},{&quot;date&quot;:{&quot;_null&quot;:true}}]},{&quot;canteen&quot;:{&quot;_eq&quot;:&quot;&lt;CANTEEN_ID&gt;&quot;}}]}&amp;limit=-1</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">https</span><span class="o">:</span><span class="c1">//rocket-meals.de/rocket-meals/api/items/foodoffers?fields=*,food.*,food.translations.*,markings.*&amp;filter={&quot;_and&quot;:[{&quot;_or&quot;:[{&quot;date&quot;:{&quot;_between&quot;:[&quot;&lt;DATE_BEGIN&gt;&quot;,&quot;&lt;DATE_END&gt;&quot;]}},{&quot;date&quot;:{&quot;_null&quot;:true}}]},{&quot;canteen&quot;:{&quot;_eq&quot;:&quot;&lt;CANTEEN_ID&gt;&quot;}}]}&amp;limit=-1</span>
 </pre></div>
 </div>
 <p>Response Content:
@@ -231,7 +237,7 @@
 <span class="w">                </span><span class="s2">&quot;translations&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
 <span class="w">                    </span><span class="p">{</span>
 <span class="w">                        </span><span class="s2">&quot;be_source_for_translations&quot;</span><span class="o">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
-<span class="w">                        </span><span class="s2">&quot;foods_id&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;800190-802608&quot;</span><span class="p">,</span>
+<span class="w">                        </span><span class="s2">&quot;foods_id&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;&lt;FOOD_ID&gt;&quot;</span><span class="p">,</span>
 <span class="w">                        </span><span class="s2">&quot;id&quot;</span><span class="o">:</span><span class="w"> </span><span class="mf">1952</span><span class="p">,</span>
 <span class="w">                        </span><span class="s2">&quot;languages_code&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;de-DE&quot;</span><span class="p">,</span>
 <span class="w">                        </span><span class="s2">&quot;let_be_translated&quot;</span><span class="o">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
@@ -246,13 +252,13 @@
 <span class="p">}</span>
 </pre></div>
 </div>
-<p><strong>Step 4: Food Offer Image Loading</strong></p>
+<p><strong>Step 4: Food Image Loading</strong></p>
 <ul class="simple">
 <li><p>As we have the <code class="docutils literal notranslate"><span class="pre">image</span></code> of the <code class="docutils literal notranslate"><span class="pre">food</span></code> from the <code class="docutils literal notranslate"><span class="pre">food</span> <span class="pre">offer</span></code>, we can now request the image.</p></li>
 <li><p>The <code class="docutils literal notranslate"><span class="pre">image</span></code> id in our example is <code class="docutils literal notranslate"><span class="pre">&lt;IMAGE_ASSET_ID&gt;</span></code>.</p></li>
 </ul>
 <p>Example Request:</p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">https</span><span class="o">:</span><span class="c1">//rocket-meals.de/demo/api/assets/&lt;IMAGE_ASSET_ID&gt;</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">https</span><span class="o">:</span><span class="c1">//rocket-meals.de/rocket-meals/api/assets/&lt;IMAGE_ASSET_ID&gt;</span>
 </pre></div>
 </div>
 <p>Response Content:
@@ -260,6 +266,43 @@
 <p>Future Information:
 - You can also request thumbnails of the image or use preset transformations like <code class="docutils literal notranslate"><span class="pre">width</span></code> and <code class="docutils literal notranslate"><span class="pre">height</span></code> in the URL.
 - More can be found here: [Request a Thumbnail](<a class="reference external" href="https://docs.directus.io/reference/files.html#requesting-a-thumbnail">https://docs.directus.io/reference/files.html#requesting-a-thumbnail</a>)</p>
+<p><strong>Step 5: Markings Loading</strong></p>
+<ul class="simple">
+<li><p>For each <code class="docutils literal notranslate"><span class="pre">food</span> <span class="pre">offer</span></code> we can read in the <code class="docutils literal notranslate"><span class="pre">markings</span></code> which <code class="docutils literal notranslate"><span class="pre">&lt;MARKING_ID&gt;</span></code> are assigned.</p></li>
+<li><p>We now want to get all <code class="docutils literal notranslate"><span class="pre">markings</span></code> in the system.</p></li>
+</ul>
+<p>Example Request:</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">https</span><span class="o">:</span><span class="c1">//rocket-meals.de/rocket-meals/api/items/markings?fields=*,translations.*&amp;limit=-1</span>
+</pre></div>
+</div>
+<p>Response Content:
+- This response will contain all <code class="docutils literal notranslate"><span class="pre">markings</span></code> in the system.
+- The <code class="docutils literal notranslate"><span class="pre">markings</span></code> contain information about: <code class="docutils literal notranslate"><span class="pre">translations</span></code>.
+- The <code class="docutils literal notranslate"><span class="pre">markings</span></code> will have an <code class="docutils literal notranslate"><span class="pre">external_identifier</span></code> which is the identifier of the marking in the related system where the data is coming from (e.g. TL1 or an FTP file).
+- We highly reccoment to use the <code class="docutils literal notranslate"><span class="pre">external_identifier</span></code> for the identification of the marking and using the <code class="docutils literal notranslate"><span class="pre">translations</span></code> name (if available) or the <code class="docutils literal notranslate"><span class="pre">alias</span></code> for the display of the marking.
+- The <code class="docutils literal notranslate"><span class="pre">markings</span></code> also may contain information about an <code class="docutils literal notranslate"><span class="pre">image</span></code>, <code class="docutils literal notranslate"><span class="pre">image_remote_url</span></code> or <code class="docutils literal notranslate"><span class="pre">icon</span></code>.</p>
+<p>Example Response:</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="w">    </span><span class="s2">&quot;data&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="s2">&quot;id&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;&lt;MARKING_ID&gt;&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="s2">&quot;alias&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Roggen Gluten&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="s2">&quot;external_identifier&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;20A&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="p">...</span>
+<span class="w">            </span><span class="s2">&quot;translations&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">                </span><span class="p">{</span>
+<span class="w">                    </span><span class="s2">&quot;languages_code&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;de-DE&quot;</span><span class="p">,</span>
+<span class="w">                    </span><span class="s2">&quot;name&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;enthält Glutenhaltiges Getreide: Roggen&quot;</span><span class="p">,</span>
+<span class="w">                    </span><span class="p">...</span>
+<span class="w">                </span><span class="p">},</span>
+<span class="w">                </span><span class="p">...</span>
+<span class="w">            </span><span class="p">]</span>
+<span class="w">        </span><span class="p">},</span>
+<span class="w">        </span><span class="p">...</span>
+<span class="w">    </span><span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+</div>
 </section>
 
 
