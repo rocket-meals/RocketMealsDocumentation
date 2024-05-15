@@ -23,14 +23,13 @@ Rocket Meals Dokumentation
    Google Developer Account <Requirements/google_developer_account>
    Einladung zu den Projekten <Requirements/invite_to_projects>
 
-   Speiseplan-Daten <Guides/meals-update>
+   Speiseplan-Daten-Aktualisieren <Guides/meals-update>
    Datenschutzerklärung <Requirements/privacy_policy>
    Barrierefreiheitserklärung <Requirements/accessibility>
 
 .. toctree::
    :maxdepth: 1
    :caption: Anleitungen
-
 ..
    TODO: Erste Schritte <Guides/quickstart>
    TODO: Backend nutzen <Guides/quickstart>
@@ -105,7 +104,9 @@ Rocket Meals Dokumentation
 
 .. toctree::
    :maxdepth: 1
-   :caption: Referenz
+   :caption: Referenz und API
+
+    API Quickstart <Reference/api-quickstart>
 
 ..
    TODO: Benutzer-API <Reference/user-api>
