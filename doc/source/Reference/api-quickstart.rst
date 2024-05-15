@@ -16,32 +16,31 @@ So in order to use the API we will quickly go through the steps you need to know
 **Step 1: Project Style and Logo**
 
 Request:
-```javascript
-https://rocket-meals.de/rocket-meals/api/settings
-```
+.. code-block:: javascript
+    https://rocket-meals.de/rocket-meals/api/settings
+
 
 Response Content:
 - This response will contain the general information about the project.
 - Including the project name, color and the logo.
 
 Example Response:
-```json
-{
-    "data": {
-        "project_name": "Rocket Meals",
-        "project_color": "#80BA27",
-        "project_logo": "<PROJECT_LOGO_ID>"
+.. code-block:: javascript
+    {
+        "data": {
+            "project_name": "Rocket Meals",
+            "project_color": "#80BA27",
+            "project_logo": "<PROJECT_LOGO_ID>"
+        }
     }
-}
 
 The logo can then be accessed via the following URL: `https://rocket-meals.de/demo/api/assets/<PROJECT_LOGO_ID>`
 
 **Step 2: Canteen Loading**
 
 Request:
-```javascript
-https://rocket-meals.de/demo/api/items/canteens?fields=*&limit=-1
-```
+.. code-block:: javascript
+    https://rocket-meals.de/demo/api/items/canteens?fields=*&limit=-1
 
 Response Content:
 - This response will contain all canteens that are available in the system.
@@ -49,21 +48,22 @@ Response Content:
 - The `id` of the canteen is important for the next step.
 - The `alias` of the canteen is the name of the canteen.
 - The `external_identifier` is the identifier of the canteen in the related system where the data is coming from (e.g. TL1 or an FTP file).
+- Limit is set to `-1` to get all canteens.
 
 Example Response:
-```json
-{
-    "data": [
-        {
-            "id": "<CANTEEN_ID>",
-            "alias": "Hauptmensa",
-            "external_identifier": "Hauptmensa",
+.. code-block:: javascript
+    {
+        "data": [
+            {
+                "id": "<CANTEEN_ID>",
+                "alias": "Hauptmensa",
+                "external_identifier": "Hauptmensa",
+                ...
+                building: "<BUILDING_ID>"
+            },
             ...
-            building: "<BUILDING_ID>"
-        },
-        ...
-    ]
-}
+        ]
+    }
 
 We will be using the `id` of the canteen for the next step.
 
@@ -79,11 +79,11 @@ Variables:
 - `<DATE_BEGIN>`: The date for which you want to get the food offers. Please replace this with the actual date you want to use: e.g. `2024-05-14T22:00:00.000Z` in ISO format.
 - `<DATE_END>`: The date for which you want to get the food offers. Please replace this with the actual date you want to use: e.g. `2024-05-15T21:59:59.999Z` in ISO format.
 - We also filter for `date` being `null` as some offers are not bound to a specific date e.g. `daily offers` like fries or a salad.
+- Limit is set to `-1` to get all food offers.
 
 Example Request:
-```javascript
-https://rocket-meals.de/demo/api/items/foodoffers?fields=*,food.*,food.translations.*,markings.*&filter={"_and":[{"_or":[{"date":{"_between":["<DATE_BEGIN>","<DATE_END>"]}},{"date":{"_null":true}}]},{"canteen":{"_eq":"<CANTEEN_ID>"}}]}&limit=-1
-```
+.. code-block:: javascript
+    https://rocket-meals.de/demo/api/items/foodoffers?fields=*,food.*,food.translations.*,markings.*&filter={"_and":[{"_or":[{"date":{"_between":["<DATE_BEGIN>","<DATE_END>"]}},{"date":{"_null":true}}]},{"canteen":{"_eq":"<CANTEEN_ID>"}}]}&limit=-1
 
 Response Content:
 - This response will contain all `food offers` for the `canteen` on the specified `date`.
@@ -91,51 +91,51 @@ Response Content:
 - The `food` holds information about: `translations`, `image` and `ratings`.
 
 Example Response:
-```json
-{
-    "data": [
-        {
-            "alias": "Linsen-Mango-Curry Salzkartoffeln",
-            "id": "<FOODOFFER_ID>",
-            "date": "2024-05-15",
-            "price_employee": 6.3,
-            "price_guest": 7.9,
-            "price_student": 3,
-            "calories_kcal": 570,
-            "carbohydrate_g": 82.4,
-            ...
-            "markings": [
-                {
-                    "foodoffers_id": "<FOODOFFER_ID>",
-                    "id": 752631,
-                    "markings_id": "<MARKING_ID>"
-                },
-                ...
-            ],
-            "food": {
+.. code-block:: javascript
+    {
+        "data": [
+            {
                 "alias": "Linsen-Mango-Curry Salzkartoffeln",
-                "id": "<FOOD_ID>",
-                "image": <IMAGE_ASSET_ID>,
-                "image_remote_url": null,
-                "rating_amount": null,
-                "rating_average": null,
+                "id": "<FOODOFFER_ID>",
+                "date": "2024-05-15",
+                "price_employee": 6.3,
+                "price_guest": 7.9,
+                "price_student": 3,
+                "calories_kcal": 570,
+                "carbohydrate_g": 82.4,
                 ...
-                "translations": [
+                "markings": [
                     {
-                        "be_source_for_translations": false,
-                        "foods_id": "800190-802608",
-                        "id": 1952,
-                        "languages_code": "de-DE",
-                        "let_be_translated": true,
-                        "name": "Pellkartoffeln"
+                        "foodoffers_id": "<FOODOFFER_ID>",
+                        "id": 752631,
+                        "markings_id": "<MARKING_ID>"
                     },
                     ...
-                ]
-            }
-        },
-        ...
-    ]
-}
+                ],
+                "food": {
+                    "alias": "Linsen-Mango-Curry Salzkartoffeln",
+                    "id": "<FOOD_ID>",
+                    "image": "<IMAGE_ASSET_ID>",
+                    "image_remote_url": null,
+                    "rating_amount": null,
+                    "rating_average": null,
+                    ...
+                    "translations": [
+                        {
+                            "be_source_for_translations": false,
+                            "foods_id": "800190-802608",
+                            "id": 1952,
+                            "languages_code": "de-DE",
+                            "let_be_translated": true,
+                            "name": "Pellkartoffeln"
+                        },
+                        ...
+                    ]
+                }
+            },
+            ...
+        ]
+    }
 
 
 **Step 4: Food Offer Image Loading**
@@ -144,9 +144,8 @@ Example Response:
 - The `image` id in our example is `<IMAGE_ASSET_ID>`.
 
 Example Request:
-```javascript
-https://rocket-meals.de/demo/api/assets/<IMAGE_ASSET_ID>
-```
+.. code-block:: javascript
+    https://rocket-meals.de/demo/api/assets/<IMAGE_ASSET_ID>
 
 Response Content:
 - This response will contain the image of the `food`.
