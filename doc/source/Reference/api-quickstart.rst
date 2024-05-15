@@ -3,11 +3,19 @@ API Quickstart
 
 For this part of the documentation, we will be using English as the language of choice.
 
+In this quickstart we will be covering the following topics:
+- Project Style and Logo
+- Canteen Loading
+- Food Offer Loading
+- Food Image Loading
+- Markings Loading
+
+
 So, in order to use the API, we will quickly go through the steps you need to know to get started. First, let's talk about variables and preambles.
 
 **Preamble**
 
-- For this quickstart, we will be using ``https://rocket-meals.de/demo/api`` as the base URL for the API. Please replace this with the actual URL of the API.
+- For this quickstart, we will be using ``https://rocket-meals.de/rocket-meals/api`` as the base URL for the API. Please replace this with the actual URL of the API.
 - By the time of reading, maybe some permissions on the test API have changed. If you encounter any problems, please contact us or test it on the actual API you want to use.
 - We are using the generated API routes from our used software [Directus](https://directus.io/). Directus offers a [JavaScript SDK](https://docs.directus.io/guides/sdk/getting-started.html) which could be handy for you.
 - In this quickstart, we will be acting as a non-logged-in/guest/public user.
@@ -36,7 +44,7 @@ Example Response:
         }
     }
 
-The logo can then be accessed via the following URL: ``https://rocket-meals.de/demo/api/assets/<PROJECT_LOGO_ID>``
+The logo can then be accessed via the following URL: ``https://rocket-meals.de/rocket-meals/api/assets/<PROJECT_LOGO_ID>``
 
 **Step 2: Canteen Loading**
 
@@ -44,7 +52,7 @@ Request:
 
 .. code-block:: javascript
 
-    https://rocket-meals.de/demo/api/items/canteens?fields=*&limit=-1
+    https://rocket-meals.de/rocket-meals/api/items/canteens?fields=*&limit=-1
 
 Response Content:
 - This response will contain all canteens that are available in the system.
@@ -91,7 +99,7 @@ Example Request:
 
 .. code-block:: javascript
 
-    https://rocket-meals.de/demo/api/items/foodoffers?fields=*,food.*,food.translations.*,markings.*&filter={"_and":[{"_or":[{"date":{"_between":["<DATE_BEGIN>","<DATE_END>"]}},{"date":{"_null":true}}]},{"canteen":{"_eq":"<CANTEEN_ID>"}}]}&limit=-1
+    https://rocket-meals.de/rocket-meals/api/items/foodoffers?fields=*,food.*,food.translations.*,markings.*&filter={"_and":[{"_or":[{"date":{"_between":["<DATE_BEGIN>","<DATE_END>"]}},{"date":{"_null":true}}]},{"canteen":{"_eq":"<CANTEEN_ID>"}}]}&limit=-1
 
 Response Content:
 - This response will contain all ``food offers`` for the ``canteen`` on the specified ``date``.
@@ -133,7 +141,7 @@ Example Response:
                     "translations": [
                         {
                             "be_source_for_translations": false,
-                            "foods_id": "800190-802608",
+                            "foods_id": "<FOOD_ID>",
                             "id": 1952,
                             "languages_code": "de-DE",
                             "let_be_translated": true,
@@ -147,7 +155,7 @@ Example Response:
         ]
     }
 
-**Step 4: Food Offer Image Loading**
+**Step 4: Food Image Loading**
 
 - As we have the ``image`` of the ``food`` from the ``food offer``, we can now request the image.
 - The ``image`` id in our example is ``<IMAGE_ASSET_ID>``.
@@ -156,7 +164,7 @@ Example Request:
 
 .. code-block:: javascript
 
-    https://rocket-meals.de/demo/api/assets/<IMAGE_ASSET_ID>
+    https://rocket-meals.de/rocket-meals/api/assets/<IMAGE_ASSET_ID>
 
 Response Content:
 - This response will contain the image of the ``food``.
@@ -164,3 +172,48 @@ Response Content:
 Future Information:
 - You can also request thumbnails of the image or use preset transformations like ``width`` and ``height`` in the URL.
 - More can be found here: [Request a Thumbnail](https://docs.directus.io/reference/files.html#requesting-a-thumbnail)
+
+
+**Step 5: Markings Loading**
+
+- For each ``food offer`` we can read in the ``markings`` which ``<MARKING_ID>`` are assigned.
+- We now want to get all ``markings`` in the system.
+
+Example Request:
+
+.. code-block:: javascript
+
+    https://rocket-meals.de/rocket-meals/api/items/markings?fields=*,translations.*&limit=-1
+
+Response Content:
+- This response will contain all ``markings`` in the system.
+- The ``markings`` contain information about: ``translations``.
+- The ``markings`` will have an ``external_identifier`` which is the identifier of the marking in the related system where the data is coming from (e.g. TL1 or an FTP file).
+- We highly reccoment to use the ``external_identifier`` for the identification of the marking and using the ``translations`` name (if available) or the ``alias`` for the display of the marking.
+- The ``markings`` also may contain information about an ``image``, ``image_remote_url`` or ``icon``.
+
+Example Response:
+
+.. code-block:: javascript
+
+    {
+        "data": [
+            {
+                "id": "<MARKING_ID>",
+                "alias": "Roggen Gluten",
+                "external_identifier": "20A",
+                ...
+                "translations": [
+                    {
+                        "languages_code": "de-DE",
+                        "name": "enthält Glutenhaltiges Getreide: Roggen",
+                        ...
+                    },
+                    ...
+                ]
+            },
+            ...
+        ]
+    }
+
+
