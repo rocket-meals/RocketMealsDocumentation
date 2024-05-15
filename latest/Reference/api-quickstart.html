@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="de" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>API Quickstart &mdash; Rocket Meals 0.0.1 Dokumentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../_static/documentation_options.js?v=a921576d"></script>
+        <script src="../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../_static/translations.js?v=70a09b52"></script>
+        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Stichwortverzeichnis" href="../genindex.html" />
+    <link rel="search" title="Suche" href="../search.html" />
+    <link rel="prev" title="Öffnungszeiten und Support-Informationen" href="../ContactSupport/hours_of_operation.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../contents.html" class="icon icon-home">
+            Rocket Meals
+              <img src="../_static/logo.png" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                0.0.1
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Rocket Meals</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../index.html">Einleitung</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Anforderungen</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Requirements/device_requirements.html">Endgerät-Anforderungen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Requirements/app_identity.html">App-Identität</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Requirements/apple_developer_account.html">Apple Developer Account</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Requirements/google_developer_account.html">Google Developer Account</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Guides/meals-update.html">Speiseplan-Daten-Aktualisieren</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Requirements/accessibility.html">Barrierefreiheitserklärung</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Funktionen</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Features/push-notifications.html">Push-Nachrichten</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Features/ota-updates.html">OTA-Updates</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Features/ingredient-filter.html">Kennzeichnung Einstellung</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Features/meals.html">Speiseplan</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Features/meal-feedback.html">Speise-Bewertungen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Features/price-category.html">Preiskategorien</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Features/automatic-translation.html">Automatische Übersetzung</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Features/sso.html">Single Sign-on (Einmalanmeldung)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Features/balance-check.html">Guthaben Abfrage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Features/menu-configuration.html">Konfigurierbares Menü</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Features/news.html">News</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Features/buildings.html">Gebäude</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Features/apartments.html">Wohnanlagen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Features/washingmachines.html">Waschanlagen</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Grundlegende Merkmale</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../CoreFeatures/user-roles-permissions.html">Benutzerrollen und Berechtigungen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../CoreFeatures/language.html">Sprache</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../CoreFeatures/anonymous-usage.html">Anonyme Nutzung</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../CoreFeatures/transparent-data-insight.html">Transparente Dateneinsicht</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../CoreFeatures/theming.html">Darstellung und Theme</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../CoreFeatures/accessibility.html">Barrierefreiheit</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Kontakt und Support</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../ContactSupport/customer_support_channels.html">Kundensupport-Kanäle</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ContactSupport/hours_of_operation.html">Öffnungszeiten</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Referenz und API</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#"> API Quickstart</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../contents.html">Rocket Meals</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../contents.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">API Quickstart</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/rocket-meals/RocketMealsDocumentation/blob/master/doc/source/Reference/api-quickstart.rst" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="api-quickstart">
+<h1>API Quickstart<a class="headerlink" href="#api-quickstart" title="Link to this heading">¶</a></h1>
+<p>For this part of the documentation we will be using english as the language of choice.</p>
+<p>So in order to use the API we will quickly go through the steps you need to know to get started. First let’s talk about variables and preambles.</p>
+<p><strong>Preamble</strong></p>
+<ul class="simple">
+<li><p>For this quickstart we will be using <cite>https://rocket-meals.de/demo/api</cite> as the base URL for the API. Please replace this with the actual URL of the API.</p></li>
+<li><p>By the time of reading maybe some permissions on the test API have changed. If you encounter any problems please contact us or test it on the actual API you want to use.</p></li>
+<li><p>We are using the generated API routes from our used software (Directus)[<a class="reference external" href="https://directus.io/">https://directus.io/</a>]. Directus offers a (JavaScript SDK)[<a class="reference external" href="https://docs.directus.io/guides/sdk/getting-started.html">https://docs.directus.io/guides/sdk/getting-started.html</a>] which could be handy for you.</p></li>
+<li><p>In this quickstart we will be acting as a non-logged-in/guest/public user.</p></li>
+</ul>
+<p><strong>Step 1: Project Style and Logo</strong></p>
+<p>Request:
+<code class="docutils literal notranslate"><span class="pre">`javascript</span>
+<span class="pre">https://rocket-meals.de/rocket-meals/api/settings</span>
+<span class="pre">`</span></code></p>
+<p>Response Content:
+- This response will contain the general information about the project.
+- Including the project name, color and the logo.</p>
+<p>Example Response:
+<a href="#id1"><span class="problematic" id="id2">``</span></a><a href="#id3"><span class="problematic" id="id4">`</span></a>json
+{</p>
+<blockquote>
+<div><dl class="simple">
+<dt>„data“: {</dt><dd><p>„project_name“: „Rocket Meals“,
+„project_color“: „#80BA27“,
+„project_logo“: „&lt;PROJECT_LOGO_ID&gt;“</p>
+</dd>
+</dl>
+<p>}</p>
+</div></blockquote>
+<p>}</p>
+<p>The logo can then be accessed via the following URL: <cite>https://rocket-meals.de/demo/api/assets/&lt;PROJECT_LOGO_ID&gt;</cite></p>
+<p><strong>Step 2: Canteen Loading</strong></p>
+<p>Request:
+<code class="docutils literal notranslate"><span class="pre">`javascript</span>
+<span class="pre">https://rocket-meals.de/demo/api/items/canteens?fields=*&amp;limit=-1</span>
+<span class="pre">`</span></code></p>
+<p>Response Content:
+- This response will contain all canteens that are available in the system.
+- The canteens contain a lot of information. We will only cover the most important fields in this quickstart.
+- The <cite>id</cite> of the canteen is important for the next step.
+- The <cite>alias</cite> of the canteen is the name of the canteen.
+- The <cite>external_identifier</cite> is the identifier of the canteen in the related system where the data is coming from (e.g. TL1 or an FTP file).</p>
+<p>Example Response:
+<a href="#id5"><span class="problematic" id="id6">``</span></a><a href="#id7"><span class="problematic" id="id8">`</span></a>json
+{</p>
+<blockquote>
+<div><dl class="simple">
+<dt>„data“: [</dt><dd><dl class="simple">
+<dt>{</dt><dd><p>„id“: „&lt;CANTEEN_ID&gt;“,
+„alias“: „Hauptmensa“,
+„external_identifier“: „Hauptmensa“,
+…
+building: „&lt;BUILDING_ID&gt;“</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p>]</p>
+</div></blockquote>
+<p>}</p>
+<p>We will be using the <cite>id</cite> of the canteen for the next step.</p>
+<p><strong>Step 3: Food Offer Loading</strong></p>
+<ul class="simple">
+<li><p>As we optained the <cite>id</cite> of the canteen we can now request the food offers for the canteen.</p></li>
+<li><p>Our used API offers to pass a query in the URL. If you want to read more about that you can do so here: [Directus Query](<a class="reference external" href="https://docs.directus.io/reference/query.html">https://docs.directus.io/reference/query.html</a>)</p></li>
+<li><p>As <cite>food offers</cite> and <cite>foods</cite> contain a lot of data we will only cover the most important fields in this quickstart.</p></li>
+<li><p>Please keep in mind that <cite>food</cite> and <cite>foodoffers</cite> are two different tables in the database. The <cite>foodoffers</cite> table contains the actual offers for a specific date and the <cite>food</cite> table contains the general information about the food.</p></li>
+</ul>
+<p>Variables:
+- <cite>&lt;CANTEEN_ID&gt;</cite>: The ID of the canteen you want to get the food offers for. Please replace this with the actual ID you want to use.
+- <cite>&lt;DATE_BEGIN&gt;</cite>: The date for which you want to get the food offers. Please replace this with the actual date you want to use: e.g. <cite>2024-05-14T22:00:00.000Z</cite> in ISO format.
+- <cite>&lt;DATE_END&gt;</cite>: The date for which you want to get the food offers. Please replace this with the actual date you want to use: e.g. <cite>2024-05-15T21:59:59.999Z</cite> in ISO format.
+- We also filter for <cite>date</cite> being <cite>null</cite> as some offers are not bound to a specific date e.g. <cite>daily offers</cite> like fries or a salad.</p>
+<p>Example Request:
+<code class="docutils literal notranslate"><span class="pre">`javascript</span>
+<span class="pre">https://rocket-meals.de/demo/api/items/foodoffers?fields=*,food.*,food.translations.*,markings.*&amp;filter={&quot;_and&quot;:[{&quot;_or&quot;:[{&quot;date&quot;:{&quot;_between&quot;:[&quot;&lt;DATE_BEGIN&gt;&quot;,&quot;&lt;DATE_END&gt;&quot;]}},{&quot;date&quot;:{&quot;_null&quot;:true}}]},{&quot;canteen&quot;:{&quot;_eq&quot;:&quot;&lt;CANTEEN_ID&gt;&quot;}}]}&amp;limit=-1</span>
+<span class="pre">`</span></code></p>
+<p>Response Content:
+- This response will contain all <cite>food offers</cite> for the <cite>canteen</cite> on the specified <cite>date</cite>.
+- The <cite>food offer</cite> holds information about: <cite>prices</cite>, <cite>nutritional values</cite>, <cite>food</cite> and <cite>markings</cite>.
+- The <cite>food</cite> holds information about: <cite>translations</cite>, <cite>image</cite> and <cite>ratings</cite>.</p>
+<p>Example Response:
+<a href="#id9"><span class="problematic" id="id10">``</span></a><a href="#id11"><span class="problematic" id="id12">`</span></a>json
+{</p>
+<blockquote>
+<div><dl>
+<dt>„data“: [</dt><dd><dl>
+<dt>{</dt><dd><p>„alias“: „Linsen-Mango-Curry Salzkartoffeln“,
+„id“: „&lt;FOODOFFER_ID&gt;“,
+„date“: „2024-05-15“,
+„price_employee“: 6.3,
+„price_guest“: 7.9,
+„price_student“: 3,
+„calories_kcal“: 570,
+„carbohydrate_g“: 82.4,
+…
+„markings“: [</p>
+<blockquote>
+<div><dl class="simple">
+<dt>{</dt><dd><p>„foodoffers_id“: „&lt;FOODOFFER_ID&gt;“,
+„id“: 752631,
+„markings_id“: „&lt;MARKING_ID&gt;“</p>
+</dd>
+</dl>
+</div></blockquote>
+<p>],
+„food“: {</p>
+<blockquote>
+<div><p>„alias“: „Linsen-Mango-Curry Salzkartoffeln“,
+„id“: „&lt;FOOD_ID&gt;“,
+„image“: &lt;IMAGE_ASSET_ID&gt;,
+„image_remote_url“: null,
+„rating_amount“: null,
+„rating_average“: null,
+…
+„translations“: [</p>
+<blockquote>
+<div><dl class="simple">
+<dt>{</dt><dd><p>„be_source_for_translations“: false,
+„foods_id“: „800190-802608“,
+„id“: 1952,
+„languages_code“: „de-DE“,
+„let_be_translated“: true,
+„name“: „Pellkartoffeln“</p>
+</dd>
+</dl>
+</div></blockquote>
+<p>]</p>
+</div></blockquote>
+<p>}</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p>]</p>
+</div></blockquote>
+<p>}</p>
+<p><strong>Step 4: Food Offer Image Loading</strong></p>
+<ul class="simple">
+<li><p>As we have the <cite>image</cite> of the <cite>food</cite> from the <cite>food offer</cite> we can now request the image.</p></li>
+<li><p>The <cite>image</cite> id in our example is <cite>&lt;IMAGE_ASSET_ID&gt;</cite>.</p></li>
+</ul>
+<p>Example Request:
+<code class="docutils literal notranslate"><span class="pre">`javascript</span>
+<span class="pre">https://rocket-meals.de/demo/api/assets/&lt;IMAGE_ASSET_ID&gt;</span>
+<span class="pre">`</span></code></p>
+<p>Response Content:
+- This response will contain the image of the <cite>food</cite>.</p>
+<p>Future Information:
+- You can also request thumbnails of the image or use preset transformations like <cite>width</cite> and <cite>height</cite> in the URL.
+- More can be found here: [Request a Thumbnail](<a class="reference external" href="https://docs.directus.io/reference/files.html#requesting-a-thumbnail">https://docs.directus.io/reference/files.html#requesting-a-thumbnail</a>)</p>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../ContactSupport/hours_of_operation.html" class="btn btn-neutral float-left" title="Öffnungszeiten und Support-Informationen" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Baumgartner Software UG (haftungsbeschränkt).</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
