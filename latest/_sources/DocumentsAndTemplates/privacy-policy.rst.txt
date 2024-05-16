@@ -26,6 +26,7 @@ Bitte ersetzen Sie die folgenden Variablen:
 
 
 .. code-block:: md
+    
     Unsere Website und unsere spezielle App (nachfolgend „App“) kann ohne Preisgabe personenbezogener Daten verwendet werden, mit Ausnahme von kurzfristiger Speicherung von Log Dateien (wie. z. B. IP-Adressen, Zugriffszeiten) zur Wahrung der Sicherheit . Solltest du jedoch bestimmte personenbezogene Daten zur Verfügung stellen (zum Beispiel im Zuge einer E-Mail-Kontaktaufnahme oder Login mit externen Anbietern wie Google, Apple und andere), wie Name, Wohnort oder E-Mail-Adresse, geschieht dies immer auf freiwilliger Basis und mit dem ausdrücklichen Einverständnis von dir.
 
     # Name und Anschrift des Verantwortlichen
