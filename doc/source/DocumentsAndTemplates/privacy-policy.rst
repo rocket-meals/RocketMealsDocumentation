@@ -26,7 +26,7 @@ Bitte ersetzen Sie die folgenden Variablen:
 
 
 .. code-block:: md
-    Unsere Website und unsere spezielle App (nachfolgend „App“) kann grundsätzlich anonym genutzt werden, sodass du ohne Preisgabe personenbezogener Daten die Funktionen verwenden kannst. Solltest du jedoch bestimmte personenbezogene Daten zur Verfügung stellen (zum Beispiel im Zuge einer E-Mail-Kontaktaufnahme oder Login mit externen Anbietern oder dem anlegen eines Nutzerkontos), wie Name, Wohnort oder E-Mail-Adresse, geschieht dies immer auf freiwilliger Basis und mit dem ausdrücklichen Einverständnis von dir.
+    Unsere Website und unsere spezielle App (nachfolgend „App“) kann ohne Preisgabe personenbezogener Daten verwendet werden, mit Ausnahme von kurzfristiger Speicherung von Log Dateien (wie. z. B. IP-Adressen, Zugriffszeiten) zur Wahrung der Sicherheit . Solltest du jedoch bestimmte personenbezogene Daten zur Verfügung stellen (zum Beispiel im Zuge einer E-Mail-Kontaktaufnahme oder Login mit externen Anbietern wie Google, Apple und andere), wie Name, Wohnort oder E-Mail-Adresse, geschieht dies immer auf freiwilliger Basis und mit dem ausdrücklichen Einverständnis von dir.
 
     # Name und Anschrift des Verantwortlichen
 
@@ -47,17 +47,19 @@ Bitte ersetzen Sie die folgenden Variablen:
 
     ### 1.1 Informationen, die beim Download erhoben werden
 
-    Beim Download der App werden bestimmte erforderliche Informationen an den von dir ausgewählten App Store (Google Play oder Apple App Store) übermittelt. Insbesondere können dabei der Nutzername, die E-Mail-Adresse, die Kundennummer deines Accounts, der Zeitpunkt des Downloads, Zahlungsinformationen sowie die individuelle Gerätekennziffer verarbeitet werden. Die Verarbeitung dieser Daten erfolgt ausschließlich durch den jeweiligen App Store und liegt außerhalb unseres Einflussbereiches.
+    Bei dem Download der App werden bestimmte erforderliche Informationen an den von dir ausgewählten App Store (Google Play oder Apple App Store) übermittelt. Insbesondere können dabei der Nutzername, die E-Mail-Adresse, die Kundennummer deines Accounts, der Zeitpunkt des Downloads, Zahlungsinformationen sowie die individuelle Gerätekennziffer verarbeitet werden. Die Verarbeitung dieser Daten erfolgt ausschließlich durch den jeweiligen App Store und liegt außerhalb unseres Einflussbereiches.
 
     ### 1.2 Informationen, die automatisch erhoben werden
 
-    Wir schätzen das Recht auf Anonymität sehr, weshalb du zu Beginn die Möglichkeit hast, auszuwählen, ob du die App anonym nutzen möchtest. In diesem Fall werden keinerlei persönliche Daten an uns übermittelt, sodass jeder, der anonym bleiben möchte, dies auch sein kann. Hierdurch muss der Funktionsumfang der App allerdings stark eingeschränkt werden. Auf die Speicherung von Daten des Providers haben wir keinerlei Einfluss.
+    Wir schätzen das Recht auf Anonymität sehr, weshalb du zu Beginn die Möglichkeit hast, auszuwählen, ob du die App als Gast nutzen möchtest. In diesem Fall werden keinerlei persönliche Daten an uns übermittelt, sodass jeder, der anonym bleiben möchte, dies auch sein soll. Wir speichern lediglich für einen kurzen Zeitraum in den Server Logs die IP-Adresse und Zugriffszeiten, um unsere Sicherheit zu gewährleisten, weitere Informationen dazu findest du unter ``Automatische Serveraufzeichnungen``. Durch die Nutzung mit einem Gastkonto wird der Funktionsumfang der App allerdings eingeschränkt werden, da für einige Funktionen wie das Synchronisieren von Daten und senden von E-Mails keine Anonymität möglich ist. Auf die Speicherung von Daten des Providers haben wir keinerlei Einfluss.
 
-    Solltest du die App nicht anonym benutzen, so wird im Rahmen deiner Nutzung der App automatisiert eine UserID (Benutzer Identifier) erstellt, welche für den vollen Nutzungsumfang der App erforderlich ist. Für die Erhebung der UserID berufen wir uns auf unser berechtigtes Interesse gem. Art. 6 Abs. 1 f) DSGVO, um die Funktionsfähigkeit und den fehlerfreien Betrieb der App zu gewährleisten und einen markt- und interessensgerechten Dienst anbieten zu können.
+    Solltest du die App nicht als Gast benutzen, so wird im Rahmen deiner Nutzung der App automatisiert eine UserID (Benutzer Identifier) erstellt, welche für den vollen Nutzungsumfang der App erforderlich ist. Für die Erhebung der UserID berufen wir uns auf unser berechtigtes Interesse gem. Art. 6 Abs. 1 f) DSGVO, um die Funktionsfähigkeit und den fehlerfreien Betrieb der App zu gewährleisten und einen markt- und interessensgerechten Dienst anbieten zu können.
 
-    Die übermittelten Bewertungen und ggf. Kommentare erheben wir auf Basis einer Einwilligung nach Art. 6 Abs. 1 a) DSGVO. Du musst deine Bewertung bzw. deinen Kommentar durch aktives Anklicken des „Feedback senden“-Buttons abschicken oder wirst in der App aktiv danach gefragt, ob du diese Bewertung und ggf. Kommentare übermitteln willst. Die Erhebung der pseudonymisierten Nutzungsdaten erfolgt auf Basis eines berechtigten Interesses nach Art. 6 Abs. 1 f) DSGVO i.V.m. Erwägungsgrund 47 (Direktmarketing).
+    Die übermittelten Bewertungen und ggf. Kommentare erheben wir auf Basis einer Einwilligung nach Art. 6 Abs. 1 a) DSGVO. Du musst deine Bewertung bzw. deinen Kommentar durch aktives Anklicken „Feedback senden“-Buttons abschicken oder Schreiben oder wirst in der App aktiv danach gefragt, ob du diese Bewertung und ggf. Kommentare übermitteln willst. Die Erhebung der pseudonymisierten Nutzungsdaten erfolgt auf Basis eines berechtigten Interesses nach Art. 6 Abs. 1 f) DSGVO i.V.m. Erwägungsgrund 47 (Direktmarketing).
 
-    Du hast in der App, sofern die App nicht anonym verwendet wird, die jederzeit die Möglichkeit all bei uns gespeicherten Daten einzusehen. Im Nachfolgenden werden die weiteren zu erhebenden Daten gelistet, die zur Bereitstellung der Leistung nach Art. 6 Abs. 1 b) und f) DSGVO notwendig sind.
+    Du hast in der App, sofern die App nicht als Gast verwendet wird, die jederzeit die Möglichkeit all bei uns gespeicherten Daten einzusehen. Im Nachfolgenden werden die weiteren zu erhebenden Daten gelistet, die zur Bereitstellung der Leistung nach Art. 6 Abs. 1 b) und f) DSGVO notwendig sind. Die Löschung deiner Daten erfolgt automatisch, wenn du dein Konto löschst oder nach 180 Tagen Inaktivität.
+
+    Wir bieten hohe Transparenz indem wie dir als Gast oder angemeldeter Nutzer die Möglichkeit geben, deine Daten einzusehen die auf deinem Gerät lokal gespeichert sind.
 
     ### User
 
@@ -71,11 +73,11 @@ Bitte ersetzen Sie die folgenden Variablen:
 
     - last_access - Wir speichern den Zeitpunkt deines letzten Zugriffes, sodass wir inaktive Nutzer automatisch löschen können.
 
-    - password - Ein von der App zufällig generiertes Passwort oder von dir erstelltes Passwort, welches verwendet wird, um dich zu autorisieren und dein Konto zu verwalten. Das Ändern des Passworts ist auch noch im Nachhinein möglich. Sofern du dich über einen externen Anbieter angemeldet hast, speichern wir natürlich kein Passwort.
+    - password - Sofern du dich über einen externen Anbieter angemeldet hast, speichern wir natürlich kein Passwort. Für Accounts von Mitarbeitern wird hier ein gehashed Passwort gespeichert.
 
     - provider - Falls du dich über einen externen Anbieter wie z. B. Google angemeldet hast, speichern wir den Namen dieses Anbieters.
 
-    - theme - Falls du liebhaber von Darkmodes bist, speichern wir hier das ausgewählte Thema.
+    - external_identifier - Falls du dich über einen externen Anbieter wie z. B. Google angemeldet hast, speichern wir die ID dieses Anbieters, um dir deinen Account zuordnen zu können.
 
     - token - Ein vom Server generierter Token, welchen du mit deinem Passwort erhältst, um dich leichter zu autorisieren.
 
@@ -87,34 +89,37 @@ Bitte ersetzen Sie die folgenden Variablen:
 
     - avatar - Neben deines Pseudonyms kannst du dir einen Avatar zusammenstellen. Dieser hat den gleichen Sinn wie der Nickname.
 
-    - nickname - Du erhältst die Möglichkeit, dir ein Pseudonym zu wählen, welches nicht einzigartig sein muss. Wir bitten dich, hierbei nicht deinen echten Namen einzugeben. Anhand dieses Nicknamen können vernetzte Freunde dich leichter erkennen und sehen, ob und wann du Lust hast in die Mensa zu gehen. Dadurch können andere Nutzer nicht deinen echten Namen sehen, welchen wir nur in deinem User-Account speichern.
-
-    - canteen - Deine ausgewählte Mensa oder Cafeteria. Damit wir dir nur Erinnerungen von Gerichten zukommen lassen, welche auch in deiner Mensa angeboten werden.
-
-    - canteen - Deine ausgewählte Mensa oder Cafeteria. Damit wir dir nur Erinnerungen von Gerichten zukommen lassen, welche auch in deiner Mensa angeboten werden.
-
-    - date_created - Das Erstelldatum deines Kontos. Dadurch können wir den Zuwachs von Benutzern verfolgen.
-
-    - date_updated - Das letzte Änderungsdatum deines Kontos. Dadurch können wir nachvollziehen, wann Änderungen getätigt wurden.
+    - credit_balance - Dein aktuelles Guthaben, welches du in der Mensa hast, sofern du deine Mensa-Karte ausgelesen hast. Damit synchronisieren wir deine Daten auf deinen Geräten.
 
     - language - Wir speichern deine bevorzugte Sprache damit wir dir Nachrichten und Inhalte in deiner Sprache anzeigen können. Die Sprache wird zu Beginn automatisch über dein verwendetes Endgerät analysiert und kann von dir geändert werden.
 
-    - course_timetable - Sofern du deinen Stundenplan erstellt hast, wird dieser auch in deinem Profil online gespeichert. Wir analysieren Profile mit Stundenplänen, um überfüllte Essensschlangen zu vermeiden - wir geben diese Daten nicht an Dritte weiter.
+    - nickname - Du erhältst die Möglichkeit, dir ein Pseudonym zu wählen, welches nicht einzigartig sein muss. Wir bitten dich, hierbei nicht deinen echten Namen einzugeben. Anhand dieses Nicknamen können vernetzte Freunde dich leichter erkennen und sehen, ob und wann du Lust hast in die Mensa zu gehen. Dadurch können andere Nutzer nicht deinen echten Namen sehen, welchen wir nur in deinem User-Account speichern.
+
+    - food_feedbacks - Deine favorisierten Gerichte. Dadurch können wir dich benachrichtigen, wenn eine deiner Wunschspeisen wieder angeboten wird. Anhand dieser versuchen wir unser Angebot zu verbessern. Deine Kommentare zu den angebotenen Gerichten. Anhand dieser versuchen wir unser Angebot zu verbessern. Deine Bewertungen der angebotenen Gerichte. Anhand dieser versuchen wir unser Angebot zu verbessern.
 
     - price_group - Wir speichern die Preisklasse ab, sodass wir dir Preise für deine Rabatt-Klasse anzeigen können.
 
-    - markings - Deine Allergene und Kennzeichnungen von Gerichten, welche du entweder nicht verträgst oder nicht magst. Dadurch können wir einerseits deine Benachrichtigungen an deine Essgewohnheiten anpassen, andererseits können wir unser Angebot anpassen, um möglichst viele Menschen anzusprechen.
+    - data_privacy_policy_accepted - Deine Zustimmung zur Datenschutzerklärung. Wir speichern diese Information, um zu wissen, ob du die Datenschutzerklärung gelesen hast.
 
     - buildings_favorites - Deine bevorzugten Gebäude, welche für dich wichtig sind.
 
     - buildings_last_visited - Deine zuletzt angeschauten Gebäude in der App. Wir nutzen diese Information unter anderem zur Sortierung der Ergebnisse.
 
-    - food_feedbacks - Deine favorisierten Gerichte. Dadurch können wir dich benachrichtigen, wenn eine deiner Wunschspeisen wieder angeboten wird. Anhand dieser versuchen wir unser Angebot zu verbessern. Deine Kommentare zu den angebotenen Gerichten. Anhand dieser versuchen wir unser Angebot zu verbessern. Deine Bewertungen der angebotenen Gerichte. Anhand dieser versuchen wir unser Angebot zu verbessern.
-
-    - visited_pages - Die von dir aufgerufenen Menüpunkte/Bereiche der App. Dadurch können wir erkennen, welche Bereiche der App besonders häufig genutzt werden. Dies hilft uns, den Fokus der Verbesserung dahingehend zu setzen. StreamViews werden nur durch deine explizite Zustimmung (zur Verbesserung der App) an uns übermittelt. Wir erhoffen uns damit, Fragen beantworten zu können wie z.B. "Verwenden Erstsemester-Studenten den Lageplan häufiger als andere?".
+    - markings - Deine Allergene und Kennzeichnungen von Gerichten, welche du entweder nicht verträgst oder nicht magst. Dadurch können wir einerseits deine Benachrichtigungen an deine Essgewohnheiten anpassen, andererseits können wir unser Angebot anpassen, um möglichst viele Menschen anzusprechen.
 
     - devices - Deine verwendeten End-Geräte. Wir verwenden diese Informationen, um z. B. Fehler besser analysieren zu können, abhängig welches End-Gerät zu verwendet hast. Weitere Informationen in dem Abschnitt zu deinem Gerät.
 
+    - canteen - Deine ausgewählte Mensa oder Cafeteria. Damit wir dir nur Erinnerungen von Gerichten zukommen lassen, welche auch in deiner Mensa angeboten werden.
+
+    - course_timetable - Sofern du deinen Stundenplan erstellt hast, wird dieser auch in deinem Profil online gespeichert. Wir analysieren Profile mit Stundenplänen, um überfüllte Essensschlangen zu vermeiden - wir geben diese Daten nicht an Dritte weiter.
+
+    - notify_on_free_housing_rooms - Deine Zustimmung, ob wir dich benachrichtigen dürfen, wenn ein freies Zimmer in einem Wohnheim verfügbar ist.
+
+    - date_created - Das Erstelldatum deines Kontos. Dadurch können wir den Zuwachs von Benutzern verfolgen.
+
+    - date_updated - Das letzte Änderungsdatum deines Kontos. Dadurch können wir nachvollziehen, wann Änderungen getätigt wurden.
+
+    - visited_pages - Die von dir aufgerufenen Menüpunkte/Bereiche der App. Dadurch können wir erkennen, welche Bereiche der App besonders häufig genutzt werden. Dies hilft uns, den Fokus der Verbesserung dahingehend zu setzen. StreamViews werden nur durch deine explizite Zustimmung (zur Verbesserung der App) an uns übermittelt. Wir erhoffen uns damit, Fragen beantworten zu können wie z.B. "Verwenden Erstsemester-Studenten den Lageplan häufiger als andere?".
 
     ### Informationen zu deinem Gerät
 
@@ -140,7 +145,7 @@ Bitte ersetzen Sie die folgenden Variablen:
 
     ### 1.3 Automatische Serveraufzeichnungen
 
-    Bei jedem Aufruf unserer Internetseite und App erfasst unser System automatisiert Daten und Informationen vom Computersystem des aufrufenden Rechners.
+    Bei jedem Aufruf unserer Internetseite und App erfasst unser System automatisiert Daten und Informationen vom Computersystem des aufrufenden Gerätes.
 
     Folgende Daten werden hierbei erhoben:
 
@@ -165,14 +170,13 @@ Bitte ersetzen Sie die folgenden Variablen:
     In diesen Zwecken liegt auch unser berechtigtes Interesse an der Datenverarbeitung nach Art. 6 Abs. 1 lit. f DSGVO.
 
     ### Dauer der Speicherung
-    Die Daten werden gelöscht, sobald sie für die Erreichung des Zweckes ihrer Erhebung nicht mehr erforderlich sind. 
-
-    Im Falle der Daten des Nutzer ist dies sobald der Nutzer seinen Account löscht oder nach 180 Tagen inaktivität.
-
-    Im Falle der Speicherung der Daten in Logfiles ist dies nach spätestens 30 Tagen der Fall.
+    Die Dauer der Speicherung kann im Abschnitt „Zeitraum der Datenspeicherung“ eingesehen werden.
 
     Widerspruchs- und Beseitigungsmöglichkeit
     Die Erfassung der Daten zur Bereitstellung der Website und die Speicherung der Daten in Logfiles ist für den Betrieb der Internetseite zwingend erforderlich. Es besteht folglich seitens des Nutzers keine Widerspruchsmöglichkeit.
+
+
+
 
     ## 2. Weitergabe und Übertragung von Daten
 
@@ -180,31 +184,13 @@ Bitte ersetzen Sie die folgenden Variablen:
 
     Wir sind für die Funktionalität unserer App auf externe Dienstleister angewiesen, die Teilprozesse oder Serviceleistungen für uns erbringen.
 
-    ## 3. Google Firebase
 
-    Unsere App nutzt Dienste von Google Firebase. Firebase ist Teil der Google Cloud Plattform und bietet für Entwickler viele Dienste an, die du hier einsehen kannst: firebase.google.com/terms/ (https://firebase.google.com/terms/). Einige Dienste von Firebase verarbeiten von dir als Endnutzer personenbezogene Daten. Dies ist für die Bereitstellung der Google-Dienste notwendig. Welche Daten zu welchem Zweck verarbeitet werden, kannst du unter dem Punkt Datenverarbeitungsinformationen (dataprocessing information) einsehen: firebase.google.com/support/privacy/ (https://firebase.google.com/support/privacy/). Google Firebase verwendet oftmals "Instance-ID´s", die laut den Informationen von Google solange gespeichert werden, bis der Endkunde einen API-Aufruf zum Löschen der ID ausführt. Danach werden die Daten 180 Tage nach Aufruf aus dem Live- und Backup-System gelöscht. Weitere Informationen findest du unter: firebase.google.com/support/privacy/manage-iids (https://firebase.google.com/support/privacy/manage-iids). Diese Instance-ID´s werden bspw. ermittelt, um zu wissen, an welches Gerät Nachrichten übermittelt werden sollen.
 
-    Wir erhalten keinerlei personenbezogene Daten von Google Firebase und stellen auch keine Anstrengungen an, diese Daten im Nachhinein zu personalisieren. Wir benutzen die Daten lediglich zur Analyse des Nutzungsverhaltens.
-
-    Wir übernehmen keinerlei Garantie für die o. g. Angaben von Google und beziehen uns lediglich auf die bereitgestellten Informationen. Google ist berechtigt, diese Informationen jederzeit zu ändern, zu löschen, die URL (Link auf Google-Webseiten) zu löschen oder zu ändern bzw. die Informationen auf einer anderen Seite bereitzustellen.
-
-    Google stellt für uns einen Datenverarbeiter gem. Art. 28 DSGVO dar, mit dem wir einen Auftragsverarbeitungsvertrag geschlossen haben.
-
-    Als Datenverarbeiter außerhalb des Europäischen Wirtschaftsraums (EWR) unterliegt Google gewissen Rahmenbedingungen, die sie einhalten müssen, um einen gleichwertigen Schutz wie innerhalb des EWR zu gewährleisten. Dieser Schutz wird durch die Standardvertragsklauseln zwischen Google und dem Studentenwerk Osnabrück abgesichert. (https://policies.google.com/privacy/frameworks)
-
-    Informationen des Drittanbieters: Google Dublin, Google Ireland Ltd., Gordon House, Barrow Street, Dublin 4, Ireland, Fax: +353 (1) 436 1001, bzw. Google Analytics der Google Inc. (1600 Amphitheatre Parkway, Mountain View, CA 94043, USA).
-
-    Nutzerbedingungen: firebase.google.com/terms/&nbsp; (https://firebase.google.com/terms/%C2%A0)
-
-    Übersicht zum Datenschutz: firebase.google.com/support/privacy/ (https://firebase.google.com/support/privacy/)
-
-    sowie die Datenschutzerklärung: policies.google.com/privacy&nbsp; (https://policies.google.com/privacy%C2%A0)
-
-    Des Weiteren verwenden wir folgende Dienste von Google Firebase: Cloud Messaging
-
-    ### 3.1 Cloud Messaging
+    ## 3. Cloud Messaging
 
     Cloud Messaging dient uns dazu, dir Push-Nachrichten oder In-App-Messages zusenden zu können. Dabei wird dem Endgerät eine pseudonymisierte Push-Reference zugeteilt, die den Push-Nachrichten bzw. In-App-Messages als Ziel dient. Die Push-Nachrichten können in den Einstellungen des Endgeräts jederzeit deaktiviert, aber auch wieder aktiviert werden.
+
+
 
     ## 4. Lageplan
 
@@ -212,27 +198,41 @@ Bitte ersetzen Sie die folgenden Variablen:
 
     Die Nutzungsbedingungen von OpenStreetMap kannst du hier nachlesen: https://wiki.osmfoundation.org/wiki/Privacy_Policy (https://wiki.osmfoundation.org/wiki/Privacy_Policy). Dort erhältst du auch weitere Informationen zu deinen diesbezüglichen Rechten und Einstellungsmöglichkeiten zum Schutz deiner Privatsphäre.
 
+
+
     ## 5. Feedback Kommentarfeld
 
     Über das Feedback Kommentarfeld kannst du uns Nachrichten zusenden. Weitere Angaben über deine Person benötigen wir nicht und werden von uns auch nicht abgefragt. Durch das Kommentarfeld verarbeiten wir deine Benutzer id und Profil id. Hierfür berufen wir uns auf deine Einwilligung gem. Art. 6 Abs. 1 a) DSGVO, da die Abgabe eines Feedbacks freiwillig ist.
+
+
+
 
     ## 6. NFC-Zugriff
 
     Für das Auslesen des Guthabens deiner Mensa-Karte per NFC wird in der App der zuletzt ausgelesene Stand angezeigt und gespeichert. Es findet eine Weiterleitung der Daten an das Backend statt, sodass diese Daten auf deinen Geräten synchronisiert wird. Wir behalten es uns vor den Verlauf des Guthabens zu analysieren.
 
+
+
+
     ## 7. Zweckänderungen
 
     Verarbeitungen deiner personenbezogenen Daten zu anderen als den beschriebenen Zwecken erfolgen nur, soweit eine Rechtsvorschrift dies erlaubt oder du in den geänderten Zweck der Datenverarbeitung eingewilligt hast. Im Falle einer Weiterverarbeitung zu anderen Zwecken als denen, für die die Daten ursprünglich erhoben worden sind, informieren wir dich vor der Weiterverarbeitung über diese anderen Zwecke und stellen dir sämtliche weitere hierfür maßgeblichen Informationen zur Verfügung.
 
+
+
+
     ## 8. Zeitraum der Datenspeicherung
 
-    Wir speichern deine Daten im Normalfall bis zu 12 Monate. Solltest du länger als 12 Monate nicht aktiv gewesen sein (sprich du hast die App nicht verwendet, warst lange im Auslandsstudium) oder du löscht dein Konto (über die App), werden alle Daten, welche wir dir zuordnen können, automatisch gelöscht oder anonymisiert.
+    Wir speichern deine Daten im Normalfall bis zu 180 Tage. Solltest du länger als 180 Tage nicht aktiv gewesen sein (sprich du hast die App nicht verwendet, warst lange im Auslandsstudium) oder du löscht dein Konto (über die App), werden alle Daten, welche wir dir zuordnen können, automatisch gelöscht oder anonymisiert.
 
     Dabei löschen oder anonymisieren wir deine personenbezogenen Daten, sobald sie für die Zwecke, für die wir sie nach den vorstehenden Ziffern erhoben oder verwendet haben, nicht mehr erforderlich sind oder soweit diese Daten nicht für die strafrechtliche Verfolgung oder zur Sicherung, Geltendmachung oder Durchsetzung von Rechtsansprüchen länger benötigt werden. Nach Löschung deines Benutzerkontos werden deine Daten für die weitere Verwendung automatisch gelöscht, es sei denn, dass wir nach Art. 6 Abs. 1 S. 1 c) DSGVO aufgrund von steuer- und handelsrechtlichen Aufbewahrungs- und Dokumentationspflichten (aus HGB, StGB oder AO) zu einer längeren Speicherung verpflichtet sind oder du in die darüberhinausgehende Speicherung nach Art. 6 Abs. 1 S. 1 a) DSGVO eingewilligt hast.
 
-    Die Bewertungen zu Speisen und anderen Leistungen werden hingegen nicht gelöscht, auch wenn du die App deinstallierst oder dieses Gericht nicht mehr auf den Speiseplänen steht. Die Bewertungen beinhalten, außer der UserID, die wie o.g. gelöscht oder anonymisiert wird, keine weiteren personenbezogenen Daten. Wir werden dich auch nicht bitten, zusätzliche personenbezogene Daten anzugeben.
+    Die Bewertungen zu Speisen und anderen Leistungen werden hingegen nicht gelöscht, auch wenn du die App deinstallierst oder dieses Gericht nicht mehr auf den Speiseplänen steht. Die Bewertungen beinhalten, außer der UserID, die wie o.g. gelöscht oder anonymisiert wird, keine weiteren personenbezogenen Daten. Wir werden dich auch nicht bitten zur Löschung oder Anonysierung deiner Daten, zusätzliche personenbezogene Daten anzugeben.
 
-    Die Account ID wird in unseren Systemen während des Angebots der App genutzt. Serverlogs werden in der Regel so lange vorgehalten, wie es erforderlich ist, um etwaige Fehler analysieren zu können. Im Regelfall liegt dies bei 14 Tagen.
+    Die Account ID wird in unseren Systemen während des Angebots der App genutzt. Serverlogs werden in der Regel so lange vorgehalten, wie es erforderlich ist, um etwaige Fehler analysieren zu können. Im Regelfall liegt dies bei 30 Tagen.
+
+
+
 
     ## 9. Deine Rechte als Betroffener
 
@@ -254,15 +254,20 @@ Bitte ersetzen Sie die folgenden Variablen:
 
     Gerne kannst du dich bei Beschwerden an unsere Datenschutzbeauftragte (Kontaktdaten s. unten) wenden. Darüber hinaus besteht ein Beschwerderecht bei der zuständigen Datenschutzaufsichtsbehörde, der Landesbeauftragten für Datenschutz Niedersachsen, Prinzenstraße 5, 30159 Hannover, Telefon: +49 511 120-4500, E-Mail: poststelle@lfd.niedersachsen.de
 
+
+
+
     ## 10. Planer
 
-    Alle Termine und Veranstaltungen im Planer werden lokal auf dem mobilen Endgerät und bei uns online gespeichert und verarbeitet.
+    Alle Termine und Veranstaltungen im Planer werden lokal auf dem mobilen Endgerät und bei uns online gespeichert und verarbeitet. Wir können unter anderem deine Daten verwenden, um unsere Mensa-Abläufe zu optimieren und dir eine bessere Erfahrung zu bieten.
 
     Auf Wunsch können bereits vorhandene Termine und Veranstaltungen von Drittanbietern wie z. B. aus Stud.IP importiert werden. Diese Daten werden ebenfalls lokal abgespeichert und an unseren Server weitergeleitet. Gegebenenfalls werden die IP-Adresse des verwendeten Endgeräts und die entsprechenden REST-Zugriffe für den Daten-Export von dem Drittanbietern wie z. B. Stud.IP selbst geloggt.
 
+
+
     ## 11. Vorschlags-System
 
-    Um den Nutzerflow zu optimieren und innerhalb der App bessere und passendere Vorschläge zu erhalten, gibt es ein Vorschlags-System. Die serverseitige Verarbeitung deiner Daten findet statt, wenn du ein nicht anonymes Profil verwendest. Allgemeine Vorschläge, die nutzerunabhängig sind, werden weiterhin gemacht wie z. B. die Tagesempfehlung.
+    Um den Nutzerflow zu optimieren und innerhalb der App bessere und passendere Vorschläge zu erhalten, gibt es ein Vorschlags-System. Die serverseitige Verarbeitung deiner Daten findet statt, wenn du ein kein Gast Profil verwendest. Allgemeine Vorschläge, die nutzerunabhängig sind, werden weiterhin gemacht wie z. B. die Tagesempfehlung oder nur anhand deiner ausgewählten Mensa oder Filter und Sortier Einstellungen.
 
     Das Vorschlags-System greift auf die folgenden Daten zu:
 
@@ -271,9 +276,13 @@ Bitte ersetzen Sie die folgenden Variablen:
     - Bevorzugte Mensa
     - Planer
 
+
+
     ## 12. Datensicherheit
 
     Wir bedienen uns geeigneter technischer und organisatorischer Sicherheitsmaßnahmen, um deine Daten gegen zufällige oder vorsätzliche Manipulationen, teilweisen oder vollständigen Verlust, Zerstörung oder gegen den unbefugten Zugriff Dritter zu schützen. Unsere Sicherheitsmaßnahmen werden entsprechend der technologischen Entwicklung fortlaufend verbessert.
+
+
 
     ## 13. Externes Hosting
 
@@ -281,13 +290,30 @@ Bitte ersetzen Sie die folgenden Variablen:
 
     Es besteht ein Vertrag zur Auftragsverarbeitung mit der Strato AG.
 
-    ## 14. Code Push
 
-    Um dir technisch notwendige Updates, z. B. wenn eine Grundfunktionalität der App nicht funktionieren sollte oder es ein Sicherheitsproblem gibt, so schnell wie möglich zukommen zu lassen, benutzen wir den Code Push Dienst von Microsoft. Damit wird deine App automatisch aktualisiert und du kannst die App wie gewohnt benutzen. Um diesen Dienst nutzen zu können, müssen wir deine Gerätekennung und die Version der App an Microsoft übermitteln. Andere Daten wie z. B. deine E-Mail-Adresse geben wir nicht weiter. Informationen zu Zweck, Umfang, Art sowie der Nutzung deiner Daten durch den Betreiber des Dienstes findest du unter folgender Adresse: [https://learn.microsoft.com/de-de/appcenter/sdk/data-collected](https://learn.microsoft.com/de-de/appcenter/sdk/data-collected)
 
-    Es werden an Microsoft die "Allgemeine Daten" und Daten zum "Verteilen" gesendet
+    ## 14. Expo (Updates und Pushnachrichten)
 
-    Wir geben diese Daten nur an diesen Dritten weiter, um dir eine gute Erfahrung mit unserem Produkt anbieten zu können und einen reibungslosen Betrieb gewährleisten zu können. Als rechtliche Grundlage führen wir hier Art. 6 Abs. 1 lit. f DSGVO und Art. 6 Abs. 1 lit. b DSGVO an.
+    Um dir technisch notwendige Updates, z. B. wenn eine Grundfunktionalität der App nicht funktionieren sollte oder es ein Sicherheitsproblem gibt, so schnell wie möglich zukommen zu lassen, benutzen wir Dienste von Expo.
+
+    Es werden an Expo die "Allgemeine Daten" und Daten zum "Verteilen" gesendet.  Als rechtliche Grundlage führen wir hier Art. 6 Abs. 1 lit. f DSGVO und Art. 6 Abs. 1 lit. b DSGVO an.
+
+    Als Datenverarbeiter außerhalb des Europäischen Wirtschaftsraums (EWR) unterliegt Expo gewissen Rahmenbedingungen, die sie einhalten müssen, um einen gleichwertigen Schutz wie innerhalb des EWR zu gewährleisten. Dieser Schutz wird durch die Standardvertragsklauseln abgesichert.
+
+    ### 14.1 EAS Updates
+
+    Damit wird deine App automatisch aktualisiert und du kannst die App wie gewohnt benutzen. Um diesen Dienst nutzen zu können, müssen wir deine Gerätekennung und die Version der App an Expo (650 Industries, Inc., 624 University Ave # 1 Palo Alto, CA, 94301-2019 United States) übermitteln. Andere Daten wie z. B. deine E-Mail-Adresse geben wir nicht weiter. Informationen zu Zweck, Umfang, Art sowie der Nutzung deiner Daten durch den Betreiber des Dienstes findest du unter folgender Adresse: [https://docs.expo.dev/regulatory-compliance/privacy-shield/](https://docs.expo.dev/regulatory-compliance/privacy-shield/) und [https://docs.expo.dev/regulatory-compliance/gdpr/](https://docs.expo.dev/regulatory-compliance/gdpr/).
+
+    ### 14.2 Pushnachrichten
+
+    Verwendest du ein mobiles Endgerät, so kannst du Pushnachrichten von uns erhalten. Wir verwenden hierfür dienste von Expo.
+
+    Expo selbst verwendet wiederum Google Firebase, um Pushnachrichten zu versenden. Hierbei wird eine pseudonymisierte Push-Reference an dein Endgerät übermittelt, um dir Pushnachrichten zukommen zu lassen. Die Pushnachrichten können in den Einstellungen des Endgeräts jederzeit deaktiviert, aber auch wieder aktiviert werden.
+
+    Expo nutzt Dienste von Google Firebase. Firebase ist Teil der Google Cloud Plattform und bietet für Entwickler viele Dienste an, die du hier einsehen kannst: [https://firebase.google.com/terms/](https://firebase.google.com/terms/). Einige Dienste von Firebase verarbeiten von dir als Endnutzer personenbezogene Daten. Dies ist für die Bereitstellung der Google-Dienste notwendig. Welche Daten zu welchem Zweck verarbeitet werden, kannst du unter dem Punkt Datenverarbeitungsinformationen (dataprocessing information) einsehen:  [https://firebase.google.com/support/privacy/](https://firebase.google.com/support/privacy/). Google Firebase verwendet oftmals "Instance-ID´s", die laut den Informationen von Google solange gespeichert werden, bis der Endkunde einen API-Aufruf zum Löschen der ID ausführt. Danach werden die Daten 180 Tage nach Aufruf aus dem Live- und Backup-System gelöscht. Weitere Informationen findest du unter:  [firebase.google.com/support/privacy/manage-iids](https://firebase.google.com/support/privacy/manage-iids). Diese Instance-ID´s werden bspw. ermittelt, um zu wissen, an welches Gerät Nachrichten übermittelt werden sollen.
+
+    Wir erhalten keinerlei personenbezogene Daten von Google Firebase und stellen auch keine Anstrengungen an, diese Daten im Nachhinein zu personalisieren. Wir benutzen die Daten lediglich zur Analyse des Nutzungsverhaltens.
+
 
     ## 15. Kontakt
 
