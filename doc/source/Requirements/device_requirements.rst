@@ -21,7 +21,7 @@ Die Android-Plattform ist bekannt für ihre Vielfalt an Geräten und Software-Ve
     - Bei dem initialen Aufruf der Applikation ist mit Datenverbrauch zu rechnen (ohne Caching):
         - ca. 2-3 MB Synchronisierung (Bald reduziert sich dies durch unser Caching Funktion)
 - **Unterstützte Geräte**: Die App ist für den Einsatz auf aktuellen Android-Geräten optimiert. Eine Liste der unterstützten Geräte finden Sie auf der `Android-Webseite <https://www.android.com/intl/de_de/phones/.html>`_.
-- **Software-Anforderungen**: Die App ist für die aktuellste Version des Android-Betriebssystems optimiert. Die Kompatibilität mit älteren Versionen kann nicht garantiert werden.
+- **Software-Anforderungen**: Die App ist für die Android 14 (SDK / API Level 34 `Android API Levels <https://apilevels.com/#fn:1>`_) Version des Android-Betriebssystems optimiert. Die Kompatibilität mit älteren Versionen kann nicht garantiert werden.
 - **Anmerkung**: Aufgrund der Fragmentierung des Android-Marktes kann die Leistung der App auf verschiedenen Geräten variieren. Wir empfehlen, die App auf dem Referenzgerät zu testen, um die beste Leistung und Kompatibilität zu gewährleisten. Bitte beachten Sie, dass wir aufgrund der Vielzahl an Android-Geräten und Software-Versionen keine Garantie für die Kompatibilität und Leistung auf allen Geräten geben können.
 
 
