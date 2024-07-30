@@ -82,6 +82,8 @@ Rocket Meals Dokumentation
    :caption: Dokumente und Vorlagen
    Impressumg Vorlage <DocumentsAndTemplates/about-us>
    Datenschutzbedingung Vorlage <DocumentsAndTemplates/privacy-policy>
+   Barrierefreiheitserklärung Vorlage <DocumentsAndTemplates/accessibility>
+   Allgemeine Geschäftsbedingungen Vorlage <DocumentsAndTemplates/terms-and-conditions>
 
 
 .. toctree::
